@@ -1,0 +1,17 @@
+//META{"name":"DRB_Remove_Shadows","description":"Removes shadows behind avatars in DRB themes, by @Zerthox","author":"Zerthox","version":"1.1"}*//
+/* "DRB Remove Shadows v1.1" by @Zerthox */
+/* Removes Shadows behind avatars & guilds */
+/* IMPORTANT: Enable after having your DRB theme active! */
+
+.avatar-small    {
+    box-shadow: none !important;
+}
+.avatar-large {
+    box-shadow: none !important;
+}
+.icon-friends {
+    box-shadow: none !important;
+}
+.guilds-wrapper .guilds .guild .guild-inner {
+    box-shadow: none !important;
+}
