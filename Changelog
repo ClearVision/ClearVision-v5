@@ -60,11 +60,11 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 --- IN NEXT VERSION ---
 	CSS:
 		- Adjusted user settings background CSS
+		- Reworked account buttons
+		- Reworked voice connection buttons
+		- Reworked icons
 
 --- PLANNED CHANGES ---
 	CSS:
 		- Add symbols to settings tab bars
-		- Rework account buttons
-		- Rework voice connection buttons
-		- Rework icons
 		- Rework server add button
