@@ -47,6 +47,9 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed searchbar CSS
 
 <b>VERSION 1.20</b>
+	GENERAL:
+		- Moved to GitHub
+		- Updated links
 	CSS:
 		- Added button onclick animations
 		- Fixed activity text on user profiles
