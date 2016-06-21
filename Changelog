@@ -8,18 +8,18 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
        _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\/\\\\\\\\\\\\\/__ 
         _\////////////_____\///________\///__\/////////////____
 
-𝗩𝗘𝗥𝗦𝗜𝗢𝗡 𝟭.𝟭𝟱
+<b>VERSION 1.15</b>
 	GENERAL:
 		- Created changelog
 	CSS:
 		- Added emoji-picker CSS
 		- Fixed highlight CSS
 
-𝗩𝗘𝗥𝗦𝗜𝗢𝗡 𝟭.𝟭𝟲
+<b>VERSION 1.16</b>
 	CSS:
 		- Added scrollbar CSS for public server list
 
-𝗩𝗘𝗥𝗦𝗜𝗢𝗡 𝟭.𝟭𝟳
+<b>VERSION 1.17</b>
 	GENERAL:
 		- Added link to changelog
 		- Added link to a preview image
@@ -27,14 +27,14 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added notification badge CSS for friends list
 		- Fixed friends list avatars on user profiles
 
-𝗩𝗘𝗥𝗦𝗜𝗢𝗡 𝟭.𝟭𝟴
+<b>VERSION 1.18</b>
 	CSS:
 		- Reworked checkbox CSS
 		- Changed slider CSS
 		- Changed radio button CSS
 		- Added twitch streaming CSS
 
-𝗩𝗘𝗥𝗦𝗜𝗢𝗡 𝟭.𝟭𝟵
+<b>VERSION 1.19</b>
 	GENERAL:
 		- Updated theme description
 		- Updated commented info in code
@@ -46,7 +46,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed text CSS next to checkboxes
 		- Fixed searchbar CSS
 
-𝗜𝗡 𝗡𝗘𝗫𝗧 𝗩𝗘𝗥𝗦𝗜𝗢𝗡
+<b>VERSION 1.20</b>
 	CSS:
 		- Added button onclick animations
 		- Fixed activity text on user profiles
@@ -54,7 +54,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added shadow to checkbox switch
 		- Fixed alt checkbox CSS
 
-𝗣𝗟𝗔𝗡𝗡𝗘𝗗 𝗖𝗛𝗔𝗡𝗚𝗘𝗦
+<b>PLANNED CHANGES</b>𝗡𝗚𝗘𝗦
 	CSS:
 		- Add symbols to settings tab bars
 		- Rework account buttons
