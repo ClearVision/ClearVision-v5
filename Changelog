@@ -57,6 +57,10 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added shadow to checkbox switch
 		- Fixed alt checkbox CSS
 
+--- IN NEXT VERSION ---
+	CSS:
+		- Adjusted user settings background CSS
+
 --- PLANNED CHANGES ---
 	CSS:
 		- Add symbols to settings tab bars
