@@ -1,5 +1,5 @@
-//META{"name":"Discord_Reborn_-_Sapphire","description":"A chilly, blue theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.20"}*//
-/* "Discord Reborn - Sapphire v1.20" by @Zerthox */
+//META{"name":"Discord_Reborn_-_Sapphire","description":"A chilly, blue theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.21"}*//
+/* "Discord Reborn - Sapphire v1.21" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient */
 /* Fixes & Adjustements by @Zerthox */
 
@@ -75,7 +75,7 @@ _______/\\\\\___________________________________________________________________
 }
 .tab-bar.SIDE {
     overflow-y: hidden;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.75);
 }
 .create-guild-container .join-server .link-container input {
     border: 1px solid #2793E6;
@@ -903,7 +903,7 @@ textarea {
 }
 #voice-connection {
     border-top: none !important;
-    padding: 15px 20px 15px 18px !important;
+    padding: 10px 20px 10px 18px !important;
 }
 #voice-connection .btn {
     background: rgba(0, 0, 0, 0.45);
@@ -2000,9 +2000,6 @@ img.image {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
-}
-.account .btn-settings:after {
-    opacity: .3;
 }
 .guild-header ul li:hover a {
     background-color: hsla(0, 0%, 0%, 0.78);
@@ -3273,7 +3270,7 @@ div#bd-pub-button:hover {
 button {
 	transition: transform .1s ease-in-out;
 }
-button:active{
+button:active {
 	transform: scale(.9);
 }
 .win-maximize, .win-minimize, .win-close {
@@ -3306,14 +3303,204 @@ button:active{
 #user-profile-modal .guilds .guild:active {
 	transform: scale(.95);
 }
+#voice-connection .btn {
+	background: transparent !important;
+	border: none;
+}
+.account .btn {
+	background: transparent !important;
+	border: none;
+}
+#voice-connection .btn-disconnect, #voice-connection .btn-info, .account .btn-settings, .account .btn-deafen, .account .btn-mute {
+	transition: all .1s ease-in-out;
+	border-radius: 0px;
+}
+.account .btn-group, #voice-connection .btn-group {
+    border-radius: 15px;
+    background-color: rgba(0,0,0,.3);
+	height: 32px;
+}
+#voice-connection .btn-info {
+	border-right: 1px solid rgba(255,255,255,.2);
+	height: 26px;
+	bottom: 3px;
+}
+#voice-connection .btn-info:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg) !important;
+	background-position: center;
+    zoom: 2.5;
+}
+#voice-connection .btn-disconnect:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg);
+	background-position: center;
+    zoom: 1.3;
+}
+.account .btn-mute {
+	border-right: 1px solid rgba(255,255,255,.2);
+	height: 26px;
+	bottom: 3px;
+}
+.account .btn-deafen {
+	border-right: 1px solid rgba(255,255,255,.2);
+	height: 26px;
+	bottom: 3px;
+}
+.account .btn-mute:after {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg) !important;
+	background-position: center;
+	opacity: .2;
+	zoom: 1.2;
+}
+.account .btn-mute:hover:after {
+	opacity: .6;
+}
+.account .btn-deafen:after {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
+	background-position: center;
+	opacity: .2;
+    zoom: 1.2;
+}
+.account .btn-deafen:hover:after {
+	opacity: .6;
+}
+.account .btn-settings:after, .guild-channels .icon-settings {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+	background-position: center;
+    zoom: 1.2;
+}
+.account .btn-settings:after {
+    opacity: .2;
+}
+.icon-muted, .account .btn-mute.disabled:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg) !important;
+	background-position: center;
+}
+.icon-deafened, .account .btn-deafen.disabled:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg) !important;
+	background-position: center;
+}
+.guild-channels .channel-voice-states li .icon {
+	opacity: .3 !important;
+}
+#voice-connection .btn-group .btn:active {
+	transform: scale(1) !important;
+}
+.account .btn:active {
+	transform: scale(1) !important;
+}
+#voice-connection .btn-group .btn:after {
+	transition: transform .1s ease-in-out;
+}
+.account .btn:after {
+	transition: transform .1s ease-in-out;
+}
+#voice-connection .btn-group .btn:active:after {
+	transform: scale(.9) !important;
+}
+.account .btn:active:after {
+	transform: scale(.9) !important;
+}
+.account .btn-settings:active {
+	transform: scale(.9) !important;
+}
+.guild-channels .channel .icon.popout-open, .guild-channels .channel .icon:hover {
+	opacity: .7 !important;
+}
+.message-group .btn-option {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+	background-size: 120%;
+	background-position: center;
+	opacity: .2;
+}
+.message-group .btn-option.popout-open, .message-group .btn-option:hover {
+	background-size: 120%;
+	background-position: center;
+	opacity: .7;
+}
+.guild-channels .icon+.icon {
+    margin-left: 3px;
+	margin-top: -1px;
+}
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
+	background-position: center;
+	background-color: #000;
+	opacity: .7;
+}
+.guild-channels .icon-instant-invite {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg) !important;
+	background-position: center;
+}
+.guilds-wrapper .guild-separator:after {
+	background-color: rgba(255,255,255,.2);
+}
+.guilds-add {
+	background-image: none !important;
+	transition: all .1s ease-in-out;
+}
+.guilds-add:hover {
+	border-color: #2793E6;
+	animation: pulsate-border 1s infinite alternate;
+}
+.guilds-wrapper .guilds-add:before {
+	content: ' ';
+	background-color: #333539;
+	position: absolute;
+	left: 22.5px;
+	top: 11.5px;
+	height: 25px;
+	width: 2px;
+	border-radius: 3px;
+	transition: all .1s ease-in-out;
+}
+ .guilds-wrapper .guilds-add:after {
+	content: ' ';
+	background-color: #333539;
+	position: absolute;
+	left: 11.5px;
+	top: 22.5px;
+	height: 2px;
+	width: 25px;
+	border-radius: 3px;
+	transition: all .1s ease-in-out;
+}
+.guilds-wrapper .guilds-add:hover:before, .guilds-wrapper .guilds-add:hover:after  {
+	background-color: #2793E6;
+	animation: pulsate-color 1s infinite alternate;
+}
+@keyframes pulsate-color {
+	from {
+		background-color: #333539;
+	}
+	to {
+		background-color: #2793E6;
+	}
+}
+@keyframes pulsate-border {
+	from {
+		border-color: #535559;
+	}
+	to {
+		border-color: #2793E6;
+	}
+}
+.guild-channels {
+	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+}
+.emote-container, .emoji-item {
+	transition: all .3s ease-in-out, transform .1s ease-in-out;
+}
+.emote-container:active, .emoji-item:active {
+	transform: scale(.9);
+}
 .links:after {
-    content: "DRBS v1.20";
+    content: "DRBS v1.21";
     color: #8C8F94;
     margin-left: 6px;
     font-weight: bold;
 }
 .member-username-inner[data-reactid*="102180837625200640"]:after {
-    content: "DRBS v1.20";
+    content: "DRBS v1.21";
     color: #E81C4F;
     margin-left: 0px;
     font-weight: 900;
