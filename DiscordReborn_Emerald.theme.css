@@ -1,5 +1,5 @@
-//META{"name":"Discord_Reborn_-_Emerald","description":"A peaceful, green theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.20"}*//
-/* "Discord Reborn - Emerald v1.20" by @Zerthox */
+//META{"name":"Discord_Reborn_-_Emerald","description":"A peaceful, green theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.21"}*//
+/* "Discord Reborn - Emerald v1.21" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient */
 /* Fixes & Adjustements by @Zerthox */
 
@@ -75,7 +75,7 @@ _______/\\\\\___________________________________________________________________
 }
 .tab-bar.SIDE {
     overflow-y: hidden;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.75);
 }
 .create-guild-container .join-server .link-container input {
     border: 1px solid #33E627;
@@ -162,7 +162,7 @@ _______/\\\\\___________________________________________________________________
 }
 @-webkit-keyframes FColorPulse {
     0% {
-        background: #2AB31E;
+        background: #1e72b3;
     }
     100% {
         background: #33E627;
@@ -260,22 +260,22 @@ _______/\\\\\___________________________________________________________________
     background: rgba(0, 0, 0, 0.75);
 }
 .change-log .header {
-    color: #2AB31E;
+    color: #1e72b3;
     border-bottom: 1px solid #4C4C4C;
 }
 .change-log ul li {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .change-log .footer {
     border-top: 1px solid #4C4C4C;
-    color: #2AB31E;
+    color: #1e72b3;
     background-color: #282D2F;
 }
 .download-apps .platforms .platform {
-    border: 2px solid #2AB31E;
+    border: 2px solid #1e72b3;
 }
 .download-apps .footer {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .download-apps .footer a {
     color: #33E627;
@@ -287,13 +287,13 @@ _______/\\\\\___________________________________________________________________
     border-color: #33E627;
 }
 .user-settings-modal a:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .user-settings-modal .voice-settings .reset-voice-settings {
     color: #33E627;
 }
 .user-settings-modal .voice-settings .reset-voice-settings:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .modal-content .form-inner p {
     color: #E6E6E6;
@@ -328,7 +328,7 @@ _______/\\\\\___________________________________________________________________
     border: 1px solid #33E627;
 }
 .user-popout .user-popout-options .btn:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .chat .welcome-message h1 {
     color: #33E627;
@@ -337,7 +337,7 @@ _______/\\\\\___________________________________________________________________
     background-color: #33E627;
 }
 .channel-members .invite-btn:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .instant-invite-popout hr {
     border: 1px solid #33E627;
@@ -346,7 +346,7 @@ _______/\\\\\___________________________________________________________________
     color: #33E627;
 }
 .instant-invite-popout a:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .clipboard-input-inner input::selection {
     background: #33E627;
@@ -356,7 +356,7 @@ _______/\\\\\___________________________________________________________________
     background-color: rgba(0, 0, 0, 0.83);
 }
 .clipboard-input-inner input {
-    color: #2AB31E;
+    color: #1e72b3;
     background: rgba(0, 0, 0, 0.6);
 }
 .clipboard-input-inner {
@@ -396,13 +396,13 @@ _______/\\\\\___________________________________________________________________
     color: #33E627;
 }
 #permissions .permissions-helpdesk:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 #settings-roles .roles li.selected:before {
     background-color: #33E627;
 }
 #settings-roles .roles li:hover:before {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .instant-invites .instant-invites-header {
     border-bottom: 2px solid #33E627;
@@ -434,7 +434,7 @@ _______/\\\\\___________________________________________________________________
     color: #33E627;
 }
 .avatar-uploader a:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .instant-invites .instant-invites-list .instant-invite .show-channel .channel {
     color: #D6D6D6;
@@ -485,7 +485,7 @@ _______/\\\\\___________________________________________________________________
     color: #33E627;
 }
 .guild-settings-modal-members .guild-settings-modal-members-footer a:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .guild-settings-modal-members .guild-settings-modal-members-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.36);
@@ -503,11 +503,11 @@ _______/\\\\\___________________________________________________________________
 }
 .user-popout .user-popout-options .btn.btn-server:hover {
     border-color: #33E627;
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .member-roles .manipulate:hover {
     border-color: #33E627;
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 #user-profile-modal header {
     background-image: none;
@@ -521,7 +521,7 @@ _______/\\\\\___________________________________________________________________
     color: #ADADAD;
 }
 .need-help-modal a:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 #user-profile-modal footer {
     background: rgba(0, 0, 0, 0.83);
@@ -549,7 +549,7 @@ _______/\\\\\___________________________________________________________________
     background: #33E627;
 }
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
-    background: #2AB31E;
+    background: #1e72b3;
 }
 .theme-dark .hljs {
     border: 1px solid transparent;
@@ -702,7 +702,7 @@ _______/\\\\\___________________________________________________________________
     background-position: 50%;
 }
 .alert.form .form-inner .btn {
-    border: 1px solid #2AB31E;
+    border: 1px solid #1e72b3;
 }
 .alert.form .form-inner .cancel {
     border-color: #99aab5 !important;
@@ -903,7 +903,7 @@ textarea {
 }
 #voice-connection {
     border-top: none !important;
-    padding: 15px 20px 15px 18px !important;
+    padding: 10px 20px 10px 18px !important;
 }
 #voice-connection .btn {
     background: rgba(0, 0, 0, 0.45);
@@ -949,7 +949,7 @@ textarea {
     display: none;
 }
 .chat .new-messages-bar:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .chat-empty {
     background: rgba(20, 23, 27, 0.95);
@@ -1242,7 +1242,7 @@ textarea {
 }
 .avatar-uploader .avatar-uploader-inner {
     background-color: #33E627;
-    border: 5px solid #2AB31E;
+    border: 5px solid #1e72b3;
 }
 .form .form-actions {
     background-color: rgba(0,0,0,0.85);
@@ -1263,10 +1263,10 @@ textarea {
     color: #33E627;
 }
 .create-guild-container .action:hover.create .btn {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .form .btn-primary:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
     background-color: #33E627 !important;
@@ -1341,10 +1341,10 @@ a:link {
     color: #EFEFEF;
 }
 .guild-settings-modal-members .member-buttons .btn.btn-danger:hover {
-    background: #2AB31E;
+    background: #1e72b3;
 }
 .guild-settings-modal-members .member-buttons .btn.btn-danger {
-    border: 1px solid #2AB31E;
+    border: 1px solid #1e72b3;
     color: #FFFFFF;
 }
 .guild-settings-modal-members .guild-settings-modal-list .member+.member {
@@ -1363,7 +1363,7 @@ a:link {
     background-size: 10px;
 }
 .member-roles .member-role:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .guilds-add:hover {
     border-color: hsl(145, 64%, 50%);
@@ -1432,7 +1432,7 @@ a:link {
 }
 .private-channels .search-result.selected:before,
 .private-channels .search-result:hover:before {
-    border-left: 4px solid #2AB31E;
+    border-left: 4px solid #1e72b3;
 }
 .message-group .edit-message .channel-textarea-inner {
     border-color: #33E627;
@@ -1641,10 +1641,10 @@ a:link {
     background-color: #33E627;
 }
 #friends .btn:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .private-channels .channel.selected .icon-friends {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 .add-friend-popout {
     background: transparent;
@@ -1653,7 +1653,7 @@ a:link {
     border-color: hsla(0, 0%, 100%, .3);
 }
 .add-friend-popout .btn:disabled {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 #user-profile-modal .sub-header {
     background: rgba(0, 0, 0, 0.83);
@@ -1666,7 +1666,7 @@ a:link {
     background-color: #33E627;
 }
 #user-profile-modal .btn:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 #user-profile-modal .header {
     background-color: #33E627;
@@ -1864,7 +1864,7 @@ div.control-group .shortcut-recorder input[type=text] {
     text-shadow: 0 0 0 #FFFFFF;
 }
 .private-channels .search-bar input:focus {
-    box-shadow: 0 0 0 1px #33E627 !important;
+	box-shadow: 0 0 0 1px #33E627 !important;
 }
 @keyframes input-pulse {
     0% {
@@ -2001,9 +2001,6 @@ img.image {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
-.account .btn-settings:after {
-    opacity: .3;
-}
 .guild-header ul li:hover a {
     background-color: hsla(0, 0%, 0%, 0.78);
 }
@@ -2038,7 +2035,7 @@ img.image {
     background-color: #33E627;
 }
 .server-info button:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 #pubs-footer {
     background: #33E627;
@@ -2249,7 +2246,7 @@ form.auth-form {
     background-color: #33E627;
 }
 .button:hover {
-    background-color: #2AB31E;
+    background-color: #1e72b3;
 }
 #friends .friends-header .tab-bar .tab-bar-separator {
     background-color: rgba(0, 0, 0, 0.75);
@@ -2347,7 +2344,7 @@ form.auth-form {
     color: #33E627;
 }
 .form .control-group label a:hover {
-    color: #2AB31E;
+    color: #1e72b3;
 }
 .theme-dark.context-menu .item-subMenu {
     background: transparent url(https://discordapp.com/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
@@ -2367,8 +2364,8 @@ form.auth-form {
     background: #33E627;
 }
 .user-popout .avatar-wrapper .avatar-popout {
-    border: 4px solid #2AB31E;
-    background-color: #2AB31E;
+    border: 4px solid #1e72b3;
+    background-color: #1e72b3;
 }
 .user-popout .body {
     background: #000;
@@ -2401,7 +2398,7 @@ form.auth-form {
     background-color: transparent;
 }
 .guild-settings-modal-members .member-buttons .btn:hover {
-    background: #2AB31E;
+    background: #1e72b3;
 }
 .guild-settings-modal-members .guild-settings-modal-members-header .form .Select .Select-value {
     color: #DDD;
@@ -2969,9 +2966,9 @@ div#bd-pub-button:hover {
     background-color: rgba(0, 0, 0, 0.3) !important;
 }
 #bd-customcss-detach-container {
-    background-image: url("https://i.imgur.com/R69mWJP.png") !important;
+	background-image: url("https://i.imgur.com/R69mWJP.png") !important;
 	background-color: rgba(0, 0, 0, 0.7) !important;
-    background-size: cover !important;
+	background-size: cover !important;
 	background-position: 70% 50%;
 }
 .CodeMirror-gutters {
@@ -3113,7 +3110,7 @@ div#bd-pub-button:hover {
 	background-color: transparent !important;
 	border: none !important;
 }
-.theme-dark .chat .title-wrap .topic .highlight:hover {
+.chat .title-wrap .topic .highlight:hover {
     background-color: #2AB31E;
     border-radius: 4px;
 }
@@ -3273,7 +3270,7 @@ div#bd-pub-button:hover {
 button {
 	transition: transform .1s ease-in-out;
 }
-button:active{
+button:active {
 	transform: scale(.9);
 }
 .win-maximize, .win-minimize, .win-close {
@@ -3306,14 +3303,204 @@ button:active{
 #user-profile-modal .guilds .guild:active {
 	transform: scale(.95);
 }
+#voice-connection .btn {
+	background: transparent !important;
+	border: none;
+}
+.account .btn {
+	background: transparent !important;
+	border: none;
+}
+#voice-connection .btn-disconnect, #voice-connection .btn-info, .account .btn-settings, .account .btn-deafen, .account .btn-mute {
+	transition: all .1s ease-in-out;
+	border-radius: 0px;
+}
+.account .btn-group, #voice-connection .btn-group {
+    border-radius: 15px;
+    background-color: rgba(0,0,0,.3);
+	height: 32px;
+}
+#voice-connection .btn-info {
+	border-right: 1px solid rgba(255,255,255,.2);
+	height: 26px;
+	bottom: 3px;
+}
+#voice-connection .btn-info:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg) !important;
+	background-position: center;
+    zoom: 2.5;
+}
+#voice-connection .btn-disconnect:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg);
+	background-position: center;
+    zoom: 1.3;
+}
+.account .btn-mute {
+	border-right: 1px solid rgba(255,255,255,.2);
+	height: 26px;
+	bottom: 3px;
+}
+.account .btn-deafen {
+	border-right: 1px solid rgba(255,255,255,.2);
+	height: 26px;
+	bottom: 3px;
+}
+.account .btn-mute:after {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg) !important;
+	background-position: center;
+	opacity: .2;
+	zoom: 1.2;
+}
+.account .btn-mute:hover:after {
+	opacity: .6;
+}
+.account .btn-deafen:after {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
+	background-position: center;
+	opacity: .2;
+    zoom: 1.2;
+}
+.account .btn-deafen:hover:after {
+	opacity: .6;
+}
+.account .btn-settings:after, .guild-channels .icon-settings {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+	background-position: center;
+    zoom: 1.2;
+}
+.account .btn-settings:after {
+    opacity: .2;
+}
+.icon-muted, .account .btn-mute.disabled:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg) !important;
+	background-position: center;
+}
+.icon-deafened, .account .btn-deafen.disabled:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg) !important;
+	background-position: center;
+}
+.guild-channels .channel-voice-states li .icon {
+	opacity: .3 !important;
+}
+#voice-connection .btn-group .btn:active {
+	transform: scale(1) !important;
+}
+.account .btn:active {
+	transform: scale(1) !important;
+}
+#voice-connection .btn-group .btn:after {
+	transition: transform .1s ease-in-out;
+}
+.account .btn:after {
+	transition: transform .1s ease-in-out;
+}
+#voice-connection .btn-group .btn:active:after {
+	transform: scale(.9) !important;
+}
+.account .btn:active:after {
+	transform: scale(.9) !important;
+}
+.account .btn-settings:active {
+	transform: scale(.9) !important;
+}
+.guild-channels .channel .icon.popout-open, .guild-channels .channel .icon:hover {
+	opacity: .7 !important;
+}
+.message-group .btn-option {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+	background-size: 120%;
+	background-position: center;
+	opacity: .2;
+}
+.message-group .btn-option.popout-open, .message-group .btn-option:hover {
+	background-size: 120%;
+	background-position: center;
+	opacity: .7;
+}
+.guild-channels .icon+.icon {
+    margin-left: 3px;
+	margin-top: -1px;
+}
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
+	background-position: center;
+	background-color: #000;
+	opacity: .7;
+}
+.guild-channels .icon-instant-invite {
+	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg) !important;
+	background-position: center;
+}
+.guilds-wrapper .guild-separator:after {
+	background-color: rgba(255,255,255,.2);
+}
+.guilds-add {
+	background-image: none !important;
+	transition: all .1s ease-in-out;
+}
+.guilds-add:hover {
+	border-color: #33E627;
+	animation: pulsate-border 1s infinite alternate;
+}
+.guilds-wrapper .guilds-add:before {
+	content: ' ';
+	background-color: #333539;
+	position: absolute;
+	left: 22.5px;
+	top: 11.5px;
+	height: 25px;
+	width: 2px;
+	border-radius: 3px;
+	transition: all .1s ease-in-out;
+}
+ .guilds-wrapper .guilds-add:after {
+	content: ' ';
+	background-color: #333539;
+	position: absolute;
+	left: 11.5px;
+	top: 22.5px;
+	height: 2px;
+	width: 25px;
+	border-radius: 3px;
+	transition: all .1s ease-in-out;
+}
+.guilds-wrapper .guilds-add:hover:before, .guilds-wrapper .guilds-add:hover:after  {
+	background-color: #33E627;
+	animation: pulsate-color 1s infinite alternate;
+}
+@keyframes pulsate-color {
+	from {
+		background-color: #333539;
+	}
+	to {
+		background-color: #33E627;
+	}
+}
+@keyframes pulsate-border {
+	from {
+		border-color: #535559;
+	}
+	to {
+		border-color: #33E627;
+	}
+}
+.guild-channels {
+	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+}
+.emote-container, .emoji-item {
+	transition: all .3s ease-in-out, transform .1s ease-in-out;
+}
+.emote-container:active, .emoji-item:active {
+	transform: scale(.9);
+}
 .links:after {
-    content: "DRBE v1.20";
+    content: "DRBE v1.21";
     color: #8C8F94;
     margin-left: 6px;
     font-weight: bold;
 }
 .member-username-inner[data-reactid*="102180837625200640"]:after {
-    content: "DRBE v1.20";
+    content: "DRBE v1.21";
     color: #E81C4F;
     margin-left: 0px;
     font-weight: 900;
