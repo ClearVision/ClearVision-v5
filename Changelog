@@ -52,20 +52,21 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Updated links
 	CSS:
 		- Added button onclick animations
-		- Fixed activity text on user profiles
-		- Adjusted user profile background image brightness
 		- Added shadow to checkbox switch
+		- Adjusted user profile background image brightness
+		- Fixed activity text on user profiles
 		- Fixed alt checkbox CSS
 
---- IN NEXT VERSION ---
+--- VERSION 1.21 ---
 	CSS:
-		- Adjusted user settings background CSS
 		- Reworked account buttons
 		- Reworked voice connection buttons
 		- Reworked icons
+		- Reworked add server button
+		- Added emote picker onklick animations
+		- Adjusted user settings background CSS
 		- Fixed public serverlist backgrounds
 
 --- PLANNED CHANGES ---
 	CSS:
 		- Add symbols to settings tab bars
-		- Rework server add button
