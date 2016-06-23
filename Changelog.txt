@@ -69,9 +69,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- IN NEXT VERISON ---
 	CSS:
-		- Fixed channel icon button positions
+		- Added symbols to settings tab bars
 		- Adjusted "Download Apps" window CSS
-
---- PLANNED CHANGES ---
-	CSS:
-		- Add symbols to settings tab bars
+		- Fixed channel icon button positions
