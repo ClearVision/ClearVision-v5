@@ -72,3 +72,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added symbols to settings tab bars
 		- Adjusted "Download Apps" window CSS
 		- Fixed channel icon button positions
+		- Fixed voice connection buttons opacity
+		- Fixed account buttons opacity
