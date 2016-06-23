@@ -67,6 +67,11 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted user settings background CSS
 		- Fixed public serverlist backgrounds
 
+--- IN NEXT VERISON ---
+	CSS:
+		- Fixed channel icon button positions
+		- Adjusted "Download Apps" window CSS
+
 --- PLANNED CHANGES ---
 	CSS:
 		- Add symbols to settings tab bars
