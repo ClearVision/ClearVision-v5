@@ -65,7 +65,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Reworked add server button
 		- Added emote picker onklick animations
 		- Adjusted user settings background CSS
-		- Fixed public serverlist backgrounds
 
 --- IN NEXT VERISON ---
 	CSS:
@@ -74,3 +73,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed channel icon button positions
 		- Fixed voice connection buttons opacity
 		- Fixed account buttons opacity
+		- Fixed public serverlist backgrounds
