@@ -1,13 +1,17 @@
 # DiscordReborn
 
 ####DiscordReborn - Amethyst
-<img src="http://i.imgur.com/iuY9aiZ.jpg">
+<img src="http://i.imgur.com/T8zH85J.png">
+<img src="http://i.imgur.com/et7zD1K.png">
 
 ####DiscordReborn - Emerald
-<img src="http://i.imgur.com/zv5xDh2.jpg">
+<img src="http://i.imgur.com/IYAYcGX.png">
+<img src="http://i.imgur.com/FCsyYDp.png">
 
 ####DiscordReborn - Ruby
-<img src="http://i.imgur.com/dqYoGYi.jpg">
+<img src="http://i.imgur.com/IYAYcGX.png">
+<img src="http://i.imgur.com/EttdCgM.png">
 
 ####DiscordReborn - Sapphire
-<img src="http://i.imgur.com/tawC1hk.jpg">
+<img src="http://i.imgur.com/wsWrzDb.png">
+<img src="http://i.imgur.com/mxttLCe.png">
