@@ -67,6 +67,10 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted user settings background CSS
 
 --- IN NEXT VERISON ---
+	GENERAL:
+		- Replaced screenshots
+		- Added new screenshots
+		- Added info to use dark theme & dark mode
 	CSS:
 		- Added symbols to settings tab bars
 		- Added pinned messages CSS
