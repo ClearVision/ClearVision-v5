@@ -82,3 +82,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed voice connection buttons opacity
 		- Fixed account buttons opacity
 		- Fixed public serverlist backgrounds
+		- Fixed mutual server icons on friends list
