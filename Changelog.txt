@@ -83,4 +83,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed account buttons opacity
 		- Fixed public serverlist backgrounds
 		- Fixed mutual server icons on friends list
-		- Fixed an issue with emote sorting
+		- Fixed emote sorting issues
+		- Fixed background colors in public server list
