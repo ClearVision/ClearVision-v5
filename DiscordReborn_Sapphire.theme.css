@@ -3611,7 +3611,7 @@ button:active {
 .header-toolbar button.active, .header-toolbar button.popout-open {
 	background-color: rgba(0,0,0,.3) !important;
 }
-#app-mount > div > div.app.flex-vertical.theme-dark > div > div:nth-child(3) > div {
+#app-mount > div > div.app.flex-vertical.theme-dark > div:not(#pubs-container) > div:nth-child(3) > div {
 	background-color: rgba(0,0,0,.7) !important;
 }
 progress {
