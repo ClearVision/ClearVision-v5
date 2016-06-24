@@ -1,13 +1,14 @@
-//META{"name":"Discord_Reborn_-_Emerald","description":"A peaceful, green theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.21"}*//
-/* "Discord Reborn - Emerald v1.21" by @Zerthox */
+//META{"name":"Discord_Reborn_-_Emerald","description":"A peaceful, green theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.22"}*//
+/* "Discord Reborn - Emerald v1.22" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient */
 /* Fixes & Adjustements by @Zerthox */
+
+/* IMPORTANT: OPTIMIZED FOR DARK THEME & DARK MODE */
 
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ================ IMPORTANT LINKS =================
 Changelog: https://github.com/Zerthox/discordreborn/blob/master/Changelog
-Preview Image: http://i.imgur.com/BH6yDIw.jpg
 RemoveShadows theme: https://github.com/Zerthox/discordreborn/blob/master/DiscordReborn_RemoveShadows.theme.css IMPORTANT: Activate on top of a DRB theme!
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */
@@ -2041,7 +2042,7 @@ img.image {
     background: #33E627;
 }
 #pubs-container {
-    background-image: url("https://imgur.com/RG03PyX.png") !important;
+    background-image: url("https://i.imgur.com/R69mWJP.png") !important;
     transition: 0.3s all ease;
     background-size: cover !important;
 }e
@@ -2441,7 +2442,7 @@ form.auth-form {
     color: #33E627;
 }
 .auth-background {
-    background-image: url("https://imgur.com/RG03PyX.png") !important;
+    background-image: url("https://i.imgur.com/R69mWJP.png") !important;
     background-size: cover !important;
 }
 .auth-copyright {
@@ -2643,7 +2644,7 @@ div#bd-customcss-innerpane {
 }
 .auth-tiling-bg {
     background-color: #2e3136;
-    background-image: url("https://imgur.com/RG03PyX.png") !important;
+    background-image: url("https://i.imgur.com/R69mWJP.png") !important;
 }
 .create-guild-container .action.create .action-icon, .create-guild-container .action.join .action-icon {
     -webkit-filter: invert() hue-rotate(145deg);
@@ -3329,11 +3330,13 @@ button:active {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg) !important;
 	background-position: center;
     zoom: 2.5;
+	opacity: .3;
 }
 #voice-connection .btn-disconnect:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg);
 	background-position: center;
     zoom: 1.3;
+	opacity: .3;
 }
 .account .btn-mute {
 	border-right: 1px solid rgba(255,255,255,.2);
@@ -3348,7 +3351,6 @@ button:active {
 .account .btn-mute:after {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg) !important;
 	background-position: center;
-	opacity: .2;
 	zoom: 1.2;
 }
 .account .btn-mute:hover:after {
@@ -3357,7 +3359,6 @@ button:active {
 .account .btn-deafen:after {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
 	background-position: center;
-	opacity: .2;
     zoom: 1.2;
 }
 .account .btn-deafen:hover:after {
@@ -3367,9 +3368,7 @@ button:active {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
 	background-position: center;
     zoom: 1.2;
-}
-.account .btn-settings:after {
-    opacity: .2;
+	margin-top: 0px !important;
 }
 .icon-muted, .account .btn-mute.disabled:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg) !important;
@@ -3393,7 +3392,8 @@ button:active {
 }
 .account .btn:after {
 	transition: transform .1s ease-in-out;
-}
+	opacity: .3;
+	}
 #voice-connection .btn-group .btn:active:after {
 	transform: scale(.9) !important;
 }
@@ -3403,6 +3403,9 @@ button:active {
 .account .btn-settings:active {
 	transform: scale(.9) !important;
 }
+.account .btn-mute:hover:after, .account .btn-deafen:hover:after, .account .btn-settings:hover:after {
+	opacity: .7;
+}
 .guild-channels .channel .icon.popout-open, .guild-channels .channel .icon:hover {
 	opacity: .7 !important;
 }
@@ -3410,7 +3413,7 @@ button:active {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
 	background-size: 120%;
 	background-position: center;
-	opacity: .2;
+	opacity: .3;
 }
 .message-group .btn-option.popout-open, .message-group .btn-option:hover {
 	background-size: 120%;
@@ -3430,6 +3433,7 @@ button:active {
 .guild-channels .icon-instant-invite {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg) !important;
 	background-position: center;
+	margin-top: 2px;
 }
 .guilds-wrapper .guild-separator:after {
 	background-color: rgba(255,255,255,.2);
@@ -3493,14 +3497,146 @@ button:active {
 .emote-container:active, .emoji-item:active {
 	transform: scale(.9);
 }
+.download-apps .platforms .platform .download-button {
+	    background-color: #2AB31E;
+}
+.download-apps .inner {
+	background-color: rgba(0,0,0,.75);
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 10px;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item {
+	padding-left: 50px;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:after {
+	position: absolute;
+	left: 15px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -3px;
+	opacity: .3;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:hover:after {
+	opacity: 1;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item.selected:after {
+	opacity: 1;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_wifi_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_camera_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_place_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg");
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15):after {
+	content: url("https://i.imgur.com/k0cJtK2.png");
+}
+.channel-pins-wrap {
+	background-color: rgba(0,0,0,.5) !important;
+}
+.channel-pins-wrap .header {
+	background-color: rgba(0,0,0,.3) !important;
+}
+.channel-pins-wrap .footer {
+	background-color: rgba(0,0,0,.3) !important;
+}
+.channel-pins-wrap .header .title {
+	color: #ddd !important;
+}
+.channel-pins-wrap .channel-pins .message-group {
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: solid 1px hsla(0, 0%, 100%, .04) !important;
+	border-radius: 0px;
+}
+.channel-pins-wrap .channel-pins .message-group:last-of-type {
+	border-bottom: none !important;
+}
+.channel-pins-wrap .channel-pins .message-group:hover .action-buttons {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+.channel-pins-wrap .channel-pins .message-group .action-buttons .jump-button {
+	background-color: rgba(0,0,0,.3) !important;
+	color: #ccc !important;
+	border-radius: 3px !important;
+	transition: all .1s ease-in-out;
+}
+.channel-pins-wrap .channel-pins .message-group .action-buttons .jump-button:hover {
+	background-color: #33E627 !important;
+	color: #ddd !important;
+}
+.channel-pins .message-group .action-buttons .close-button {
+	background-color: rgba(0,0,0,.3);
+	border-radius: 3px;
+	transition: all .1s ease-in-out;
+}
+.channel-pins .message-group .action-buttons .close-button:hover {
+	background-color: #B50303;
+	opacity: .7 !important;
+}
+.header-toolbar button {
+	transition: all .1s ease-in-out !important;
+}
+.header-toolbar button.active, .header-toolbar button.popout-open {
+	background-color: rgba(0,0,0,.3) !important;
+}
+#app-mount > div > div.app.flex-vertical.theme-dark > div > div:nth-child(3) > div {
+	background-color: rgba(0,0,0,.7) !important;
+}
+progress {
+	background: rgba(0,0,0,.3) !important;
+}
+progress::-webkit-progress-value {
+	background: #33E627 !important;
+}
+.radio-theme label {
+	border-color: #333539;
+}
+.radio-theme input[type=radio]:checked~label {
+	border-color: #33E627;
+}
 .links:after {
-    content: "DRBE v1.21";
+    content: "DRB v1.22";
     color: #8C8F94;
     margin-left: 6px;
     font-weight: bold;
 }
 .member-username-inner[data-reactid*="102180837625200640"]:after {
-    content: "DRBE v1.21";
+    content: "DRB v1.22";
     color: #E81C4F;
     margin-left: 0px;
     font-weight: 900;
