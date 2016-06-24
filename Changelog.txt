@@ -70,6 +70,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 	CSS:
 		- Added symbols to settings tab bars
 		- Added pinned messages CSS
+		- Added background to active header buttons
 		- Adjusted "Download Apps" window CSS
 		- Fixed channel icon button positions
 		- Fixed voice connection buttons opacity
