@@ -3629,6 +3629,9 @@ progress::-webkit-progress-value {
 .radio-theme input[type=radio]:checked~label {
 	border-color: #33E627;
 }
+#friends .friends-table .friends-row .friends-column-guilds .avatar-small {
+	background-color: transparent;
+}
 .links:after {
     content: "DRB v1.22";
     color: #8C8F94;
