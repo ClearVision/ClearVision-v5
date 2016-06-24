@@ -5,7 +5,7 @@
 <img src="http://i.imgur.com/et7zD1K.png">
 
 ####DiscordReborn - Emerald
-<img src="http://i.imgur.com/IYAYcGX.png">
+<img src="http://i.imgur.com/FCsyYDp.png">
 <img src="http://i.imgur.com/FCsyYDp.png">
 
 ####DiscordReborn - Ruby
