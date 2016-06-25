@@ -3429,6 +3429,7 @@ button:active {
 .guild-channels .icon-instant-invite {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg) !important;
 	background-position: center;
+	zoom: 1.1;
 }
 .guilds-wrapper .guild-separator:after {
 	background-color: rgba(255,255,255,.2);
