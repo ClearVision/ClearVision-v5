@@ -76,7 +76,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added pinned messages CSS
 		- Added background to active header buttons
 		- Added BetterDiscord loading bar CSS
-		- Adjusted "Download Apps" window CSS
+		- Adjusted Download Apps window CSS
 		- Adjusted theme picker CSS
 		- Fixed channel icon button positions
 		- Fixed voice connection buttons opacity
