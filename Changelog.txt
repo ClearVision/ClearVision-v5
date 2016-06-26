@@ -88,5 +88,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- NEXT VERSION ---
 	CSS:
+		- Added jump to present bar CSS
 		- Added symbols to settings tab bars for browser and mac
 		- Fixed wrong symbols showing up for browser and mac
