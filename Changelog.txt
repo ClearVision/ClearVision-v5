@@ -93,3 +93,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added symbols to settings tab bars for browser and mac
 		- Fixed wrong symbols showing up for browser and mac
 		- Fixed highlight CSS
+		- Adjusted BetterDiscord loading bar CSS
