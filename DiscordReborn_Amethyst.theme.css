@@ -1,5 +1,5 @@
-//META{"name":"Discord_Reborn_-_Amethyst","description":"A mystical, purple theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.22"}*//
-/* "Discord Reborn - Amethyst v1.22" by @Zerthox */
+//META{"name":"Discord_Reborn_-_Amethyst","description":"A mystical, purple theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.23"}*//
+/* "Discord Reborn - Amethyst v1.23" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient */
 /* Fixes & Adjustements by @Zerthox */
 
@@ -3109,7 +3109,7 @@ div#bd-pub-button:hover {
 	border: none !important;
 }
 .chat .title-wrap .topic .highlight:hover {
-    background-color: #A71EB3;
+    background-color: #A71EB3 !important;
     border-radius: 4px;
 }
 .bda-dark #pubs-container .scroller::-webkit-scrollbar {
@@ -3326,13 +3326,13 @@ button:active {
 #voice-connection .btn-info:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg) !important;
 	background-position: center;
-    zoom: 2.5;
+    background-size: 65%;
 	opacity: .3;
 }
 #voice-connection .btn-disconnect:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg);
 	background-position: center;
-    zoom: 1.3;
+    background-size: 65%;
 	opacity: .3;
 }
 .account .btn-mute {
@@ -3348,7 +3348,7 @@ button:active {
 .account .btn-mute:after {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg) !important;
 	background-position: center;
-	zoom: 1.2;
+	background-size: 65%;
 }
 .account .btn-mute:hover:after {
 	opacity: .6;
@@ -3356,15 +3356,20 @@ button:active {
 .account .btn-deafen:after {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
 	background-position: center;
-    zoom: 1.2;
+    background-size: 65%;
 }
 .account .btn-deafen:hover:after {
 	opacity: .6;
 }
-.account .btn-settings:after, .guild-channels .icon-settings {
+.account .btn-settings:after{
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
 	background-position: center;
-    zoom: 1.2;
+    background-size: 65%;
+}
+.guild-channels .icon-settings {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+	background-position: center;
+    background-size: 120%;
 }
 .icon-muted, .account .btn-mute.disabled:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg) !important;
@@ -3418,7 +3423,6 @@ button:active {
 }
 .guild-channels .icon+.icon {
     margin-left: 3px;
-	margin-top: -1px;
 }
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
 	background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
@@ -3495,7 +3499,7 @@ button:active {
 	transform: scale(.9);
 }
 .download-apps .platforms .platform .download-button {
-	    background-color: #A71EB3;
+	background-color: #A71EB3;
 }
 .download-apps .inner {
 	background-color: rgba(0,0,0,.75);
@@ -3538,27 +3542,60 @@ button:active {
 	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg");
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after {
-	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg");
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after {
 	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_camera_white_24px.svg");
 }
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after {
-	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg");
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
-	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg");
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):after {
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after {
 	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_place_white_24px.svg");
 }
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):after {
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after {
 	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg");
 }
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):after {
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
 	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg");
 }
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15):after {
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_camera_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_place_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg");
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15):after {
+	content: url("https://i.imgur.com/k0cJtK2.png");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_camera_white_24px.svg");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_place_white_24px.svg");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):after {
+	content: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg");
+}
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):after {
 	content: url("https://i.imgur.com/k0cJtK2.png");
 }
 .channel-pins-wrap {
@@ -3612,7 +3649,7 @@ button:active {
 	background-color: rgba(0,0,0,.3) !important;
 }
 #app-mount > div > div.app.flex-vertical.theme-dark > div:not(#pubs-container) > div:nth-child(3) > div {
-	background-color: rgba(0,0,0,.7) !important;
+	background-color: rgba(0,0,0,.8) !important;
 }
 progress {
 	background: rgba(0,0,0,.3) !important;
@@ -3629,14 +3666,56 @@ progress::-webkit-progress-value {
 #friends .friends-table .friends-row .friends-column-guilds .avatar-small {
 	background-color: transparent;
 }
+.chat .jump-to-present-bar {
+	background-color: rgba(0,0,0,.9) !important;
+}
+.chat .jump-to-present-bar:hover {
+	background-color: #DA27E6 !important;
+}
+.chat .jump-to-present-bar button {
+	color: hsla(0,0%,100%,.6) !important;
+}
+.chat .jump-to-present-bar:hover button {
+	color: #fff !important;
+}
+.guilds-wrapper .guilds .guild-placeholder {
+	border-color: #DA27E6 !important;
+	animation: pulsate-border 1s infinite alternate;
+}
+.change-log .changelog-added, .change-log .changelog-added-secondary {
+	background-color: #DA27E6;
+}
+.change-log .changelog-in-progress {
+	background-color: #A71EB3;
+}
+.create-guild-container .action.create .action-icon, .create-guild-container .action.join .action-icon {
+	-webkit-filter: invert() grayscale(1) brightness(2);
+	opacity: .5;
+}
+.download-apps .platforms .platform.active {
+	-webkit-filter: drop-shadow(0 0 3px #DA27E6);
+	animation: pulsate-drop-shadow 1s infinite alternate;
+}
+@keyframes pulsate-drop-shadow {
+	from {
+		-webkit-filter: drop-shadow(0 0 3px #DA27E6);
+	}
+	to {
+		-webkit-filter: drop-shadow(0 0 3px transparent);
+	}
+}
+#voice-connection-popout > section > div:nth-child(1) > div > svg > line {
+	stroke: #DA27E6 !important;
+	stroke-dasharray: 5,3 !important;
+}
 .links:after {
-    content: "DRB v1.22";
+    content: "DRB v1.23";
     color: #8C8F94;
     margin-left: 6px;
     font-weight: bold;
 }
 .member-username-inner[data-reactid*="102180837625200640"]:after {
-    content: "DRB v1.22";
+    content: "DRB v1.23";
     color: #E81C4F;
     margin-left: 0px;
     font-weight: 900;
