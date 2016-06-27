@@ -86,7 +86,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed emote sorting issues
 		- Fixed background colors in public server list
 
---- NEXT VERSION ---
+--- VERSION 1.23 ---
 	CSS:
 		- Added jump to present bar CSS
 		- Added guild placeholder CSS
