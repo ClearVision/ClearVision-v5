@@ -91,6 +91,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added jump to present bar CSS
 		- Added guild placeholder CSS
 		- Added symbols to settings tab bars for browser and mac
+		- Added voice connection sparkline CSS
 		- Adjusted BetterDiscord loading bar CSS
 		- Adjusted changelog window CSS
 		- Adjusted Download Apps window CSS
