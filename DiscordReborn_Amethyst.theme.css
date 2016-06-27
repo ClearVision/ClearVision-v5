@@ -3708,6 +3708,9 @@ progress::-webkit-progress-value {
 	stroke: #DA27E6 !important;
 	stroke-dasharray: 5,3 !important;
 }
+#voice-connection-popout .debug-button {
+	color: #8a8e94;
+}
 .links:after {
     content: "DRB v1.23";
     color: #8C8F94;
