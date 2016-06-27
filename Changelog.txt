@@ -78,11 +78,11 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added BetterDiscord loading bar CSS
 		- Adjusted Download Apps window CSS
 		- Adjusted theme picker CSS
-		- Fixed channel icon button positions
+		- Fixed channel icon button position issues
 		- Fixed voice connection buttons opacity
 		- Fixed account buttons opacity
 		- Fixed public serverlist backgrounds
-		- Fixed mutual server icons on friends list
+		- Fixed mutual server icons on friends list issues
 		- Fixed emote sorting issues
 		- Fixed background colors in public server list
 
@@ -96,4 +96,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted Download Apps window CSS
 		- Adjusted guilds add window CSS
 		- Fixed wrong symbols showing up for browser and mac
-		- Fixed highlight CSS
+		- Fixed highlight CSS issues
+		- Fixed icon/button sizing issues
