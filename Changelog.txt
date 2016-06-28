@@ -99,3 +99,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed wrong symbols showing up for browser and mac
 		- Fixed highlight CSS issues
 		- Fixed icon/button sizing issues
+
+--- NEXT VERSION --- 
+	CSS:
+		- Added clock plugin CSS
