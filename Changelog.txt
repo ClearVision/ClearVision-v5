@@ -101,5 +101,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed icon/button sizing issues
 
 --- NEXT VERSION --- 
+	GENERAL:
+		- Beautified CSS
 	CSS:
 		- Added clock plugin CSS
