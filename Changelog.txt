@@ -102,8 +102,9 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- NEXT VERSION --- 
 	GENERAL:
-		- Renamed "Ruby" theme to "Amber"
 		- Added new red "Ruby" theme
+		- Renamed "Ruby" theme to "Amber"
+		- Updated backgrounds to higher resolutions
 		- Beautified CSS
 		- Shortened URLs
 	CSS:
