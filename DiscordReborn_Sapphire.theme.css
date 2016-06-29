@@ -3251,6 +3251,7 @@ div#bd-pub-button:hover {
 .slider-handle {
     border: none;
     background-color: #2793E6;
+	margin-top: 1px;
 }
 .slider-handle span {
     border-radius: 10px;
