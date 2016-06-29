@@ -102,6 +102,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- NEXT VERSION --- 
 	GENERAL:
+		- Renamed "Ruby" theme to "Amber"
+		- Added new red "Ruby" theme
 		- Beautified CSS
 	CSS:
 		- Added clock plugin CSS
