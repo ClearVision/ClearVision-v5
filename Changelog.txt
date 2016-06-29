@@ -109,3 +109,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Shortened URLs
 	CSS:
 		- Added clock plugin CSS
+		- Fixed slider handle positions
