@@ -105,5 +105,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Renamed "Ruby" theme to "Amber"
 		- Added new red "Ruby" theme
 		- Beautified CSS
+		- Shortened URLs
 	CSS:
 		- Added clock plugin CSS
