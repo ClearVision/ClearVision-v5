@@ -100,7 +100,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed highlight CSS issues
 		- Fixed icon/button sizing issues
 
---- NEXT VERSION --- 
+--- VERSION 1.24 --- 
 	GENERAL:
 		- Added new red "Ruby" theme
 		- Renamed "Ruby" theme to "Amber"
