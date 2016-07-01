@@ -114,6 +114,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 --- VERSION 1.2.5 (Release: Upcoming) ---
 	GENERAL:
 		- Changed versioning system
+		- Added release dates to changelog
+		- Added former version numbers to changelog
 	CSS:
 		- Added hover animations for account buttons
 		- Added hover & popout animation for voice connection buttons
