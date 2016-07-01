@@ -8,18 +8,18 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
        _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\/\\\\\\\\\\\\\/__ 
         _\////////////_____\///________\///__\/////////////____
 
---- VERSION 1.15 ---
+--- VERSION 1.1.5 (Old: 1.15) ---
 	GENERAL:
 		- Created changelog
 	CSS:
 		- Added emoji-picker CSS
 		- Fixed highlight CSS
 
---- VERSION 1.16 ---
+--- VERSION 1.1.6 (Old: 1.16) ---
 	CSS:
 		- Added scrollbar CSS for public server list
 
---- VERSION 1.17 ---
+--- VERSION 1.1.7 (Old: 1.17) ---
 	GENERAL:
 		- Added link to changelog
 		- Added link to a preview image
@@ -27,14 +27,14 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added notification badge CSS for friends list
 		- Fixed friends list avatars on user profiles
 
---- VERSION 1.18 ---
+--- VERSION 1.1.8 (Old: 1.18) ---
 	CSS:
 		- Reworked checkbox CSS
 		- Changed slider CSS
 		- Changed radio button CSS
 		- Added twitch streaming CSS
 
---- VERSION 1.19 ---
+--- VERSION 1.1.9 (Old: 1.19) ---
 	GENERAL:
 		- Updated theme description
 		- Updated commented info in code
@@ -46,7 +46,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed text CSS next to checkboxes
 		- Fixed searchbar CSS
 
---- VERSION 1.20 ---
+--- VERSION 1.2.0 (Old: 1.20) ---
 	GENERAL:
 		- Moved to GitHub
 		- Updated links
@@ -57,7 +57,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed activity text on user profiles
 		- Fixed alt checkbox CSS
 
---- VERSION 1.21 ---
+--- VERSION 1.2.1 (Old: 1.21) ---
 	CSS:
 		- Reworked account buttons
 		- Reworked voice connection buttons
@@ -66,7 +66,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added emote picker onklick animations
 		- Adjusted user settings background CSS
 
---- VERSION 1.22 ---
+--- VERSION 1.2.2 (Old: 1.22) ---
 	GENERAL:
 		- Replaced screenshots
 		- Added new screenshots
@@ -86,7 +86,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed emote sorting issues
 		- Fixed background colors in public server list
 
---- VERSION 1.23 ---
+--- VERSION 1.2.3 (Old: 1.23) ---
 	CSS:
 		- Added jump to present bar CSS
 		- Added guild placeholder CSS
@@ -100,7 +100,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed highlight CSS issues
 		- Fixed icon/button sizing issues
 
---- VERSION 1.24 --- 
+--- VERSION 1.2.4 (Old: 1.24) --- 
 	GENERAL:
 		- Added new red "Ruby" theme
 		- Renamed "Ruby" theme to "Amber"
@@ -110,3 +110,10 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 	CSS:
 		- Added clock plugin CSS
 		- Fixed slider handle positions
+		
+--- VERSION 1.2.5 (Upcoming) ---
+	GENERAL:
+		- Changed versioning system
+	CSS:
+		- Added hover animations for account buttons
+		- Added hover & popout animation for voice connection buttons
