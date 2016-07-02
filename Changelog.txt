@@ -125,3 +125,9 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted hamburger button color
 		- Changed titlebar button hover colors
 		- Removed channel name capitalizing
+
+--- VERSION 1.2.6 (Release: Upcoming) ---
+	CSS:
+		- Added user name hover CSS
+		- Adjusted bot tag background
+		- Fixed account & voice connection position issues
