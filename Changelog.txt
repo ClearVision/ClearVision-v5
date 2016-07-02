@@ -120,7 +120,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added icons for titlebar buttons
 		- Added icons for header toolbar buttons
 		- Added hover animations for account buttons
-		- Added hover & popout animation for voice connection buttons
+		- Added hover & popout animations for voice connection buttons
 		- Adjusted & blurred user profile & user popout backgrounds
 		- Adjusted hamburger button color
 		- Changed titlebar button hover colors
@@ -128,6 +128,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- VERSION 1.2.6 (Release: Upcoming) ---
 	CSS:
+		- Added mute button hover animation
 		- Added user name hover CSS
 		- Adjusted bot tag background
 		- Fixed account & voice connection position issues
