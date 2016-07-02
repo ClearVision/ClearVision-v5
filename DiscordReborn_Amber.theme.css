@@ -3946,7 +3946,7 @@ span[style='background-image: url("/assets/ac9e460931395610d173fd5db87399b7.svg"
     background-position: center;
 }
 .header-toolbar button:nth-child(5) span,
-.header-toolbar button span {
+#friends .header-toolbar button span {
     background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_help_white_24px.svg") !important;
     background-repeat: no-repeat;
     background-position: center;
