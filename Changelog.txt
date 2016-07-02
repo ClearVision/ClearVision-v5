@@ -121,5 +121,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added icons for header toolbar buttons
 		- Added hover animations for account buttons
 		- Added hover & popout animation for voice connection buttons
-		- Removed channel name capitalizing
+		- Adjusted & blurred user profile & user popout backgrounds
 		- Adjusted hamburger button color
+		- Removed channel name capitalizing
