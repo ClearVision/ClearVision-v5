@@ -46,7 +46,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed text CSS next to checkboxes
 		- Fixed searchbar CSS
 
---- VERSION 1.2.0 [Former: 1.20] (Release: 6/21/2016) ---
+--- VERSION 1.2.0 [Former: 1.20] (Release: 06/21/2016) ---
 	GENERAL:
 		- Moved to GitHub
 		- Updated links
@@ -57,7 +57,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed activity text on user profiles
 		- Fixed alt checkbox CSS
 
---- VERSION 1.2.1 [Former: 1.21] (Release: 6/22/2016) ---
+--- VERSION 1.2.1 [Former: 1.21] (Release: 06/22/2016) ---
 	CSS:
 		- Reworked account buttons
 		- Reworked voice connection buttons
@@ -66,7 +66,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added emote picker onklick animations
 		- Adjusted user settings background CSS
 
---- VERSION 1.2.2 [Former: 1.22] (Release: 6/24/2016) ---
+--- VERSION 1.2.2 [Former: 1.22] (Release: 06/24/2016) ---
 	GENERAL:
 		- Replaced screenshots
 		- Added new screenshots
@@ -86,7 +86,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed emote sorting issues
 		- Fixed background colors in public server list
 
---- VERSION 1.2.3 [Former: 1.23] (Release: 6/27/2016) ---
+--- VERSION 1.2.3 [Former: 1.23] (Release: 06/27/2016) ---
 	CSS:
 		- Added jump to present bar CSS
 		- Added guild placeholder CSS
@@ -100,7 +100,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed highlight CSS issues
 		- Fixed icon/button sizing issues
 
---- VERSION 1.2.4 [Former: 1.24] (Release: 6/29/2016) --- 
+--- VERSION 1.2.4 [Former: 1.24] (Release: 06/29/2016) --- 
 	GENERAL:
 		- Added new red "Ruby" theme
 		- Renamed "Ruby" theme to "Amber"
@@ -111,7 +111,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added clock plugin CSS
 		- Fixed slider handle positions
 		
---- VERSION 1.2.5 (Release: Upcoming) ---
+--- VERSION 1.2.5 (Release: 06/02/2016) ---
 	GENERAL:
 		- Changed versioning system
 		- Added release dates to changelog
