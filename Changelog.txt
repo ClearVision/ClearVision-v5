@@ -111,7 +111,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added clock plugin CSS
 		- Fixed slider handle positions
 		
---- VERSION 1.2.5 (Release: 06/02/2016) ---
+--- VERSION 1.2.5 (Release: 07/02/2016) ---
 	GENERAL:
 		- Changed versioning system
 		- Added release dates to changelog
