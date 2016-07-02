@@ -123,4 +123,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added hover & popout animation for voice connection buttons
 		- Adjusted & blurred user profile & user popout backgrounds
 		- Adjusted hamburger button color
+		- Changed titlebar button hover colors
 		- Removed channel name capitalizing
