@@ -117,5 +117,9 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added release dates to changelog
 		- Added former version numbers to changelog
 	CSS:
+		- Added icons for titlebar buttons
+		- Added icons for header toolbar buttons
 		- Added hover animations for account buttons
 		- Added hover & popout animation for voice connection buttons
+		- Removed channel name capitalizing
+		- Adjusted hamburger button color
