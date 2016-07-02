@@ -1,5 +1,5 @@
-//META{"name":"Discord_Reborn_-_Sapphire","description":"A chilly, blue theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.24"}*//
-/* "Discord Reborn - Sapphire v1.24" by @Zerthox */
+//META{"name":"Discord_Reborn_-_Sapphire","description":"A chilly, blue theme with Customizable Colors & Background! Based on Discord Reborn by @Omniscient, Edited and fixed by @Zerthox","author":"Zerthox","version":"1.2.5"}*//
+/* "Discord Reborn - Sapphire v1.2.5" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient */
 /* Fixes & Adjustements by @Zerthox */
 
@@ -440,7 +440,6 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 }
 .instant-invites .instant-invites-list .instant-invite .show-channel .channel {
     color: #D6D6D6;
-    text-transform: capitalize;
 }
 .instant-invites .instant-invites-list .instant-invite+.instant-invite {
     border-top: 1px solid #2793E6;
@@ -881,7 +880,7 @@ textarea {
     margin-right: -25px;
 }
 .btn-hamburger span {
-    background: #fff;
+    background: rgb(221, 221, 221);
 }
 .account {
     padding: 0 4px !important;
@@ -2202,7 +2201,6 @@ span.replyer {
 }
 .chat>.title-wrap>.title .channel-name {
     color: #BFBFBF;
-    text-transform: capitalize;
 }
 .member-username-inner[data-reactid*="172218388880293888"] {
     color: #E81C4F;
@@ -2490,15 +2488,15 @@ form.auth-form {
     margin-left: 5px;
 }
 button.win-close:hover {
-    background-color: #B50303;
+    background-color: #2793E6;
     border-radius: 3px;
 }
 button.win-maximize:hover {
-    background-color: #0373B5;
+    background-color: #2793E6;
     border-radius: 3px;
 }
 button.win-minimize:hover {
-    background-color: #03B584;
+    background-color: #2793E6;
     border-radius: 3px;
 }
 .header-toolbar button+button[data-reactid=".0.1.1.0.2.0.3.0:1"] {
@@ -2620,9 +2618,6 @@ div#bd-customcss-innerpane {
 }
 .chat .welcome-message p {
     color: #A0A0A0;
-}
-.guild-channels ul .channel-text .channel-name {
-    text-transform: capitalize;
 }
 .form .control-group label {
     color: #D0D0D0;
@@ -3012,13 +3007,37 @@ div#bd-pub-button:hover {
     background-color: transparent;
 }
 .user-popout {
+    background: transparent !important;
+}
+.user-popout:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
     background-image: url("https://i.imgur.com/lR1M5XM.jpg") !important;
     background-position: 50% 50%;
+    -webkit-filter: blur(3px);
+    transform: scale(1.03);
 }
 #user-profile-modal .header {
+    background: transparent !important;
+}
+#user-profile-modal .header:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url("https://i.imgur.com/lR1M5XM.jpg") !important;
     background-position: 50% 50%;
     background-size: cover !important;
+    -webkit-filter: blur(3px);
+    transform: scale(1.03);
 }
 .user-popout .header {
     background: rgba(0, 0, 0, .3);
@@ -3251,7 +3270,7 @@ div#bd-pub-button:hover {
 .slider-handle {
     border: none;
     background-color: #2793E6;
-	margin-top: 1px;
+    margin-top: 1px;
 }
 .slider-handle span {
     border-radius: 10px;
@@ -3797,14 +3816,168 @@ progress::-webkit-progress-value {
     color: #bbb !important;
     border-radius: 10px !important;
 }
+@keyframes wiggle {
+    from {
+        transform: rotate(-7deg);
+    }
+    to {
+        transform: rotate(7deg);
+    }
+}
+@keyframes wiggle_active {
+    from {
+        transform: scale(.9) rotate(-7deg);
+    }
+    to {
+        transform: scale(.9) rotate(7deg);
+    }
+}
+@keyframes pulsate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.9);
+    }
+}
+@keyframes opacity_fade {
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes opacity_fade_reverse {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+#voice-connection .btn-disconnect:hover:after {
+    animation: wiggle 70ms infinite alternate;
+}
+#voice-connection .btn-disconnect:active:after {
+    animation: wiggle_active 70ms infinite alternate;
+}
+#voice-connection .btn-info:hover:after,
+#voice-connection .btn-info.popout-open:after {
+    animation: pulsate 1s infinite alternate;
+}
+.account .btn-deafen:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-right: 5px;
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg");
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.account .btn-deafen:hover:before {
+    animation: opacity_fade_reverse 2s infinite alternate;
+}
+.account .btn-deafen:hover:after {
+    animation: opacity_fade 2s infinite alternate;
+}
+.account .btn-deafen:after,
+.account .btn-deafen:before {
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+.account .btn-deafen.disabled:before {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg");
+    background-position: center;
+}
+.account .btn-mute:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-right: 5px;
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg");
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.account .btn-mute:hover:before {
+    animation: opacity_fade_reverse 2s infinite alternate;
+}
+.account .btn-mute:hover:after {
+    animation: opacity_fade 2s infinite alternate;
+}
+.account .btn-mute:after,
+.account .btn-mute:before {
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+.account .btn-mute.disabled:before {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg");
+    background-position: center;
+}
+.account .btn-mute:active:before,
+.account .btn-deafen:active:before {
+    transform: scale(.9);
+}
+span[style='background-image: url("/assets/70b7e4bf8b79bb44805705ef2611393b.svg");'] {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg") !important;
+}
+span[style='background-image: url("/assets/ac9e460931395610d173fd5db87399b7.svg");'] {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_off_white_24px.svg") !important;
+}
+.header-toolbar button span {
+    opacity: .7;
+}
+.header-toolbar button:nth-child(2) span {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-toolbar button:nth-child(3) span {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_place_white_24px.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-toolbar button:nth-child(5) span,
+.header-toolbar button span {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_help_white_24px.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.win-buttons button {
+    opacity: .7;
+}
+.win-buttons.win-buttons-light .win-minimize {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_remove_white_24px.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center 6px;
+}
+.win-buttons.win-buttons-light .win-maximize {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_fullscreen_white_24px.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+}
+.win-buttons.win-buttons-light .win-close {
+    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_close_white_24px.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .links:after {
-    content: "DRB v1.24";
+    content: "DRB v1.2.5";
     color: #8C8F94;
     margin-left: 6px;
     font-weight: bold;
 }
 .member-username-inner[data-reactid*="102180837625200640"]:after {
-    content: "DRB v1.24";
+    content: "DRB v1.2.5";
     color: #E81C4F;
     margin-left: 0px;
     font-weight: 900;
