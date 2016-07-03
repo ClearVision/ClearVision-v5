@@ -132,3 +132,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added user name hover CSS
 		- Adjusted bot tag background
 		- Fixed account & voice connection position issues
+		- Fixed confirm button onclick animation
