@@ -131,6 +131,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added mute button hover animation
 		- Added user name hover CSS
 		- Added user popout roles hover CSS
+		- Added jump to pinned message animation
 		- Added emoji fav button CSS
 		- Added emoji remove popout CSS
 		- Changed user popout icons
