@@ -130,6 +130,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 	CSS:
 		- Added mute button hover animation
 		- Added user name hover CSS
+		- Added user popout roles hover CSS
 		- Adjusted bot tag background
 		- Fixed account & voice connection position issues
 		- Fixed confirm button onclick animation
