@@ -140,3 +140,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed account & voice connection position issues
 		- Fixed confirm button onclick animation
 		- Fixed settings tab bar scroll issues
+		- Fixed avatars not sizing correctly
