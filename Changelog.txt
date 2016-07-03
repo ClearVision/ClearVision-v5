@@ -131,6 +131,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added mute button hover animation
 		- Added user name hover CSS
 		- Added user popout roles hover CSS
+		- Changed user popout icons
 		- Adjusted bot tag background
 		- Fixed account & voice connection position issues
 		- Fixed confirm button onclick animation
+		- Fixed settings tab bar scroll issues
