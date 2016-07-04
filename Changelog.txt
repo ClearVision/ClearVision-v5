@@ -137,11 +137,12 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added emoji fav button CSS
 		- Added emoji remove popout CSS
 		- Changed user popout icons
+		- Changed search bar icon CSS
 		- Adjusted user settings borders
 		- Adjusted user profile borders
 		- Adjusted bot & aka tag background
 		- Adjusted several colors
-		- Adjusted search bar icon CSS
+		- Adjusted detachted custom css container background image brightness
 		- Fixed wrong button icons showing in private chat
 		- Fixed account & voice connection position issues
 		- Fixed confirm button onclick animation
