@@ -127,6 +127,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Removed channel name capitalizing
 
 --- VERSION 1.2.6 (Release: Upcoming) ---
+	GENERAL:
+		- Updated screenshots
 	CSS:
 		- Added mute button hover animation
 		- Added user name hover CSS
