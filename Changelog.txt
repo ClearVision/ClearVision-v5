@@ -138,11 +138,11 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added emoji remove popout CSS
 		- Changed user popout icons
 		- Changed search bar icon CSS
+		- Adjusted & blurred detached custom css container background
 		- Adjusted user settings borders
 		- Adjusted user profile borders
 		- Adjusted bot & aka tag background
 		- Adjusted several colors
-		- Adjusted detachted custom css container background image brightness
 		- Fixed wrong button icons showing in private chat
 		- Fixed account & voice connection position issues
 		- Fixed confirm button onclick animation
