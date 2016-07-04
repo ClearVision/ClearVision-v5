@@ -126,7 +126,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Changed titlebar button hover colors
 		- Removed channel name capitalizing
 
---- VERSION 1.2.6 (Release: Upcoming) ---
+--- VERSION 1.2.6 (Release: 07/04/2016) ---
 	GENERAL:
 		- Updated screenshots
 	CSS:
