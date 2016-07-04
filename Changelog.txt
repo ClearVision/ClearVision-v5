@@ -141,6 +141,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted user profile borders
 		- Adjusted bot & aka tag background
 		- Adjusted several colors
+		- Adjusted search bar icon
 		- Fixed wrong button icons showing in private chat
 		- Fixed account & voice connection position issues
 		- Fixed confirm button onclick animation
