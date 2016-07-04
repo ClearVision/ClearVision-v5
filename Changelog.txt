@@ -148,3 +148,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed confirm button onclick animation
 		- Fixed settings tab bar scroll issues
 		- Fixed avatars not sizing correctly
+		- Removed several unnecessary, no longer working lines
