@@ -149,3 +149,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed settings tab bar scroll issues
 		- Fixed avatars not sizing correctly
 		- Removed several unnecessary, no longer working lines
+
+--- VERSION 1.2.7 (Release: Upcoming) ---
+	CSS:
+		- Added backdrop to public server list
+		- Fixed emoji picker onclick issues
