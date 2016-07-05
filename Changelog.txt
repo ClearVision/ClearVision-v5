@@ -153,4 +153,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 --- VERSION 1.2.7 (Release: Upcoming) ---
 	CSS:
 		- Added backdrop to public server list
+		- Adjusted tab bar button sizing & positions
 		- Fixed emoji picker onclick issues
