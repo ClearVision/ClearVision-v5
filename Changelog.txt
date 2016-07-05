@@ -154,4 +154,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 	CSS:
 		- Added backdrop to public server list
 		- Adjusted tab bar button sizing & positions
+		- Adjusted highlight hover CSS
 		- Fixed emoji picker onclick issues
