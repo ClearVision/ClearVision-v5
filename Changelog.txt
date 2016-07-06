@@ -157,11 +157,11 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added new icons in channels
 		- Added image download button CSS
 		- Added mention highlight CSS
-		- Added backdrop to public server list
+		- Adjusted & blurred public server list background
 		- Adjusted avatar uploader CSS
 		- Adjusted highlight hover CSS
 		- Adjusted cancel button CSS
 		- Adjusted tab bar button sizing & positions
 		- Adjusted & fixed disabled checkbox CSS
 		- Fixed emoji picker onclick issues
-		- Several little fixes
+		- Several little changes & fixes
