@@ -161,3 +161,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted cancel button CSS
 		- Adjusted & fixed disabled checkbox CSS
 		- Fixed emoji picker onclick issues
+		- Several little fixes
