@@ -152,7 +152,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- VERSION 1.2.7 (Release: Upcoming) ---
 	GENERAL:
-		- Added support for more browsers
+		- Added support for more browsers (mainly webkit)
 	CSS:
 		- Added new icons in channels
 		- Added image download button CSS
