@@ -151,6 +151,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Removed several unnecessary, no longer working lines
 
 --- VERSION 1.2.7 (Release: Upcoming) ---
+	GENERAL:
+		- Added support for more browsers
 	CSS:
 		- Added new icons in channels
 		- Added image download button CSS
