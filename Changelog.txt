@@ -163,6 +163,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted & blurred public server list background
 		- Adjusted avatar uploader CSS
 		- Adjusted highlight hover CSS
+		- Adjusted server settings connection link CSS
 		- Adjusted cancel button CSS
 		- Adjusted tab bar button sizing & positions
 		- Adjusted & fixed disabled checkbox CSS
