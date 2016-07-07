@@ -150,7 +150,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed avatars not sizing correctly
 		- Removed several unnecessary, no longer working lines
 
---- VERSION 1.2.7 (Release: Upcoming) ---
+--- VERSION 1.2.7 (Release: 07/07/2016) ---
 	GENERAL:
 		- Added support for more browsers (webkit)
 	CSS:
