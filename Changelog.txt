@@ -164,8 +164,10 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted avatar uploader CSS
 		- Adjusted highlight hover CSS
 		- Adjusted server settings connection link CSS
+		- Adjusted user settings keybinds CSS
 		- Adjusted cancel button CSS
 		- Adjusted tab bar button sizing & positions
 		- Adjusted & fixed disabled checkbox CSS
 		- Fixed emoji picker onclick issues
+		- Fixed link hover CSS
 		- Several little changes & fixes
