@@ -157,6 +157,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added new icons in channels
 		- Added image download button CSS
 		- Added mention highlight CSS
+		- Added link hover CSS
+		- Added toolbar badge CSS
 		- Adjusted & blurred public server list background
 		- Adjusted avatar uploader CSS
 		- Adjusted highlight hover CSS
