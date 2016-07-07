@@ -159,6 +159,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Added mention highlight CSS
 		- Added link hover CSS
 		- Added toolbar badge CSS
+		- Changed friends guild & friend channel icons
 		- Adjusted & blurred public server list background
 		- Adjusted avatar uploader CSS
 		- Adjusted highlight hover CSS
