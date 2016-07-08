@@ -174,5 +174,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 
 --- VERSION 1.2.8 (Release: Upcoming) ---
 	CSS:
+		- Added & adjusted user settings connections CSS
 		- Adjusted background image gradients
 		- Adjusted code cursor color
