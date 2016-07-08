@@ -171,3 +171,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed emoji picker onclick issues
 		- Fixed link hover CSS
 		- Several little changes & fixes
+
+--- VERSION 1.2.8 (Release: Upcoming) ---
+	CSS:
+		- Adjusted background image gradients
+		- Adjusted code cursor color
