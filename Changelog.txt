@@ -172,7 +172,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Fixed link hover CSS
 		- Several little changes & fixes
 
---- VERSION 1.2.8 (Release: Upcoming) ---
+--- VERSION 1.2.8 (Release: 07/10/2016) ---
 	GENERAL:
 		- Better support for light theme
 		- Removed unnecessary CSS
