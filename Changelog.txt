@@ -170,13 +170,13 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted & fixed disabled checkbox CSS
 		- Fixed emoji picker onclick issues
 		- Fixed link hover CSS
-		- Several little changes & fixes
+		- Minor changes & fixes
 
 --- VERSION 1.2.8 (Release: 07/10/2016) ---
 	GENERAL:
 		- Better support for light theme
 		- Removed unnecessary CSS
-		- Shortened CSS
+		- Shortened & optimized CSS
 	CSS:
 		- Changed pin icon
 		- Changed new messages CSS
@@ -185,4 +185,4 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted background image gradients
 		- Adjusted custom CSS container
 		- Adjusted code cursor color
-		- Minor changes
+		- Minor changes & fixes
