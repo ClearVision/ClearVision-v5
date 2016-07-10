@@ -173,7 +173,16 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Several little changes & fixes
 
 --- VERSION 1.2.8 (Release: Upcoming) ---
+	GENERAL:
+		- Better support for light theme
+		- Removed unnecessary CSS
+		- Shortened CSS
 	CSS:
+		- Changed pin icon
+		- Changed new messages CSS
 		- Added & adjusted user settings connections CSS
+		- Adjusted titlebar & header toolbar icons sizes
 		- Adjusted background image gradients
+		- Adjusted custom CSS container
 		- Adjusted code cursor color
+		- Minor changes
