@@ -190,7 +190,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 --- VERSION 1.3.0 (Release: Upcoming) ---
 	GENERAL:
 		- Renamed themes to "Discord ReBorn"
-		- Adjusted colors to increase performance
+		- Optimized colors
 	CSS:
 		- Added recent mentions popout CSS
 		- Updated pinned messages popout CSS
