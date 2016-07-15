@@ -198,4 +198,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Changed & fixed search bar icon CSS
 		- Adjusted & fixed changelog CSS
 		- Adjusted highlight CSS
+		- Adjusted search bar CSS
 		- Fixed button icons
