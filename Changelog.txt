@@ -186,3 +186,11 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Adjusted custom CSS container
 		- Adjusted code cursor color
 		- Minor changes & fixes
+
+--- VERSION 1.3.0 (Release: Upcoming) ---
+	CSS:
+		- Added recent mentions popout CSS
+		- Updated pinned messages popout CSS
+		- Added new recent mentions button icon
+		- Added several new icons
+		- Fixed button icons
