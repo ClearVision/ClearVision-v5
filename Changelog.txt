@@ -188,6 +188,8 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Minor changes & fixes
 
 --- VERSION 1.3.0 (Release: Upcoming) ---
+	GENERAL:
+		- Renamed themes to "Discord ReBorn"
 	CSS:
 		- Added recent mentions popout CSS
 		- Updated pinned messages popout CSS
