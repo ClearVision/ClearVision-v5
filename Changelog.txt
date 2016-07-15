@@ -193,4 +193,5 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 		- Updated pinned messages popout CSS
 		- Added new recent mentions button icon
 		- Added several new icons
+		- Adjusted & fixed changelog CSS
 		- Fixed button icons
