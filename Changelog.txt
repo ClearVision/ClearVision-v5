@@ -183,6 +183,7 @@
 		- Optimized colors
 		- Updated Screenshots
 	CSS:
+		- Added load animation
 		- Added recent mentions popout CSS
 		- Updated pinned messages popout CSS
 		- Added new recent mentions button icon
