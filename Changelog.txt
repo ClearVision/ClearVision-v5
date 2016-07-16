@@ -182,6 +182,7 @@
 		- Renamed themes to "Discord ReBorn"
 		- Optimized colors
 	CSS:
+		- Added user settings changelog link CSS
 		- Added recent mentions popout CSS
 		- Updated pinned messages popout CSS
 		- Added new recent mentions button icon
