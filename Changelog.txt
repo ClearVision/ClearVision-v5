@@ -189,6 +189,7 @@
 		- Added several new icons
 		- Added user settings changelog link CSS
 		- Added & adjusted user settings CSS
+		- Added animations to user settings
 		- Changed & fixed search bar icon CSS
 		- Adjusted & fixed changelog CSS
 		- Adjusted highlight CSS
