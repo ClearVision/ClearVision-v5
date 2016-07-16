@@ -181,6 +181,7 @@
 	GENERAL:
 		- Renamed themes to "Discord ReBorn"
 		- Optimized colors
+		- Updated Screenshots
 	CSS:
 		- Added recent mentions popout CSS
 		- Updated pinned messages popout CSS
@@ -192,4 +193,5 @@
 		- Adjusted & fixed changelog CSS
 		- Adjusted highlight CSS
 		- Adjusted search bar CSS
+		- Adjusted discriminator CSS
 		- Fixed button icons
