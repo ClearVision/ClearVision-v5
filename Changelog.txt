@@ -205,3 +205,4 @@
 		- Added DRB Dev mark CSS
 		- Added message delete code CSS
 		- Added nickname change warning CSS
+		(- Add new delete channel icon)
