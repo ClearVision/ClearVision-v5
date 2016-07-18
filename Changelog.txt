@@ -201,8 +201,11 @@
 
 --- VERSIOn 1.3.1 (Release: Upcoming) ---
 	CSS:
+		- Removed old load animation
+		- Added new load animation
 		- Added fade in animation
 		- Added DRB Dev mark CSS
 		- Added message delete code CSS
 		- Added nickname change warning CSS
-		(- Add new delete channel icon)
+		- Added new delete channel icon
+		- Fixed custom css editor
