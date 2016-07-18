@@ -173,7 +173,7 @@
 		- Added & adjusted user settings connections CSS
 		- Adjusted titlebar & header toolbar icons sizes
 		- Adjusted background image gradients
-		- Adjusted custom CSS container
+		- Adjusted custom css container
 		- Adjusted code cursor color
 		- Minor changes & fixes
 
@@ -208,4 +208,5 @@
 		- Added message delete code CSS
 		- Added nickname change warning CSS
 		- Added new delete channel icon
+		- Changed guild header drop down CSS
 		- Fixed custom css editor
