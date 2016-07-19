@@ -213,6 +213,7 @@
 		- Added new delete channel icon
 		- Added new color picker icon
 		- Added new notification settings modal icons
+		- Added scroller feathers
 		- Added nickname change warning CSS
 		- Added transitions to chat buttons
 		- Changed guild header drop down CSS
