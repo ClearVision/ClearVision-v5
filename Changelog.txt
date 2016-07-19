@@ -210,6 +210,8 @@
 		- Added message delete code CSS
 		- Added nickname change warning CSS
 		- Added new delete channel icon
+		- Added new color picker icon
+		- Added new notification settings modal icons
 		- Changed guild header drop down CSS
 		- Fixed user settings changelog link
 		- Fixed custom css editor CSS
