@@ -216,6 +216,7 @@
 		- Added nickname change warning CSS
 		- Added transitions to chat buttons
 		- Changed guild header drop down CSS
+		- Changed BetterDiscord plugin/theme list CSS
 		- Fixed user settings changelog link
 		- Fixed custom css editor CSS
 		- Minor adjustements & fixes
