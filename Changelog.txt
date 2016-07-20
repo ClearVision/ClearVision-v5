@@ -202,6 +202,7 @@
 --- VERSIOn 1.3.1 (Release: Upcoming) ---
 	GENERAL:
 		- New background image for Sapphire
+		- Toned Sapphire colors to fit new background
 		- Added credit to CosmicSalad (Omniscient used parts of his theme)
 		- Updated RemoveShadows theme link
 	CSS:
