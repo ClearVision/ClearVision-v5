@@ -214,6 +214,7 @@
 		- Added new color picker icon
 		- Added new notification settings modal icons
 		- Added scroller feathers
+		- Added channel sorting CSS
 		- Added nickname change warning CSS
 		- Added transitions to chat buttons
 		- Changed guild header drop down CSS
