@@ -206,6 +206,7 @@
 		- Added credit to CosmicSalad (Omniscient used parts of his theme)
 		- Updated RemoveShadows theme link
 	CSS:
+		- Reworked background image CSS
 		- Removed old load animation
 		- Added new load animation
 		- Added fade in animation
