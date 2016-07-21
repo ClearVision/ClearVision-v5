@@ -17,5 +17,5 @@
 <img src="http://i.imgur.com/ANNtb8g.png">
 
 ####DiscordReBorn - Sapphire
-<img src="http://i.imgur.com/BEbG9FQ.png">
-<img src="http://i.imgur.com/cm5FQkB.png">
+<img src="http://i.imgur.com/9CcMrRT.png">
+<img src="http://i.imgur.com/fSIbA6i.png">
