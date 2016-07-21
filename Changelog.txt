@@ -204,7 +204,7 @@
 		- New background image for Sapphire
 		- Toned Sapphire colors to fit new background
 		- Updated theme descriptions
-		- Added credit to CosmicSalad (Omniscient used parts of his theme)
+		- Added credit to Hammock (Omniscient used parts of his theme)
 		- Updated RemoveShadows theme link
 	CSS:
 		- Reworked background image CSS
