@@ -203,6 +203,7 @@
 	GENERAL:
 		- New background image for Sapphire
 		- Toned Sapphire colors to fit new background
+		- Updated Sapphire screenshots
 		- Updated theme descriptions
 		- Added credit to Hammock (Omniscient used parts of his theme)
 		- Updated RemoveShadows theme link
