@@ -1,5 +1,5 @@
-//META{"name":"Discord_ReBorn_-_Amethyst","description":"A mystical, purple theme with Customizable Colors & Background! Based on Discord ReBorn by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"1.3.1"}*//
-/* "Discord ReBorn - Amethyst v1.3.1" by @Zerthox */
+//META{"name":"Discord_ReBorn_-_Amethyst","description":"A mystical, purple theme with Customizable Colors & Background! Based on Discord ReBorn by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"1.3.1b"}*//
+/* "Discord ReBorn - Amethyst v1.3.1b" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 /* Fixes & Adjustements by @Zerthox */
 
@@ -34,6 +34,9 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
        _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\/\\\\\\\\\\\\\/__
         _\////////////_____\///________\///__\/////////////____
 */
+DummyClass {
+    color: #fff;
+}
 body:after {
     content: "";
     position: absolute;
@@ -298,9 +301,6 @@ _______/\\\\\___________________________________________________________________
        ____\///\\\\\/_____\/\\\__\/\\\__\/\\\_\/\\\___\/\\\_\/\\\__/\\\\\\\\\\__\///\\\\\\\\_\/\\\__\//\\\\\\\\\\_\/\\\___\/\\\__/\\\____\//\\\\\___
         ______\/////_______\///___\///___\///__\///____\///__\///__\//////////_____\////////__\///____\//////////__\///____\///__\///______\/////____
 */
-.DummyClass {
-    background: #fff;
-}
 .app {
     background: transparent !important;
 }
@@ -5195,7 +5195,7 @@ pre:hover .copybutton {
     width: 100px;
 }
 .account:after {
-    content: "DRB v1.3.1";
+    content: "DRB v1.3.1b";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
