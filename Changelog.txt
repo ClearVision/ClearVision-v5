@@ -232,3 +232,15 @@
 
 --- HOTFIX 1.3.1b (Release: 23/07/2016) ---
                 - Fixed backgrounds not showing for browsers and custom CSS
+
+--- VERSION 1.3.2 (Release: Upcoming) ---
+	CSS:
+		- Added EBR CSS 
+		- Added new create group modal CSS
+		- Added new create group icon
+		- Added new start call icon
+		- Added new add to group icon
+		- Fixed wrong icons showing
+		- Fixed button sizing issues
+		- Fixed voice debug issues
+		- Minor adjustements & fixes
