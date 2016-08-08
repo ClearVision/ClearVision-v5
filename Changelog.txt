@@ -234,12 +234,15 @@
                 - Fixed backgrounds not showing for browsers and custom CSS
 
 --- VERSION 1.3.2 (Release: Upcoming) ---
+	GENERAL:
+		- Moved icons to github
 	CSS:
 		- Added EBR CSS 
 		- Added new create group modal CSS
 		- Added new create group icon
 		- Added new start call icon
 		- Added new add to group icon
+		- Adjusted quicksave button CSS
 		- Fixed wrong icons showing
 		- Fixed button sizing issues
 		- Fixed voice debug issues
