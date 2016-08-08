@@ -1,9 +1,9 @@
 # DiscordReBorn
 
-##Discord Server
-<iframe src="https://discordapp.com/widget?id=212324635356692500&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+###Discord Server
+**Instant Invite:** https://discord.gg/FtYVPky
 
-##Previews
+###Previews
 ####DiscordReBorn - Amber
 <img src="http://i.imgur.com/tKPmxLq.png">
 <img src="http://i.imgur.com/JXfOZTY.png">
