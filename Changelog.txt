@@ -181,7 +181,7 @@
 	GENERAL:
 		- Renamed themes to "Discord ReBorn"
 		- Optimized colors
-		- Updated Screenshots
+		- Updated screenshots
 		- Changed release dates
 	CSS:
 		- Added load animation
@@ -237,6 +237,7 @@
 	GENERAL:
 		- Created Discord ReBorn Discord server
 		- Moved icons to github
+		- Updated screenshots
 	CSS:
 		- Added Call CSS
 		- Added EBR CSS 
