@@ -1,5 +1,5 @@
-//META{"name":"Discord_ReBorn_-_Emerald","description":"A peaceful, green theme with Customizable Colors & Background! Based on Discord ReBorn by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"1.3.1b"}*//
-/* "Discord ReBorn - Emerald v1.3.1b" by @Zerthox */
+//META{"name":"Discord_ReBorn_-_Emerald","description":"A peaceful, green theme with Customizable Colors & Background! Based on Discord ReBorn by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"1.3.2"}*//{}
+/* "Discord ReBorn - Emerald v1.3.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 /* Fixes & Adjustements by @Zerthox */
 
@@ -34,9 +34,6 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
        _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\/\\\\\\\\\\\\\/__
         _\////////////_____\///________\///__\/////////////____
 */
-.DummyClass {
-    color: #fff;
-}
 body:after {
     content: "";
     position: absolute;
@@ -288,7 +285,6 @@ body:after {
         opacity: 0;
     }
 }
-
 /* BASE CSS BY OMNISCIENT & HAMMOCK (EDITED BY ZERTHOX) */
 /*
 _______/\\\\\________________________________________________________________________________________________________________________________
@@ -301,6 +297,7 @@ _______/\\\\\___________________________________________________________________
        ____\///\\\\\/_____\/\\\__\/\\\__\/\\\_\/\\\___\/\\\_\/\\\__/\\\\\\\\\\__\///\\\\\\\\_\/\\\__\//\\\\\\\\\\_\/\\\___\/\\\__/\\\____\//\\\\\___
         ______\/////_______\///___\///___\///__\///____\///__\///__\//////////_____\////////__\///____\//////////__\///____\///__\///______\/////____
 */
+
 .app {
     background: transparent !important;
 }
@@ -362,6 +359,7 @@ _______/\\\\\___________________________________________________________________
 }
 .settings .settings-inner {
     background-color: rgba(0, 0, 0, 0.70) !important;
+    color: #999;
 }
 .notification-settings-modal .mute-server .checkbox .label {
     color: #fff;
@@ -555,7 +553,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 }
 .form .form-header {
     background: rgba(0, 0, 0, 0.85);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.53);
+    border-bottom: 1px solid transparent;
 }
 .popout header {
     background-color: #33e627;
@@ -1158,7 +1156,7 @@ textarea {
     border: none;
 }
 .title-wrap {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-bottom: 1px solid transparent !important;
     background: rgba(0, 0, 0, 0.88) !important;
 }
 .chat .divider:not(.divider-red)>div {
@@ -1483,8 +1481,7 @@ textarea {
 }
 .form .btn-default {
     background-color: rgba(0, 0, 0, 0.77);
-    padding: 10px 0 !important;
-    width: 75px;
+    padding: 10px !important;
     height: 35.5px;
     border-radius: 3px;
     border-bottom: none;
@@ -1590,7 +1587,7 @@ a:link {
     border-top: 1px solid rgba(0, 0, 0, 0.45);
 }
 .member-roles .member-role .member-role-remove {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_close_white_24px.svg) 50% no-repeat;
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/close.svg) 50% no-repeat;
     width: 8px;
     height: 12px;
     background-size: 150%;
@@ -1601,7 +1598,7 @@ a:link {
     opacity: .7;
 }
 .member-roles .member-role .member-role-add {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_add_white_24px.svg) 50% no-repeat;
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/add.svg) 50% no-repeat;
     width: 8px;
     height: 12px;
     background-size: 150%;
@@ -2501,6 +2498,8 @@ form.auth-form {
 }
 .emoji-picker .category {
     color: #BBBBBB;
+    background-color: rgba(0, 0, 0, .3) !important;
+    border-radius: 2px;
 }
 .item:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -3057,8 +3056,9 @@ div#bd-pub-button:hover {
     -webkit-filter: grayscale(1) brightness(.7);
 }
 .user-settings-modal button.preview-sound:before {
-    filter: grayscale(1) brightness(.7);
-    -webkit-filter: grayscale(1) brightness(.7);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/volume_up.svg) !important;
+    background-position: center;
+    opacity: .3;
 }
 .channel-members .avatar-small .status {
     border: 0px solid transparent !important;
@@ -3288,6 +3288,7 @@ div#bd-pub-button:hover {
 .search-bar input {
     background-color: rgba(0, 0, 0, .3);
     border: 1px solid transparent;
+    border-radius: 2px;
 }
 .search-bar input:focus {
     border-color: #33e627;
@@ -3301,8 +3302,7 @@ div#bd-pub-button:hover {
 }
 .bda-dark #bda-qem-favourite-container,
 .bda-dark #bda-qem-twitch-container,
-.bda-dark .emoji-picker,
-.bda-dark .emoji-picker .category {
+.bda-dark .emoji-picker {
     background: rgba(0, 0, 0, .5) !important;
 }
 .bda-dark #bda-qem button.active {
@@ -3634,10 +3634,7 @@ button:active {
     -webkit-transform: scale(.95);
     transform: scale(.95);
 }
-#voice-connection .btn {
-    background: transparent !important;
-    border: none;
-}
+#voice-connection .btn,
 .account .btn {
     background: transparent !important;
     border: none;
@@ -3663,13 +3660,13 @@ button:active {
     bottom: 3px;
 }
 #voice-connection .btn-info:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/info.svg) !important;
     background-position: center;
     background-size: 65%;
     opacity: .3;
 }
 #voice-connection .btn-disconnect:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/call_end.svg);
     background-position: center;
     background-size: 65%;
     opacity: .3;
@@ -3685,7 +3682,7 @@ button:active {
     bottom: 3px;
 }
 .account .btn-mute:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic.svg) !important;
     background-position: center;
     background-size: 65%;
 }
@@ -3693,7 +3690,7 @@ button:active {
     opacity: .6;
 }
 .account .btn-deafen:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/volume_up.svg) !important;
     background-position: center;
     background-size: 65%;
 }
@@ -3701,23 +3698,23 @@ button:active {
     opacity: .6;
 }
 .account .btn-settings:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/settings.svg) !important;
     background-position: center;
     background-size: 65%;
 }
 .guild-channels .icon-settings {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/settings.svg) !important;
     background-position: center;
     background-size: 120%;
 }
 .icon-muted,
 .account .btn-mute.disabled:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic_off.svg) !important;
     background-position: center;
 }
 .icon-deafened,
 .account .btn-deafen.disabled:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/volume_off.svg) !important;
     background-position: center;
 }
 .guild-channels .channel-voice-states li .icon {
@@ -3766,7 +3763,7 @@ button:active {
     opacity: .7 !important;
 }
 .message-group .btn-option {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/settings.svg) !important;
     background-size: 120%;
     background-position: center;
     opacity: 0;
@@ -3787,13 +3784,13 @@ button:active {
     margin-left: 3px;
 }
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/volume_up.svg) !important;
     background-position: center;
     background-color: #000;
     opacity: .7;
 }
 .guild-channels .icon-instant-invite {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/share.svg) !important;
     background-position: center;
     background-size: 110%;
     margin-top: 1px;
@@ -3906,53 +3903,53 @@ button:active {
     opacity: 1;
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/person.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_wifi_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/wifi.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/group.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/chat.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/notifications.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after,
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_camera_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/camera.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):after,
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_place_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/place.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after,
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/videocam.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after,
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/security.svg);
 }
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/keyboard.svg);
 }
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/games.svg);
 }
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):after {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/desktop_windows.svg);
 }
 #bd-settings-new:after {
     content: url(https://i.imgur.com/k0cJtK2.png);
@@ -4095,7 +4092,7 @@ progress::-webkit-progress-value {
         -webkit-filter: drop-shadow(0 0 3px transparent);
     }
 }
-#voice-connection-popout > section > div:nth-child(1) > div > svg > line {
+line {
     stroke: #33e627 !important;
     stroke-dasharray: 5, 3 !important;
 }
@@ -4265,7 +4262,7 @@ progress::-webkit-progress-value {
     height: 100%;
     width: 100%;
     margin-right: 5px;
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/volume_off.svg);
     background-size: 65%;
     background-position: center;
     background-repeat: no-repeat;
@@ -4287,7 +4284,7 @@ progress::-webkit-progress-value {
     transition: opacity .1s ease-in-out, transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
 .account .btn-deafen.disabled:before {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/volume_up.svg);
     background-position: center;
 }
 .account .btn-mute:before {
@@ -4298,7 +4295,7 @@ progress::-webkit-progress-value {
     height: 100%;
     width: 100%;
     margin-right: 5px;
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic_off.svg);
     background-size: 65%;
     background-position: center;
     background-repeat: no-repeat;
@@ -4320,7 +4317,7 @@ progress::-webkit-progress-value {
     transition: opacity .1s ease-in-out, transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
 .account .btn-mute.disabled:before {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic.svg);
     background-position: center;
 }
 .account .btn-mute:active:before,
@@ -4371,7 +4368,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMy4wMDYyODY2MiAyMmMuOTk5OTk5OTggMCAxLjcxNDI4NTY4LS40MDE5NTMxIDEuOTk5OTk5OTgtMS4wMDQ4ODI4aC0zLjk5OTk5OTk4Yy4yODU3MTQzLjYwMjkyOTcgMSAxLjAwNDg4MjggMiAxLjAwNDg4Mjh6bTYuOTgwNTI5NzgtMy45NjM0Mzk5VjEwYzAtMi42NC0yLjMwMjg2NjgtNC45NzUwMzY2Mi01LjAxMDU1OTEtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1Mi0xLjAyOTg0NjItMS45NzMxMTQtMS4wMjk4NDYyLTEuNjI5MDU4ODMgMC0xLjk2NTg1MDgyLjMwOTg0NjItMS45NjU4NTA4MiAxLjAyOTg0NjJDOC4zMjk2MDAxOCA1LjAyNDk2MzM4IDUuOTk1NDgzNCA3LjM2IDUuOTk1NDgzNCAxMHY4LjAzNjU2MDFoLS45ODkxOTY3OHYxLjk1MTQxNkgyMXYtMS45NTE0MTZoLTEuMDEzMTgzNnpNMTMuMDgzODk2MTYgMThsLTIuMDc4OTMwODIgMi4wMjcyMDQ1SDQuOTQxNjIwMzhWMThINnYtM2wyLTIuMDgyOTQyOTJWMTAuM0M4IDguNDMgOS40NDQ0NDQ0NCA3IDExLjMzMzMzMzMzIDdoMy4zMzMzMzMzN2MuMjA1ODcyMSAwIDEuMzU3OTgyNS0xLjkwOTA0NTggMS4zNTc5ODI1LTEuOTA5MDQ1OHMxLjMxODM5MDguMjc5MTU2OTIgMi41NTU1MzQzIDEuNTk4ODMzNjdjMS4yMzcxNDM2IDEuMzE5Njc2NzYgMS4zMjUzODg5IDMuMjUxOTI3NzQgMS4zMjUzODg5IDMuMjUxOTI3NzRMMTggMTIuOTQ1NDcyNTZWMThoLTQuOTE2MTAzODR6Ii8+CiAgICA8cGF0aCBzdHJva2U9IiNGMDQ3NDciIHN0cm9rZS13aWR0aD0iMiIgZD0iTTIxIDVMNSAyMSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgogIDwvZz4KPC9zdmc+");']:before,
 span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iIzk5QUFCNSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDA2Mjg2NjIgMjJjMSAwIDEuNzE0Mjg1NzItLjQwMTk1MzEgMS45OTk5OTk5OC0xLjAwNDg4MjhoLTMuOTk5OTk5OThjLjI4NTcxNDMuNjAyOTI5NyAxIDEuMDA0ODgyOCAyIDEuMDA0ODgyOHptNi45ODA1Mjk3OC0zLjk2MzQzOTlWMTBjMC0yLjY0LTIuMzAyODY2OC00Ljk3NTAzNjYyLTUuMDEwNTU5MDgtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1MTctMS4wMjk4NDYyLTEuOTczMTE0LTEuMDI5ODQ2Mi0xLjYyOTA1ODg1IDAtMS45NjU4NTA4NC4zMDk4NDYyLTEuOTY1ODUwODQgMS4wMjk4NDYyQzguMzI5NjAwMTggNS4wMjQ5NjMzOCA1Ljk5NTQ4MzQgNy4zNiA1Ljk5NTQ4MzQgMTB2OC4wMzY1NjAxaC0uOTg5MTk2Nzh2MS45NTE0MTZIMjF2LTEuOTUxNDE2aC0xLjAxMzE4MzZ6TTE4IDE4SDh2LTcuN0M4IDguNDMgOS40NDQ0NDQ0NCA3IDExLjMzMzMzMzMzIDdoMy4zMzMzMzMzNEMxNi41NTU1NTU2IDcgMTggOC40MyAxOCAxMC4zVjE4eiIvPgo8L3N2Zz4=");']:after,
 span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGZpbGw9IiM5OUFBQjUiIGQ9Ik0xMy4wMDYyODY2MiAyMmMuOTk5OTk5OTggMCAxLjcxNDI4NTY4LS40MDE5NTMxIDEuOTk5OTk5OTgtMS4wMDQ4ODI4aC0zLjk5OTk5OTk4Yy4yODU3MTQzLjYwMjkyOTcgMSAxLjAwNDg4MjggMiAxLjAwNDg4Mjh6bTYuOTgwNTI5NzgtMy45NjM0Mzk5VjEwYzAtMi42NC0yLjMwMjg2NjgtNC45NzUwMzY2Mi01LjAxMDU1OTEtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1Mi0xLjAyOTg0NjItMS45NzMxMTQtMS4wMjk4NDYyLTEuNjI5MDU4ODMgMC0xLjk2NTg1MDgyLjMwOTg0NjItMS45NjU4NTA4MiAxLjAyOTg0NjJDOC4zMjk2MDAxOCA1LjAyNDk2MzM4IDUuOTk1NDgzNCA3LjM2IDUuOTk1NDgzNCAxMHY4LjAzNjU2MDFoLS45ODkxOTY3OHYxLjk1MTQxNkgyMXYtMS45NTE0MTZoLTEuMDEzMTgzNnpNMTMuMDgzODk2MTYgMThsLTIuMDc4OTMwODIgMi4wMjcyMDQ1SDQuOTQxNjIwMzhWMThINnYtM2wyLTIuMDgyOTQyOTJWMTAuM0M4IDguNDMgOS40NDQ0NDQ0NCA3IDExLjMzMzMzMzMzIDdoMy4zMzMzMzMzN2MuMjA1ODcyMSAwIDEuMzU3OTgyNS0xLjkwOTA0NTggMS4zNTc5ODI1LTEuOTA5MDQ1OHMxLjMxODM5MDguMjc5MTU2OTIgMi41NTU1MzQzIDEuNTk4ODMzNjdjMS4yMzcxNDM2IDEuMzE5Njc2NzYgMS4zMjUzODg5IDMuMjUxOTI3NzQgMS4zMjUzODg5IDMuMjUxOTI3NzRMMTggMTIuOTQ1NDcyNTZWMThoLTQuOTE2MTAzODR6Ii8+CiAgICA8cGF0aCBzdHJva2U9IiNGMDQ3NDciIHN0cm9rZS13aWR0aD0iMiIgZD0iTTIxIDVMNSAyMSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgogIDwvZz4KPC9zdmc+");']:before {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/notifications.svg) !important;
     content: "";
     position: absolute;
     top: 0;
@@ -4402,7 +4399,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     height: 100%;
     width: 100%;
     margin-right: 5px;
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_off_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/notifications_off.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
@@ -4434,30 +4431,47 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     opacity: .7;
 }
 .header-toolbar button:nth-child(3) span {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/group.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .header-toolbar button:nth-child(2) span,
 .private .header-toolbar button:nth-child(1) span {
-    background-image: url(https://i.imgur.com/kXewkB7.png) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/1c27baec26cfdfee955bd0b9411b25344a49c284/icons/pin.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .header-toolbar button:nth-child(5) span,
-#friends .header-toolbar button:nth-child(1) span,
-.private .header-toolbar button:nth-child(3) span {
-    background-image: url(https://i.imgur.com/NK9GANC.png) !important;
+#friends .header-toolbar button:nth-child(3) span {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/1c27baec26cfdfee955bd0b9411b25344a49c284/icons/mail.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .header-toolbar button:nth-child(6) span,
-#friends .header-toolbar button:nth-child(2) span,
+#friends .header-toolbar button:nth-child(4) span,
 .private .header-toolbar button:nth-child(4) span {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_help_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/help.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+#friends .header-toolbar button:nth-child(1) span {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/group_add.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+.private .header-toolbar button:nth-child(1) span {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/call.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+.private .header-toolbar button:nth-child(3) span {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/person_add.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
@@ -4466,19 +4480,19 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     opacity: .7;
 }
 .win-buttons .win-minimize {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_remove_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/remove.svg) !important;
     background-repeat: no-repeat;
     background-position: center 7px;
     background-size: 24px;
 }
 .win-buttons .win-maximize {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_fullscreen_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/fullscreen.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .win-buttons .win-close {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_close_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/close.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
@@ -4552,7 +4566,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     background-color: rgba(100, 100, 100, .3);
 }
 .fav {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/favorite.svg);
     background-color: transparent;
     opacity: .3;
     -webkit-transition: opacity .1s ease-in-out, -webkit-transform .1s ease-in-out;
@@ -4638,13 +4652,13 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     }
 }
 .guild-channels .channel-voice .channel-arrow {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_navigate_next_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/navigate_next.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .guild-channels header button:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_add_circle_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/add_circle.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 115%;
@@ -4673,7 +4687,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 }
 .guilds-wrapper .guilds .friends-icon,
 .private-channels .channel .icon-friends {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/group.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;
@@ -4807,30 +4821,30 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     text-decoration: none;
 }
 .guild-channels .toggle-muted-text-channels a:before {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_expand_more_white_24px.svg);
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/expand_more.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .markdown-modal .markdown-modal-header .markdown-modal-close {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_close_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/close.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 #user-profile-modal .header .additional-actions-icon {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_expand_more_white_24px.svg);
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/expand_more.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200%;
 }
-.theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .close-button {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_close_white_24px.svg) !important;
+.messages-popout-wrap .messages-popout .message-group .action-buttons .close-button {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/close.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
 }
 .recent-mentions-popout .mention-filter {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_expand_more_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/expand_more.svg) !important;
     background-repeat: no-repeat !important;
     background-position: 133px top !important;
     background-size: 18px !important;
@@ -4879,10 +4893,10 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     color: #ADADAD;
 }
 .buttonClose {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_close_white_24px.svg) !important;
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/close.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 24px;
+    background-size: 200%;
 }
 #searchBarInner>.buttonClose:last-child {
     margin: 0 5px 0 10px;
@@ -4960,7 +4974,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 .change-log-button-container:after {
     content: "";
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_history_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/history.svg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -5024,12 +5038,12 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     color: #B6BBC1;
 }
 .settings-connections-wrapper .authed-app .details .permission-checkmark {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_check_white_24px.svg) left no-repeat;
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/check.svg) left no-repeat;
     background-size: 18px;
     opacity: .7;
 }
 .settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-header .btn-delete {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_delete_white_24px.svg) left no-repeat;
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/delete.svg) left no-repeat;
     background-size: 20px;
 }
 .btn-confirm .icon.icon-logout,
@@ -5051,10 +5065,10 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     transition: all .3s ease-in-out;
 }
 .btn-confirm .icon.icon-logout:after {
-    background-image: url(https://i.imgur.com/msG8Y1K.png);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/exit.svg);
 }
 .btn-confirm .icon.icon-delete:after {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_delete_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/delete.svg);
 }
 .btn-confirm.active .icon:after,
 .btn-confirm:hover .icon:after {
@@ -5074,22 +5088,22 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     padding: 0.3em 0.6em;
 }
 .channel-mute-button {
-    background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg) 50% no-repeat;
+    background: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/notifications.svg) 50% no-repeat;
     background-size: 18px;
 }
 .channel-mute-button.muted {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_off_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/notifications_off.svg);
 }
 .color-picker .swatches .swatch.custom {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_colorize_black_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/colorize_black.svg);
     background-size: 20px;
 }
 .color-picker .swatches .swatch.custom.light {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_colorize_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/colorize.svg);
     background-size: 20px;
 }
 .guild-channels .icon-lock {
-    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_lock_white_24px.svg);
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/lock.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
@@ -5161,6 +5175,157 @@ pre:hover .copybutton {
 .copybutton:hover {
     color: #fff;
 }
+.private-channel-recipients-invite .body .scroller {
+    height: 300px;
+    width: 192px;
+}
+.private-channel-recipients-invite .friend {
+    background: transparent !important;
+}
+.search-bar-tag {
+    background: transparent !important;
+    box-shadow: 0 0 1px #000;
+}
+.private-channel-recipients-invite .footer button {
+    background-color: #33e627;
+}
+.private-channel-recipients-invite .footer button:hover {
+    background-color: #2ab31e;
+}
+.alert.form .form-inner .btn-close-forever {
+    color: #999;
+}
+#voice-connection .voice-connection-channel:hover,
+.alert.form .form-inner .btn-close-forever:hover {
+    text-decoration: none;
+    text-shadow: 0 0 1px;
+}
+.search-bar .search-bar-inner {
+    background: transparent !important;
+}
+.tab-bar.SIDE .tab-bar-header {
+    padding-bottom: 13px;
+}
+.ebr-themes:after {
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/palette.svg);
+    position: absolute;
+    left: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -3px;
+    opacity: .3;
+}
+.ebr-plugins:after {
+    content: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/puzzle.svg);
+    position: absolute;
+    left: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -3px;
+    opacity: .3;
+}
+#ebr-themes-pane .ebr-top .themes-header,
+#ebr-plugins-pane .ebr-top .plugins-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: default;
+    overflow: hidden;
+}
+#theme-search,
+#plugin-search {
+    background-color: rgba(0, 0, 0, .3);
+    border-color: transparent !important;
+    border-radius: 3px;
+}
+#theme-search:focus,
+#plugin-search:focus {
+    outline-color: #33e627;
+}
+.ebr-plugin-item,
+.ebr-theme-item {
+    background-color: rgba(0, 0, 0, .3) !important;
+    border-color: transparent !important;
+}
+.install-button,
+.view-source-button,
+.update-button {
+    background-color: #33e627 !important;
+}
+.install-button:hover,
+.view-source-button:hover,
+.update-button:hover {
+    background-color: #2ab31e !important;
+}
+.ebr-themes p,
+.ebr-plugins p {
+    font-size: 13.5px;
+}
+.ebr-themes .name,
+.ebr-plugins .name {
+    color: #33e627;
+    font-weight: 700;
+}
+.ebr-themes .author,
+.ebr-plugins .author {
+    font-weight: 700;
+}
+.modal .download-button {
+    float: left;
+}
+.modal #qs_button {
+    float: right;
+}
+.server-official {
+    color: #33e627!important;
+    text-shadow: 0 0 4px #33e627;
+}
+.chat .welcome-message .item-container .icon {
+    opacity: .7;
+}
+.private-channels .channel .close {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/close.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+}
+.private-channel-call .speaking {
+    border-color: #33e627;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.5) !important;
+}
+.chat .private-channel-call {
+    background: rgba(0, 0, 0, 0.85) !important;
+}
+.private-channel-call .btn-icon-settings:after {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/settings.svg) !important;
+    background-position: center;
+}
+.private-channel-call .btn-icon-mute:after {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic.svg) !important;
+    background-position: center;
+}
+.private-channel-call .btn-icon-mute.mute:after {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic_off.svg) !important;
+    background-position: center;
+}
+.private-channel-call .status-deafened:after,
+.private-channel-call .status-muted:after {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/mic_off.svg) !important;
+    background-position: center;
+    background-size: 18px;
+}
+.chat .private-channel-call .status {
+    background-color: #33e627;
+    border: none;
+    margin: 4px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+.incoming-call .options .option .icon {
+    background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/icons/call.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
 .avatar-small[style*='144881947557101568/d57a09b8841dcb42a21b0a3f12c8c2a1'] + .member-inner .member-username {
     position: relative;
 }
@@ -5175,10 +5340,12 @@ pre:hover .copybutton {
     position: absolute;
 }
 .avatar-small[style*='144881947557101568/d57a09b8841dcb42a21b0a3f12c8c2a1'] + .member-inner .member-username:after {
+    position: static;
     font-size: 11px;
     text-align: right;
     right: 0;
     top: 0;
+    margin-left: auto;
 }
 .avatar-popout[style*='144881947557101568/d57a09b8841dcb42a21b0a3f12c8c2a1']:after {
     font-size: 11px;
@@ -5195,7 +5362,7 @@ pre:hover .copybutton {
     width: 100px;
 }
 .account:after {
-    content: "DRB v1.3.1b";
+    content: "DRB v1.3.2";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
