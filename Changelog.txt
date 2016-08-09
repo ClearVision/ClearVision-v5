@@ -238,6 +238,7 @@
 		- Created Discord ReBorn Discord server
 		- Moved icons to github
 	CSS:
+		- Added Call CSS
 		- Added EBR CSS 
 		- Added new create group modal CSS
 		- Added new create group icon
