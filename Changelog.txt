@@ -255,6 +255,7 @@
 	GENERAL:
 		- Moved images to github
 	CSS:
+		- Added upload drag & drop modal CSS
 		- Removed "channel members loading" image
 		- Fixed BetterDiscord buttons
 		- Fixed user popout discriminator height
