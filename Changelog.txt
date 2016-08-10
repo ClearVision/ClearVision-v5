@@ -233,7 +233,7 @@
 --- HOTFIX 1.3.1b (Release: 23/07/2016) ---
                 - Fixed backgrounds not showing for browsers and custom CSS
 
---- VERSION 1.3.2 (Release: Upcoming) ---
+--- VERSION 1.3.2 (Release: 09/08/2016) ---
 	GENERAL:
 		- Created Discord ReBorn Discord server
 		- Moved icons to github
@@ -250,3 +250,9 @@
 		- Fixed button sizing issues
 		- Fixed voice debug issues
 		- Minor adjustements & fixes
+
+--- VERSION 1.3.3 (Release: Upcoming)
+	CSS:
+		- Removed "channel members loading" image
+		- Fixed BetterDiscord buttons
+		- Fixed server settings member list DRB Dev mark
