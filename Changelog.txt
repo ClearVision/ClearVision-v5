@@ -255,4 +255,5 @@
 	CSS:
 		- Removed "channel members loading" image
 		- Fixed BetterDiscord buttons
+		- Fixed user popout discriminator height
 		- Fixed server settings member list DRB Dev mark
