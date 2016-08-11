@@ -16,12 +16,12 @@ RemoveShadows theme: https://git.io/v6BMd IMPORTANT: Activate on top of a ClearV
 */
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
-===== CUSTOMIZABLE COLORS & --background-image =====
+===== CUSTOMIZABLE COLORS & BACKGROUND IMAGE =====
 */
 :root {
 	--basic-color: #e62727;
 	--hover-color: #b31e1e;
-	--background-image: url(https://cdn.rawgit.com/Zerthox/DiscordReBorn/master/images/ruby.jpg); /* IMPORTANT: Link must be HTTPS! */
+	--background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/ruby.jpg); /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -4988,7 +4988,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     position: relative;
 }
 .change-log .footer:after {
-    content: "BetterDiscord by Jiiks \2022  Discord ReBorn by Zerthox";
+    content: "BetterDiscord by Jiiks \2022  ClearVision by Zerthox";
     position: absolute;
     top: 0;
     left: 0;
