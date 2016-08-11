@@ -257,6 +257,8 @@
 		- Added CSS variables for colors and background
 		- Better support for non-BD Dark
 		- Moved images to github
+		- Moved screenshots to github
+		- Updated screenshots
 	CSS:
 		- Added upload modal CSS
 		- Added drag & drop modal CSS
