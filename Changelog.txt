@@ -258,6 +258,7 @@
 	CSS:
 		- Added upload drag & drop modal CSS
 		- Removed "channel members loading" image
+		- Adjusted copy button CSS
 		- Fixed BetterDiscord buttons
 		- Fixed user popout discriminator height
 		- Fixed server settings member list DRB Dev mark
