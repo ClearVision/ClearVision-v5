@@ -253,6 +253,7 @@
 
 --- VERSION 1.3.3 (Release: Upcoming)
 	GENERAL:
+		- Added CSS variables for colors and background
 		- Better support for non-BD Dark
 		- Moved images to github
 	CSS:
@@ -263,3 +264,4 @@
 		- Fixed BetterDiscord buttons
 		- Fixed user popout discriminator height
 		- Fixed server settings member list DRB Dev mark
+		- Minor adjustements & fixes
