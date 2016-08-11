@@ -251,7 +251,7 @@
 		- Fixed voice debug issues
 		- Minor adjustements & fixes
 
---- VERSION 2.0.0 (Release: Upcoming)
+--- VERSION 2.0.0 (Release: Upcoming) ---
 	GENERAL:
 		- Renamed theme series to "ClearVision"
 		- Added CSS variables for colors and background
@@ -264,5 +264,5 @@
 		- Adjusted copy button CSS
 		- Fixed BetterDiscord buttons
 		- Fixed user popout discriminator height
-		- Fixed server settings member list CV Dev mark
+		- Fixed server settings member list ClearVision Dev mark
 		- Minor adjustements & fixes
