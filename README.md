@@ -5,21 +5,21 @@
 
 ###Previews
 ####ClearVision - Amber
-<img src="http://i.imgur.com/19bU8Mn.png">
-<img src="http://i.imgur.com/OxaT0qH.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_1.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_2.png">
 
 ####ClearVision - Amethyst
-<img src="http://i.imgur.com/W5OravO.png">
-<img src="http://i.imgur.com/nrPgnOZ.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_1.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_2.png">
 
 ####ClearVision - Emerald
-<img src="http://i.imgur.com/eZqhGnh.png">
-<img src="http://i.imgur.com/cT6FEv6.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_1.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_2.png">
 
 ####ClearVision - Ruby
-<img src="http://i.imgur.com/gDhX65o.png">
-<img src="http://i.imgur.com/yHkD1zK.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_1.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_2.png">
 
 ####ClearVision - Sapphire
-<img src="http://i.imgur.com/1wDtQAQ.png">
-<img src="http://i.imgur.com/o2DrD3M.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_1.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_2.png">
