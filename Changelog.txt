@@ -251,7 +251,7 @@
 		- Fixed voice debug issues
 		- Minor adjustements & fixes
 
---- VERSION 2.0.0 (Release: Upcoming) ---
+--- VERSION 2.0.0 (Release: 11/08(2016) ---
 	GENERAL:
 		- Renamed theme series to "ClearVision"
 		- Added CSS variables for colors and background
