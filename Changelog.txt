@@ -268,3 +268,9 @@
 		- Fixed user popout discriminator height
 		- Fixed server settings member list ClearVision Dev mark
 		- Minor adjustements & fixes
+
+--- VERSION 2.0.1 (Release: Upcoming) ---
+	CSS:
+		- Added download apps button CSS
+		- Added authenticate modal CSS
+		- Added invite accept CSS
