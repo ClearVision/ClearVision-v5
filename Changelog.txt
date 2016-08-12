@@ -274,3 +274,4 @@
 		- Added download apps button CSS
 		- Added authenticate modal CSS
 		- Added invite accept CSS
+		- Fixed bot tag
