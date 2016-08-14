@@ -12,7 +12,7 @@
 #####CSS:
 <ul>
 <li>Added scrollbar CSS for public server list</li>
-</ul
+</ul>
 ####VERSION 1.1.7 [Former: 1.17]
 #####GENERAL:
 <ul>
