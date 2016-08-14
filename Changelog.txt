@@ -1,7 +1,9 @@
---- VERSION 1.1.5 [Former: 1.15] ---
-	GENERAL:
-		- Created changelog
-	CSS:
+###VERSION 1.1.5 [Former: 1.15]
+####GENERAL:
+<ul>
+	<li>Created changelog</li>
+</ul>
+####CSS:
 		- Added emoji-picker CSS
 		- Fixed highlight CSS
 
