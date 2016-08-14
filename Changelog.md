@@ -1,4 +1,4 @@
-###VERSION 1.1.5 [Former: 1.15]
+###VERSION 1.1.5
 ####GENERAL:
 <ul>
 <li>Created changelog</li>
@@ -9,13 +9,13 @@
 <li>Fixed highlight CSS</li>
 </ul>
 
-###VERSION 1.1.6 [Former: 1.16]
+###VERSION 1.1.6
 ####CSS:
 <ul>
 <li>Added scrollbar CSS for public server list</li>
 </ul>
 
-###VERSION 1.1.7 [Former: 1.17]
+###VERSION 1.1.7
 ####GENERAL:
 <ul>
 <li>Added link to changelog</li>
@@ -27,7 +27,7 @@
 <li>Fixed friends list avatars on user profiles
 </ul>
 
-###VERSION 1.1.8 [Former: 1.18]
+###VERSION 1.1.8
 ####CSS:
 <ul>
 <li>Reworked checkbox CSS</li>
@@ -36,7 +36,7 @@
 <li>Added twitch streaming CSS</li>
 </ul>
 
-###VERSION 1.1.9 [Former: 1.19]
+###VERSION 1.1.9
 ####GENERAL:
 <ul>
 <li>Updated theme description</li>
@@ -52,7 +52,7 @@
 <li>Fixed searchbar CSS</li>
 </ul>
 
-###VERSION 1.2.0 [Former: 1.20] (Release: 21/06/2016)
+###VERSION 1.2.0 (Release: 21/06/2016)
 ####GENERAL:
 <ul>
 <li>Moved to GitHub</li>
@@ -67,7 +67,7 @@
 <li>Fixed alt checkbox CSS</li>
 </ul>
 
-###VERSION 1.2.1 [Former: 1.21] (Release: 22/06/2016)
+###VERSION 1.2.1 (Release: 22/06/2016)
 ####CSS:
 <ul>
 <li>Reworked account buttons</li>
@@ -78,7 +78,7 @@
 <li>Adjusted user settings background CSS</li>
 </ul>
 
-###VERSION 1.2.2 [Former: 1.22] (Release: 24/06/2016)
+###VERSION 1.2.2 (Release: 24/06/2016)
 ####GENERAL:
 <ul>
 <li>Replaced screenshots</li>
@@ -102,7 +102,7 @@
 <li>Fixed background colors in public server list</li>
 </ul>
 
-###VERSION 1.2.3 [Former: 1.23] (Release: 27/06/2016)
+###VERSION 1.2.3 (Release: 27/06/2016)
 ####CSS:
 <ul>
 <li>Added jump to present bar CSS</li>
@@ -118,7 +118,7 @@
 <li>Fixed icon/button sizing issues</li>
 </ul>
 
-###VERSION 1.2.4 [Former: 1.24] (Release: 29/06/2016) ###
+###VERSION 1.2.4 (Release: 29/06/2016) ###
 ####GENERAL:
 <ul>
 <li>Added new red "Ruby" theme</li>
@@ -339,6 +339,7 @@
 ####GENERAL:
 <ul>
 <li>Beautified changelog</li>
+<li>Removed former version numbers from changelog</li>
 </ul>
 ####CSS:
 <ul>
