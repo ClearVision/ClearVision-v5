@@ -8,11 +8,13 @@
 <li>Added emoji-picker CSS</li>
 <li>Fixed highlight CSS</li>
 </ul>
+
 ###VERSION 1.1.6 [Former: 1.16]
 ####CSS:
 <ul>
 <li>Added scrollbar CSS for public server list</li>
 </ul>
+
 ###VERSION 1.1.7 [Former: 1.17]
 ####GENERAL:
 <ul>
