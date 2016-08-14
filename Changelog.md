@@ -334,6 +334,10 @@
 </ul>
 
 ###VERSION 2.0.1 (Release: Upcoming)
+####GENERAL:
+<ul>
+<li>Beautified changelog</li>
+</ul>
 ####CSS:
 <ul>
 <li>Added download apps button CSS</li>
