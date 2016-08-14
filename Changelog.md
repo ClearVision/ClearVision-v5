@@ -343,6 +343,7 @@
 </ul>
 ####CSS:
 <ul>
+<li>Renamed "basic-color" variable to "main-color"</li>
 <li>Added download apps button CSS</li>
 <li>Added authenticate modal CSS</li>
 <li>Added invite accept CSS</li>
