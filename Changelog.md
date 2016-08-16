@@ -348,6 +348,7 @@
 <li>Added download apps button CSS</li>
 <li>Added authenticate modal CSS</li>
 <li>Added invite accept CSS</li>
+<li>Fixed user profile scrollbar CSS</li>
 <li>Fixed bot tag</li>
 <li>Minor fixes</li>
 </ul>
