@@ -123,7 +123,7 @@
 </ul>
 
 ###VERSION 1.2.4
-(Release: 29/06/2016) ###
+(Release: 29/06/2016)
 ####GENERAL:
 <ul>
 <li>Added new red "Ruby" theme</li>
