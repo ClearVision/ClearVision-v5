@@ -350,7 +350,7 @@
 </ul>
 
 ###VERSION 2.0.1
-(Release: Upcoming)
+(Release: 17/08/2016)
 ####GENERAL:
 <ul>
 <li>Beautified changelog</li>
