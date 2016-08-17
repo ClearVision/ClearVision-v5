@@ -1,5 +1,5 @@
-//META{"name":"ClearVision_-_Ruby","description":"A raging, red theme with customizable colors & background! Based on ClearVision by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"2.0.1"}*//{}
-/* "ClearVision - Ruby v2.0.1" by @Zerthox */
+//META{"name":"ClearVision_-_Emerald","description":"A peaceful, green theme with customizable colors & background! Based on ClearVision by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"2.0.1"}*//{}
+/* "ClearVision - Emerald v2.0.1" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 /* Fixes & Adjustements by @Zerthox */
 /*
@@ -19,9 +19,9 @@ RemoveShadows theme: https://git.io/v6BMd IMPORTANT: Activate on top of a ClearV
 ===== CUSTOMIZABLE COLORS & BACKGROUND IMAGE =====
 */
 :root {
-	--main-color: #e62727;
-	--hover-color: #b31e1e;
-	--background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/ruby.jpg); /* IMPORTANT: Link must be HTTPS! */
+	--main-color: #33e627;
+	--hover-color: #2ab31e;
+	--background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/emerald.jpg); /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
