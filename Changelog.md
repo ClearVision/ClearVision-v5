@@ -340,6 +340,7 @@
 <ul>
 <li>Beautified changelog</li>
 <li>Removed former version numbers from changelog</li>
+<li>Updated changelog link</li>
 </ul>
 ####CSS:
 <ul>
