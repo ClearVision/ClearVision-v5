@@ -345,6 +345,7 @@
 <ul>
 <li>Renamed "basic-color" variable to "main-color"</li>
 <li>Added channel textarea focus CSS</li>
+<li>Added instant invite modal icons</li>
 <li>Added download apps button CSS</li>
 <li>Added authenticate modal CSS</li>
 <li>Added invite accept CSS</li>
