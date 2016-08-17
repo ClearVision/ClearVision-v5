@@ -52,7 +52,8 @@
 <li>Fixed searchbar CSS</li>
 </ul>
 
-###VERSION 1.2.0 (Release: 21/06/2016)
+###VERSION 1.2.0
+(Release: 21/06/2016)
 ####GENERAL:
 <ul>
 <li>Moved to GitHub</li>
@@ -67,7 +68,8 @@
 <li>Fixed alt checkbox CSS</li>
 </ul>
 
-###VERSION 1.2.1 (Release: 22/06/2016)
+###VERSION 1.2.1
+(Release: 22/06/2016)
 ####CSS:
 <ul>
 <li>Reworked account buttons</li>
@@ -78,7 +80,8 @@
 <li>Adjusted user settings background CSS</li>
 </ul>
 
-###VERSION 1.2.2 (Release: 24/06/2016)
+###VERSION 1.2.2
+(Release: 24/06/2016)
 ####GENERAL:
 <ul>
 <li>Replaced screenshots</li>
@@ -102,7 +105,8 @@
 <li>Fixed background colors in public server list</li>
 </ul>
 
-###VERSION 1.2.3 (Release: 27/06/2016)
+###VERSION 1.2.3
+(Release: 27/06/2016)
 ####CSS:
 <ul>
 <li>Added jump to present bar CSS</li>
@@ -118,7 +122,8 @@
 <li>Fixed icon/button sizing issues</li>
 </ul>
 
-###VERSION 1.2.4 (Release: 29/06/2016) ###
+###VERSION 1.2.4
+(Release: 29/06/2016) ###
 ####GENERAL:
 <ul>
 <li>Added new red "Ruby" theme</li>
@@ -133,7 +138,8 @@
 <li>Fixed slider handle positions</li>
 </ul>
 		
-###VERSION 1.2.5 (Release: 02/07/2016)
+###VERSION 1.2.5
+(Release: 02/07/2016)
 ####GENERAL:
 <ul>
 <li>Changed versioning system</li>
@@ -152,7 +158,8 @@
 <li>Removed channel name capitalizing</li>
 </ul>
 
-###VERSION 1.2.6 (Release: 04/07/2016)
+###VERSION 1.2.6
+(Release: 04/07/2016)
 ####GENERAL:
 <ul>
 <li>Updated screenshots</li>
@@ -180,7 +187,8 @@
 <li>Removed several unnecessary, no longer working lines</li>
 </ul>
 
-###VERSION 1.2.7 (Release: 07/07/2016)
+###VERSION 1.2.7
+(Release: 07/07/2016)
 ####GENERAL:
 <ul>
 <li>Added support for more browsers (webkit)</li>
@@ -206,7 +214,8 @@
 <li>Minor changes & fixes</li>
 </ul>
 
-###VERSION 1.2.8 (Release: 10/07/2016)
+###VERSION 1.2.8
+(Release: 10/07/2016)
 ####GENERAL:
 <ul>
 <li>Better support for light theme</li>
@@ -225,7 +234,8 @@
 <li>Minor changes & fixes</li>
 </ul>
 
-###VERSION 1.3.0 (Release: 16/07/2016)
+###VERSION 1.3.0
+(Release: 16/07/2016)
 ####GENERAL:
 <ul>
 <li>Renamed themes to "Discord ReBorn"</li>
@@ -251,7 +261,8 @@
 <li>Fixed button icons</li>
 </ul>
 
-###VERSION 1.3.1 (Release: 21/07/2016)
+###VERSION 1.3.1
+(Release: 21/07/2016)
 ####GENERAL:
 <ul>
 <li>New background image for Sapphire</li>
@@ -286,12 +297,14 @@
 <li>Minor adjustements & fixes</li>
 </ul>
 
-###HOTFIX 1.3.1b (Release: 23/07/2016)
+###HOTFIX 1.3.1b
+(Release: 23/07/2016)
 <ul>
 <li>Fixed backgrounds not showing for browsers and custom CSS</li>
 </ul>
 
-###VERSION 1.3.2 (Release: 09/08/2016)
+###VERSION 1.3.2
+(Release: 09/08/2016)
 ####GENERAL:
 <ul>
 <li>Created Discord ReBorn Discord server</li>
@@ -313,7 +326,8 @@
 <li>Minor adjustements & fixes</li>
 </ul>
 
-###VERSION 2.0.0 (Release: 11/08(2016)
+###VERSION 2.0.0
+(Release: 11/08(2016)
 ####GENERAL:
 <ul>
 <li>Renamed theme series to "ClearVision"</li>
@@ -335,7 +349,8 @@
 <li>Minor adjustements & fixes</li>
 </ul>
 
-###VERSION 2.0.1 (Release: Upcoming)
+###VERSION 2.0.1
+(Release: Upcoming)
 ####GENERAL:
 <ul>
 <li>Beautified changelog</li>
