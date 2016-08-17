@@ -367,5 +367,5 @@
 <li>Added invite accept CSS</li>
 <li>Fixed user profile scrollbar CSS</li>
 <li>Fixed bot tag</li>
-<li>Minor fixes</li>
+<li>Minor adjustements & fixes</li>
 </ul>
