@@ -370,7 +370,7 @@
 <li>Minor adjustements & fixes</li>
 </ul>
 
-###VERSION 2.0.2
+###VERSION 2.1.0
 (Release: Upcoming)
 ####GENERAL:
 <ul>
@@ -378,6 +378,7 @@
 </ul>
 ####CSS:
 <ul>
-<li>Added bright version of the theme for Discord's light apperance</li>
+<li>Added light version of the theme for light apperance</li>
+<li>Added info to appereance tab in settings</li>
 <li>Fixed text channel hover CSS</li>
 </ul>
