@@ -379,4 +379,5 @@
 ####CSS:
 <ul>
 <li>Added bright version of the theme for Discord's light apperance</li>
+<li>Fixed text channel hover CSS</li>
 </ul>
