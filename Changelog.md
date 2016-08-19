@@ -369,3 +369,14 @@
 <li>Fixed bot tag</li>
 <li>Minor adjustements & fixes</li>
 </ul>
+
+###VERSION 2.0.2
+(Release: Upcoming)
+####GENERAL:
+<ul>
+<li>Removed "Fixes & adjustements by Zerthox" note</li>
+</ul>
+####CSS:
+<ul>
+<li>Added bright version of the theme for Discord's light apperance</li>
+</ul>
