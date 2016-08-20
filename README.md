@@ -18,7 +18,7 @@
 
 ####ClearVision - Ruby
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby1.png">
-<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby2.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/1ba1fa0442f60fde970fd55cb8011c3b49233c3b/screenshots/ruby2.png">
 
 ####ClearVision - Sapphire
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire1.png">
