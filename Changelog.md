@@ -382,7 +382,7 @@
 </ul>
 ####CSS:
 <ul>
-<li>Added light version of the theme for light apperance</li>
+<li>Added light version of the theme for light appearance</li>
 <li>Added info to appereance tab in settings</li>
 <li>Added CSS from dark theme to light theme</li>
 <li>Fixed text channel hover CSS</li>
