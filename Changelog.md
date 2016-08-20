@@ -371,7 +371,7 @@
 </ul>
 
 ###VERSION 2.1.0
-(Release: Upcoming)
+(Release: 20/08/2016)
 ####GENERAL:
 <ul>
 <li>Better support for light theme</li>
