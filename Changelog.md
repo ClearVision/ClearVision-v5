@@ -376,6 +376,7 @@
 <ul>
 <li>Better support for light theme</li>
 <li>Moved themes into own folder</li>
+<li>Updated screenshots</li>
 <li>Updated links</li>
 <li>Removed "Fixes & adjustements by Zerthox" note</li>
 </ul>
