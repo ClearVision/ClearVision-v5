@@ -1,5 +1,5 @@
-//META{"name":"ClearVision_-_Emerald","description":"A peaceful, green theme with customizable colors & background! Based on ClearVision by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"2.1.0"}*//{}
-/* "ClearVision - Emerald v2.1.0" by @Zerthox */
+//META{"name":"ClearVision_-_Emerald","description":"A peaceful, green theme with customizable colors & background! Based on ClearVision by @Omniscient & DarkMatter by @Hammock; Reworked, edited and fixed by @Zerthox","author":"Zerthox","version":"2.1.1"}*//{}
+/* "ClearVision - Emerald v2.1.1" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -40,7 +40,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
         _\////////////_____\///________\///__\/////////////____
 */
 .account:after {
-    content: "ClearVision v2.1.0";
+    content: "ClearVision v2.1.1";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -4532,21 +4532,22 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 .header-toolbar button span {
     opacity: .7;
 }
-.header-toolbar button:nth-child(3) span {
+.header-toolbar button:nth-child(3) span,
+.private .channel-group-dm + .header-toolbar button:nth-child(4) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
-.header-toolbar button:nth-child(2) span,
-.private .header-toolbar button:nth-child(1) span {
+.header-toolbar #CHANNEL_PINS_BUTTON_ID span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/1c27baec26cfdfee955bd0b9411b25344a49c284/icons/pin.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
 .header-toolbar button:nth-child(5) span,
-#friends .header-toolbar button:nth-child(3) span {
+#friends .header-toolbar button:nth-child(3) span,
+.private .channel-group-dm + .header-toolbar button:nth-child(7) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/1c27baec26cfdfee955bd0b9411b25344a49c284/icons/mail.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -4554,7 +4555,8 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 }
 .header-toolbar button:nth-child(6) span,
 #friends .header-toolbar button:nth-child(4) span,
-.private .header-toolbar button:nth-child(4) span {
+.private .header-toolbar button:nth-child(4) span,
+.private .channel-group-dm + .header-toolbar button:nth-child(8) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/help.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -4566,13 +4568,14 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     background-position: center;
     background-size: 24px;
 }
-.private .header-toolbar button:nth-child(1) span {
+.private .header-toolbar .private-channel-call-btn span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/call.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
-.private .header-toolbar button:nth-child(3) span {
+.private .header-toolbar button:nth-child(3) span,
+.private .channel-group-dm + .header-toolbar button:nth-child(5) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person_add.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
