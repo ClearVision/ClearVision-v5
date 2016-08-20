@@ -10,7 +10,7 @@
 
 ####ClearVision - Amethyst
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst1.png">
-<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst2.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst2.jpg">
 
 ####ClearVision - Emerald
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald1.png">
