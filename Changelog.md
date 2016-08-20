@@ -374,11 +374,14 @@
 (Release: Upcoming)
 ####GENERAL:
 <ul>
+<li>Better support for light theme</li>
 <li>Removed "Fixes & adjustements by Zerthox" note</li>
 </ul>
 ####CSS:
 <ul>
 <li>Added light version of the theme for light apperance</li>
 <li>Added info to appereance tab in settings</li>
+<li>Added CSS from dark theme to light theme</li>
 <li>Fixed text channel hover CSS</li>
+<li>Minor adjustemens & fixes</li>
 </ul>
