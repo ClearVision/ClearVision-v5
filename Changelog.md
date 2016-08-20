@@ -388,3 +388,8 @@
 <li>Fixed text channel hover CSS</li>
 <li>Minor adjustemens & fixes</li>
 </ul>
+
+###VERSION 2.1.1
+(Release: 20/08/2016)
+####CSS:
+- Fixed group channel toolbar icons
