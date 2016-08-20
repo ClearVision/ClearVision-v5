@@ -241,7 +241,7 @@
 - Fixed custom css editor CSS
 - Minor adjustements & fixes
 
-###HOTFIX 1.3.1b
+###VERSION 1.3.1b
 (Release: 23/07/2016)
 ####CSS:
 - Fixed backgrounds not showing for browsers and custom CSS
