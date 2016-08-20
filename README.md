@@ -14,12 +14,12 @@
 
 ####ClearVision - Emerald
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald1.png">
-<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald2.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald2.jpg">
 
 ####ClearVision - Ruby
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby1.png">
-<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby2.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby2.jpg">
 
 ####ClearVision - Sapphire
 <img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire1.png">
-<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire2.png">
+<img src="https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire2.jpg">
