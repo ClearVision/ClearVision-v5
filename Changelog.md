@@ -1,15 +1,15 @@
-###VERSION 1.1.5
+##VERSION 1.1.5
 ####GENERAL:
 - Created changelog
 ####CSS:
 - Added emoji-picker CSS
 - Fixed highlight CSS
 
-###VERSION 1.1.6
+##VERSION 1.1.6
 ####CSS:
 - Added scrollbar CSS for public server list
 
-###VERSION 1.1.7
+##VERSION 1.1.7
 ####GENERAL:
 - Added link to changelog
 - Added link to a preview image
@@ -17,14 +17,14 @@
 - Added notification badge CSS for friends list
 - Fixed friends list avatars on user profiles
 
-###VERSION 1.1.8
+##VERSION 1.1.8
 ####CSS:
 - Reworked checkbox CSS
 - Changed slider CSS
 - Changed radio button CSS
 - Added twitch streaming CSS
 
-###VERSION 1.1.9
+##VERSION 1.1.9
 ####GENERAL:
 - Updated theme description
 - Updated commented info in code
@@ -36,7 +36,7 @@
 - Fixed text CSS next to checkboxes
 - Fixed searchbar CSS
 
-###VERSION 1.2.0
+##VERSION 1.2.0
 (Release: 21/06/2016)
 ####GENERAL:
 - Moved to GitHub
@@ -48,7 +48,7 @@
 - Fixed activity text on user profiles
 - Fixed alt checkbox CSS
 
-###VERSION 1.2.1
+##VERSION 1.2.1
 (Release: 22/06/2016)
 ####CSS:
 - Reworked account buttons
@@ -58,7 +58,7 @@
 - Added emote picker onklick animations
 - Adjusted user settings background CSS
 
-###VERSION 1.2.2
+##VERSION 1.2.2
 (Release: 24/06/2016)
 ####GENERAL:
 - Replaced screenshots
@@ -79,7 +79,7 @@
 - Fixed emote sorting issues
 - Fixed background colors in public server list
 
-###VERSION 1.2.3
+##VERSION 1.2.3
 (Release: 27/06/2016)
 ####CSS:
 - Added jump to present bar CSS
@@ -94,7 +94,7 @@
 - Fixed highlight CSS issues
 - Fixed icon/button sizing issues
 
-###VERSION 1.2.4
+##VERSION 1.2.4
 (Release: 29/06/2016)
 ####GENERAL:
 - Added new red "Ruby" theme
@@ -106,7 +106,7 @@
 - Added clock plugin CSS
 - Fixed slider handle positions
 
-###VERSION 1.2.5
+##VERSION 1.2.5
 (Release: 02/07/2016)
 ####GENERAL:
 - Changed versioning system
@@ -122,7 +122,7 @@
 - Changed titlebar button hover colors
 - Removed channel name capitalizing
 
-###VERSION 1.2.6
+##VERSION 1.2.6
 (Release: 04/07/2016)
 ####GENERAL:
 - Updated screenshots
@@ -147,7 +147,7 @@
 - Fixed avatars not sizing correctly
 - Removed several unnecessary, no longer working lines
 
-###VERSION 1.2.7
+##VERSION 1.2.7
 (Release: 07/07/2016)
 ####GENERAL:
 - Added support for more browsers (webkit)
@@ -170,7 +170,7 @@
 - Fixed link hover CSS
 - Minor changes & fixes
 
-###VERSION 1.2.8
+##VERSION 1.2.8
 (Release: 10/07/2016)
 ####GENERAL:
 - Better support for light theme
@@ -186,7 +186,7 @@
 - Adjusted code cursor color
 - Minor changes & fixes
 
-###VERSION 1.3.0
+##VERSION 1.3.0
 (Release: 16/07/2016)
 ####GENERAL:
 - Renamed themes to "Discord ReBorn"
@@ -209,7 +209,7 @@
 - Adjusted discriminator CSS
 - Fixed button icons
 
-###VERSION 1.3.1
+##VERSION 1.3.1
 (Release: 21/07/2016)
 ####GENERAL:
 - New background image for Sapphire
@@ -241,12 +241,12 @@
 - Fixed custom css editor CSS
 - Minor adjustements & fixes
 
-###VERSION 1.3.1b
+##VERSION 1.3.1b
 (Release: 23/07/2016)
 ####CSS:
 - Fixed backgrounds not showing for browsers and custom CSS
 
-###VERSION 1.3.2
+##VERSION 1.3.2
 (Release: 09/08/2016)
 ####GENERAL:
 - Created Discord ReBorn Discord server
@@ -265,7 +265,7 @@
 - Fixed voice debug issues
 - Minor adjustements & fixes
 
-###VERSION 2.0.0
+##VERSION 2.0.0
 (Release: 11/08(2016)
 ####GENERAL:
 - Renamed theme series to "ClearVision"
@@ -284,7 +284,7 @@
 - Fixed server settings member list ClearVision Dev mark
 - Minor adjustements & fixes
 
-###VERSION 2.0.1
+##VERSION 2.0.1
 (Release: 17/08/2016)
 ####GENERAL:
 - Beautified changelog
@@ -301,7 +301,7 @@
 - Fixed bot tag
 - Minor adjustements & fixes
 
-###VERSION 2.1.0
+##VERSION 2.1.0
 (Release: 20/08/2016)
 ####GENERAL:
 - Better support for light theme
@@ -316,12 +316,12 @@
 - Fixed text channel hover CSS
 - Minor adjustemens & fixes
 
-###VERSION 2.1.1
+##VERSION 2.1.1
 (Release: 20/08/2016)
 ####CSS:
 - Fixed group channel toolbar icons
 
-###VERSION 2.1.2
+##VERSION 2.1.2
 (Release: Upcoming)
 ####CSS:
 - Added flashing unread guild marker animation
