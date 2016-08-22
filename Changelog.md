@@ -320,3 +320,9 @@
 (Release: 20/08/2016)
 ####CSS:
 - Fixed group channel toolbar icons
+
+###VERSION 2.1.2
+(Release: Upcoming)
+####CSS:
+- Added flashing unread guild marker animation
+- Added flashing badge animation
