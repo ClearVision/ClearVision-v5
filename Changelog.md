@@ -326,3 +326,4 @@
 ####CSS:
 - Added flashing unread guild marker animation
 - Added flashing badge animation
+- Minor adjustements & fixes
