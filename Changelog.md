@@ -349,6 +349,8 @@
 - Added flashing badge animation
 - Added selected call guild CSS
 - Added selected call guild animation
+- Added icon friends transition
 - Added system message pin icon
 - Added system message link CSS
+- Adjusted header toolbar button transitions
 - Minor adjustements & fixes
