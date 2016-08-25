@@ -343,6 +343,7 @@
 - Darkened light version of the theme for better readability
 
 ####CSS:
+- Nearly full support for light theme
 - Made pinned messages clickable
 - Added flashing unread guild marker animation
 - Added flashing badge animation
