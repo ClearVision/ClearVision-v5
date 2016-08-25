@@ -1,6 +1,7 @@
 ##VERSION 1.1.5
 ####GENERAL:
 - Created changelog
+
 ####CSS:
 - Added emoji-picker CSS
 - Fixed highlight CSS
@@ -13,6 +14,7 @@
 ####GENERAL:
 - Added link to changelog
 - Added link to a preview image
+
 ####CSS:
 - Added notification badge CSS for friends list
 - Fixed friends list avatars on user profiles
@@ -30,6 +32,7 @@
 - Updated commented info in code
 - Added link to DRB RemoveShadows theme
 - Reworked changelog
+
 ####CSS:
 - Reworked settings tab bar CSS
 - Adjusted alt checkbox CSS
@@ -41,6 +44,7 @@
 ####GENERAL:
 - Moved to GitHub
 - Updated links
+
 ####CSS:
 - Added button onclick animations
 - Added shadow to checkbox switch
@@ -64,6 +68,7 @@
 - Replaced screenshots
 - Added new screenshots
 - Added info to use dark theme & dark mode
+
 ####CSS:
 - Added symbols to settings tab bars
 - Added pinned messages CSS
@@ -102,6 +107,7 @@
 - Updated backgrounds to higher resolutions
 - Beautified CSS
 - Shortened URLs
+
 ####CSS:
 - Added clock plugin CSS
 - Fixed slider handle positions
@@ -112,6 +118,7 @@
 - Changed versioning system
 - Added release dates to changelog
 - Added former version numbers to changelog
+
 ####CSS:
 - Added icons for titlebar buttons
 - Added icons for header toolbar buttons
@@ -126,6 +133,7 @@
 (Release: 04/07/2016)
 ####GENERAL:
 - Updated screenshots
+
 ####CSS:
 - Added mute button hover animation
 - Added user name hover CSS
@@ -151,6 +159,7 @@
 (Release: 07/07/2016)
 ####GENERAL:
 - Added support for more browsers (webkit)
+
 ####CSS:
 - Added new icons in channels
 - Added image download button CSS
@@ -176,6 +185,7 @@
 - Better support for light theme
 - Removed unnecessary CSS
 - Shortened & optimized CSS
+
 ####CSS:
 - Changed pin icon
 - Changed new messages CSS
@@ -193,6 +203,7 @@
 - Optimized colors
 - Updated screenshots
 - Changed release dates
+
 ####CSS:
 - Added load animation
 - Added recent mentions popout CSS
@@ -218,6 +229,7 @@
 - Updated theme descriptions
 - Added credit to Hammock (Omniscient used parts of his theme)
 - Updated RemoveShadows theme link
+
 ####CSS:
 - Reworked background image CSS
 - Removed old load animation
@@ -252,6 +264,7 @@
 - Created Discord ReBorn Discord server
 - Moved icons to github
 - Updated screenshots
+
 ####CSS:
 - Added Call CSS
 - Added EBR CSS
@@ -274,6 +287,7 @@
 - Moved images to github
 - Moved screenshots to github
 - Updated screenshots
+
 ####CSS:
 - Added upload modal CSS
 - Added drag & drop modal CSS
@@ -290,6 +304,7 @@
 - Beautified changelog
 - Removed former version numbers from changelog
 - Updated changelog link
+
 ####CSS:
 - Renamed "basic-color" variable to "main-color"
 - Added channel textarea focus CSS
@@ -309,6 +324,7 @@
 - Updated screenshots
 - Updated links
 - Removed "Fixes & adjustements by Zerthox" note
+
 ####CSS:
 - Added light version of the theme for light appearance
 - Added info to appereance tab in settings
