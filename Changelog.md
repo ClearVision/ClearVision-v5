@@ -319,6 +319,7 @@
 ##VERSION 2.1.0
 (Release: 20/08/2016)
 ####GENERAL:
+- Added light version of the theme for light appearance
 - Better support for light theme
 - Moved themes into own folder
 - Updated screenshots
@@ -326,7 +327,6 @@
 - Removed "Fixes & adjustements by Zerthox" note
 
 ####CSS:
-- Added light version of the theme for light appearance
 - Added info to appereance tab in settings
 - Added CSS from dark theme to light theme
 - Fixed text channel hover CSS
@@ -339,6 +339,9 @@
 
 ##VERSION 2.1.2
 (Release: Upcoming)
+####GENERAL:
+- Darkened light version of the theme for better readability
+
 ####CSS:
 - Made pinned messages clickable
 - Added flashing unread guild marker animation
