@@ -340,6 +340,7 @@
 ##VERSION 2.1.2
 (Release: Upcoming)
 ####CSS:
+- Made pinned messages clickable
 - Added flashing unread guild marker animation
 - Added flashing badge animation
 - Added selected call guild CSS
