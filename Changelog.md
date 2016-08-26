@@ -350,6 +350,7 @@
 - Added selected call guild CSS
 - Added selected call guild animation
 - Added invite modal CSS
+- Added custom CSS syntax highlighting
 - Added icon friends transition
 - Added system message pin icon
 - Added system message link CSS
