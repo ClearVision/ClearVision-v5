@@ -308,7 +308,7 @@
 ####CSS:
 - Renamed "basic-color" variable to "main-color"
 - Added channel textarea focus CSS
-- Added instant invite modal icons
+- Added web invite modal icons
 - Added download apps button CSS
 - Added authenticate modal CSS
 - Added invite accept CSS
@@ -349,6 +349,7 @@
 - Added flashing badge animation
 - Added selected call guild CSS
 - Added selected call guild animation
+- Added invite modal CSS
 - Added icon friends transition
 - Added system message pin icon
 - Added system message link CSS
