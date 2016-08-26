@@ -337,7 +337,7 @@
 ####CSS:
 - Fixed group channel toolbar icons
 
-##VERSION 2.1.2
+##VERSION 2.2.0
 (Release: Upcoming)
 ####GENERAL:
 - Darkened light version of the theme for better readability
