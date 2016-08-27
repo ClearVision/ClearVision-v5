@@ -341,9 +341,9 @@
 (Release: Upcoming)
 ####GENERAL:
 - Darkened light version of the theme for better readability
+- Nearly full support for light theme
 
 ####CSS:
-- Nearly full support for light theme
 - Made pinned messages clickable
 - Added flashing unread guild marker animation
 - Added flashing badge animation
@@ -354,5 +354,7 @@
 - Added icon friends transition
 - Added system message pin icon
 - Added system message link CSS
+- Adjusted EBR CSS
 - Adjusted header toolbar button transitions
+- Fixed EBR CSS issues
 - Minor adjustements & fixes
