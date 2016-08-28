@@ -353,7 +353,7 @@
 - Added selected call guild animation
 - Added invite modal CSS
 - Added custom CSS syntax highlighting
-- Added notice dismiss close icon
+- Added notice close icon
 - Added system message pin icon
 - Added system message link CSS
 - Added icon friends transition
