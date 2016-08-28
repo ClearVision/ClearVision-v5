@@ -2,6 +2,7 @@
 
 ##Discord Server
 Join for update notifications and theme support!
+
 **Instant Invite:** https://discord.gg/FtYVPky
 
 ##Customization
