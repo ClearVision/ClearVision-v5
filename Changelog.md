@@ -353,9 +353,10 @@
 - Added selected call guild animation
 - Added invite modal CSS
 - Added custom CSS syntax highlighting
-- Added icon friends transition
+- Added notice dismiss close icon
 - Added system message pin icon
 - Added system message link CSS
+- Added icon friends transition
 - Adjusted EBR CSS
 - Adjusted header toolbar button transitions
 - Fixed EBR CSS issues
