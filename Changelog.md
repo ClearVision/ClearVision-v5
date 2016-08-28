@@ -359,5 +359,7 @@
 - Added icon friends transition
 - Adjusted EBR CSS
 - Adjusted header toolbar button transitions
+- Fixed user popout username CSS
+- Fixed user popout bot tag CSS
 - Fixed EBR CSS issues
 - Minor adjustements & fixes
