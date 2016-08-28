@@ -1,7 +1,7 @@
 # ClearVision for Discord
 
 ##Discord Server
-Join for support and update notifications!
+Join for update notifications and theme support!
 **Instant Invite:** https://discord.gg/FtYVPky
 
 ##Customization
