@@ -340,6 +340,7 @@
 ##VERSION 2.2.0
 (Release: Upcoming)
 ####GENERAL:
+- Added info for customization to the readme
 - Darkened light version of the theme for better readability
 - Nearly full support for light theme
 
