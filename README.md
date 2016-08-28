@@ -3,6 +3,18 @@
 ##Discord Server
 **Instant Invite:** https://discord.gg/FtYVPky
 
+##Customization
+The `:root` is located at the top of the `.theme.css` file.
+- Change both color values to change the color scheme
+- Change the image link to change the background
+```css
+:root {
+	--main-color: #2780e6;
+	--hover-color: #1e63b3;
+	--background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/sapphire.jpg);
+}
+```
+
 ##Previews
 ###ClearVision - Amber
 ![Amber1](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber1.png)
