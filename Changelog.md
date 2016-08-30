@@ -338,7 +338,7 @@
 - Fixed group channel toolbar icons
 
 ##VERSION 2.2.0
-(Release: Upcoming)
+(Release: 30/08/2016)
 ####GENERAL:
 - Added info for customization to the readme
 - Darkened light version of the theme for better readability
