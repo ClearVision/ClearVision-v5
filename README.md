@@ -19,21 +19,41 @@ The `:root` is located at the top of the `.theme.css` file.
 
 ##Previews
 ###ClearVision - Amber
-![Amber1](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber1.png)
-![Amber2](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber2.png)
+####Dark Appearance
+![AmberDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber1.png)
+####Light Appearance
+![AmberLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber2.png)
+####Settings
+![AmberSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber3.png)
 
 ###ClearVision - Amethyst
-![Amethyst1](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst1.png)
-![Amethyst2](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst2.jpg)
+####Dark Appearance
+![AmethystDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst1.png)
+####Light Appearance
+![AmethystLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst2.png)
+####Settings
+![AmethystSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst3.png)
 
 ###ClearVision - Emerald
-![Emerald1](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald1.png)
-![Emerald2](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald2.jpg)
+####Dark Appearance
+![EmeraldDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald1.png)
+####Light Appearance
+![EmeraldLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald2.png)
+####Settings
+![EmeraldSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald3.png)
 
 ###ClearVision - Ruby
-![Ruby1](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby1.png)
-![Ruby2](https://cdn.rawgit.com/Zerthox/ClearVision/1ba1fa0442f60fde970fd55cb8011c3b49233c3b/screenshots/ruby2.png)
+####Dark Appearance
+![RubyDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby1.png)
+####Light Appearance
+![RubyLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby2.png)
+####Settings
+![RubySettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby3.png)
 
 ###ClearVision - Sapphire
-![Sapphire1](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire1.png)
-![Sapphire2](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire2.jpg)
+####Dark Appearance
+![SapphireDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire1.png)
+####Light Appearance
+![SapphireLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire2.png)
+####Settings
+![SapphireSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire3.png)
