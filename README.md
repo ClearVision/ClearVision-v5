@@ -1,11 +1,9 @@
-# ClearVision for Discord
-
-##Discord Server
+#ClearVision Discord Server
 Join for update notifications and theme support!
 
 **Instant Invite:** https://discord.gg/FtYVPky
 
-##Customization
+#Customization
 The `:root` is located at the top of the `.theme.css` file.
 - Change both color values to change the color scheme
 - Change the image link to change the background
@@ -17,8 +15,8 @@ The `:root` is located at the top of the `.theme.css` file.
 }
 ```
 
-##Previews
-###ClearVision - Amber
+#Previews
+##ClearVision - Amber
 ####Dark Appearance
 ![AmberDark](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/amber1.png)
 ####Light Appearance
@@ -26,7 +24,7 @@ The `:root` is located at the top of the `.theme.css` file.
 ####Settings
 ![AmberSettings](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/amber3.png)
 
-###ClearVision - Amethyst
+##ClearVision - Amethyst
 ####Dark Appearance
 ![AmethystDark](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/amethyst1.png)
 ####Light Appearance
@@ -34,7 +32,7 @@ The `:root` is located at the top of the `.theme.css` file.
 ####Settings
 ![AmethystSettings](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/amethyst3.png)
 
-###ClearVision - Emerald
+##ClearVision - Emerald
 ####Dark Appearance
 ![EmeraldDark](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/emerald1.png)
 ####Light Appearance
@@ -42,7 +40,7 @@ The `:root` is located at the top of the `.theme.css` file.
 ####Settings
 ![EmeraldSettings](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/emerald3.png)
 
-###ClearVision - Ruby
+##ClearVision - Ruby
 ####Dark Appearance
 ![RubyDark](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/ruby1.png)
 ####Light Appearance
@@ -50,7 +48,7 @@ The `:root` is located at the top of the `.theme.css` file.
 ####Settings
 ![RubySettings](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/ruby3.png)
 
-###ClearVision - Sapphire
+##ClearVision - Sapphire
 ####Dark Appearance
 ![SapphireDark](https://cdn.rawgit.com/Zerthox/ClearVision/2b6b035e22dcd7ba1a95668ed2e35f13a77e3afd/screenshots/sapphire1.png)
 ####Light Appearance
