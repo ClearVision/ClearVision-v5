@@ -367,4 +367,5 @@
 ##VERSION 2.2.1 
 (Release: Upcoming)
 ####CSS:
+- Added user popout CSS to light version
 - Lightened user popout for better readability
