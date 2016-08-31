@@ -363,3 +363,8 @@
 - Fixed user popout bot tag CSS
 - Fixed EBR CSS issues
 - Minor adjustements & fixes
+
+##VERSION 2.2.1 
+(Release: Upcoming)
+####CSS:
+- Lightened user popout for better readability
