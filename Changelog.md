@@ -386,3 +386,8 @@
 - Fixed friends guild issues
 - Several little fixes
 - Minor adjustements
+
+##VERSION 2.3.1
+(Release: Upcoming)
+####CSS:
+- Added user profile modal icons
