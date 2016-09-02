@@ -373,6 +373,9 @@
 ####CSS:
 - Added user popout CSS to light version
 - Added detected accounts modal CSS
+- Added friend add page CSS
+- Added friend synchronization button CSS
+- Added friend synchronization button icons
 - Lightened user popout for better readability
 - Adjusted connection page CSS
 - Fixed text rendering issues
@@ -380,4 +383,6 @@
 - Fixed user popout
 - Fixed chat dividers
 - Fixed user popout quick message
+- Fixed friends guild issues
 - Several little fixes
+- Minor adjustements
