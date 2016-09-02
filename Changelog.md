@@ -364,8 +364,17 @@
 - Fixed EBR CSS issues
 - Minor adjustements & fixes
 
-##VERSION 2.2.1 
+##VERSION 2.3.0 
 (Release: Upcoming)
+####GENERAL:
+- Sorted little parts of CSS
+- Fixed issues with new Discord version
+
 ####CSS:
 - Added user popout CSS to light version
+- Added detected accounts modal CSS
 - Lightened user popout for better readability
+- Fixed user profile modal
+- Fixed user popout
+- Fixed chat dividers
+- Several little fixes
