@@ -365,7 +365,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 2.3.0 
-(Release: Upcoming)
+(Release: 02/09/2016)
 ####GENERAL:
 - Sorted little parts of CSS
 - Fixed issues with new Discord version
