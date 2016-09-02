@@ -374,7 +374,10 @@
 - Added user popout CSS to light version
 - Added detected accounts modal CSS
 - Lightened user popout for better readability
+- Adjusted connection page CSS
+- Fixed text rendering issues
 - Fixed user profile modal
 - Fixed user popout
 - Fixed chat dividers
+- Fixed user popout quick message
 - Several little fixes
