@@ -391,3 +391,5 @@
 (Release: Upcoming)
 ####CSS:
 - Added user profile modal icons
+- Added pseudo element syntax highlighting
+- Fixed emote picker custom emotes
