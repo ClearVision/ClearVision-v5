@@ -392,4 +392,6 @@
 ####CSS:
 - Added user profile modal icons
 - Added pseudo element syntax highlighting
+- Adjusted inline code block CSS
+- Adjusted multi-line code block CSS
 - Fixed emote picker custom emotes
