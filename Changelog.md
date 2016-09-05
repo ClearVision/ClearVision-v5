@@ -388,7 +388,7 @@
 - Minor adjustements
 
 ##VERSION 2.3.1
-(Release: Upcoming)
+(Release: 05/09/2016)
 ####CSS:
 - Reworked Dev mark
 - Added user profile modal icons
