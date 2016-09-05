@@ -394,4 +394,5 @@
 - Added pseudo element syntax highlighting
 - Adjusted inline code block CSS
 - Adjusted multi-line code block CSS
+- Adjusted BetterDiscord theme/plugin list CSS
 - Fixed emote picker custom emotes
