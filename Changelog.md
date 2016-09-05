@@ -390,6 +390,7 @@
 ##VERSION 2.3.1
 (Release: Upcoming)
 ####CSS:
+- Reworked Dev mark
 - Added user profile modal icons
 - Added pseudo element syntax highlighting
 - Adjusted inline code block CSS
