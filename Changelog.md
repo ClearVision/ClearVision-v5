@@ -402,6 +402,8 @@
 (Release: Upcoming)
 ####GENERAL:
 - Theme not automatically loads the newest version from github
+- Updated theme description
+- Added links to theme description
 
 ####CSS:
 - Added user popout dev mark hover CSS
