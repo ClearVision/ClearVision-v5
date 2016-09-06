@@ -397,3 +397,14 @@
 - Adjusted multi-line code block CSS
 - Adjusted BetterDiscord theme/plugin list CSS
 - Fixed emote picker custom emotes
+
+##VERSION 3.0.0
+(Release: Upcoming)
+####GENERAL:
+- Theme not automatically loads the newest version from github
+
+####CSS:
+- Added user popout dev mark hover CSS
+- Fixed settings input CSS
+- Fixed discriminator position
+- Fixed bot tag position
