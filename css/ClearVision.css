@@ -5322,7 +5322,7 @@ pre:hover .copybutton {
 	margin: 10px 6px 10px 20px;
 }
 .messages .divider-red + .divider {
-	opacity: 0;
+	margin-top: 40px;
 }
 .chat .divider::before {
 	background-color: transparent !important;
