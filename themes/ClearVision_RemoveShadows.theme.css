@@ -1,18 +1,7 @@
-//META{"name":"ClearVision_Remove_Shadows","description":"Removes shadows behind avatars in ClearVision themes, by @Zerthox","author":"Zerthox","version":"2.0"}*//
-/* "ClearVision Remove Shadows v1.1" by @Zerthox */
+//META{"name":"ClearVision_Remove_Shadows","description":"Removes shadows behind avatars in ClearVision themes, by @Zerthox","author":"Zerthox","version":"2"}*//
+/* "ClearVision Remove Shadows v2" by @Zerthox */
 /* Removes Shadows behind avatars & guilds */
 
 /* IMPORTANT: Enable after having your ClearVision theme active! */
 
-.avatar-small    {
-    box-shadow: none !important;
-}
-.avatar-large {
-    box-shadow: none !important;
-}
-.icon-friends {
-    box-shadow: none !important;
-}
-.guilds-wrapper .guilds .guild .guild-inner {
-    box-shadow: none !important;
-}
+@import url("https://rawgit.com/Zerthox/ClearVision/master/css/RemoveShadows.css");
