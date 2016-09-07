@@ -398,8 +398,8 @@
 - Adjusted BetterDiscord theme/plugin list CSS
 - Fixed emote picker custom emotes
 
-##VERSION 3.0.0
-(Release: Upcoming)
+##VERSION 3.0.0 & 3.0.1
+(Release: 07/09/2016)
 ####GENERAL:
 - Theme not automatically loads the newest version from github
 - Updated theme description
