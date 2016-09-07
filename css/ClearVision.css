@@ -1,4 +1,4 @@
-/* "ClearVision CSS v3.0.0" by @Zerthox */
+/* "ClearVision CSS v3.0.1" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
         _\////////////_____\///________\///__\/////////////____
 */
 .account::after {
-    content: "ClearVision v3.0.0";
+    content: "ClearVision v3.0.1";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -27,6 +27,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
 }
 body {
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 body::after {
     content: "";
@@ -312,6 +313,15 @@ body::after {
     font-size: 15px;
     top: 5%;
     right: -5%;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.avatar-popout[style*='144881947557101568/d57a09b8841dcb42a21b0a3f12c8c2a1']:hover::after {
+	color: #fff;
+    font-size: 20px;
+    padding: 5px 4px;
+    top: 2.5%;
+    right: -10%;
 }
 .guild-settings-modal-members .avatar-small[style*='144881947557101568/d57a09b8841dcb42a21b0a3f12c8c2a1'] + .member-inner .member-username::after {
     font-size: 10px;
@@ -670,6 +680,10 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .theme-dark .chat .welcome-message a {
     color: var(--main-color);
 }
+.chat .welcome-message a:hover,
+.theme-dark .chat .welcome-message a:hover {
+    text-shadow: 0 0 1px;
+}
 #settings-roles .roles li.selected {
     background: none;
 }
@@ -787,7 +801,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     background: none;
 }
 .form hr {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 .user-popout .user-popout-options .btn.btn-server {
     color: #fff;
@@ -1131,12 +1145,6 @@ textarea {
 .private-channels .search-bar input {
     background: rgba(0, 0, 0, 0.4) !important;
 }
-.search-bar-clear::before {
-    background: rgba(100, 100, 100, .7);
-}
-.search-bar-clear {
-    background: transparent;
-}
 .btn-hamburger {
     margin-right: -25px;
 }
@@ -1469,6 +1477,13 @@ textarea {
     padding: 0px 0px 0px 5px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+.form .control-group input[type=email],
+.form .control-group input[type=password],
+.form .control-group input[type=text],
+.form .control-group textarea {
+    border-bottom: 2px solid transparent;
+	margin-bottom: 0 !important;
 }
 .form .control-group input[type=email]:focus,
 .form .control-group input[type=password]:focus,
@@ -2241,10 +2256,13 @@ img.image {
 .emoji-picker .dimmer {
     background-color: transparent;
 }
+.emoji-picker .header .search-bar {
+    background-color: transparent !important;
+}
 .emoji-picker .search-bar input {
     background-color: rgba(0, 0, 0, 0.55);
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid transparent;
 }
 .emoji-picker .sticky-header {
     background-color: transparent;
@@ -2416,9 +2434,11 @@ form.auth-form {
     color: #B4B5B5;
 }
 .emoji-picker {
+	width: 346px;
+	height: 327px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.55);
-    border: 1px solid hsla(0, 0%, 0%, 0.31);
+    border: none;
     box-shadow: none;
 }
 .emoji-picker .search-bar {
@@ -2454,30 +2474,24 @@ form.auth-form {
     color: hsla(0, 0%, 100%, 0.5);
 }
 .emoji-picker .category {
+	height: 21px;
     color: #BBBBBB;
     background-color: rgba(0, 0, 0, .3) !important;
     border-radius: 2px;
+	text-align: center;
+	color: var(--main-color);
+    font-size: 11px;
+	font-weight: 700;
+	line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+.emoji-picker .sticky-header .category {
+	background: rgba(0, 0, 0, 0.5) !important;
 }
 .item:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
-}
-.emoji-picker .search-bar-clear {
-    background: transparent;
-}
-.emoji-picker .search-bar-clear::before {
-    background: transparent !important;
-    box-shadow: 0 0 0 2px rgba(100, 100, 100, .7), 0 0 0 1px rgba(100, 100, 100, .7) inset;
-}
-.emoji-picker .search-bar-clear::after {
-    background: rgba(100, 100, 100, .7);
-}
-.search-bar-clear::after {
-    background: rgba(100, 100, 100, .7);
-}
-.emoji-picker .search-bar-clear.active::after,
-.emoji-picker .search-bar-clear.active::before {
-    background: rgb(28, 28, 28);
 }
 .emoji-picker .no-search-results .sad-discord {
     opacity: 0.6;
@@ -2527,10 +2541,6 @@ form.auth-form {
 .user-popout .header {
     background: var(--main-color);
 }
-.user-popout .avatar-wrapper .avatar-popout {
-    border: 4px solid var(--hover-color);
-    background-color: var(--hover-color);
-}
 .user-popout .body {
     background: #000;
     padding-bottom: 10px;
@@ -2540,8 +2550,8 @@ form.auth-form {
     border-top: 2px var(--main-color) solid;
 }
 .user-popout .footer .quick-message-wrapper .quick-message {
-    border: 1px solid #1D1D1D;
-    background: #131212;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .5);
     color: #fff;
 }
 .theme-dark.context-menu .item:hover {
@@ -2854,14 +2864,21 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
 .guild-channels .channel-text:not(.selected):hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
-.private-channels .channel.selected::before {
+.private-channels .channel.selected::before,
+#voice-debug-modal #users-section .user-list li.selected::before {
     border-left: 4px solid var(--main-color);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.private-channels .channel:not(.selected):hover::before {
+.private-channels .channel:not(.selected):hover::before,
+#voice-debug-modal #users-section .user-list li:hover::before {
     border-left: 4px solid var(--hover-color);
     opacity: .25;
+}
+#voice-debug-modal #users-section .user-list li:hover::before,
+#voice-debug-modal #users-section .user-list li.selected::before {
+	height: 100%;
+	width: 0;
 }
 .guilds-wrapper .guilds .guild.active:first-of-type .guild-inner {
     background: var(--main-color) !important;
@@ -2910,11 +2927,13 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
 .guild-channels ul .channel.selected,
 .private-channels .channel.selected,
 .private-channels .search-result.selected,
-.private-channels .search-result:hover {
+.private-channels .search-result:hover,
+#voice-debug-modal #users-section .user-list li:hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 85%, transparent) !important;
 }
 .guild-channels ul .channel:not(.selected):hover,
-.private-channels .channel:not(.selected):hover {
+.private-channels .channel:not(.selected):hover,
+#voice-debug-modal #users-section .user-list li.selected {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
 .guilds-wrapper .guilds .guild.selected::before,
@@ -3189,17 +3208,11 @@ div#bd-pub-button:hover {
 .user-popout .avatar-wrapper .avatar-popout {
     border: none;
     background-color: transparent;
-}
-.user-popout .avatar-wrapper {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 .guild-inner .guild-name,
 .guild-inner .guild-nick {
     margin-left: 5px;
-}
-.user-popout .footer .quick-message-wrapper .quick-message {
-    background: rgba(0, 0, 0, .5);
 }
 #permissions .permission-actions>div.PASSTHROUGH:hover {
     border-color: #51555F;
@@ -3365,6 +3378,9 @@ div#bd-pub-button:hover {
     transition: -webkit-transform .1s ease-in-out;
     transition: transform .1s ease-in-out;
     transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
 }
 .channel-members .member:active {
     -webkit-transform: scale(.9);
@@ -3686,82 +3702,6 @@ button:active {
     background-color: rgba(0, 0, 0, .75);
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 10px;
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item {
-    padding-left: 50px;
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item::after {
-    position: absolute;
-    left: 15px;
-    padding: 0px;
-    margin: 0px;
-    margin-top: -3px;
-    opacity: .3;
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:hover::after,
-.user-settings-modal .tab-bar.SIDE .tab-bar-item.selected::after,
-#bd-settings-new:hover::after,
-#bd-settings-new.selected::after,
-.change-log-button-container:hover::after {
-    opacity: 1;
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/wifi.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after,
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/place.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg);
-}
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after,
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg);
-}
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg);
-}
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg);
-}
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg);
-}
-#bd-settings-new::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/discordlogo.png);
-    position: absolute;
-    left: 15px;
-    padding: 0px;
-    margin: 0px;
-    margin-top: -3px;
-    opacity: .3;
 }
 .themed-popout {
     background-color: rgba(0, 0, 0, .5) !important;
@@ -4718,91 +4658,6 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 #searchBarInner>.buttonClose:last-child {
     margin: 0 5px 0 10px;
 }
-.change-log-button-container {
-    border: none !important;
-    -webkit-transition: all 0s;
-    transition: all 0s;
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    cursor: pointer;
-    margin: 0;
-}
-.change-log-button-container:hover {
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
-}
-.change-log-button-container:active {
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 85%, transparent) !important;
-}
-.change-log-button-container .change-log-button {
-    width: 100%;
-    height: 100%;
-    color: hsla(0, 0%, 100%, .3) !important;
-    font-size: 14px;
-    line-height: 1.25em;
-    text-decoration: none;
-    font-weight: 500;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding: 8px 6px 10px 50px;
-    opacity: 1;
-}
-.change-log-button-container:hover .change-log-button {
-    color: #fff !important;
-}
-.change-log-button-container .change-log-button:hover {
-    text-shadow: none;
-}
-.change-log-button-container .change-log-button:active {
-    -webkit-transform: none;
-    transform: none;
-}
-.change-log-button-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-left: none;
-    opacity: 0;
-    pointer-events: none;
-}
-.change-log-button-container:hover::before {
-    border: 2px solid var(--main-color) !important;
-    opacity: .25;
-    -webkit-transition: all 0s;
-    transition: all 0s;
-    opacity: .3;
-}
-.change-log-button-container:active::before {
-    border: 2px solid var(--main-color) !important;
-    opacity: 1;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.change-log-button-container::after {
-    content: "";
-    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 15px;
-    width: 24px;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: .3;
-    pointer-events: none;
-}
 .account .discriminator {
     color: #fff !important;
     border: none !important;
@@ -5106,7 +4961,7 @@ pre:hover .copybutton {
     background-size: 18px;
 }
 .private-channel-call .speaking {
-    border-color: var(--main-color);
+    border-color: var(--main-color) !important;
     box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.5) !important;
 }
 .chat .private-channel-call {
@@ -5288,9 +5143,6 @@ pre:hover .copybutton {
 .theme-dark .system-message-content a {
     color: var(--main-color) !important;
 }
-.system-message-content a:hover {
-    color: var(--hover-color) !important;
-}
 .messages-popout .message-group .sink-interactions.clickable,
 .messages-popout .message-group .avatar-large,
 .messages-popout .message-group h2 {
@@ -5327,9 +5179,14 @@ pre:hover .copybutton {
 .chat .divider::before {
 	background-color: transparent !important;
 }
+#voice-debug-modal #users-section .user-list {
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* USER POPOUT ROLES */
 .user-popout .body .roles .member-roles {
-    max-height: 218px;
-	overflow: scroll;
+    max-height: 230px;
+	overflow-y: auto;
 }
 .user-popout .body .roles .member-roles::-webkit-scrollbar  {
 	width: 14px;
@@ -5337,6 +5194,32 @@ pre:hover .copybutton {
 .user-popout .body .roles .member-roles::-webkit-scrollbar-thumb  {
 	background-clip: padding-box;
 	border: 3px solid transparent;
+}
+.user-popout .body .roles .member-roles::-webkit-scrollbar-thumb,
+.user-popout .body .roles .member-roles::-webkit-scrollbar-track-piece,
+.user-popout .body .roles .member-roles::-webkit-scrollbar-thumb,
+.user-popout .body .roles .member-roles::-webkit-scrollbar-track-piece {
+	visibility: hidden;
+}
+.user-popout .body .roles .member-roles:hover::-webkit-scrollbar-thumb,
+.user-popout .body .roles .member-roles:hover::-webkit-scrollbar-track-piece,
+.user-popout .body .roles .member-roles:hover::-webkit-scrollbar-thumb,
+.user-popout .body .roles .member-roles:hover::-webkit-scrollbar-track-piece {
+	visibility: visible;
+}
+
+/* SEARCH BAR CLEAR BUTTON */
+.search-bar-clear,
+.emoji-picker .search-bar-clear {
+    background: transparent;
+}
+.emoji-picker .search-bar-clear::before,
+.emoji-picker .search-bar-clear::after,
+.search-bar-clear::after,
+.search-bar-clear::before,
+.emoji-picker .search-bar-clear.active::after,
+.emoji-picker .search-bar-clear.active::before {
+    background: rgba(100, 100, 100, .7);
 }
 
 /* FRIENDS PAGE */
@@ -5348,8 +5231,9 @@ pre:hover .copybutton {
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-green {
     background-color: var(--main-color);
 }
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-green:hover {
-    background-color: var(--hover-color);
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-green:hover,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover {
+    background-color: var(--hover-color) !important;
 }
 #friends .friends-table .friend-table-add-wrapper .friend-table-add-header,
 .theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
@@ -5409,11 +5293,28 @@ pre:hover .copybutton {
     background-position: center;
     background-size: 24px;
 }
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore {
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-call {
+	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/call.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+#friends .friends-table .friends-row .discord-tag .discriminator {
+	visibility: visible !important;
+	opacity: 0;
+}
+#friends .friends-table .friends-row:hover .discriminator {
+	opacity: 1;
+}
+#friends .friends-table .friends-column-name {
+    width: 250px;
 }
 
 /* DETECTED ACCOUNTS MODAL */
@@ -5506,7 +5407,6 @@ pre:hover .copybutton {
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after {
 	-webkit-transform: none !important; 
     transform: none !important;
-}
 }
 
 /* CONNECTION SETTINGS */
@@ -5807,8 +5707,10 @@ ul.bda-slist {
     color: #777;
 }
 #user-profile-modal .header .discord-tag,
-#user-profile-modal .header .discord-tag .discriminator {
+#user-profile-modal .header .discord-tag .discriminator,
+#user-profile-modal .header .discord-tag .bot-tag.bot-tag-invert {
     line-height: 19px;
+	vertical-align: middle;
 }
 #user-profile-modal .guilds .section+.section {
 	border-top: 1px solid rgba(0, 0, 0, 0.4);
@@ -5888,6 +5790,163 @@ ul.bda-slist {
 	color: #d98026 !important;
 }
 
+/* SETTINGS TAB BAR */
+.user-settings-modal .tab-bar.SIDE .tab-bar-item {
+    padding-left: 50px;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item::after {
+    position: absolute;
+    left: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -3px;
+    opacity: .3;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:hover::after,
+.user-settings-modal .tab-bar.SIDE .tab-bar-item.selected::after,
+#bd-settings-new:hover::after,
+#bd-settings-new.selected::after,
+.change-log-button-container:hover::after {
+    opacity: 1;
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/wifi.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after,
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/place.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after,
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg);
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg);
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg);
+}
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg);
+}
+#bd-settings-new::after {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/42bf9ad71835f8e75ebf7fbdd4fe7018ffbaa003/icons/betterdiscord.svg);
+}
+.change-log-button-container {
+    border: none !important;
+    -webkit-transition: all 0s;
+    transition: all 0s;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin: 0;
+}
+.change-log-button-container:hover {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
+}
+.change-log-button-container:active {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 85%, transparent) !important;
+}
+.change-log-button-container .change-log-button {
+    width: 100%;
+    height: 100%;
+    color: hsla(0, 0%, 100%, .3) !important;
+    font-size: 14px;
+    line-height: 1.25em;
+    text-decoration: none;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 8px 6px 10px 50px;
+    opacity: 1;
+}
+.change-log-button-container:hover .change-log-button {
+    color: #fff !important;
+}
+.change-log-button-container .change-log-button:hover {
+    text-shadow: none;
+}
+.change-log-button-container .change-log-button:active {
+    -webkit-transform: none;
+    transform: none;
+}
+.change-log-button-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-left: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.change-log-button-container:hover::before {
+    border: 2px solid var(--main-color) !important;
+    opacity: .25;
+    -webkit-transition: all 0s;
+    transition: all 0s;
+    opacity: .3;
+}
+.change-log-button-container:active::before {
+    border: 2px solid var(--main-color) !important;
+    opacity: 1;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.change-log-button-container::after {
+    content: "";
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    width: 24px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: .3;
+    pointer-events: none;
+}
+
 /* APPEARANCE SETTINGS */
 .radio-theme.dark label {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--background-image) !important;
@@ -5927,14 +5986,16 @@ ul.bda-slist {
 }
 .theme-light .guild-channels ul .channel:not(.selected):hover,
 .theme-light .private-channels .channel:not(.selected):hover,
-.theme-light .guild-channels .channel-text:not(.selected):hover {
+.theme-light .guild-channels .channel-text:not(.selected):hover,
+.theme-light #voice-debug-modal #users-section .user-list li:hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 85%, transparent) !important;
 }
 .theme-light .guild-channels ul .channel.selected,
 .theme-light .private-channels .channel.selected,
 .theme-light .private-channels .search-result.selected,
 .theme-light .private-channels .search-result:hover,
-.theme-light .guild-channels .channel-text.selected {
+.theme-light .guild-channels .channel-text.selected,
+.theme-light #voice-debug-modal #users-section .user-list li.selected {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
 .theme-light .content .flex-spacer,
@@ -5947,7 +6008,9 @@ ul.bda-slist {
 .theme-light .channel-members h2,
 .theme-light .guild-header ul,
 .theme-light .user-popout .body ,
-.theme-light .user-popout .footer{
+.theme-light .user-popout .footer,
+.theme-light .account .btn-group,
+.theme-light #voice-connection .btn-group {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 .theme-light .channels-wrap,
@@ -5977,4 +6040,7 @@ ul.bda-slist {
 .theme-light #friends .friends-table .friends-row .friends-column-name,
 .theme-light #friends .friends-table .friends-row .friends-column-status {
 	color: hsla(0, 0%, 100%, .5);
+}
+.theme-light .message-group:not(.has-divider) {
+    border-bottom-color: rgba(255, 255, 255, .04);
 }
