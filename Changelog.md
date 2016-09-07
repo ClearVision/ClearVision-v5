@@ -411,6 +411,7 @@
 - Added friend list discriminator transition
 - Changed BetterDiscord settings tab icon
 - Adjusted friend list name column width
+- Fixed voice debug modal CSS
 - Fixed settings input CSS
 - Fixed discriminator position
 - Fixed bot tag position
