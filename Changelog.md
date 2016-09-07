@@ -407,6 +407,11 @@
 
 ####CSS:
 - Added user popout dev mark hover CSS
+- Added friend list button icons
+- Added friend list discriminator transition
+- Changed BetterDiscord settings tab icon
+- Adjusted friend list name column width
 - Fixed settings input CSS
 - Fixed discriminator position
 - Fixed bot tag position
+- Minor adjustements & fixes
