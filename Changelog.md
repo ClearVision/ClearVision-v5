@@ -416,3 +416,9 @@
 - Fixed discriminator position
 - Fixed bot tag position
 - Minor adjustements & fixes
+
+##VERSION 3.0.2
+(Release: Upcoming)
+####CSS:
+- Added broken image CSS
+- Fixed custom css editor selection
