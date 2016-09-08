@@ -398,7 +398,7 @@
 - Adjusted BetterDiscord theme/plugin list CSS
 - Fixed emote picker custom emotes
 
-##VERSION 3.0.0 & 3.0.1
+##VERSION 3.0.0
 (Release: 07/09/2016)
 ####GENERAL:
 - Theme now automatically loads the newest version from github
@@ -406,15 +406,23 @@
 - Added links to theme description
 
 ####CSS:
-- Added user popout dev mark hover CSS
 - Added friend list button icons
 - Added friend list discriminator transition
 - Changed BetterDiscord settings tab icon
 - Adjusted friend list name column width
-- Fixed voice debug modal CSS
-- Fixed settings input CSS
 - Fixed discriminator position
 - Fixed bot tag position
+- Minor adjustements & fixes
+
+##VERSION 3.0.1
+(Release: 07/09/2016)
+####CSS:
+- Added user popout dev mark hover CSS
+- Adjusted member roles overflow
+- Adjusted emoji picker category CSS
+- Fixed settings input CSS
+- Fixed voice debug modal CSS
+- Fixed bot tag & discriminator issues
 - Minor adjustements & fixes
 
 ##VERSION 3.0.2
