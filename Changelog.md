@@ -430,3 +430,4 @@
 ####CSS:
 - Added broken image CSS
 - Fixed custom css editor selection
+- Fixed issues with BetterDiscord Minimal Mode
