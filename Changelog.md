@@ -430,6 +430,7 @@
 ####CSS:
 - Added keyboard shorcut modal CSS
 - Added broken image CSS
+- Fixed emoji picker diversity selector CSS
 - Fixed emoji picker dimmer CSS
 - Fixed custom css editor selection
 - Fixed issues with BetterDiscord Minimal Mode
