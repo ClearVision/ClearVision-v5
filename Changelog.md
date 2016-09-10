@@ -431,6 +431,7 @@
 - Added keyboard shorcut modal CSS
 - Added broken image CSS
 - Added role add button icon
+- Adjusted friend list border colors
 - Fixed emoji picker diversity selector CSS
 - Fixed emoji picker dimmer CSS
 - Fixed custom css editor selection
