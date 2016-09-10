@@ -4,7 +4,7 @@ Join for *update notifications* and *theme support*!
 **Instant Invite:** https://discord.gg/FtYVPky
 
 #Customization
-The `:root` is located at the top of the `.theme.css` file.
+The `:root` is located in the `.theme.css` file.
 - Change both color values to change the color scheme
 - Change the image link to change the background
 ```css
