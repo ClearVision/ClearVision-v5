@@ -434,3 +434,4 @@
 - Fixed emoji picker dimmer CSS
 - Fixed custom css editor selection
 - Fixed issues with BetterDiscord Minimal Mode
+- Minor adjustements & fixes
