@@ -445,3 +445,4 @@
 ####CSS:
 - Fixed voice debug selected list CSS
 - Fixed broken image CSS
+- Fixed pin & mention popout issues
