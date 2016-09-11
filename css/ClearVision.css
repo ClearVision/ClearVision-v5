@@ -1,4 +1,4 @@
-/* "ClearVision CSS v3.0.1" by @Zerthox */
+/* "ClearVision CSS v3.0.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ __/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
         _\////////////_____\///________\///__\/////////////____
 */
 .account::after {
-    content: "ClearVision v3.0.1";
+    content: "ClearVision v3.0.2";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -398,7 +398,7 @@ _______/\\\\\___________________________________________________________________
 }
 .need-help-modal .footer {
     background-color: rgba(0, 0, 0, 0.88);
-    border-top: 1px solid #1D1F23;
+    border-top: none;
 }
 .need-help-modal .header {
     background-color: var(--main-color);
@@ -654,9 +654,6 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .instant-invite-popout a:hover {
     color: var(--hover-color);
 }
-.clipboard-input-inner input::selection {
-    background: var(--main-color);
-}
 .clipboard-input-inner button {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(0, 0, 0, 0.8);
@@ -672,7 +669,12 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .clipboard-input-inner button:first-of-type::before {
     background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.79));
 }
-::selection {
+::selection,
+.clipboard-input-inner input::selection,
+.CodeMirror-focused .CodeMirror-selected,
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
     color: #fff;
     background: var(--main-color);
 }
@@ -1269,7 +1271,7 @@ textarea {
 }
 .channel-textarea-inner {
     border: 2px solid rgba(255, 255, 255, 0.1) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 .typing {
     font-size: 11px;
@@ -1331,9 +1333,6 @@ textarea {
 }
 .tooltip {
     color: #e0e0e0;
-}
-.bd-minimal .guilds {
-    padding-left: 10px !important;
 }
 .bd-minimal .guilds .friends-icon {
     background-size: 60%;
@@ -2189,12 +2188,18 @@ img.image {
 .guild-header ul li:hover a {
     background-color: hsla(0, 0%, 0%, 0.78);
 }
+.markdown-modal .markdown-modal-header,
 .markdown-modal .markdown-modal-footer {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-top: 1px solid #1A1E1F;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
 }
 .markdown-modal .markdown-modal-header {
-    border-bottom: 1px solid #0F0F0F;
+	margin: 0;
+	padding: 28px 20px 28px;
+	border-radius: 5px 5px 0 0;
+}
+.markdown-modal .markdown-modal-header .markdown-modal-close {
+	margin-top: 28px;
 }
 .header-toolbar button.active,
 .theme-dark .header-toolbar button.active {
@@ -2303,7 +2308,7 @@ img.image {
     border-radius: 4px;
 }
 .markdown-modal {
-    background-color: rgba(0, 0, 0, 0.79);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #A3A3A3;
 }
 .form .control-group .Select.is-disabled .Select-control:hover,
@@ -2377,7 +2382,7 @@ img.image {
 .chat .has-more button,
 .theme-dark .chat .has-more button {
     background: rgba(0, 0, 0, 0.52);
-    border: 1px solid #000000;
+    border: none;
 }
 .streamer-mode-enabled .streamer-mode-enabled-btn {
     background-color: rgba(100, 61, 167, 0.41);
@@ -2405,9 +2410,6 @@ form.auth-form {
 #friends .friends-header .tab-bar .tab-bar-item.selected {
     background-color: var(--main-color);
     color: #fff;
-}
-#friends .friends-table .friends-table-header .friends-column-separator {
-    background-color: rgba(0, 0, 0, 0.54);
 }
 #friends .friends-empty p {
     color: rgba(195, 195, 195, 0.4);
@@ -2444,13 +2446,16 @@ form.auth-form {
 .emoji-picker .search-bar {
     background-color: transparent;
 }
-.diversity-selector .popout {
-    background: rgba(23, 23, 23, 0.82);
+.diversity-selector .popout,
+.emoji-picker .diversity-selector .popout,
+.bda-dark .emoji-picker .diversity-selector .popout {
+    background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.7);
 }
-.emoji-picker .dimmer.visible {
+.emoji-picker .dimmer.visible,
+.bda-dark .emoji-picker .dimmer.visible {
     pointer-events: auto;
-    background-color: hsla(0, 0%, 0%, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 #friends .friends-header,
 .theme-dark #friends .friends-header {
@@ -2459,11 +2464,11 @@ form.auth-form {
 }
 #friends .friends-table .friends-table-header,
 .theme-dark #friends .friends-table .friends-table-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 #friends .friends-table .friends-table-header .friends-column-separator,
 .theme-dark #friends .friends-table .friends-table-header .friends-column-separator {
-    background-color: rgba(0, 0, 0, 0.54);
+    background-color: rgba(255, 255, 255, 0.04);
 }
 #friends .friends-table .friends-table-header .friends-column,
 .theme-dark #friends .friends-table .friends-table-header .friends-column {
@@ -2702,7 +2707,7 @@ a[data-reactid*=".0.1.1.0.1.0.0.1.3.0"] {
     border-radius: 3px;
 }
 #bd-pane .scroller-wrap div[style*="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bottom:0; left:0; right:0;"] {
-    background: rgba(0, 0, 0, .95) !important;
+    background: rgba(0, 0, 0, .75) !important;
 }
 .markup:not([style*="color: color: rgba(255, 255, 255, 0.8);"]) {
     color: #B1B1B1;
@@ -2751,7 +2756,7 @@ ul.bda-slist {
     box-shadow: none;
 }
 #friends .friends-table .friends-row+.friends-row {
-    border-top: 1px solid hsla(0, 0%, 0%, 0.5) !important;
+    border-top: 1px solid rgba(255,255,255,.04) !important;
 }
 .guild-channels header span {
     text-align: center;
@@ -3286,8 +3291,8 @@ div#bd-pub-button:hover {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.diversity-selector .item:hover {
-    background: var(--main-color);
+.diversity-selector .popout .item:hover {
+    background-color: var(--main-color);
 }
 .chat .title-wrap .topic .highlight:hover {
     background-color: var(--hover-color) !important;
@@ -3298,9 +3303,6 @@ div#bd-pub-button:hover {
     color: #fff !important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-}
-#friends .friends-header .tab-bar .tab-bar-item.selected .badge {
-    background-color: var(--hover-color) !important;
 }
 .user-popout .header.streaming {
     background-color: transparent;
@@ -3651,6 +3653,12 @@ button:active {
     border-radius: 3px;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
+}
+.bd-minimal .guilds-wrapper .guilds-add::before {
+    height: 10px;
+}
+.bd-minimal .guilds-wrapper .guilds-add::after {
+    width: 10px;
 }
 .guilds-wrapper .guilds-add:hover::before,
 .guilds-wrapper .guilds-add:hover::after {
@@ -4182,18 +4190,13 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     background-position: center;
     background-size: 24px;
 }
-.header-toolbar button:nth-child(5) span,
-#friends .header-toolbar button:nth-child(3) span,
-.private .channel-group-dm + .header-toolbar button:nth-child(7) span {
+.header-toolbar button:nth-last-of-type(2) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mail.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
-.header-toolbar button:nth-child(6) span,
-#friends .header-toolbar button:nth-child(4) span,
-.private .header-toolbar button:nth-child(4) span,
-.private .channel-group-dm + .header-toolbar button:nth-child(8) span {
+.header-toolbar button:last-of-type span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/help.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -4214,6 +4217,12 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 .private .header-toolbar button:nth-child(3) span,
 .private .channel-group-dm + .header-toolbar button:nth-child(5) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person_add.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+.header-toolbar .auto-update.auto-update-checking span {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/refresh.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
@@ -4478,6 +4487,9 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     color: #fff;
     border: none;
 }
+.need-help-modal .header input[type=text] {
+    border: none;
+}
 .need-help-modal .header input[type=text]:focus {
     background-color: rgba(0, 0, 0, .5);
     border: none;
@@ -4612,9 +4624,6 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 .bd-dropdown.open .bd-dropdown-list ul {
     height: 250px;
 }
-#bd-wn-modal .markdown-modal .markdown-modal-header {
-    padding: 0 0 28px;
-}
 #bd-wn-modal .markdown-modal h2,
 #bd-wn-modal .markdown-modal strong,
 #bd-wn-modal .markdown-modal span {
@@ -4631,7 +4640,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 .change-log .footer {
     background-color: rgba(0, 0, 0, .3);
-    border-top: 1px solid #1A1E1F;
+    border: none;
     padding: 14px 28px;
     position: relative;
 }
@@ -5182,6 +5191,93 @@ pre:hover .copybutton {
 #voice-debug-modal #users-section .user-list {
 	border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
+.member-roles .member-role.member-role-add button {
+	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: 170%;
+    opacity: .3;
+    -webkit-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+}
+.member-roles .member-role.member-role-add:hover button {
+	opacity: .7;
+}
+#voice-connection .btn-group .btn-info {
+	color: var(--main-color) !important;
+}
+.chat .private-channel-call .btn-icon,
+.theme-dark .chat .private-channel-call .btn-icon {
+	background: rgba(0, 0, 0, .3);
+}
+.chat .private-channel-call .btn-icon:hover,
+.theme-dark .chat .private-channel-call .btn-icon:hover {
+	background: rgba(0, 0, 0, .5);
+}
+.chat .private-channel-call .btn-icon::after,
+.theme-dark .chat .private-channel-call .btn-icon::after {
+	opacity: .7;
+}
+.chat .private-channel-call .btn-icon:hover::after,
+.theme-dark .chat .private-channel-call .btn-icon:hover::after {
+	opacity: 1;
+}
+
+/* KEYBOARD SHORTCUT MODAL */
+.keyboard-shortcuts-modal {
+	background-color: rgba(0, 0, 0, 0.83 );
+}
+.keyboard-shortcuts-modal .modal-title,
+.keyboard-shortcuts-modal .modal-subtitle,
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .keybind-description,
+.keybind-shortcut {
+	color: hsla(0, 0%, 100%, 0.7);
+}
+.keyboard-shortcuts-modal .ddr-arrows {
+	display: none;
+}
+.keybind-shortcut span {
+	border-color: var(--main-color);
+	-webkit-box-shadow: inset 0 -4px 0 var(--hover-color);
+	box-shadow: inset 0 -4px 0 var(--hover-color);
+}
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .bind-arrow {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/arrow_down.svg);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .bind-arrow.up {
+	-webkit-transform: rotate(180deg) scale(1.3);
+	transform: rotate(180deg) scale(1.3);
+}
+
+/* BROKEN IMAGE */
+img:after { 
+    content: attr(alt);
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+    background-color: #222;
+    border: 2px dashed rgba(0, 0, 0, .3);
+	box-sizing: border-box;
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 13px;
+    text-align: left;
+    line-height: 20px;
+    border-radius: 3px;
+    margin-top: -2px;
+    padding-top: 2px;;
+    text-indent: 22px;
+}
+img::before {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/broken_image.svg);
+	position: absolute;
+    top: -1px;
+    left: 1px;
+    z-index: 1;
+    opacity: .7;
+}
 
 /* USER POPOUT ROLES */
 .user-popout .body .roles .member-roles {
@@ -5260,7 +5356,7 @@ pre:hover .copybutton {
 	background-color: var(--main-color);
 	color: #fff;
 }
-#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected .badge {
+#friends .friends-header .tab-bar .tab-bar-item.selected .badge {
 	color: var(--main-color) !important;
 	background-color: #fff !important;
 	-webkit-transition: all .3s ease-in-out;
@@ -5284,7 +5380,8 @@ pre:hover .copybutton {
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
 	background-color: var(--hover-color);
 }
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover {
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
 	background-color: var(--hover-color) !important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add {
@@ -5410,6 +5507,9 @@ pre:hover .copybutton {
 }
 
 /* CONNECTION SETTINGS */
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list {
+	box-shadow: 0 -1px hsla(0, 0%, 100%, .04);
+}
 .connection .checkbox .checkbox-inner {
 	background-color: transparent;
 }
@@ -5423,6 +5523,14 @@ pre:hover .copybutton {
 }
 .connection .checkbox .checkbox-inner input[type=checkbox]:checked + span::after {
     margin-left: -20px !important;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-header .btn-delete {
+	transition: all .1s ease-in-out;
+	mix-blend-mode: screen;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-header .btn-delete:hover {
+    color: #000;
+    background: #fff;
 }
 
 /* SCROLLBAR */
