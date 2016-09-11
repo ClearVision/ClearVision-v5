@@ -426,7 +426,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.0.2
-(Release: Upcoming)
+(Release: 11/09/2016)
 ####CSS:
 - Added keyboard shorcut modal CSS
 - Added broken image CSS
