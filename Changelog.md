@@ -439,3 +439,9 @@
 - Fixed issues with BetterDiscord Minimal Mode
 - Fixed issues with friend page buttons
 - Minor adjustements & fixes
+
+##VERSION 3.0.3
+(Release: Upcoming)
+####CSS:
+- Fixed voice debug selected list CSS
+- Fixed broken image CSS
