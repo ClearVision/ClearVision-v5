@@ -445,6 +445,8 @@
 ####CSS:
 - Added context menu animation
 - Added user popout animation
+- Adjusted titlebar topic link CSS
+- Adjusted titlebar topic highlight CSS
 - Fixed voice debug selected list CSS
 - Fixed broken image CSS
 - Fixed pin & mention popout issues
