@@ -443,6 +443,8 @@
 ##VERSION 3.0.3
 (Release: Upcoming)
 ####CSS:
+- Added context menu animation
+- Added user popout animation
 - Fixed voice debug selected list CSS
 - Fixed broken image CSS
 - Fixed pin & mention popout issues
