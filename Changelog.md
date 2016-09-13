@@ -447,6 +447,7 @@
 - Added user popout animation
 - Added file upload button icon
 - Added file icons (chat & modal)
+- Added progress bar CSS
 - Adjusted titlebar topic link CSS
 - Adjusted titlebar topic highlight CSS
 - Fixed voice debug selected list CSS
