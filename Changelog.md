@@ -446,9 +446,10 @@
 - Added context menu animation
 - Added user popout animation
 - Added file upload button icon
-- Added file icons
+- Added file icons (chat & modal)
 - Adjusted titlebar topic link CSS
 - Adjusted titlebar topic highlight CSS
 - Fixed voice debug selected list CSS
 - Fixed broken image CSS
 - Fixed pin & mention popout issues
+- Minor adjustements & fixes
