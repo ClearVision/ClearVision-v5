@@ -445,6 +445,8 @@
 ####CSS:
 - Added context menu animation
 - Added user popout animation
+- Added file upload button icon
+- Added file icons
 - Adjusted titlebar topic link CSS
 - Adjusted titlebar topic highlight CSS
 - Fixed voice debug selected list CSS
