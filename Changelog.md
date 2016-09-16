@@ -441,7 +441,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.0.3
-(Release: Upcoming)
+(Release: 16/09/16)
 ####CSS:
 - Added context menu animation
 - Added user popout animation
