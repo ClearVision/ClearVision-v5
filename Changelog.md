@@ -454,3 +454,9 @@
 - Fixed broken image CSS
 - Fixed pin & mention popout issues
 - Minor adjustements & fixes
+
+##VERSION 3.0.4
+(Release: Upcoming)
+###CSS:
+- Adjusted list seperator CSS
+- Fixed voice debug modal CSS
