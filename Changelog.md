@@ -460,3 +460,4 @@
 ###CSS:
 - Adjusted list seperator CSS
 - Fixed voice debug modal CSS
+- Fixed search bar clear button CSS
