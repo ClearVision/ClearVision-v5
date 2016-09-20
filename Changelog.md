@@ -459,5 +459,7 @@
 (Release: Upcoming)
 ###CSS:
 - Adjusted list seperator CSS
+- Fixes for light version
 - Fixed voice debug modal CSS
 - Fixed search bar clear button CSS
+- Minor adjustements & fixes
