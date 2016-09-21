@@ -460,6 +460,7 @@
 ###CSS:
 - Adjusted seperator colors
 - Fixes for light version
+- Fixes for message popouts
 - Fixed voice debug modal CSS
 - Fixed search bar clear button CSS
 - Minor adjustements & fixes
