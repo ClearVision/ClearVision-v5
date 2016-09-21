@@ -458,7 +458,7 @@
 ##VERSION 3.0.4
 (Release: Upcoming)
 ###CSS:
-- Adjusted list seperator CSS
+- Adjusted seperator colors
 - Fixes for light version
 - Fixed voice debug modal CSS
 - Fixed search bar clear button CSS
