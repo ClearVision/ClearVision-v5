@@ -458,6 +458,7 @@
 ##VERSION 3.0.4
 (Release: Upcoming)
 ###CSS:
+- Adjusted dev mark CSS
 - Adjusted seperator colors
 - Adjusted popout backgrounds for better readability
 - Fixes for light version
