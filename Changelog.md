@@ -458,6 +458,7 @@
 ##VERSION 3.0.4
 (Release: Upcoming)
 ###CSS:
+- Added context menu item sub menu animation 
 - Adjusted dev mark CSS
 - Adjusted seperator colors
 - Adjusted popout backgrounds for better readability
