@@ -459,6 +459,7 @@
 (Release: Upcoming)
 ###CSS:
 - Adjusted seperator colors
+- Adjusted popout backgrounds for better readability
 - Fixes for light version
 - Fixes for message popouts
 - Fixed voice debug modal CSS
