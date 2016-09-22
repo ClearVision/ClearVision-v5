@@ -466,4 +466,5 @@
 - Fixes for message popouts
 - Fixed voice debug modal CSS
 - Fixed search bar clear button CSS
+- Fixed chat bot tag color
 - Minor adjustements & fixes
