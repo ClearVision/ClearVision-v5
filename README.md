@@ -4,16 +4,7 @@ Join for *update notifications* and *theme support*!
 **Instant Invite:** https://discord.gg/FtYVPky
 
 #Customization
-The `:root` is located in the `.theme.css` file.
-- Change both color values to change the color scheme
-- Change the image link to change the background
-```css
-:root {
-	--main-color: #2780e6;
-	--hover-color: #1e63b3;
-	--background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/sapphire.jpg);
-}
-```
+Visit the Wiki page to learn more about customization: [ClearVision Wiki](https://github.com/Zerthox/ClearVision/wiki)
 
 #Previews
 ##ClearVision - Amber
