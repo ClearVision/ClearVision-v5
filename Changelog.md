@@ -456,7 +456,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.0.4
-(Release: Upcoming)
+(Release: 24/09/16)
 ###CSS:
 - Added context menu item sub menu animation 
 - Adjusted dev mark CSS
