@@ -468,3 +468,8 @@
 - Fixed search bar clear button CSS
 - Fixed chat bot tag color
 - Minor adjustements & fixes
+
+##VERSION 3.0.5
+(Release: Upcoming)
+###CSS:
+- Fixed an issue with user names in chat
