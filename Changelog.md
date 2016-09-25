@@ -472,4 +472,5 @@
 ##VERSION 3.0.5
 (Release: Upcoming)
 ###CSS:
+- Made message edit boxes scrollable
 - Fixed an issue with user names in chat
