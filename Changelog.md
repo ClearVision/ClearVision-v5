@@ -459,6 +459,7 @@
 (Release: 24/09/16)
 ###CSS:
 - Added context menu item sub menu animation 
+- Added account avatar hover animation
 - Adjusted dev mark CSS
 - Adjusted seperator colors
 - Adjusted popout backgrounds for better readability
@@ -473,4 +474,5 @@
 (Release: Upcoming)
 ###CSS:
 - Made message edit boxes scrollable
+- Fixed account avatar hover animation
 - Fixed an issue with user names in chat
