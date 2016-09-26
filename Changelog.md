@@ -473,6 +473,6 @@
 ##VERSION 3.0.5
 (Release: Upcoming)
 ###CSS:
-- Made message edit boxes scrollable
+- Made channel textarea & message edit boxes scrollable
 - Fixed account avatar hover animation
 - Fixed an issue with user names in chat
