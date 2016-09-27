@@ -475,7 +475,9 @@
 ###CSS:
 - Made channel textarea & message edit boxes scrollable
 - Added popout menu CSS
+- Added status picker menu CSS
 - Added channel notice CSS
 - Added instant invite modal CSS
 - Fixed account avatar hover animation
+- Fixed issues with account avatar hover animation & account discriminator hover animation
 - Fixed an issue with user names in chat
