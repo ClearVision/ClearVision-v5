@@ -473,7 +473,7 @@
 ##VERSION 3.1.0
 (Release: Upcoming)
 ###GENERAL:
-- Better support for webkit browser
+- Better support for webkit browsers
 
 ###CSS:
 - Made channel textarea & message edit boxes scrollable
