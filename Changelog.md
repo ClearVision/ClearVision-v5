@@ -477,12 +477,13 @@
 - Removed unnecessary CSS
 
 ###CSS:
-- Made channel textarea & message edit boxes scrollable
+- Added guild settings tab bar icons
 - Added popout menu CSS
 - Added status picker menu CSS
 - Added channel notice CSS
 - Added instant invite modal CSS
 - Added new messages indicator CSS
+- Made channel textarea & message edit boxes scrollable
 - Adjusted more seperator colors
 - Adjusted status dot shadows
 - Fixed account avatar hover animation
