@@ -483,6 +483,7 @@
 - Added channel notice CSS
 - Added instant invite modal CSS
 - Added new messages indicator CSS
+- Adjusted more seperator colors
 - Adjusted status dot shadows
 - Fixed account avatar hover animation
 - Fixed issues with account avatar hover animation & account discriminator hover animation
