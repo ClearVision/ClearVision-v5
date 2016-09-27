@@ -474,6 +474,7 @@
 (Release: Upcoming)
 ###GENERAL:
 - Better support for webkit browsers
+- Removed unnecessary CSS
 
 ###CSS:
 - Made channel textarea & message edit boxes scrollable
@@ -486,4 +487,3 @@
 - Fixed issues with account avatar hover animation & account discriminator hover animation
 - Fixed an issue with user names in chat
 - Minor adjustements & fixes
-- Removed unnecessary CSS parts
