@@ -470,9 +470,12 @@
 - Fixed chat bot tag color
 - Minor adjustements & fixes
 
-##VERSION 3.0.5
+##VERSION 3.1.0
 (Release: Upcoming)
 ###CSS:
 - Made channel textarea & message edit boxes scrollable
+- Added popout menu CSS
+- Added channel notice CSS
+- Added instant invite modal CSS
 - Fixed account avatar hover animation
 - Fixed an issue with user names in chat
