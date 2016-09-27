@@ -474,6 +474,7 @@
 (Release: Upcoming)
 ###GENERAL:
 - Better support for webkit browser
+
 ###CSS:
 - Made channel textarea & message edit boxes scrollable
 - Added popout menu CSS
