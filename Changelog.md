@@ -483,6 +483,7 @@
 - Added channel notice CSS
 - Added instant invite modal CSS
 - Added new messages indicator CSS
+- Updated CSS syntax highlighting
 - Made channel textarea & message edit boxes scrollable
 - Adjusted more seperator colors
 - Adjusted status dot shadows
