@@ -1,20 +1,20 @@
-/* "ClearVision CSS v3.0.4" by @Zerthox */
+/* "ClearVision CSS v3.1.0" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
 /*
-__/\\\\\\\\\\\\_______/\\\\\\\\\______/\\\\\\\\\\\\\___
- _\/\\\////////\\\___/\\\///////\\\___\/\\\/////////\\\_
-  _\/\\\______\//\\\_\/\\\_____\/\\\___\/\\\_______\/\\\_
-   _\/\\\_______\/\\\_\/\\\\\\\\\\\/____\/\\\\\\\\\\\\\\__
-    _\/\\\_______\/\\\_\/\\\//////\\\____\/\\\/////////\\\_
-     _\/\\\_______\/\\\_\/\\\____\//\\\___\/\\\_______\/\\\_
-      _\/\\\_______/\\\__\/\\\_____\//\\\__\/\\\_______\/\\\_
-       _\/\\\\\\\\\\\\/___\/\\\______\//\\\_\/\\\\\\\\\\\\\/__
-        _\////////////_____\///________\///__\/////////////____
+________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\________/\\\______________________________________________________
+ _____/\\\////////__\////\\\________________________________________________\/\\\_______\/\\\______________________________________________________
+  ___/\\\/______________\/\\\________________________________________________\//\\\______/\\\___/\\\_______________/\\\_____________________________
+   __/\\\________________\/\\\________/\\\\\\\\___/\\\\\\\\\_____/\\/\\\\\\\___\//\\\____/\\\___\///___/\\\\\\\\\\_\///______/\\\\\_____/\\/\\\\\\___
+    _\/\\\________________\/\\\______/\\\/////\\\_\////////\\\___\/\\\/////\\\___\//\\\__/\\\_____/\\\_\/\\\//////___/\\\___/\\\///\\\__\/\\\////\\\__
+     _\//\\\_______________\/\\\_____/\\\\\\\\\\\____/\\\\\\\\\\__\/\\\___\///_____\//\\\/\\\_____\/\\\_\/\\\\\\\\\\_\/\\\__/\\\__\//\\\_\/\\\__\//\\\_
+      __\///\\\_____________\/\\\____\//\\///////____/\\\/////\\\__\/\\\_____________\//\\\\\______\/\\\_\////////\\\_\/\\\_\//\\\__/\\\__\/\\\___\/\\\_
+       ____\////\\\\\\\\\__/\\\\\\\\\__\//\\\\\\\\\\_\//\\\\\\\\/\\_\/\\\______________\//\\\_______\/\\\__/\\\\\\\\\\_\/\\\__\///\\\\\/___\/\\\___\/\\\_
+        _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v3.0.4";
+    content: "ClearVision v3.1.0";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -318,6 +318,7 @@ body::after {
     font-size: 15px;
     top: 5%;
     right: -15%;
+	z-index: 2;
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
@@ -359,13 +360,13 @@ _______/\\\\\___________________________________________________________________
     background: transparent !important;
 }
 .callout-backdrop {
-    background-color: #000 !important;
-    background-image: var(--background-image) !important;
+    background-color: #000;
+    background-image: var(--background-image);
+	background-size: cover;
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    background-size: cover !important;
 }
 .Select-control {
     background: rgba(0, 0, 0, 0.62);
@@ -429,10 +430,11 @@ _______/\\\\\___________________________________________________________________
     color: #ABAAAA;
 }
 .channel-notification-settings {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .04);
 }
 .notification-settings-modal .notification-settings-modal-channel-settings-list {
-    box-shadow: 0 -1px var(--main-color);
+    -webkit-box-shadow: 0 -1px hsla(0, 0%, 100%, .04);
+    box-shadow: 0 -1px hsla(0, 0%, 100%, .04);
 }
 .chat .new-messages-bar button {
     border-radius: 5px;
@@ -485,6 +487,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     background-color: var(--main-color);
     cursor: pointer;
     border: 2px solid var(--main-color);
+    -webkit-box-shadow: inset 0 0 0 2px #2e3136;
     box-shadow: inset 0 0 0 2px #2e3136;
 }
 #unsupported-browser li:hover {
@@ -526,6 +529,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .tooltip {
     position: absolute;
     background-color: var(--main-color);
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
     border-radius: 3px;
     font-weight: 600;
@@ -568,6 +572,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: #fff;
 }
 .need-help-modal .header input[type=text] {
+    -webkit-box-shadow: 0 2px 1px var(--main-color);
     box-shadow: 0 2px 1px var(--main-color);
 }
 .change-log {
@@ -620,12 +625,11 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 #voice-connection-popout hr {
     border: 1px solid #4C4C4C;
 }
-.small-popout-box {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid transparent;
+.option-popout .btn-item {
+    color: #919191;
 }
 .option-popout .btn-item:hover {
-    color: #BBBBBB;
+    color: #bbb;
 }
 .member-roles .member-role {
     background-color: var(--main-color);
@@ -766,7 +770,8 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 }
 .guild-settings-modal-integrations .guild-settings-modal-integrations-header {
     color: #CCCCCC;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.47);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p {
@@ -1077,6 +1082,7 @@ textarea {
 }
 .guilds-wrapper {
     background: rgba(0, 0, 0, 0.6) !important;
+    -webkit-box-shadow: inset -10px 0px 20px -10px rgba(0, 0, 0, 0.2);
     box-shadow: inset -10px 0px 20px -10px rgba(0, 0, 0, 0.2);
 }
 .channels-wrap {
@@ -1089,18 +1095,9 @@ textarea {
 .channel-members {
     background: rgba(0, 0, 0, 0.9) !important
 }
-.guild-header ul {
-    background: rgba(0, 0, 0, 0.52) !important;
-    transition: all .3s ease-in-out !important;
-    opacity: 0;
-}
-.guild-header-open ul {
-    padding-top: 56px;
-    margin-top: -56px;
-    opacity: 1;
-}
 .guild-header header {
     background: transparent !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     color: #ddd;
 }
@@ -1168,11 +1165,9 @@ textarea {
     position: relative;
     margin-bottom: 3px;
 }
-.account .status {
-    border: 2px solid rgba(0, 0, 0, 1);
-}
 .account .btn {
     background: transparent;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 .account .btn:active {
@@ -1188,6 +1183,7 @@ textarea {
 }
 #voice-connection .btn {
     background: rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 #voice-connection .btn:active {
@@ -1195,11 +1191,8 @@ textarea {
 }
 .account .btn-deafen,
 .account .btn-settings {
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
-}
-.account .btn-group,
-#voice-connection .btn-group {
-    border: none;
 }
 .title-wrap {
     border-bottom: 1px solid transparent !important;
@@ -1477,12 +1470,7 @@ textarea {
     padding: 0px 0px 0px 5px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-}
-.form .control-group input[type=email],
-.form .control-group input[type=password],
-.form .control-group input[type=text],
-.form .control-group textarea {
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .04);
 	margin-bottom: 0 !important;
 }
 .form .control-group input[type=email]:focus,
@@ -1500,7 +1488,7 @@ textarea {
 }
 .region-select button {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.28);
+    border-color: rgba(0, 0, 0, 0.28);
     color: var(--main-color);
 }
 .region-select:hover .region-select-inner,
@@ -1518,6 +1506,7 @@ textarea {
     border: none;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 .form .form-actions {
@@ -1583,6 +1572,7 @@ a:link {
     border-top: transparent;
 }
 .user-settings-modal-connections .user-settings-modal-connections-list {
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.37);
     box-shadow: 0 -1px rgba(0, 0, 0, 0.37);
 }
 .tab-bar.TOP .tab-bar-item.selected {
@@ -1610,7 +1600,7 @@ a:link {
 }
 .guild-settings-modal-members .member-buttons .btn {
     background: var(--main-color);
-    border: 1px solid var(--main-color);
+    border: 1px solid transparent;
     color: #EFEFEF;
 }
 .guild-settings-modal-members .member-buttons .btn.btn-danger:hover {
@@ -1801,10 +1791,6 @@ a:link {
         right: 0;
     }
 }
-.header-toolbar button[data-reactid=".0.1.1.0.2.0.4.0:0"]:hover {
-    animation: swing 4s infinite linear;
-    -webkit-animation: swing 4s infinite linear;
-}
 @-webkit-keyframes load8 {
     0% {
         -webkit-transform: rotate(0deg);
@@ -1823,6 +1809,26 @@ a:link {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes load8-active {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.9);
+        transform: rotate(0deg) scale(0.9);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.9);
+        transform: rotate(360deg) scale(0.9);
+    }
+}
+@keyframes load8-active {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.9);
+        transform: rotate(0deg) scale(0.9);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.9);
+        transform: rotate(360deg) scale(0.9);
     }
 }
 .account .btn-settings:hover::after {
@@ -1935,17 +1941,6 @@ a:link {
 .chat .has-more button {
     color: var(--main-color);
 }
-.theme-dark #friends .friends-table .friends-table-header .friends-column[data-reactid*=".0.1.1.0.2.1.0.6"]::after {
-    content: "Actions";
-    color: hsla(0, 0%, 100%, 0.5);
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: .025em;
-    font-weight: 600;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
-    margin-left: 60px;
-}
 .friends-table .messages .message-group .comment .markup pre,
 .messages-wrapper .messages .message-group .comment .markup pre,
 .theme-dark .friends-table .messages .message-group .comment .markup pre,
@@ -2003,10 +1998,11 @@ a:link {
     background: rgba(0, 0, 0, 0.19) !important;
     font-weight: 700 !important;
     padding: 3px;
-    -webkit-transition: all 0.3s ease-in-out !important;
-    -moz-transition: all 0.3s ease-in-out !important;
-    -o-transition: all 0.3s ease-in-out !important;
-    -ms-transition: all 0.3s ease-in-out !important;
+    -webkit-transition: all 0.1s ease-in-out !important;
+    -moz-transition: all 0.1s ease-in-out !important;
+    -o-transition: all 0.1s ease-in-out !important;
+    -ms-transition: all 0.1s ease-in-out !important;
+    transition: all 0.1s ease-in-out !important;
 }
 .discriminator:hover {
     background: rgba(0, 0, 0, 0.32) !important;
@@ -2066,12 +2062,15 @@ div.control-group .shortcut-recorder input[type=text] {
 }
 @keyframes input-pulse {
     0% {
+        -webkit-box-shadow: 0 0 0 0 var(--main-color);
         box-shadow: 0 0 0 0 var(--main-color);
     }
     70% {
+        -webkit-box-shadow: 0 0 10px 10px transparent;
         box-shadow: 0 0 10px 10px transparent;
     }
     to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent;
     }
 }
@@ -2110,10 +2109,8 @@ div.control-group .shortcut-recorder input[type=text] {
     -webkit-transform: translateZ(0px);
     transform: translateZ(0px);
 }
-.offline {
-    background-color: #982929;
-}
-.status-offline {
+.dnd,
+.status-dnd {
     background-color: #982929;
 }
 img.image {
@@ -2121,6 +2118,7 @@ img.image {
 }
 #voice-connection .btn {
     background: rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border-radius: 40px;
 }
@@ -2128,6 +2126,7 @@ img.image {
 .account .btn-mute,
 .account .btn-settings {
     background: rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border-radius: 40px;
 }
@@ -2185,9 +2184,6 @@ img.image {
     100% {
         transform: scale(1);
     }
-}
-.guild-header ul li:hover a {
-    background-color: hsla(0, 0%, 0%, 0.78);
 }
 .markdown-modal .markdown-modal-header,
 .markdown-modal .markdown-modal-footer {
@@ -2406,6 +2402,7 @@ form.auth-form {
 }
 #friends .friends-header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 #friends .friends-header .tab-bar .tab-bar-item.selected {
@@ -2439,6 +2436,7 @@ form.auth-form {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.55);
     border: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .emoji-picker .search-bar {
@@ -2507,7 +2505,8 @@ form.auth-form {
 .theme-dark.context-menu,
 .context-menu {
     background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
 	cursor: pointer;
 }
 .form .control-group label a {
@@ -2525,6 +2524,7 @@ form.auth-form {
 .theme-dark.context-menu .context-menu {
     background: rgba(0, 0, 0, 0.6);
 	border-color: transparent;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
 }
 .theme-dark.context-menu .item-group {
@@ -2546,8 +2546,16 @@ form.auth-form {
     background: rgba(0, 0, 0, .5);
     color: #fff;
 }
+.user-popout .avatar-wrapper .avatar-hint {
+	margin: 0;
+}
+.user-popout .avatar-wrapper .avatar-popout .status {
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
 .theme-dark.context-menu .item:hover {
     background: rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
     box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
     cursor: pointer;
 }
@@ -2599,6 +2607,7 @@ form.auth-form {
 }
 .form .is-focused:not(.is-open)>.Select-control {
     border: 1px solid #000;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .private-channels .channel .channel-game strong {
@@ -2629,52 +2638,12 @@ button.win-minimize:hover {
     background-color: var(--main-color);
     border-radius: 3px;
 }
-.header-toolbar button+button[data-reactid=".0.1.1.0.2.0.3.0:1"] {
-    background-color: var(--main-color);
-    opacity: 0.8;
-}
 .tipsy-inner {
     border-radius: 3px;
 }
 .bda-slist .checkbox {
     margin-left: 18px;
     margin-top: 0px;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.1.0"] {
-    background-color: var(--main-color);
-    border-radius: 3px;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.1.0"]:hover {
-    background-color: var(--main-color) !important;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.0.0"] {
-    background-color: var(--main-color);
-    border-radius: 3px;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.0.0"]:hover {
-    background-color: var(--main-color) !important;
-}
-.guild-header ul a.red-highlight:hover {
-    background-color: #A93D3D !important;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.2.0"]:hover {
-    background-color: var(--main-color) !important;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.2.0"] {
-    background-color: var(--main-color);
-    border-radius: 3px;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.3.0"]:hover {
-    background-color: var(--main-color) !important;
-}
-a[data-reactid*=".0.1.1.0.1.0.0.1.3.0"] {
-    background-color: var(--main-color);
-    border-radius: 3px;
-}
-.guild-header ul a.red-highlight {
-    color: #fff;
-    background-color: #A93D3D;
-    border-radius: 3px;
 }
 .channel-members .member .member-activity strong {
     font-weight: 900;
@@ -2735,6 +2704,7 @@ ul.bda-slist {
     color: #D0D0D0;
 }
 .chat>.title-wrap {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 #friends .friends-table .friends-row+.friends-row {
@@ -2789,12 +2759,6 @@ ul.bda-slist {
 .user-settings-locale .select-item .primary {
     font-size: 15px;
     color: #AEAEAE !important;
-}
-span[data-reactid=".0.5.$=1$UserSettingsModal.0.0.1.0.$LOCALE.0.1:1.0.1.$0.0"] {
-    color: #CDCDCD;
-}
-span[data-reactid=".0.5.$=1$UserSettingsModal.0.0.1.0.$LOCALE.0.1:1.0.1.$1.0"] {
-    color: #CDCDCD;
 }
 .user-popout .username-wrapper.has-nickname .discriminator,
 .user-popout .username-wrapper.has-nickname .username {
@@ -2966,13 +2930,8 @@ div#bd-pub-button:hover {
 }
 .private-channels .status {
     border: none !important;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-    margin-bottom: 2px;
-    margin-right: 2px;
-}
-.account .status {
-    border: none !important;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 2px;
     margin-right: 2px;
 }
@@ -2984,11 +2943,6 @@ div#bd-pub-button:hover {
 }
 #voice-connection .btn-group {
     margin-right: -10px;
-}
-.guild-header ul a {
-    opacity: .7;
-	-webkit-transition: all .1s ease-in-out;
-	transition: all .1s ease-in-out;
 }
 #friends .friends-header .tab-bar .tab-bar-item.selected {
     background-color: var(--main-color) !important;
@@ -3033,22 +2987,21 @@ div#bd-pub-button:hover {
 }
 .channel-members .avatar-small .status {
     border: 0px solid transparent !important;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 2px;
     margin-right: 2px;
 }
-.avatar-small {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-}
-.avatar-large {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-}
+.avatar-small,
+.avatar-large,
 .icon-friends {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .guilds-wrapper .guilds .guild .guild-inner {
     background-color: rgba(0, 0, 0, 0.5) !important;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
@@ -3112,6 +3065,7 @@ div#bd-pub-button:hover {
     transition: all .3s ease-in-out;
 }
 #pubs-sterm:focus {
+    -webkit-box-shadow: 0 0 0 1px var(--main-color) inset;
     box-shadow: 0 0 0 1px var(--main-color) inset;
 }
 .server-pinned {
@@ -3186,7 +3140,8 @@ div#bd-pub-button:hover {
 .user-popout .avatar-wrapper .avatar-popout {
     border: none;
     background-color: transparent;
-	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .guild-inner .guild-name,
 .guild-inner .guild-nick {
@@ -3197,12 +3152,14 @@ div#bd-pub-button:hover {
 }
 .badge {
     background-color: var(--main-color);
+    -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-animation: unread 1s infinite alternate;
     animation: unread 1s infinite alternate;
 }
 .search-bar {
     background-color: rgba(0, 0, 0, 0.7) !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 .search-bar input {
@@ -3212,9 +3169,6 @@ div#bd-pub-button:hover {
 }
 .search-bar input:focus {
     border-color: var(--main-color);
-}
-.search-bar input:active {
-    box-shadow: 0 0 1px 0 var(--main-color) inset;
 }
 .bda-dark #bda-qem,
 #bda-qem {
@@ -3241,6 +3195,7 @@ div#bd-pub-button:hover {
 #bda-qem button {
     background: transparent !important;
     border: none !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     color: #fff;
     -webkit-transition: all .3s ease-in-out;
@@ -3255,10 +3210,6 @@ div#bd-pub-button:hover {
 .bda-dark .emoji-picker .scroller .emoji-item.selected,
 .emoji-picker .scroller .emoji-item.selected {
     background-color: var(--main-color) !important;
-}
-.bda-dark .emoji-picker .scroller .category[name*="custom"] + .row .emoji-item.selected,
-.emoji-picker .scroller .category[name*="custom"] + .row .emoji-item.selected {
-    background-size: 28px;
 }
 .diversity-selector .item {
     -webkit-transition: all .3s ease-in-out;
@@ -3308,6 +3259,7 @@ div#bd-pub-button:hover {
 }
 .radio .radio-inner {
     background-color: rgba(0, 0, 0, .44);
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
@@ -3317,6 +3269,7 @@ div#bd-pub-button:hover {
     transform: scale(.8);
 }
 .radio .radio-inner span::after {
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
 }
 .tab-bar.SIDE .tab-bar-item {
@@ -3451,11 +3404,16 @@ button:active {
     transition: all .1s ease-in-out;
     border-radius: 0px;
 }
+.account .btn-group {
+	position: absolute;
+	right: 4px;
+}
 .account .btn-group,
 #voice-connection .btn-group {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, .3);
     height: 32px;
+	border: none;
 }
 #voice-connection .btn-info::after {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg) !important;
@@ -3709,6 +3667,7 @@ button:active {
 }
 .messages-popout-wrap .messages-popout .message-group:hover .action-buttons {
     background-color: transparent !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button {
@@ -4248,10 +4207,12 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     transition: box-shadow .1s ease-in-out, text-shadow .1s ease-in-out;
 }
 .member-roles .member-role:hover {
+    -webkit-box-shadow: 0 0 1px;
     box-shadow: 0 0 1px;
     text-shadow: 0 0 1px;
 }
 .member-roles .member-role:not([style]):hover {
+    -webkit-box-shadow: 0 0 1px var(--hover-color);
     box-shadow: 0 0 1px var(--hover-color);
 }
 .user-popout .body,
@@ -4304,6 +4265,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 #rmenu {
     background: rgba(0, 0, 0, .7);
     color: #ddd;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5);
     box-shadow: 0 0 2px rgba(0, 0, 0, .5);
     border-radius: 3px;
     -webkit-transition: all .1s ease-in-out;
@@ -4473,6 +4435,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 .header-toolbar .toolbar-badge {
     background-color: var(--main-color);
     border: none;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-top: 2px;
     margin-left: 2px;
@@ -4487,23 +4450,29 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 @-webkit-keyframes shortcut-recorder-pulse {
     0% {
+        -webkit-box-shadow: 0 0 0 0 var(--main-color);
         box-shadow: 0 0 0 0 var(--main-color);
     }
     70% {
+        -webkit-box-shadow: 0 0 10px 10px transparent;
         box-shadow: 0 0 10px 10px transparent;
     }
     to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent;
     }
 }
 @keyframes shortcut-recorder-pulse {
     0% {
+        -webkit-box-shadow: 0 0 0 0 var(--main-color);
         box-shadow: 0 0 0 0 var(--main-color);
     }
     70% {
+        -webkit-box-shadow: 0 0 10px 10px transparent;
         box-shadow: 0 0 10px 10px transparent;
     }
     to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent;
     }
 }
@@ -4649,6 +4618,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     opacity: .3 !important;
 }
 .account .discriminator:hover {
+	background: transparent !important;
     opacity: .7 !important;
 }
 .settings-wrapper:not(.user-settings-modal-connections),
@@ -4679,6 +4649,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 .settings-connections-wrapper .authed-app {
     background: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-color: transparent;
 }
@@ -4838,6 +4809,7 @@ pre:hover .copybutton {
 }
 .search-bar-tag {
     background: transparent !important;
+    -webkit-box-shadow: 0 0 1px #000;
     box-shadow: 0 0 1px #000;
 }
 .private-channel-recipients-invite .footer button {
@@ -4941,6 +4913,7 @@ pre:hover .copybutton {
 }
 .private-channel-call .speaking {
     border-color: var(--main-color) !important;
+    -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.5) !important;
     box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.5) !important;
 }
 .chat .private-channel-call {
@@ -4968,7 +4941,8 @@ pre:hover .copybutton {
     background-color: var(--main-color);
     border: none;
     margin: 4px;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .incoming-call .options .option .icon {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/call.svg) !important;
@@ -5047,6 +5021,7 @@ pre:hover .copybutton {
 }
 .channel-textarea-inner textarea:focus + .channel-textarea-emoji::after {
     border-color: var(--main-color);
+    -webkit-box-shadow: 0 0 3px var(--main-color);
     box-shadow: 0 0 3px var(--main-color);
 }
 .clipboard-input-inner button:active {
@@ -5130,7 +5105,8 @@ pre:hover .copybutton {
     -webkit-transition: all .1 ease-in-out;
     transition: all .1 ease-in-out
 }
-.notice .notice-dismiss {
+.notice .notice-dismissm
+.channel-notices .channel-notice .close {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -5215,19 +5191,259 @@ ul.bda-slist {
 .messages-popout-wrap .messages-popout .channel-separator .guild-name {
     color: rgba(255,255,255,.3);
 }
+.channel-textarea .channel-textarea-inner textarea {
+	overflow-y: auto !important;
+}
+.guild-settings-modal-security {
+	background: none;
+}
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a,
+.protip .tip a,
+.guild-settings-modal-security .control-group .help-text a {
+	color: var(--main-color);
+}
+
+/* NEW MESSAGES INDICATOR */
+.new-messages-indicator.new-messages-indicator-mention {
+	background-color: var(--main-color);
+}
+.new-messages-indicator .icon.icon-unread-arrow {
+	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/arrow_down.svg);
+}
+
+/* EMOJI GUILD SETTINGS PAGE */
+.guild-settings-modal-emoji .guild-settings-modal-emoji-header h6 {
+	color: #D0D0D0;
+}
+.guild-settings-modal-emoji .guild-settings-modal-emoji-header p {
+	color: #B6BBC1;
+}
+.guild-settings-modal-emoji .no-emoji p {
+	color: hsla(0, 0%, 100%, .2);
+}
+.guild-settings-modal-emoji .guild-settings-modal-emoji-header {
+	border-bottom-color: hsla(0, 0%, 100%, .04);
+}
+.guild-settings-modal-emoji .no-emoji img {
+	-webkit-filter: grayscale(1);
+}
+.guild-settings-modal-emoji .emoji-row {
+	border-color: hsla(0, 0%, 100%, .04);
+}
+.guild-settings-modal-emoji .emoji-row .emoji-name {
+	background-color: rgba(0, 0, 0, .3) !important;
+	border-color: transparent !important;
+	color: #D0D0D0 !important;
+}
+.guild-settings-modal-emoji .emoji-row .emoji-name:focus {
+	border-color: var(--main-color) !important;
+}
+.guild-settings-modal .emoji-row .btn.btn-danger,
+.guild-settings-modal .member-buttons .btn.btn-danger {
+	background-color: var(--main-color);
+	border-color: transparent;
+	color: #fff;
+}
+.guild-settings-modal .emoji-row .btn.btn-danger:hover,
+.guild-settings-modal .member-buttons .btn.btn-danger:hover {
+	background-color: var(--hover-color);
+}
+	
+/* ACCOUNT AVATAR & STATUS */
 .account .avatar-small {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	-webkit-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
 }
-.account .avatar-small:hover {
+.account .avatar-small:hover,
+.account .avatar-small.popout-open {
 	width: 50px;
 	height: 50px;
+	opacity: 1;
+}
+.account .avatar-small::after {
+	content: "Status";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	border-radius: 50%;
+	-webkit-box-shadow: inset 0 0 70px rgba(0,0,0,.75);
+    box-shadow: inset 0 0 70px rgba(0,0,0,.75);
+	opacity: 0;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+.account .avatar-small:hover::after {
+	opacity: 1;
+}
+.account .avatar-small:hover::after,
+.account .avatar-small.popout-open::after {
+	font-size: 10px;
+	line-height: 50px;
+}
+.account .status {
+    border: none !important;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    top: calc(90% - 6.5px);
+    left: calc(90% - 6.5px);
+	z-index: 2;
+}
+
+/* POPOUT MENU & STATUS PICKER */
+.popout.popout-bottom, .popout.popout-bottom-right,
+.popout-menu {
+	margin-top: -58px;
+    padding: 58px 2px 0;
+}
+.popout.popout-bottom, .popout.popout-bottom-right {
+    z-index: 1;
+}
+.popout-menu {
+    background: rgba(0, 0, 0, 0.7);
+}
+.popout-menu .popout-menu-item {
+    color: #ddd !important;
+	margin: 3px;
+    padding: 7px 11px;
+    border-radius: 3px;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+.popout-menu .popout-menu-item:hover {
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popout-menu .popout-menu-item.invite {
+    background-color: var(--hover-color);
+}
+.popout-menu .popout-menu-item.invite:hover {
+    background-color: var(--main-color);
+}
+.popout-menu .popout-menu-item.leave {
+	background-color: #a93d3d;
+}
+.popout-menu .popout-menu-item.leave:hover {
+	background-color: #f04747;
+}
+.popout-menu .popout-menu-icon {
+    display: none;
+}
+.popout-menu .popout-menu-separator {
+    border-color: hsla(0, 0%, 100%, .2);
+}
+.status-picker .popout-menu-item .helper {
+	color: rgba(170, 170, 170, .8);
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+.status-picker .popout-menu-item:hover .helper {
+	color: rgba(170, 170, 170, 1);
+}
+
+/* CHANNEL NOTICE */
+.channel-notices .channel-notice.invite {
+    background: rgba(0, 0, 0, .52);
+    padding: 20px;
+}
+.channel-notices .channel-notice .message {
+    color: #fff;
+}
+.channel-notices .channel-notice .message .btn {
+    background-color: var(--main-color);
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 10px 0;
+    transition: all .3s ease-in-out;
+}
+.channel-notices .channel-notice .message .btn:hover {
+    background-color: var(--hover-color);
+}
+.channel-notices .channel-notice .close {
+	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.channel-notices .channel-notice .close:hover {
+    opacity: .7;
+}
+
+/* INSTANT INVITE MENU */
+.instant-invite-modal {
+    background: transparent;
+}
+#instant-invite-modal .form-actions {
+    background: rgba(0, 0, 0,.85);
+}
+#instant-invite-modal .form-header header {
+	color: var(--main-color);
+}
+#instant-invite-modal .clipboard-input-inner input {
+    color: var(--main-color);
+	font-size: 20px;
+}
+#instant-invite-modal .blurb {
+	color: #C7C7C7;
+}
+#instant-invite-modal .expire-text {
+    color: #7f7f7f;
+}
+#instant-invite-modal .copy {
+    color: transparent;
+    background-color: rgba(0, 0, 0, .8);
+}
+#instant-invite-modal .form-actions .advanced {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/settings.svg) !important;
+    background-size: 100%;
+    opacity: .3;
+}
+#instant-invite-modal .form-actions .advanced:hover {
+    -webkit-animation: load8 2.8s infinite linear;
+    animation: load8 2.8s infinite linear;
+    opacity: .7;
+}
+#instant-invite-modal .form-actions .advanced:active {
+    -webkit-animation: load8-active 2.8s infinite linear;
+    animation: load8-active 2.8s infinite linear;
+}
+#instant-invite-modal-advanced .form-actions {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-top: 1px solid transparent;
+}
+#instant-invite-modal-advanced .form-actions .btn {
+    height: 35.5px;
+    line-height: 18px;
+}
+#instant-invite-modal-advanced .form-actions .btn-default {
+    color: #949494;
+    background-color: rgba(0, 0, 0, 0.77);
+    padding: 10px !important;
+    border-radius: 3px;
+    border-bottom: none;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#instant-invite-modal-advanced .form-actions .btn-default:hover {
+	color: #fff;
+}
+#instant-invite-modal-advanced .form-actions {
+    padding: 18px 20px;
 }
 
 /* LINK HOVER CSS */
 .highlight:hover,
+.chat .user-name:hover,
 .chat .username-wrapper:hover .user-name,
 .chat > .content .messages .message-group .markup .highlight:hover,
 .chat .title-wrap .topic a:hover,
@@ -5240,7 +5456,9 @@ ul.bda-slist {
 .alert.form .form-inner .btn-close-forever:hover,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a:hover,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
-.theme-dark .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover {
+.theme-dark .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
+.protip .tip a:hover,
+.guild-settings-modal-security .control-group .help-text a:hover {
     text-decoration: none;
     text-shadow: 0 0 1px;
 }
@@ -5563,6 +5781,7 @@ img::before {
     height: 18px !important;
     border: none !important;
     border-radius: 100% !important;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
     display: table;
     -webkit-transition: all .2s ease-in-out;
@@ -5586,6 +5805,7 @@ img::before {
     background-color: var(--main-color) !important;
 }
 .checkbox .checkbox-inner.alt {
+    -webkit-box-shadow: 0 0 .3px 1px rgba(0, 0, 0, .3);
     box-shadow: 0 0 .3px 1px rgba(0, 0, 0, .3);
 }
 .checkbox .checkbox-inner+span {
@@ -5767,6 +5987,9 @@ img::before {
 .bda-slist .scroller::-webkit-scrollbar-track-piece {
 	border-radius: 7px !important;
 }
+.channel-textarea .channel-textarea-inner textarea::-webkit-scrollbar {
+	display: none;
+}
 
 /* USER PROFILE MODAL */
 #user-profile-modal .scroller {
@@ -5814,23 +6037,29 @@ img::before {
 }
 @-webkit-keyframes friend-request-pulse {
     0% {
+        -webkit-box-shadow: 0 0 0 0 var(--main-color);
         box-shadow: 0 0 0 0 var(--main-color);
     }
     70% {
+        -webkit-box-shadow: 0 0 10px 10px transparent;
         box-shadow: 0 0 10px 10px transparent;
     }
     to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent;
     }
 }
 @keyframes friend-request-pulse {
     0% {
+        -webkit-box-shadow: 0 0 0 0 var(--main-color);
         box-shadow: 0 0 0 0 var(--main-color);
     }
     70% {
+        -webkit-box-shadow: 0 0 10px 10px transparent;
         box-shadow: 0 0 10px 10px transparent;
     }
     to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
         box-shadow: 0 0 0 0 transparent;
     }
 }
@@ -5842,7 +6071,8 @@ img::before {
     background: var(--main-color);
 }
 #user-profile-modal .avatar-profile .status {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 #user-profile-modal footer .btn.add-friend {
     background: var(--main-color);
@@ -5871,6 +6101,7 @@ img::before {
     transform: scale(1.1);
 }
 #user-profile-modal .avatar-profile {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border: none !important;
     margin-top: 4px;
@@ -5881,6 +6112,7 @@ img::before {
     background-color: transparent;
 }
 #user-profile-modal .guilds .guild .status {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border: none !important;
     bottom: 0px;
@@ -5956,13 +6188,17 @@ img::before {
     color: #2626d9 !important;
 }
 .css .hljs-class,
-.css .hljs-important {
+.css .hljs-selector-class,
+.css .hljs-important,
+.css .hljs-meta {
     color: #d92626 !important;
 }
 .css .hljs-value,
 .css .hljs-hexcolor,
 .css .hljs-number,
-.css .hljs-function {
+.css .hljs-function,
+.css .hljs-built_in,
+.css .hljs-string {
     color: rgba(255, 255, 255, 0.8) !important;
 }
 .css .hljs-attribute {
@@ -5972,15 +6208,17 @@ img::before {
     color: #34b234 !important;
 }
 .css .hljs-id,
+.css .hljs-selector-id,
 .css .hljs-at_rule,
 .css .hljs-keyword {
     color: #337fcc !important;
 }
-.css .hljs-pseudo {
+.css .hljs-pseudo,
+.css .hljs-selector-pseudo {
 	color: #d98026 !important;
 }
 
-/* SETTINGS TAB BAR */
+/* USER SETTINGS TAB BAR */
 .user-settings-modal .tab-bar.SIDE .tab-bar-item {
     padding-left: 50px;
 }
@@ -6137,6 +6375,50 @@ img::before {
     pointer-events: none;
 }
 
+/* GUILD SETTINGS TAB BAR */
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item {
+    padding-left: 50px;
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item::after {
+    position: absolute;
+    left: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -3px;
+    opacity: .3;
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:hover::after,
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item.selected::after {
+    opacity: 1;
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6)::after {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/assignment.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7)::after {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/block.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after {
+	content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg);
+}
+
 /* VOICE CHANNEL CSS */
 .guild-channels .channel-voice-states li {
     border-left: 4px solid transparent;
@@ -6234,6 +6516,11 @@ img::before {
 	-webkit-transform-origin: 50% 0;
 	transform-origin: 50% 0;
 }
+.small-popout-box {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
+	margin-top: -58px;
+}
 .context-menu.invertY {
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
@@ -6284,6 +6571,7 @@ img::before {
 }
 .theme-light .guilds-wrapper .guilds .guild .guild-inner {
     background: rgba(0, 0, 0, 0.3) !important;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
 }
 .theme-light .guild-channels ul .channel:not(.selected):hover,
@@ -6308,7 +6596,7 @@ img::before {
 .theme-light .chat .private-channel-call,
 .theme-light .channel-textarea-inner,
 .theme-light .channel-members h2,
-.theme-light .guild-header ul,
+.theme-light .popout-menu,
 .theme-light .user-popout .body ,
 .theme-light .user-popout .footer,
 .theme-light .account .btn-group,
