@@ -471,7 +471,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.1.0
-(Release: Upcoming)
+(Release: 17/09/26)
 ###GENERAL:
 - Better support for webkit browsers
 - Removed unnecessary CSS
