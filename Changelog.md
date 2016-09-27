@@ -481,3 +481,4 @@
 - Fixed account avatar hover animation
 - Fixed issues with account avatar hover animation & account discriminator hover animation
 - Fixed an issue with user names in chat
+- Minor adjustements & fixes
