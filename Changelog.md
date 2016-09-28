@@ -491,3 +491,9 @@
 - Fixed issues with account avatar hover animation & account discriminator hover animation
 - Fixed an issue with user names in chat
 - Minor adjustements & fixes
+
+##VERSION 3.1.1
+(Release: Upcoming)
+###CSS:
+- Added popout menu icons
+- Minor fixes
