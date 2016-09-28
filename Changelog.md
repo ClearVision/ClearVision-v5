@@ -496,4 +496,5 @@
 (Release: Upcoming)
 ###CSS:
 - Added popout menu icons
+- Fixed CSS syntax highlighting
 - Minor fixes
