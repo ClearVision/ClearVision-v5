@@ -4,7 +4,7 @@ Join for *update notifications* and *theme support*!
 **Instant Invite:** https://discord.gg/FtYVPky
 
 #Installation & Customization
-Visit the Wiki page to learn more about how to install customize your theme: [ClearVision Wiki](https://github.com/Zerthox/ClearVision/wiki)
+Visit the Wiki page to learn more about how to install and customize your theme: [ClearVision Wiki](https://github.com/Zerthox/ClearVision/wiki)
 
 #Previews
 ##ClearVision - Amber
