@@ -500,4 +500,4 @@
 - Added custom css editor syntax highlighting
 - Adjusted invite button CSS
 - Fixed CSS syntax highlighting
-- Minor fixes
+- Minor adjustements & fixes
