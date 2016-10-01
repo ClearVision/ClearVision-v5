@@ -496,6 +496,7 @@
 (Release: Upcoming)
 ###CSS:
 - Added popout menu icons
+- Added leave button hover & active animation
 - Added custom css editor syntax highlighting
 - Fixed CSS syntax highlighting
 - Minor fixes
