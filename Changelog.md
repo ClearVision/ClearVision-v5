@@ -499,5 +499,6 @@
 - Added leave button hover & active animation
 - Added custom css editor syntax highlighting
 - Adjusted invite button CSS
+- Adjusted context menu item CSS
 - Fixed CSS syntax highlighting
 - Minor adjustements & fixes
