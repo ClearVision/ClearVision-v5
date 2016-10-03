@@ -471,7 +471,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.1.0
-(Release: 17/09/26)
+(Release: 17/09/16)
 ###GENERAL:
 - Better support for webkit browsers
 - Removed unnecessary CSS
@@ -493,7 +493,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.1.1
-(Release: Upcoming)
+(Release: 03/10/16)
 ###CSS:
 - Added popout menu icons
 - Added leave button hover & active animation
