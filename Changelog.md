@@ -503,3 +503,8 @@
 - Adjusted role settings tab bar item CSS
 - Fixed CSS syntax highlighting
 - Minor adjustements & fixes
+
+##VERSION 3.1.2
+(Release: Upcoming)
+###CSS:
+- Fixed issues with context menu
