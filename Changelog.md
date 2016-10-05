@@ -507,8 +507,8 @@
 ##VERSION 3.1.2
 (Release: Upcoming)
 ###CSS:
-- Changed connections icon
-- Changed locale icon
+- Changed Connections icon
+- Changed Locale icon
 - Adjusted user popout & user profile CSS to allow easier rendering
 - Adjusted & fixed image file icon
 - Fixed issues with context menu
