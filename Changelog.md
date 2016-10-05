@@ -507,6 +507,7 @@
 ##VERSION 3.1.2
 (Release: Upcoming)
 ###CSS:
+- Changed status dot CSS
 - Changed Connections icon
 - Changed Locale icon
 - Adjusted user popout & user profile CSS to allow easier rendering
