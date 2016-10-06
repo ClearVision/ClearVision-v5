@@ -512,5 +512,6 @@
 - Changed Locale icon
 - Adjusted user popout & user profile CSS to allow easier rendering
 - Adjusted & fixed image file icon
+- Fixed loading image modal button positions
 - Fixed issues with context menu
 - Minor adjustements & fixes
