@@ -3,6 +3,15 @@ Join for *update notifications* and *theme support*!
 
 **Instant Invite:** https://discord.gg/FtYVPky
 
+#Donations
+I spend hours working voluntarily on my themes every day.  
+Donations help me to keep up my work and constantly update, improve and optimize my themes.  
+Supporters get access to *supporter only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/FtYVPky).
+If you want to support me you can donate money via Paypal or items via Steam.
+
+**Donate money:** [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GFZQ8PUPAWPSC)  
+**Donate items:** [Steam](https://steamcommunity.com/tradeoffer/new/?partner=128392116&token=v9WYPla-)
+
 #Installation & Customization
 Visit the Wiki page to learn more about how to install and customize your theme: [ClearVision Wiki](https://github.com/Zerthox/ClearVision/wiki)
 
