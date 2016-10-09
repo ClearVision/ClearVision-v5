@@ -1,12 +1,12 @@
 #ClearVision Discord Server
 Join for *update notifications* and *theme support*!
 
-**Instant Invite:** https://discord.gg/FtYVPky
+**Instant Invite:** https://discord.gg/HmVKer8
 
 #Donations
 I spend hours working voluntarily on my themes every day.  
 Donations help me to keep up my work and constantly update, improve and optimize my themes.  
-Supporters get access to *supporter only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/FtYVPky).  
+Supporters get access to *supporter only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/HmVKer8).  
 If you want to support me you can donate money via Paypal or items via Steam.
 
 **Donate money:** [Paypal](https://www.paypal.me/zerthox)  
