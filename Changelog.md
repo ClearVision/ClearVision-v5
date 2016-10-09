@@ -507,6 +507,7 @@
 ##VERSION 3.1.2
 (Release: Upcoming)
 ###CSS:
+- Added color picker CSS
 - Changed status dot CSS
 - Changed Connections icon
 - Changed Locale icon
