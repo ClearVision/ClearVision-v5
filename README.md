@@ -9,7 +9,7 @@ Donations help me to keep up my work and constantly update, improve and optimize
 Supporters get access to *supporter only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/FtYVPky).  
 If you want to support me you can donate money via Paypal or items via Steam.
 
-**Donate money:** [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GFZQ8PUPAWPSC)  
+**Donate money:** [Paypal](https://www.paypal.me/zerthox)  
 **Donate items:** [Steam](https://steamcommunity.com/tradeoffer/new/?partner=128392116&token=v9WYPla-)
 
 #Installation & Customization
