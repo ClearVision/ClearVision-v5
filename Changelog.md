@@ -515,4 +515,5 @@
 - Adjusted & fixed image file icon
 - Fixed loading image modal button positions
 - Fixed issues with context menu
+- Fixed light version context menu
 - Minor adjustements & fixes
