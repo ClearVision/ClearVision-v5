@@ -235,7 +235,7 @@
 - Removed old load animation
 - Added new load animation
 - Added fade in animation
-- Added DRB Dev mark CSS
+- Added Dev mark CSS
 - Added copy button CSS
 - Added message delete code CSS
 - Added new delete channel icon
@@ -417,7 +417,7 @@
 ##VERSION 3.0.1
 (Release: 07/09/2016)
 ####CSS:
-- Added user popout dev mark hover CSS
+- Added user popout Dev mark hover CSS
 - Adjusted member roles overflow
 - Adjusted emoji picker category CSS
 - Fixed settings input CSS
@@ -460,7 +460,7 @@
 ###CSS:
 - Added context menu item sub menu animation 
 - Added account avatar hover animation
-- Adjusted dev mark CSS
+- Adjusted Dev mark CSS
 - Adjusted seperator colors
 - Adjusted popout backgrounds for better readability
 - Fixes for light version
@@ -508,9 +508,11 @@
 (Release: Upcoming)
 ###CSS:
 - Added color picker CSS
+- Added BetterDiscord Dev mark
 - Changed status dot CSS
 - Changed Connections icon
 - Changed Locale icon
+- Adjusted ClearVision Dev mark
 - Adjusted user popout & user profile CSS to allow easier rendering
 - Adjusted & fixed image file icon
 - Fixed loading image modal button positions
