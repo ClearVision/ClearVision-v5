@@ -504,9 +504,10 @@
 - Fixed CSS syntax highlighting
 - Minor adjustements & fixes
 
-##VERSION 3.1.2
+##VERSION 3.2.0
 (Release: Upcoming)
 ###CSS:
+- Added webhook settings page CSS
 - Added color picker CSS
 - Added BetterDiscord Dev mark
 - Changed status dot CSS
@@ -515,6 +516,7 @@
 - Adjusted ClearVision Dev mark
 - Adjusted user popout & user profile CSS to allow easier rendering
 - Adjusted & fixed image file icon
+- Fixed issues with new Discord update
 - Fixed loading image modal button positions
 - Fixed issues with context menu
 - Fixed light version context menu
