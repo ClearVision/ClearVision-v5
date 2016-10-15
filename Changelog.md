@@ -505,7 +505,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 3.2.0
-(Release: Upcoming)
+(Release: 15/10/16)
 ###CSS:
 - Added webhook settings page CSS
 - Added color picker CSS
