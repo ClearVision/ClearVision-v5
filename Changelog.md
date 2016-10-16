@@ -527,5 +527,6 @@
 ###GENERAL:
 - Now loads CSS via GitCDN
 - Fixed issues with links
+- Fixed issues with background image
 ###CSS:
 - Fixed issues with cancel button
