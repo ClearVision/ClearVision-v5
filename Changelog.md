@@ -521,3 +521,11 @@
 - Fixed issues with context menu
 - Fixed light version context menu
 - Minor adjustements & fixes
+
+##VERSION 4.0.0
+(Release: Upcoming)
+###GENERAL:
+- Now loads CSS via GitCDN
+- Fixed issues with links
+###CSS:
+- Fixed issues with cancel button
