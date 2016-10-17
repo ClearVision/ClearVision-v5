@@ -528,6 +528,7 @@
 - Now loads CSS via GitCDN
 - Fixed issues with links
 - Fixed issues with background image
+
 ###CSS:
 - Added info notice CSS
 - Fixed issues with cancel button
