@@ -531,4 +531,5 @@
 
 ###CSS:
 - Added info notice CSS
+- Fixed custom CSS syntax highlighting
 - Fixed issues with cancel button
