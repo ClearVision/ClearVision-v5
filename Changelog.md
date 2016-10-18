@@ -530,6 +530,8 @@
 - Fixed issues with background image
 
 ###CSS:
+- Added plugin settings popout CSS
 - Added info notice CSS
+- Reworked select input CSS
 - Fixed custom CSS syntax highlighting
 - Fixed issues with cancel button
