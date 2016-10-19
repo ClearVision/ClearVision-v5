@@ -536,5 +536,6 @@
 - Reworked select input CSS
 - Reworked shorcut recorder CSS
 - Fixed custom CSS syntax highlighting
+- Fixed issues with account
 - Fixed issues with cancel button
 - Minor adjustements & fixes
