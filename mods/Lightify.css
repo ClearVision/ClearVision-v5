@@ -1,0 +1,68 @@
+/* LIGHTIFY by Zerthox */
+.theme-light .guilds-wrapper,
+.theme-light .user-popout .header {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+.theme-light .guilds-wrapper .guilds .guild .guild-inner {
+    background: rgba(0, 0, 0, 0.3) !important;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
+}
+.theme-light .guild-channels ul .channel:not(.selected):hover,
+.theme-light .private-channels .channel:not(.selected):hover,
+.theme-light .guild-channels .channel-text:not(.selected):hover,
+.theme-light #voice-debug-modal #users-section .user-list li:not(.selected):hover {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 85%, transparent) !important;
+}
+.theme-light .guild-channels ul .channel.selected,
+.theme-light .private-channels .channel.selected,
+.theme-light .private-channels .search-result.selected,
+.theme-light .private-channels .search-result:hover,
+.theme-light .guild-channels .channel-text.selected,
+.theme-light #voice-debug-modal #users-section .user-list li.selected {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
+}
+.theme-light .content .flex-spacer,
+.theme-light .channel-members,
+.theme-light .title-wrap,
+.theme-light .friends-header,
+.theme-light .friends-table,
+.theme-light .chat .private-channel-call,
+.theme-light .channel-textarea-inner,
+.theme-light .channel-members h2,
+.theme-light .popout-menu,
+.theme-light .user-popout .body,
+.theme-light .user-popout .footer,
+.theme-light .account .btn-group,
+.theme-light #voice-connection .btn-group {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+.theme-light .channels-wrap,
+.theme-light .private-channels .search-bar input,
+.theme-light #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+.add-friend-input-wrapper {
+    border-color: rgba(0, 0, 0, 0.3) !important;
+}
+.theme-light .friends-table .messages .invite-button,
+.theme-light .messages-wrapper .messages .invite-button {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.theme-light .chat .divider.divider-red > span::before {
+    background-color: hsla(0, 0%, 100%, 0.5);
+}
+.theme-light #friends .friends-table .friends-row .friends-column-name,
+.theme-light #friends .friends-table .friends-row .friends-column-status {
+    color: hsla(0, 0%, 100%, .5);
+}
+.theme-light .message-group:not(.has-divider) {
+    border-bottom-color: rgba(255, 255, 255, .04);
+}
+.theme-light .message-group .comment .markup[style*="rgb(46, 49, 54)"] {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.theme-light .chat .title-wrap .topic:before {
+    background-color: hsla(0, 0%, 85%, .1);
+}
