@@ -1,0 +1,8 @@
+/* NO LOADING ANIMATIONS by Zerthox */
+.app,
+body::after,
+#app-mount::before,
+#app-mount::after {
+    -webkit-animation: none;
+    animation: none;
+}
