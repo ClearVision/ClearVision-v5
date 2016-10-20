@@ -526,6 +526,7 @@
 (Release: Upcoming)
 ###GENERAL:
 - Now loads CSS via GitCDN
+- Darkened light version *(Old version available as mod on my Discord Server)*
 - Fixed issues with links
 - Fixed issues with background image
 - Fixed mistakes in CSS
@@ -542,4 +543,5 @@
 - Fixed issues with account
 - Fixed issues with cancel button
 - Fixed webhook message CSS
+- Fixes for light version
 - Minor adjustements & fixes
