@@ -528,6 +528,8 @@
 - Now loads CSS via GitCDN
 - Fixed issues with links
 - Fixed issues with background image
+- Fixed mistakes in CSS
+- Removed unnecessary CSS
 
 ###CSS:
 - Added plugin settings popout CSS
