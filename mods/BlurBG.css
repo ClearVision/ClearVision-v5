@@ -1,0 +1,5 @@
+/* BLURBG by Zerthox */
+body::after,
+.callout-backdrop {
+  -webkit-filter: blur(5px);
+}
