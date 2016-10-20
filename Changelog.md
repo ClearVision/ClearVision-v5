@@ -534,6 +534,7 @@
 - Removed unnecessary CSS
 
 ###CSS:
+- Added channel textarea guard countdown CSS
 - Added plugin settings popout CSS
 - Added Linenumber plugin CSS
 - Added info notice CSS
