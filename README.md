@@ -15,6 +15,9 @@ If you want to support me you can donate money via Paypal or items via Steam.
 #Installation & Customization
 Visit the Wiki page to learn more about how to install and customize your theme: [ClearVision Wiki](https://github.com/Zerthox/ClearVision/wiki)
 
+#Mods
+Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.com/Zerthox/ClearVision/wiki/Mods)
+
 #Previews
 ##ClearVision - Amber
 ####Dark Appearance
