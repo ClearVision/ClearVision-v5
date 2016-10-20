@@ -539,4 +539,5 @@
 - Fixed custom CSS syntax highlighting
 - Fixed issues with account
 - Fixed issues with cancel button
+- Fixed webhook message CSS
 - Minor adjustements & fixes
