@@ -531,6 +531,7 @@
 
 ###CSS:
 - Added plugin settings popout CSS
+- Added Linenumber plugin CSS
 - Added info notice CSS
 - Reworked dropdown CSS
 - Reworked select input CSS
