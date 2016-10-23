@@ -541,7 +541,9 @@
 - Reworked dropdown CSS
 - Reworked select input CSS
 - Reworked shorcut recorder CSS
-- Adjuste minimal mode account CSS
+- Adjusted add friend input CSS
+- Adjusted minimal mode account CSS
+- Fixed several issues with minimal mode
 - Fixed custom CSS syntax highlighting
 - Fixed issues with account
 - Fixed issues with cancel button
