@@ -526,7 +526,7 @@
 ###GENERAL:
 - Now loads CSS via GitCDN
 - Added info for mods
-- Darkened light version *(Old version available as mod on my Discord Server)*
+- Darkened light version *(Old version available as mod)*
 - Fixed issues with links
 - Fixed issues with background image
 - Fixed mistakes in CSS
