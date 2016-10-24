@@ -53,8 +53,7 @@
 - Fixed alt checkbox CSS
 
 ##VERSION 1.2.1
-(Release: 22/06/2016)
-####CSS:
+(Release: 22/06/2016)####CSS:
 - Reworked account buttons
 - Reworked voice connection buttons
 - Reworked icons
@@ -541,8 +540,8 @@
 - Reworked dropdown CSS
 - Reworked select input CSS
 - Reworked shorcut recorder CSS
+- Adjusted minimal mode CSS
 - Adjusted add friend input CSS
-- Adjusted minimal mode account CSS
 - Fixed several issues with minimal mode
 - Fixed custom CSS syntax highlighting
 - Fixed issues with account
