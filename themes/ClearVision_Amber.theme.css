@@ -1,9 +1,9 @@
-//META{"name":"ClearVision_Amber","description":"A fiery, orange theme with customizable colors & background!</br> Based on <a href='https://github.com/0mniscient/Discord-Themes/tree/master/Themes' target='_new'>Discord ReBorn</a> by <a href='https://github.com/0mniscient' target='_new'>@Omniscient</a> & <a href='https://github.com/cosmicsalad/Discord-Themes-and-Plugins/tree/master/themes/DarkMatter' target='_new'>DarkMatter</a> by <a href='https://github.com/cosmicsalad' target='_new'>@Hammock</a> <span style='position: absolute; bottom: 0; left: 0;'>Links: <b><a href='https://git.io/v6BHO' target='_new'>Github</a></b> | <b><a href='https://discord.gg/FtYVPky' target='_new'>Discord</a></b></span> <span style='position: absolute; bottom: 0; right: 14px;'>By <b><a href='https://github.com/Zerthox' target='_new'>@Zerthox</a></b></span>","author":"Zerthox","version":"3"}*//{}
+//META{"name":"ClearVision_Amber","description":"A fiery, orange theme with customizable colors & background!</br> Based on <a href='https://github.com/0mniscient/Discord-Themes/tree/master/Themes' target='_new'>Discord ReBorn</a> by <a href='https://github.com/0mniscient' target='_new'>@Omniscient</a> & <a href='https://github.com/cosmicsalad/Discord-Themes-and-Plugins/tree/master/themes/DarkMatter' target='_new'>DarkMatter</a> by <a href='https://github.com/cosmicsalad' target='_new'>@Hammock</a> <span style='position: absolute; bottom: 0; left: 0;'>Links: <b><a href='https://git.io/v6BHO' target='_new'>Github</a></b> | <b><a href='https://discord.gg/FtYVPky' target='_new'>Discord</a></b></span> <span style='position: absolute; bottom: 0; right: 14px;'>By <b><a href='https://github.com/Zerthox' target='_new'>@Zerthox</a></b></span>","author":"<a href='https://github.com/Zerthox' target='_new'>@Zerthox</a>","version":"3"}*//{}
 /* "ClearVision - Amber v3" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* IMPORT CSS FROM GITHUB */
-@import url(https://rawgit.com/Zerthox/ClearVision/master/css/ClearVision.css);
+@import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v4.css);
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE BETWEEN DARK AND LIGHT VERSION IN APPEARANCE SETTINGS!
@@ -19,12 +19,30 @@ RemoveShadows theme: https://git.io/v6MuU IMPORTANT: Activate on top of a ClearV
 */
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
-===== CUSTOMIZABLE COLORS & BACKGROUND IMAGE =====
+============== CUSTOMIZABLE COLORS ===============
 */
 :root {
 	--main-color: #e67a27;
 	--hover-color: #b35d1e;
-	--background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/amber.jpg); /* IMPORTANT: Link must be HTTPS!*/
+}
+/*
+--------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------
+========= CUSTOMIZABLE BACKGROUND IMAGE ==========
+*/
+body::after,
+.callout-backdrop,
+.user-popout::before,
+#user-profile-modal .header::before,
+#pubs-container::before,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme.light label,
+.radio-theme.dark label{
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/images/sapphire.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
