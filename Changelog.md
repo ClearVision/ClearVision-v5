@@ -549,3 +549,9 @@
 - Fixed webhook message CSS
 - Fixes for light version
 - Minor adjustements & fixes
+
+##VERSIOn 4.0.1
+(Release: Upcoming)
+###CSS:
+- Added Spectrum Colorpicker CSS
+- Adjusted link hover CSS
