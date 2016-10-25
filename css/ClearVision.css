@@ -6892,3 +6892,20 @@ img::before {
 .theme-light .chat .title-wrap .topic:before {
     background-color: hsla(0, 0%, 85%, .1);
 }
+
+/* CLEARVISION OUTDATED CSS */
+#app-mount::after {
+    content: "OUTDATED \a Please Update ClearVision";
+    top: 50%;
+    margin-top: -50px;
+    line-height: 50px;
+    white-space: pre;
+    opacity: .3;
+    -webkit-animation: none;
+    -animation: none;
+}
+#app-mount::before {
+	background-color: rgba(0, 0, 0, .5);
+    -webkit-animation: none;
+    -animation: none;
+}
