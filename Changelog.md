@@ -522,7 +522,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 4.0.0
-(Release: Upcoming)
+(Release: 25/10/16)
 ###GENERAL:
 - Now loads CSS via GitCDN
 - Added info for mods
