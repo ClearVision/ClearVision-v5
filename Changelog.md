@@ -557,3 +557,4 @@
 - Adjusted link hover CSS
 - Adjusted Dev mark CSS
 - Fixed issues with Owner Tags plugin
+- Fixed issues with compact appearance
