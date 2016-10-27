@@ -1,7 +1,0 @@
-//META{"name":"ClearVision_Remove_Shadows","description":"Removes shadows behind avatars in ClearVision themes <span style='position: absolute; bottom: 0; right: 14px;'>By <b><a href='https://github.com/Zerthox' target='_new'>@Zerthox</a></b></span>","author":"<a href='https://github.com/Zerthox' target='_new'>@Zerthox</a>","version":"2"}*//
-/* "ClearVision Remove Shadows v2" by @Zerthox */
-/* Removes Shadows behind avatars & guilds */
-
-/* IMPORTANT: Enable after having your ClearVision theme active! */
-
-@import url("https://rawgit.com/Zerthox/ClearVision/master/css/RemoveShadows.css");
