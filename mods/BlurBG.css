@@ -1,5 +1,5 @@
 /* "BlurBG v1" by Zerthox */
-/* Makes light version really light (Reverts back to old version) */
+/* Blurs app & backdrop background image */
 
 body::after,
 .callout-backdrop {
