@@ -21,49 +21,49 @@ Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.co
 #Previews
 ##ClearVision - Amber
 ####Dark Appearance
-![Amber Dark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_dark.png)
+![AmberDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_dark.png)
 ####Light Appearance
-![Amber Light](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_light.png)
+![AmberLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_light.png)
 ####Settings
-![Amber Settings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_settings.png)
+![AmberSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_settings.png)
 
 ##ClearVision - Amethyst
 ####Dark Appearance
-![Amethyst Dark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_dark.png)
+![AmethystDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_dark.png)
 ####Light Appearance
-![Amethyst Light](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_light.png)
+![AmethystLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_light.png)
 ####Settings
-![Amethyst Settings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_settings.png)
+![AmethystSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_settings.png)
 
 ##ClearVision - Emerald
 ####Dark Appearance
-![Emerald Dark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_dark.png)
+![EmeraldDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_dark.png)
 ####Light Appearance
-![Emerald Light](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_light.png)
+![EmeraldLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_light.png)
 ####Settings
-![Emerald Settings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_settings.png)
+![EmeraldSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_settings.png)
 
 ##ClearVision - Ruby
 ####Dark Appearance
-![Ruby Dark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_dark.png)
+![RubyDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_dark.png)
 ####Light Appearance
-![Ruby Light](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_light.png)
+![RubyLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_light.png)
 ####Settings
-![Ruby Settings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_settings.png)
+![RubySettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_settings.png)
 
 ##ClearVision - Sapphire
 ####Dark Appearance
-![Sapphire Dark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_dark.png)
+![SapphireDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_dark.png)
 ####Light Appearance
-![Sapphire Light](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_light.png)
+![SapphireLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_light.png)
 ####Settings
-![Sapphir eSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_settings.png)
+![SapphireSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_settings.png)
 
 #Event themes
 ##ClearVision - Halloween
 ####Dark Appearance
-![Halloween Dark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_dark.png)
+![HalloweenDark](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_dark.png)
 ####Light Appearance
-![Halloween Light](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_light.png)
+![HalloweenLight](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_light.png)
 ####Settings
-![Halloween Settings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_settings.png)
+![HalloweenSettings](https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_settings.png)
