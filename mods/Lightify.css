@@ -1,4 +1,6 @@
-/* LIGHTIFY by Zerthox */
+/* "Lightify v1" by Zerthox */
+/* Makes light version really light (Reverts back to old version) */
+
 .theme-light .guilds-wrapper,
 .theme-light .user-popout .header {
     background: rgba(0, 0, 0, 0.1) !important;
