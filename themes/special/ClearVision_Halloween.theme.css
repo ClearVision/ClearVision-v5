@@ -42,7 +42,7 @@ body::after,
 .invite-modal .invite-splash,
 .radio-theme.light label,
 .radio-theme.dark label{
-    background-image: url(https://initiate.alphacoders.com/images/552/cropped-1920-1080-552086.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/raw/master/images/halloween.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
