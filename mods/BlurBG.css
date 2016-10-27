@@ -1,4 +1,6 @@
-/* BLURBG by Zerthox */
+/* "BlurBG v1" by Zerthox */
+/* Makes light version really light (Reverts back to old version) */
+
 body::after,
 .callout-backdrop {
   -webkit-filter: blur(5px);
