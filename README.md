@@ -21,49 +21,49 @@ Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.co
 #Previews
 ##ClearVision - Amber
 ####Dark Appearance
-![AmberDark](https://github.com/Zerthox/ClearVision/master/screenshots/amber_dark.png)
+![AmberDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber_dark.png)
 ####Light Appearance
-![AmberLight](https://github.com/Zerthox/ClearVision/master/screenshots/amber_light.png)
+![AmberLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber_light.png)
 ####Settings
-![AmberSettings](https://github.com/Zerthox/ClearVision/master/screenshots/amber_settings.png)
+![AmberSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber_settings.png)
 
 ##ClearVision - Amethyst
 ####Dark Appearance
 ![AmethystDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst_dark.png)
 ####Light Appearance
-![AmethystLight](https://github.com/Zerthox/ClearVision/master/screenshots/amethyst_light.png)
+![AmethystLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst_light.png)
 ####Settings
-![AmethystSettings](https://github.com/Zerthox/ClearVision/master/screenshots/amethyst_settings.png)
+![AmethystSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst_settings.png)
 
 ##ClearVision - Emerald
 ####Dark Appearance
-![EmeraldDark](https://github.com/Zerthox/ClearVision/master/screenshots/emerald_dark.png)
+![EmeraldDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald_dark.png)
 ####Light Appearance
-![EmeraldLight](https://github.com/Zerthox/ClearVision/master/screenshots/emerald_light.png)
+![EmeraldLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald_light.png)
 ####Settings
-![EmeraldSettings](https://github.com/Zerthox/ClearVision/master/screenshots/emerald_settings.png)
+![EmeraldSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald_settings.png)
 
 ##ClearVision - Ruby
 ####Dark Appearance
-![RubyDark](https://github.com/Zerthox/ClearVision/master/screenshots/ruby_dark.png)
+![RubyDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby_dark.png)
 ####Light Appearance
-![RubyLight](https://github.com/Zerthox/ClearVision/master/screenshots/ruby_light.png)
+![RubyLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby_light.png)
 ####Settings
-![RubySettings](https://github.com/Zerthox/ClearVision/master/screenshots/ruby_settings.png)
+![RubySettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby_settings.png)
 
 ##ClearVision - Sapphire
 ####Dark Appearance
-![SapphireDark](https://github.com/Zerthox/ClearVision/master/screenshots/sapphire_dark.png)
+![SapphireDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_dark.png)
 ####Light Appearance
-![SapphireLight](https://github.com/Zerthox/ClearVision/master/screenshots/sapphire_light.png)
+![SapphireLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_light.png)
 ####Settings
-![SapphireSettings](https://github.com/Zerthox/ClearVision/master/screenshots/sapphire_settings.png)
+![SapphireSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_settings.png)
 
 #Event themes
 ##ClearVision - Halloween
 ####Dark Appearance
-![HalloweenDark](https://github.com/Zerthox/ClearVision/master/screenshots/halloween_dark.png)
+![HalloweenDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_dark.png)
 ####Light Appearance
-![HalloweenLight](https://github.com/Zerthox/ClearVision/master/screenshots/halloween_light.png)
+![HalloweenLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_light.png)
 ####Settings
-![HalloweenSettings](https://github.com/Zerthox/ClearVision/master/screenshots/halloween_settings.png)
+![HalloweenSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_settings.png)
