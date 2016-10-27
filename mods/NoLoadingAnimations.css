@@ -1,4 +1,6 @@
-/* NO LOADING ANIMATIONS by Zerthox */
+/* "No Loading Animations v1" by Zerthox */
+/* Removes ClearVision start up animations */
+
 .app,
 body::after,
 #app-mount::before,
