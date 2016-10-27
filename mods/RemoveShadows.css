@@ -1,8 +1,6 @@
 /* "RemoveShadows v2" by @Zerthox */
 /* Removes Shadows behind avatars & guilds */
 
-/* IMPORTANT: Enable after having your ClearVision theme active! */
-
 .avatar-small    {
     box-shadow: none !important;
 }
