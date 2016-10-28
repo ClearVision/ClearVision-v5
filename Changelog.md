@@ -558,3 +558,4 @@
 - Adjusted Dev mark CSS
 - Fixed issues with Owner Tags plugin
 - Fixed issues with compact appearance
+- Minor adjustements & fixes
