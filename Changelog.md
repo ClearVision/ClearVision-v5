@@ -556,6 +556,7 @@
 - Added Spectrum Colorpicker CSS
 - Adjusted link hover CSS
 - Adjusted Dev mark CSS
+- Fixed issues with invite button
 - Fixed issues with Owner Tags plugin
 - Fixed issues with compact appearance
 - Minor adjustements & fixes
