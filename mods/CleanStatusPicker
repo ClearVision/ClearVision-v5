@@ -1,0 +1,6 @@
+/* "Clean Status Picker v1" by Zerthox */
+/* Remove unnecessary help texts from status picker */
+
+.status-picker .popout-menu-item .helper {
+    display: none;
+}
