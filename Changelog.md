@@ -553,6 +553,7 @@
 ##VERSIOn 4.0.1
 (Release: Upcoming)
 ###CSS:
+- Added embed video actions icons
 - Added Spectrum Colorpicker CSS
 - Adjusted link hover CSS
 - Adjusted Dev mark CSS
