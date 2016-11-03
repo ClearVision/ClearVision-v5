@@ -558,6 +558,7 @@
 - Adjusted link hover CSS
 - Adjusted Dev mark CSS
 - Fixed issues with invite button
-- Fixed issues with Owner Tags plugin
 - Fixed issues with compact appearance
+- Fixed issues with codeblocks in popouts
+- Fixed issues with Owner Tags plugin
 - Minor adjustements & fixes
