@@ -553,8 +553,12 @@
 ##VERSION 4.0.1
 (Release: Upcoming)
 ###CSS:
+- Added reactions buttons CSS
+- Added pinned messages & recent mentions animation
+- Added emote menu animation
 - Added embed video actions icons
 - Added Spectrum Colorpicker CSS
+- Adjusted menu & popout animations
 - Adjusted link hover CSS
 - Adjusted Dev mark CSS
 - Fixed issues with invite button
