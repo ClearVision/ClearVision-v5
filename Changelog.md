@@ -550,8 +550,8 @@
 - Fixes for light version
 - Minor adjustements & fixes
 
-##VERSION 4.0.1
-(Release: Upcoming)
+##VERSION 4.1.0
+(Release: 06/11/16)
 ###CSS:
 - Added reactions buttons CSS
 - Added pinned messages & recent mentions animation
