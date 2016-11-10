@@ -566,3 +566,9 @@
 - Fixed issues with codeblocks in popouts
 - Fixed issues with Owner Tags plugin
 - Minor adjustements & fixes
+
+##VERSION 4.1.1
+(Release: Upcoming)
+###CSS:
+- Increased user profile max name length
+- Minor fixes
