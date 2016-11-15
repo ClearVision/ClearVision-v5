@@ -570,5 +570,6 @@
 ##VERSION 4.1.1
 (Release: Upcoming)
 ###CSS:
+- Added update button icon
 - Increased user profile max name length
-- Minor fixes
+- Minor adjustements & fixes
