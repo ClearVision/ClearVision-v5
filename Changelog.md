@@ -570,6 +570,7 @@
 ##VERSION 4.1.1
 (Release: Upcoming)
 ###CSS:
+- Updated & adjsuted user profile modal CSS
 - Updated embed links CSS
 - Added update button icon
 - Increased user profile max name length
