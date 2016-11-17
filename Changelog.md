@@ -570,6 +570,8 @@
 ##VERSION 4.1.1
 (Release: Upcoming)
 ###CSS:
+- Updated embed links CSS
 - Added update button icon
 - Increased user profile max name length
+- Fixed issues with new Discord update
 - Minor adjustements & fixes
