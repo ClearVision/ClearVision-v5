@@ -575,4 +575,5 @@
 - Added update button icon
 - Increased user profile max name length
 - Fixed issues with new Discord update
+- Fixed issues with emotes
 - Minor adjustements & fixes
