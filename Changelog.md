@@ -572,6 +572,7 @@
 ###CSS:
 - Updated & adjsuted user profile modal CSS
 - Updated embed links CSS
+- Added verified icon
 - Added update button icon
 - Increased user profile max name length
 - Fixed issues with new Discord update
