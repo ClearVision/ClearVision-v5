@@ -568,7 +568,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 4.1.1
-(Release: Upcoming)
+(Release: 18/11/2016)
 ###CSS:
 - Updated & adjsuted user profile modal CSS
 - Updated embed links CSS
