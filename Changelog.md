@@ -578,3 +578,12 @@
 - Fixed issues with new Discord update
 - Fixed issues with emotes
 - Minor adjustements & fixes
+
+##VERSION 4.1.2
+(Release: Upcoming)
+###CSS:
+- Changed default role CSS
+- Changed role add button CSS
+- Fixed missing system message icon
+- Fixed isses with Group DM
+- Minor adjustements & fixes
