@@ -584,6 +584,7 @@
 ###CSS:
 - Changed default role CSS
 - Changed role add button CSS
+- Adjusted broken emote & emoji CSS
 - Fixed missing system message icon
 - Fixed isses with Group DM
 - Minor adjustements & fixes
