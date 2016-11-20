@@ -582,6 +582,7 @@
 ##VERSION 4.1.2
 (Release: Upcoming)
 ###CSS:
+- Added quoter plugin CSS
 - Changed default role CSS
 - Changed role add button CSS
 - Adjusted broken emote & emoji CSS
