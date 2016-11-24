@@ -586,6 +586,7 @@
 - Reworked add role button CSS
 - Added quoter plugin CSS
 - Adjusted broken emote & emoji CSS
+- Fied issues with popout menus
 - Fixed missing system message icon
 - Fixed isses with Group DM
 - Minor adjustements & fixes
