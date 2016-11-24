@@ -589,5 +589,5 @@
 - Adjusted broken emote & emoji CSS
 - Fied issues with popout menus
 - Fixed missing system message icon
-- Fixed isses with Group DM
+- Fixed issues with Group DM
 - Minor adjustements & fixes
