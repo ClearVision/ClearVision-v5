@@ -53,7 +53,8 @@
 - Fixed alt checkbox CSS
 
 ##VERSION 1.2.1
-(Release: 22/06/2016)####CSS:
+(Release: 22/06/2016)
+####CSS:
 - Reworked account buttons
 - Reworked voice connection buttons
 - Reworked icons
