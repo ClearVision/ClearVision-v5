@@ -588,6 +588,7 @@
 - Added quoter plugin CSS
 - Adjusted broken emote & emoji CSS
 - Adjusted link & highlight hover CSS
+- Adjusted embed CSS
 - Fixed issues with popout menus
 - Fixed missing system message icon
 - Fixed issues with Group DM
