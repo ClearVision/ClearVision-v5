@@ -580,8 +580,12 @@
 - Fixed issues with emotes
 - Minor adjustements & fixes
 
-##VERSION 4.1.2
-(Release: Upcoming)
+##VERSION 4.2.0
+(Release: 02/12/2016)
+###GENRAL:
+- Added min CSS
+- Themes now load min CSS
+
 ###CSS:
 - Reworked role CSS
 - Reworked add role button CSS
