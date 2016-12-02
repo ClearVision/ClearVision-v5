@@ -1,4 +1,4 @@
-/* "ClearVision CSS v4.1.1" by @Zerthox */
+/* "ClearVision CSS v4.2.0" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v4.1.1";
+    content: "ClearVision v4.2.0";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -376,11 +376,11 @@ body::after {
 
 /* LINK HOVER CSS */
 a,
-.highlight,
 .chat .user-name,
 .chat .username-wrapper .user-name,
 .chat .message-group a,
 .chat .title-wrap .topic a,
+.mentioned .highlight,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a,
 .theme-dark .chat .title-wrap .topic a,
 .markdown-modal a,
@@ -399,12 +399,11 @@ a,
     transition: text-shadow .1s ease-in-out;
 }
 a:hover,
-.highlight:hover,
 .chat .user-name:hover,
 .chat .username-wrapper:hover .user-name,
 .chat .message-group a:hover,
-.chat > .content .messages .message-group .markup .highlight:hover,
 .chat .title-wrap .topic a:hover,
+.mentioned .highlight:hover,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a:hover,
 .theme-dark .chat .title-wrap .topic a:hover,
 .markdown-modal a:hover,
@@ -564,7 +563,6 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 }
 .mentioned .highlight:hover {
     color: var(--main-color);
-    text-decoration: underline;
 }
 .highlight:hover {
     cursor: pointer;
@@ -692,11 +690,6 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 }
 .option-popout .btn-item:hover {
     color: #bbb;
-}
-.member-roles .member-role {
-    background-color: var(--main-color);
-    color: #ffffff;
-    border: 1px solid var(--main-color);
 }
 .user-popout .user-popout-options .btn {
     background-color: var(--main-color);
@@ -848,7 +841,12 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 #autocomplete-popout h3 {
     color: #ECECEC;
 }
-.popout.popout-bottom header::before {
+.popout.popout-invert.popout-top header::before,
+.popout.popout-invert.popout-top-right header::before {
+    border-top-color: var(--main-color);
+}
+.popout.popout-bottom header::before,
+.popout.popout-bottom-right header::before {
     border-bottom-color: var(--main-color);
 }
 .guild-settings-modal .guild-settings-modal-search {
@@ -1461,7 +1459,7 @@ textarea {
     margin-left: -46px;
 }
 .bd-minimal .account .avatar-small {
-    display: block !important;
+    display: block;
     margin-left: 5px;
 }
 .bd-minimal .account .username,
@@ -1658,31 +1656,6 @@ a:link {
 }
 .guild-settings-modal-members .guild-settings-modal-list .member+.member {
     border-top: 1px solid hsla(0, 0%, 100%, 0.04);
-}
-.member-roles .member-role .member-role-remove {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) 50% no-repeat;
-    width: 8px;
-    height: 12px;
-    background-size: 150%;
-    opacity: .3;
-    transition: opacity .1s ease-in-out;
-}
-.member-roles .member-role:hover .member-role-remove {
-    opacity: .7;
-}
-.member-roles .member-role .member-role-add {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add.svg) 50% no-repeat;
-    width: 8px;
-    height: 12px;
-    background-size: 150%;
-    opacity: .7;
-    transition: opacity .1s ease-in-out;
-}
-.member-roles .member-role:hover .member-role-add {
-    opacity: 1;
-}
-.member-roles .member-role:hover {
-    background-color: var(--hover-color);
 }
 .channel-members h2 {
     color: var(--main-color) !important;
@@ -1948,17 +1921,6 @@ a:link {
 }
 .user-settings-modal-account .discord-tag {
     color: var(--main-color);
-}
-.guilds-wrapper .guilds .friends-online {
-    cursor: pointer;
-    -webkit-transition: background-color .25s ease-in, border-radius .3s cubic-bezier(.68, -1.25, .228, 1.8);
-    transition: background-color .25s ease-in, border-radius .3s cubic-bezier(.68, -1.25, .228, 1.8);
-    overflow: hidden;
-    border-radius: 25px;
-    background: rgba(21, 21, 21, 0.41) !important;
-}
-.guilds .friends-online:hover {
-    background: var(--main-color) !important;
 }
 .add-friend-popout-info .add-friend-popout-info-confirmation::before {
     background: url(https://i.imgur.com/DYCx6qB.png) 50% no-repeat;
@@ -2586,7 +2548,7 @@ form.auth-form {
     border-top: 2px var(--main-color) solid;
 }
 .user-popout .footer .quick-message-wrapper .quick-message {
-    border: 1px solid rgba(0, 0, 0, .05);
+    border-color: transparent;
     background: rgba(0, 0, 0, .5);
     color: #fff;
 }
@@ -2932,8 +2894,18 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
     width: 13px;
 }
 .guilds-wrapper .guilds .friends-online {
-    text-transform: uppercase;
+    background: rgba(21, 21, 21, 0.41);
+    border-radius: 25px;
     color: #DCDCDC;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    cursor: default;
+}
+.guilds-wrapper .guilds .friends-online:hover {
+    background-color: var(--main-color);
+    color: #fff;
 }
 div#bd-pub-button {
     text-transform: uppercase;
@@ -3246,7 +3218,6 @@ div#bd-pub-button:hover {
 .chat .title-wrap .topic .highlight:hover {
     background-color: var(--main-color) !important;
     border-radius: 4px;
-    text-shadow: 0 0 1px;
 }
 #friends .friends-header .tab-bar .tab-bar-item .badge {
     background-color: var(--main-color) !important;
@@ -4086,7 +4057,8 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     background-size: 24px;
 }
 .header-toolbar span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4="],
-.header-toolbar span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iIzk5QUFCNSIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4="] {
+.header-toolbar span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iIzk5QUFCNSIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4="],
+.private .channel-group-dm + .header-toolbar button:nth-child(3) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/pin.svg) !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -4173,19 +4145,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
-.member-roles .member-role {
-    -webkit-transition: box-shadow .1s ease-in-out, text-shadow .1s ease-in-out;
-    transition: box-shadow .1s ease-in-out, text-shadow .1s ease-in-out;
-}
-.member-roles .member-role:hover {
-    -webkit-box-shadow: 0 0 1px;
-    box-shadow: 0 0 1px;
-    text-shadow: 0 0 1px;
-}
-.member-roles .member-role:not([style]):hover {
-    -webkit-box-shadow: 0 0 1px var(--hover-color);
-    box-shadow: 0 0 1px var(--hover-color);
-}
+
 .user-popout .body,
 .user-popout .footer {
     cursor: default;
@@ -4705,16 +4665,6 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 #bd-changelog:hover {
     text-shadow: 0 0 1px;
 }
-span.replyer {
-    border-radius: 3px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    -webkit-animation: replyer-fade .1s ease-in-out;
-    animation: replyer-fade .1s ease-in-out;
-}
-span.replyer:hover {
-    background: var(--main-color) !important;
-}
 @-webkit-keyframes replyer-fade {
     from {
         opacity: 0;
@@ -4731,26 +4681,6 @@ span.replyer:hover {
         opacity: 1;
     }
 }
-.copybutton {
-    background: rgba(255, 255, 255, .1) !important;
-    color: rgba(255, 255, 255, 0.7) !important;
-    border: none !important;
-    border-radius: 3px 0 0 0;
-    opacity: 0;
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-pre:hover .copybutton {
-    opacity: 1;
-}
-.copybutton:hover {
-    color: #fff;
-}
-.copybutton:active {
-    color: var(--main-color);
-    -webkit-transform: none;
-    transform: none;
-}
 .private-channel-recipients-invite .body .scroller {
     height: 300px;
     width: 192px;
@@ -4759,9 +4689,10 @@ pre:hover .copybutton {
     background: transparent !important;
 }
 .search-bar-tag {
-    background: transparent !important;
-    -webkit-box-shadow: 0 0 1px #000;
-    box-shadow: 0 0 1px #000;
+    background: hsla(0, 0%, 100%, .07);
+}
+.search-bar-tag:hover {
+    background: hsla(0, 0%, 100%, .15);
 }
 .private-channel-recipients-invite .footer button {
     background-color: var(--main-color);
@@ -4854,6 +4785,9 @@ pre:hover .copybutton {
     float: left;
     -webkit-transition: all .1s ease-in-out, margin-top 0s;
     transition: all .1s ease-in-out, margin-top 0s;
+}
+.modal .download-button:hover {
+    text-shadow: none;
 }
 .modal .download-button:active {
     -webkit-transform: scale(.9);
@@ -5070,18 +5004,6 @@ pre:hover .copybutton {
 #voice-debug-modal #users-section .user-list {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
-.member-roles .member-role.member-role-add button {
-    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 170%;
-    opacity: .3;
-    -webkit-transition: opacity .1s ease-in-out;
-    transition: opacity .1s ease-in-out;
-}
-.member-roles .member-role.member-role-add:hover button {
-    opacity: .7;
-}
 #voice-connection .btn-group .btn-info {
     color: var(--main-color) !important;
 }
@@ -5117,7 +5039,9 @@ ul.bda-slist {
     color: #909090;
 }
 .message-group a,
-.theme-dark .message-group a {
+.theme-dark .message-group a,
+.message-group .embed a.embed-title,
+.theme-dark .message-group .embed a.embed-title {
     color: var(--main-color);
 }
 .channel-textarea .channel-textarea-inner textarea {
@@ -5169,6 +5093,7 @@ ul.bda-slist {
 .bd-minimal .guild-channels .channel .channel-name {
     text-indent: 5px;
 }
+.message-group .comment .attachment .metadata,
 .message-group .comment .attachment .upload > .speed {
     color: #808080;
 }
@@ -5180,6 +5105,129 @@ ul.bda-slist {
 }
 .chat > .content .messages .message-group a, .theme-dark .chat>.content .messages .message-group a code.inline {
     color: var(--main-color) !important;
+}
+.private-channel-recipients-invite .friend .avatar-small .status {
+    border: none !important;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+.form .control-group #channel-topic {
+    padding: 6.5px 5px;
+    background: rgba(0, 0, 0, 0.6) !important;
+    -webkit-transition: border .3s ease-in-out;
+    transition: border .3s ease-in-out;
+}
+
+/* MEMBER ROLES */
+.member-roles .member-role {
+    position: relative;
+    border-color: transparent !important;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.member-roles .member-role[style]:hover {
+    border: 1px solid !important;
+}
+.member-roles .member-role::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 3px;
+    background-color: inherit;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+    pointer-events: none;
+}
+.member-roles .member-role:hover::after {
+    opacity: 1;
+}
+.member-roles .member-role:not([style]) {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    color: #c8c8c8;
+}
+.member-roles .member-role.member-role-add.popout-open {
+    background-color: var(--hover-color);
+}
+.member-roles .member-role.member-role-add button {
+    position: relative;
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 170%;
+    opacity: .3;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    z-index: 1;
+    pointer-events: none;
+}
+.member-roles .member-role.member-role-add:hover button,
+.member-roles .member-role.member-role-add.popout-open button {
+    opacity: .7;
+}
+.member-roles .member-role .member-role-add {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add.svg) 50% no-repeat;
+    width: 8px;
+    height: 12px;
+    background-size: 150%;
+    opacity: .7;
+    -webkit-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+}
+.member-roles .member-role:hover .member-role-add {
+    opacity: 1;
+}
+.member-roles .member-role .member-role-remove {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) 50% no-repeat;
+    width: 8px;
+    height: 12px;
+    background-size: 150%;
+    opacity: .3;
+    -wekbit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.member-roles .member-role:hover .member-role-remove {
+    opacity: .7;
+}
+
+/* REPLYER & QUOTER */
+span.replyer,
+span.quoter {
+    border-radius: 3px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-animation: replyer-fade .1s ease-in-out;
+    animation: replyer-fade .1s ease-in-out;
+}
+span.replyer:hover,
+span.quoter:hover {
+    background: var(--main-color) !important;
+}
+
+/* COPY BUTTON */
+.copybutton {
+    background: rgba(255, 255, 255, .1) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: none !important;
+    border-radius: 3px 0 0 0;
+    opacity: 0;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+}
+pre:hover .copybutton {
+    opacity: 1;
+}
+.copybutton:hover {
+    color: #fff;
+}
+.copybutton:active {
+    color: var(--main-color);
+    -webkit-transform: none;
+    transform: none;
 }
 
 /* EMBED LINKS */
@@ -5339,7 +5387,11 @@ ul.bda-slist {
     opacity: .7;
 }
 
-/* EMBED PLAYER CONTROLS */
+/* EMBED PLAYER */
+.embed .embed-video-actions .embed-video-actions-inner {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .embed .embed-video-actions .embed-video-play {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/play.svg);
     background-position: center;
@@ -5646,6 +5698,9 @@ ul.bda-slist {
 }
 
 /* COLOR PICKER */
+.color-picker .swatches .swatch.selected::after {
+    background-color: var(--main-color);
+}
 .color-picker-popout {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: transparent;
@@ -5777,24 +5832,21 @@ ul.bda-slist {
 }
 
 /* POPOUT MENU & STATUS PICKER */
-.popout.popout-bottom,
-.popout.popout-bottom-right,
-.popout-menu {
-    margin-top: -58px;
-    padding: 58px 2px 0;
-}
-.popout.popout-bottom,
-.popout.popout-bottom-right {
+.popout.popout-bottom[style*="top: 56px;"] {
+    top: 0px !important;
+    margin-top: 0px;
     z-index: 1;
-}
-.popout.popout-bottom-right.no-arrow, .popout.popout-bottom.no-arrow {
-    padding: 0;
 }
 .popout-menu {
     background: rgba(0, 0, 0, 0.7);
+    margin: 0 2px;
+    padding: 0 2px 0;
 }
 .bd-minimal .popout-menu {
     width: 156px;
+}
+.popout-menu:not(.status-picker) {
+    padding: 56px 2px 0;
 }
 .popout-menu .popout-menu-item {
     color: #ddd !important;
@@ -5855,6 +5907,9 @@ ul.bda-slist {
 .popout-menu .popout-menu-separator {
     border-color: hsla(0, 0%, 100%, .2);
 }
+.bd-minimal .status-picker {
+    width: 156px;
+}
 .status-picker .popout-menu-item .status {
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
@@ -5882,9 +5937,6 @@ ul.bda-slist {
 }
 .status-picker .popout-menu-item:hover .helper {
     color: rgba(170, 170, 170, 1);
-}
-.bd-minimal .status-picker {
-    width: 156px;
 }
 
 /* STATUS COLORS, GLOW & SHADOW */
@@ -6168,10 +6220,10 @@ ul.bda-slist {
 }
 
 /* BROKEN IMAGE */
-img:after {
+img:not(.emote):not(.emoji)::after {
     content: attr(alt);
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     background-color: #222;
@@ -6182,18 +6234,45 @@ img:after {
     text-align: left;
     line-height: 20px;
     border-radius: 3px;
-    margin-top: -2px;
     padding-top: 2px;
-    ;
     text-indent: 22px;
 }
-img::before {
+img:not(.emote):not(.emoji)::before {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/broken_image.svg);
     position: absolute;
     top: -1px;
     left: 1px;
     z-index: 1;
     opacity: .7;
+}
+
+/* BROKEN EMOTES */
+.emote::after,
+.emoji::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background-color: #222;
+    border: 2px dashed rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.emote::before,
+.emoji::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/broken_image.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .7;
+    z-index: 1;
 }
 
 /* USER POPOUT ROLES */
