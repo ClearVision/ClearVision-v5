@@ -597,3 +597,11 @@
 - Fixed missing system message icon
 - Fixed issues with Group DM
 - Minor adjustements & fixes
+
+##VERSION 4.2.1
+(Release: Upcoming)
+###CSS:
+- Adjusted cancel button CSS
+- Fixed verified icon
+- Removed unnecessary CSS
+- Minor adjustements & fixes
