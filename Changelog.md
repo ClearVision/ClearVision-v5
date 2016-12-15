@@ -601,6 +601,8 @@
 ##VERSION 4.2.1
 (Release: Upcoming)
 ###CSS:
+- Adjusted guild error CSS
+- Adjusted tooltip error CSS
 - Adjusted cancel button CSS
 - Adjusted codeblock width
 - Fixed issues with private channels
