@@ -59,11 +59,12 @@ Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.co
 ####Settings
 ![SapphireSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_settings.png)
 
-#Event themes
-##ClearVision - Halloween
+##ClearVision - Winter
 ####Dark Appearance
-![HalloweenDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_dark.png)
+![WinterDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_dark.png)
 ####Light Appearance
-![HalloweenLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_light.png)
+![WinterLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_light.png)
 ####Settings
-![HalloweenSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_settings.png)
+![WinterSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_settings.png)
+
+v
