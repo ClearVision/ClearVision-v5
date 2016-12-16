@@ -66,5 +66,3 @@ Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.co
 ![WinterLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_light.png)
 ####Settings
 ![WinterSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_settings.png)
-
-v
