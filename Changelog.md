@@ -604,6 +604,7 @@
 - Adjusted guild error CSS
 - Adjusted tooltip error CSS
 - Adjusted cancel button CSS
+- Adjusted & fixed linenumbers CSS
 - Adjusted codeblock width
 - Adjusted embed CSS
 - Fixed issues with private channels
