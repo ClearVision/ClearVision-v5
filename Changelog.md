@@ -608,6 +608,7 @@
 - Adjusted codeblock width
 - Adjusted embed CSS
 - Fixed issues with new Discord update
+- Fixed issues with guild transitions
 - Fixed issues with private channels
 - Fixed verified icon
 - Removed unread animation
