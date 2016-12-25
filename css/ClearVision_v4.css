@@ -1,4 +1,4 @@
-/* "ClearVision CSS v4.2.0" by @Zerthox */
+/* "ClearVision CSS v4.1.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v4.2.0";
+    content: "ClearVision v4.2.1";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -380,7 +380,7 @@ a,
 .chat .username-wrapper .user-name,
 .chat .message-group a,
 .chat .title-wrap .topic a,
-.mentioned .highlight,
+.mentioned .mention,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a,
 .theme-dark .chat .title-wrap .topic a,
 .markdown-modal a,
@@ -403,7 +403,7 @@ a:hover,
 .chat .username-wrapper:hover .user-name,
 .chat .message-group a:hover,
 .chat .title-wrap .topic a:hover,
-.mentioned .highlight:hover,
+.mentioned .mention:hover,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a:hover,
 .theme-dark .chat .title-wrap .topic a:hover,
 .markdown-modal a:hover,
@@ -561,56 +561,13 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: #fff;
     border-color: var(--main-color);
 }
-.mentioned .highlight:hover {
+.mentioned .mention:hover {
     color: var(--main-color);
 }
-.highlight:hover {
+.mention:hover {
     cursor: pointer;
     color: #fff;
     background-color: var(--main-color) !important;
-}
-.tooltip.tooltip-left::after {
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    border-left-color: var(--main-color);
-    margin-top: -5px;
-}
-.tooltip.tooltip-right::after {
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    border-right-color: var(--main-color);
-    margin-top: -5px;
-}
-.tooltip {
-    position: absolute;
-    background-color: var(--main-color);
-    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
-    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
-    border-radius: 3px;
-    font-weight: 600;
-    font-size: 12px;
-    color: #fff;
-    z-index: 1002;
-    max-width: 160px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    padding: 5px 10px;
-}
-.tooltip.tooltip-bottom::after {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    border-bottom-color: var(--main-color);
-    margin-left: -5px;
-}
-.tooltip.tooltip-top::after {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-top-color: var(--main-color);
 }
 .region-select-modal {
     background: rgba(0, 0, 0, 0.75);
@@ -736,7 +693,8 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .CodeMirror .CodeMirror-selected,
 .CodeMirror-line::selection,
 .CodeMirror-line > span::selection,
-.CodeMirror-line > span > span::selection {
+.CodeMirror-line > span > span::selection,
+.note textarea::selection {
     color: #fff;
     background: var(--main-color);
 }
@@ -918,6 +876,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .theme-dark .message-group .comment .markup pre code {
     background: transparent;
     color: rgba(255, 255, 255, 0.7);
+    overflow-x: visible;
 }
 .chat .title-wrap .topic a,
 .theme-dark .chat .title-wrap .topic a {
@@ -1060,8 +1019,9 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: #F5FBF9;
     border-radius: 3px;
 }
-.user-settings-modal-games .games-table .games-row .item-game .icon {
-    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/verified.svg);
+.user-settings-modal-games .games-table .games-row .item-game .icon,
+.now-playing .item-game .icon {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/verified.svg) !important;
     background-position: center;
     background-size: 100%;
     opacity: .7 !important;
@@ -1130,7 +1090,7 @@ textarea {
     background: transparent !important;
 }
 .guilds-wrapper {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset -10px 0px 20px -10px rgba(0, 0, 0, 0.2);
     box-shadow: inset -10px 0px 20px -10px rgba(0, 0, 0, 0.2);
 }
@@ -1281,8 +1241,8 @@ textarea {
 .chat >. content .messages .message-group:not(.has-divider) {
     border-bottom-color: hsla(0, 0%, 100%, .04) !important;
 }
-.highlight:hover,
-.chat > .content .messages .message-group .markup .highlight:hover {
+.mention:hover,
+.chat > .content .messages .message-group .markup .mention:hover {
     color: #fff !important;
 }
 .chat > .content .messages .message-group .markup {
@@ -1299,6 +1259,7 @@ textarea {
     cursor: pointer;
 }
 .chat > .content .messages .message-group .markup pre {
+    max-width: 93%;
     background: transparent !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
     padding: 0;
@@ -1557,7 +1518,7 @@ textarea {
     border-top: 1px solid transparent;
 }
 .form .btn-default {
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px !important;
     height: 35.5px;
     border-radius: 3px;
@@ -1592,7 +1553,7 @@ a:link {
     background-color: rgba(0, 0, 0, 0.76);
     border-top: 2px solid var(--main-color);
 }
-.highlight {
+.mention {
     color: #ddd !important;
     background: rgba(115, 139, 215, .1) !important;
     padding: 1px 4px;
@@ -1958,10 +1919,10 @@ a:link {
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {
     background: rgba(0, 0, 0, 0.29);
 }
-.friends-table .messages .message-group .comment .markup .highlight:hover,
-.messages-wrapper .messages .message-group .comment .markup .highlight:hover,
-.theme-dark .friends-table .messages .message-group .comment .markup .highlight:hover,
-.theme-dark .messages-wrapper .messages .message-group .comment .markup .highlight:hover {
+.friends-table .messages .message-group .comment .markup .mention:hover,
+.messages-wrapper .messages .message-group .comment .markup .mention:hover,
+.theme-dark .friends-table .messages .message-group .comment .markup .mention:hover,
+.theme-dark .messages-wrapper .messages .message-group .comment .markup .mention:hover {
     background-color: var(--main-color) !important;
 }
 .user-settings-modal.settings {
@@ -2016,10 +1977,14 @@ a:link {
     font-size: 14px !important;
     font-weight: 700 !important;
 }
-.guilds-error {
-    width: 40px !important;
-    height: 40px !important;
-    line-height: 39px !important;
+.guilds-wrapper .guilds-error {
+    background-color: rgba(21, 21, 21, 0.41);
+    border-color: var(--main-color);
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+.guilds-wrapper .guilds-error:hover {
+    background-color: var(--main-color);
 }
 .private-channels .channel .icon-friends {
     background-color: var(--main-color) !important;
@@ -2295,8 +2260,8 @@ img.image {
 .emoji-picker .categories .item.recent {
     background-image: url(https://discordapp.com/assets/0f1f2dff98b5e2099086e303d9be0dad.svg);
 }
-.chat .title-wrap .topic .highlight,
-.theme-dark .chat .title-wrap .topic .highlight {
+.chat .title-wrap .topic .mention,
+.theme-dark .chat .title-wrap .topic .mention {
     border-radius: 4px;
 }
 .markdown-modal {
@@ -2847,8 +2812,6 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
 }
 .guilds-wrapper .guilds .guild.unread::before {
     background: var(--main-color) !important;
-    -webkit-animation: unread 1s infinite alternate;
-    animation: unread 1s infinite alternate;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -2870,8 +2833,6 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
     margin-left: 6px;
     border-radius: 0;
     opacity: .25;
-    -webkit-animation: unread-hover 1s ease-in-out;
-    animation: unread-hover 1s ease-in-out;
 }
 .bd-minimal .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):hover::before {
     height: 28px;
@@ -3000,8 +2961,8 @@ div#bd-pub-button:hover {
     background-color: rgba(0, 0, 0, 0.5) !important;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+    -webkit-transition: transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
 }
 .guilds-wrapper .guilds .guild .guild-inner:active {
     -webkit-transform: scale(.9);
@@ -3215,7 +3176,7 @@ div#bd-pub-button:hover {
 .diversity-selector .popout .item:hover {
     background-color: var(--main-color);
 }
-.chat .title-wrap .topic .highlight:hover {
+.chat .title-wrap .topic .mention:hover {
     background-color: var(--main-color) !important;
     border-radius: 4px;
 }
@@ -4330,7 +4291,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 .message-group .mentioned .message-text {
     background-color: rgba(100, 100, 100, .3) !important;
 }
-.chat>.content .messages .message-group .mentioned .markup .highlight {
+.chat>.content .messages .message-group .mentioned .markup .mention {
     color: var(--main-color) !important;
 }
 .message-group .mentioned .message-text::after {
@@ -4338,6 +4299,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     border-left: 4px solid var(--main-color);
 }
 .form .btn-default:hover {
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     border: none;
 }
@@ -4468,7 +4430,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
-.chat>.content .messages .message-group .mentioned .markup .highlight:hover {
+.chat>.content .messages .message-group .mentioned .markup .mention:hover {
     background: transparent !important;
 }
 .bd-dropdown.open .bd-dropdown-list ul {
@@ -4959,7 +4921,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 .CodeMirror-scrollbar-filler {
     background: transparent;
 }
-.dms .guild:not(.audio) .guild-inner[style*="border-radius: 15px;"]::before {
+.guild.active ~ .dms .guild:not(.audio) .guild-inner[style*="border-radius: 15px;"]::before {
     content: "";
     width: 13px;
     left: -21px;
@@ -5117,6 +5079,65 @@ ul.bda-slist {
     -webkit-transition: border .3s ease-in-out;
     transition: border .3s ease-in-out;
 }
+.private-channels .channel .channel-name {
+    text-shadow: none;
+}
+.private-channels .channel.selected .channel-activity {
+    color: #fff;
+}
+.note textarea {
+    color: #a7a7a7;
+}
+
+/* TOOLTIP */
+.tooltip,
+.tooltip.tooltip-error {
+    position: absolute;
+    background-color: var(--main-color);
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    z-index: 1002;
+    max-width: 160px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding: 5px 10px;
+}
+.tooltip.tooltip-top::after,
+.tooltip.tooltip-top.tooltip-error::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-top-color: var(--main-color);
+}
+.tooltip.tooltip-right::after,
+.tooltip.tooltip-right.tooltip-error::after {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    border-right-color: var(--main-color);
+    margin-top: -5px;
+}
+.tooltip.tooltip-bottom::after,
+.tooltip.tooltip-bottom.tooltip-error::after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-bottom-color: var(--main-color);
+    margin-left: -5px;
+}
+.tooltip.tooltip-left::after,
+.tooltip.tooltip-left.tooltip-error::after {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    border-left-color: var(--main-color);
+    margin-top: -5px;
+}
 
 /* MEMBER ROLES */
 .member-roles .member-role {
@@ -5237,9 +5258,13 @@ pre:hover .copybutton {
     border-color: transparent;
 }
 .message-group .embed-wrapper .embed-color-pill,
-.theme-dark .message-group .embed-wrapper .embed-color-pill {
-    background-color: hsla(0, 0%, 95%, .1) !important;
+.theme-dark .message-group .embed-wrapper .embed-color-pill{
+    background-color: hsla(0, 0%, 95%, .1);
     border-radius: 0;
+}
+.message-group .embed-wrapper .embed-color-pill[style*="background-color"],
+.theme-dark .message-group .embed-wrapper .embed-color-pill[style*="background-color"] {
+    opacity: 0.3;
 }
 .message-group .embed .embed-author-name,
 .theme-dark .message-group .embed .embed-author-name {
@@ -5417,24 +5442,28 @@ pre:hover .copybutton {
 
 /* CODEBLOCK LINENUMBERS */
 .hljs .kawaii-linenumbers {
-    list-style: none !important;
+    list-style: none;
+    counter-reset: linenumbers;
     border-left: 2.6ch solid rgba(255, 255, 255, 0.04);
     margin: -6px;
     padding: 6px;
 }
+
 .hljs .kawaii-linenumbers li {
-    counter-increment: lines;
-    text-indent: -6.6ch;
+    text-indent: -3ch;
+    margin-left: 0;
     padding: 0;
     border: none;
 }
+
 .hljs .kawaii-linenumbers li::before {
-    content: counter(lines);
-    display: inline-block;
-    margin-right: 1ch;
-    padding: 0;
-    max-width: 2ch;
+    content: counter(linenumbers);
+    counter-increment: linenumbers;
     color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 2ch;
+    margin-right: 0.5ch;
+    padding-right: 0.5ch;
     text-align: right;
     overflow: hidden;
     vertical-align: top;
@@ -6743,6 +6772,11 @@ img:not(.emote):not(.emoji)::before {
 #user-profile-modal .avatar-profile {
     border: 6px solid var(--main-color) !important;
 }
+#user-profile-modal .actions .btn.add-friend,
+#user-profile-modal .actions .btn.reject-friend {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
 @-webkit-keyframes friend-request-pulse {
     0% {
         -webkit-box-shadow: 0 0 0 0 var(--main-color);
@@ -6772,16 +6806,18 @@ img:not(.emote):not(.emoji)::before {
     }
 }
 #user-profile-modal .actions .btn.add-friend {
+    background: var(--main-color);
     -webkit-animation: friend-request-pulse 1.5s infinite;
     animation: friend-request-pulse 1.5s infinite;
 }
-#user-profile-modal .actions .btn.add-friend {
-    background: var(--main-color);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
 #user-profile-modal .actions .btn.add-friend:hover {
     background: var(--hover-color);
+}
+#user-profile-modal .actions .btn.reject-friend {
+    background: rgba(0, 0, 0, 0.3);
+}
+#user-profile-modal .actions .btn.reject-friend:hover {
+    background: rgba(0, 0, 0, 0.5);
 }
 #user-profile-modal .actions .btn.disabled {
     background: #8E8E8E !important;
@@ -6820,6 +6856,9 @@ img:not(.emote):not(.emoji)::before {
     margin-top: 4px;
     margin-left: 4px;
     background-color: transparent;
+}
+#user-profile-modal .guilds .section .note textarea {
+    color: #909090;
 }
 #user-profile-modal .guilds .avatar-large {
     background-color: transparent;
@@ -7460,4 +7499,10 @@ img:not(.emote):not(.emoji)::before {
 }
 .theme-light .chat .title-wrap .topic::before {
     background-color: hsla(0, 0%, 85%, .1);
+}
+.theme-light .messages-popout .empty-placeholder .body {
+    color: rgba(255,255,255,.2);
+}
+.theme-light .messages-popout .empty-placeholder .image {
+    -webkit-filter: brightness(25%);
 }
