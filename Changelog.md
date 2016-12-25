@@ -599,7 +599,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 4.2.1
-(Release: Upcoming)
+(Release: 25/12/16)
 ###CSS:
 - Adjusted guild error CSS
 - Adjusted tooltip error CSS
