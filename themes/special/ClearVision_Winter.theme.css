@@ -48,12 +48,12 @@ body::after,
 --------------------------------------------------------------------------------------------------------------------------------------------
 */
 
-/* HALLOWEEN LOADING ANIMATION */
+/* Winter LOADING ANIMATION */
 #app-mount::after {
-    -webkit-animation: cv-halloween 3s ease-in-out;
-    animation: cv-halloween 3s ease-in-out;
+    -webkit-animation: cv-winter 3s ease-in-out;
+    animation: cv-winter 3s ease-in-out;
 }
-@-webkit-keyframes cv-halloween {
+@-webkit-keyframes cv-winter {
     0% {
         content: "Riding sleigh";
         -webkit-transform: scale(.7);
@@ -131,7 +131,7 @@ body::after,
         opacity: 0;
     }
 }
-@keyframes cv-halloween {
+@keyframes cv-winter {
     0% {
         content: "Riding sleigh";
         -webkit-transform: scale(.7);
