@@ -624,3 +624,4 @@
 ###CSS:
 - Added Discord Nitro mark
 - Adjusted background image position
+- Fixed input CSS
