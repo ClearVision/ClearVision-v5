@@ -614,3 +614,12 @@
 - Removed unread animation
 - Removed unnecessary CSS
 - Minor adjustements & fixes
+
+##VERSION 5.0.0
+(Release: Upcoming)
+###GENERAL:
+- Added background image brightness CSS variable
+- Added background image blur CSS variable
+
+###CSS:
+- Added Discord Nitro mark
