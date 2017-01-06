@@ -6,7 +6,7 @@ Join for *update notifications* and *theme support*!
 #Donations
 I spend hours working voluntarily on my themes every day.  
 Donations help me to keep up my work and constantly update, improve and optimize my themes.  
-Supporters get access to *supporter only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/HmVKer8).  
+Donators get access to *donator only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/HmVKer8).  
 If you want to support me you can donate money via Paypal or items via Steam.
 
 **Donate money:** [Paypal](https://www.paypal.me/zerthox)  
