@@ -624,6 +624,7 @@
 
 ###CSS:
 - Added Discord Nitro mark
+- Added custom GIF badge
 - Adjusted background image position
 - Fixed input CSS
 - Fixed channel scroller flickering issues
