@@ -625,3 +625,4 @@
 - Added Discord Nitro mark
 - Adjusted background image position
 - Fixed input CSS
+- Fixed channel scroller flickering issues
