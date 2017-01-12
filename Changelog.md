@@ -620,6 +620,7 @@
 ###GENERAL:
 - Added background image brightness CSS variable
 - Added background image blur CSS variable
+- Adjusted comment info in code
 
 ###CSS:
 - Added Discord Nitro mark
