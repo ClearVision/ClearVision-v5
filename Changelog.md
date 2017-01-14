@@ -624,6 +624,7 @@
 
 ###CSS:
 - Added Discord search CSS
+- Added reactions modal CSS
 - Added Discord Nitro mark
 - Added custom GIF badge
 - Adjusted background image position
