@@ -616,7 +616,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 5.0.0
-(Release: Upcoming)
+(Release: 15/01/2017)
 ###GENERAL:
 - Added background image brightness CSS variable
 - Added background image blur CSS variable
