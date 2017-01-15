@@ -1,9 +1,9 @@
-//META{"name":"ClearVision_Halloween","description":"A spooky, orange theme made for halloween!</br> Based on <a href='https://github.com/0mniscient/Discord-Themes/tree/master/Themes' target='_blank'>Discord Reborn</a> by <a href='https://github.com/0mniscient' target='_blank'>@Omniscient</a> & <a href='https://github.com/cosmicsalad/Discord-Themes-and-Plugins/tree/master/themes/DarkMatter' target='_blank'>DarkMatter</a> by <a href='https://github.com/cosmicsalad' target='_blank'>@Hammock</a> <span style='position: absolute; bottom: 0; left: 0;'>Links: <b><a href='https://git.io/v6BHO' target='_blank'>Github</a></b> | <b><a href='https://discord.gg/FtYVPky' target='_blank'>Discord</a></b> | <b><a href='https://git.io/vXTqM' target='_blank'>Wiki</a></b></span> <span style='position: absolute; bottom: 0; right: 14px;'>By <b><a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a></b></span>","author":"<a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a>","version":"4"}*//{}
-/* "ClearVision - Halloween v4" by @Zerthox */
+//META{"name":"ClearVision_Halloween","description":"A spooky, orange theme made for halloween!</br> Based on <a href='https://github.com/0mniscient/Discord-Themes/tree/master/Themes' target='_blank'>Discord Reborn</a> by <a href='https://github.com/0mniscient' target='_blank'>@Omniscient</a> & <a href='https://github.com/cosmicsalad/Discord-Themes-and-Plugins/tree/master/themes/DarkMatter' target='_blank'>DarkMatter</a> by <a href='https://github.com/cosmicsalad' target='_blank'>@Hammock</a> <span style='position: absolute; bottom: 0; left: 0;'>Links: <b><a href='https://git.io/v6BHO' target='_blank'>Github</a></b> | <b><a href='https://discord.gg/FtYVPky' target='_blank'>Discord</a></b> | <b><a href='https://git.io/vXTqM' target='_blank'>Wiki</a></b></span> <span style='position: absolute; bottom: 0; right: 14px;'>By <b><a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a></b></span>","author":"<a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a>","version":"5"}*//{}
+/* "ClearVision - Halloween v5" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* IMPORT CSS FROM GITHUB */
-@import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v4.min.css);
+@import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css);
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE BETWEEN DARK AND LIGHT VERSION IN APPEARANCE SETTINGS!
@@ -12,9 +12,11 @@ IMPORTANT: CHANGE BETWEEN DARK AND LIGHT VERSION IN APPEARANCE SETTINGS!
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ================ IMPORTANT LINKS =================
+Github: https://git.io/v6BHO
+Discord: https://git.io/vMnlu
+Wiki: https://git.io/vXTqM
 Latest version: https://git.io/v6Muk
 Changelog: https://git.io/v6r5N
-RemoveShadows theme: https://git.io/v6MuU IMPORTANT: Activate on top of a ClearVision theme!
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */
 /*
@@ -24,6 +26,8 @@ RemoveShadows theme: https://git.io/v6MuU IMPORTANT: Activate on top of a ClearV
 :root {
 	--main-color: #e67a27;
 	--hover-color: #b35d1e;
+    --background-blur: 0px;
+    --background-brightness: 100%;
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -49,163 +53,8 @@ body::after,
 */
 
 /* HALLOWEEN LOADING ANIMATION */
-#app-mount::after {
-    -webkit-animation: cv-halloween 3s ease-in-out;
-    animation: cv-halloween 3s ease-in-out;
-}
-@-webkit-keyframes cv-halloween {
-    0% {
-        content: "Getting costumes";
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    30% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    45% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    49% {
-        content: "Getting costumes";
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    50% {
-        content: "Carving pumpkins";
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    55% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    70% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    74% {
-        content: "Carving pumpkins";
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    75% {
-        content: "Ready for halloween";
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    80% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    95% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    99% {
-        content: "Ready for halloween";
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    100% {
-        content: "";
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-@keyframes cv-halloween {
-    0% {
-        content: "Getting costumes";
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    30% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    45% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    49% {
-        content: "Getting costumes";
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    50% {
-        content: "Carving pumpkins";
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    55% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    70% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    74% {
-        content: "Carving pumpkins";
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    75% {
-        content: "Ready for halloween";
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    80% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    95% {
-        opacity: .3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    99% {
-        content: "Ready for halloween";
-        opacity: 0;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-    }
-    100% {
-        content: "";
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-    }
+:root {
+    --load1: "Getting costumes";
+    --load2: "Carving pumpkins";
+    --load3: "Finished loading";
 }
