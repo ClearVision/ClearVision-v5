@@ -1,7 +1,0 @@
-/* "BlurBG v1" by Zerthox */
-/* Blurs app & backdrop background image */
-
-body::after,
-.callout-backdrop {
-  -webkit-filter: blur(5px);
-}
