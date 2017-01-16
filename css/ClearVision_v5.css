@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.0.0" by @Zerthox */
+/* "ClearVision CSS v5.0.1" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.0.0";
+    content: "ClearVision v5.0.1";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -460,6 +460,7 @@ _______/\\\\\___________________________________________________________________
 .callout-backdrop {
     background-color: #000;
     background-size: cover;
+    background-position: center;
     -webkit-filter: blur(var(--background-blur)) brightness(var(--background-brightness));
     filter: blur(var(--background-blur)) brightness(var(--background-brightness));
     -webkit-transition: 0.3s all ease;
@@ -5119,6 +5120,9 @@ ul.bda-slist {
 }
 .note textarea {
     color: #a7a7a7;
+}
+.image canvas {
+    border-radius: 5px;
 }
 .image .image-gif {
     background: rgba(0, 0, 0, .3);
