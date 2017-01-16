@@ -630,3 +630,9 @@
 - Adjusted background image position
 - Fixed input CSS
 - Fixed channel scroller flickering issues
+
+##VERSION 5.0.1
+(Release: 16/01/2017)
+###CSS:
+- Fixed backdrop position
+- Fixed GIF border radius
