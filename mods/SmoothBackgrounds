@@ -1,0 +1,9 @@
+/* "Smooth Backgrounds v1" by Zerthox */
+/* Make the background really clear & more smooth */
+
+.channels-wrap,
+.content .flex-spacer,
+.title-wrap,
+.channel-members {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+}
