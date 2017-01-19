@@ -59,6 +59,15 @@ Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.co
 ####Settings
 ![SapphireSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_settings.png)
 
+##ClearVision - Halloween
+####Dark Appearance
+![WinterDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_dark.png)
+####Light Appearance
+![WinterLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_light.png)
+####Settings
+![WinterSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_settings.png)
+
+
 ##ClearVision - Winter
 ####Dark Appearance
 ![WinterDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_dark.png)
