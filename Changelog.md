@@ -636,3 +636,10 @@
 ###CSS:
 - Fixed backdrop position
 - Fixed GIF border radius
+
+##VERSION 5.0.2
+(Release: Upcoming)
+- Adjusted search CSS
+- Fixed issues with new Discord update
+- Fixed user settings icons
+- Minor adjustements & fixes
