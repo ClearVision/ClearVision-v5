@@ -638,7 +638,7 @@
 - Fixed GIF border radius
 
 ##VERSION 5.0.2
-(Release: Upcoming)
+(Release: 25/01/2017)
 - Adjusted search CSS
 - Fixed issues with new Discord update
 - Fixed user settings icons
