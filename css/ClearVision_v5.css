@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.0.1" by @Zerthox */
+/* "ClearVision CSS v5.0.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.0.1";
+    content: "ClearVision v5.0.2";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -1492,7 +1492,6 @@ textarea {
 .form .control-group textarea {
     background: rgba(0, 0, 0, 0.6);
     color: #D6D6D6;
-    border-bottom: 0px solid #000000;
     border-radius: 3px;
     padding: 0px 0px 0px 5px;
     -webkit-transition: all .3s ease-in-out;
@@ -3151,6 +3150,8 @@ div#bd-pub-button:hover {
 }
 .search-bar.search-bar-light input::-webkit-input-placeholder {
     color: #616161;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 .search-bar-icon {
     width: 0;
@@ -5079,6 +5080,8 @@ ul.bda-slist {
 }
 .channel-textarea-inner textarea::-webkit-input-placeholder {
     color: hsla(0, 0%, 100%, .2);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 .message-group .embed .embed-author,
 .message-group .embed .embed-description,
@@ -5138,6 +5141,14 @@ ul.bda-slist {
 }
 
 /* SEARCH */
+.search .search-bar {
+    border-bottom: 2px solid hsla(0, 0%, 100%, .04);
+    -wekbit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.search.focused .search-bar {
+    border-color: var(--main-color);
+}
 .search-answer,
 .theme-dark .search-answer,
 .search-filter,
@@ -5164,6 +5175,11 @@ ul.bda-slist {
 }
 .search-popout .search-query {
     border-color: transparent;
+}
+.search-popout .search-query.selected .keybind-shortcut span {
+    border-color: hsla(0, 0%, 100%, .7);
+    -webkit-box-shadow: inset 0 -4px 0 rgba(227, 227, 227, .7);
+    box-shadow: inset 0 -4px 0 rgba(227, 227, 227, .7);
 }
 .search-popout .results-group .search-clear-history {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) !important;
@@ -5294,9 +5310,31 @@ ul.bda-slist {
 .message-reactions-modal .message-reactions-reactors .reactor {
     box-shadow: inset 0 -1px 0 0 hsla(0, 0%, 100%, .04);
 }
+.message-reactions-modal .message-reactions-list-inner .reaction {
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+.message-reactions-modal .message-reactions-list-inner .reaction + .reaction {
+    margin-top: 3px;
+}
+.message-reactions-modal .message-reactions-list-inner .reaction:not(.selected) {
+    background-color: hsla(0, 0%, 100%, .04);
+}
+.message-reactions-modal .message-reactions-list-inner .reaction:not(.selected):hover {
+    background-color: hsla(0, 0%, 100%, .1);
+}
+.message-reactions-modal .message-reactions-list-inner .reaction.selected {
+    background-color: var(--hover-color) !important;
+}
+.message-reactions-modal .message-reactions-list-inner .reaction.selected:hover {
+    background-color: var(--main-color) !important;
+}
 .message-reactions-modal .message-reactions-list-inner .reaction .count,
 .message-reactions-modal .message-reactions-reactors .reactor .name {
-    color: rgba(255,255,255,.3);
+    color: hsla(0, 0%, 100%, .5);
+}
+.message-reactions-modal .message-reactions-list-inner .reaction.selected .count {
+    color: hsla(0, 0%, 100%, .7) !important;
 }
 .message-reactions-modal .message-reactions-reactors .reactor .remove {
     width:0px;
@@ -5596,8 +5634,10 @@ pre:hover .copybutton {
     -webkit-transition: background .1s ease-in-out;
     transition: background .1s ease-in-out;
 }
-.reaction .reaction-count {
+.reaction .reaction-count,
+.theme-dark .reaction .reaction-count {
     margin-left: 3px;
+    color: hsla(0, 0%, 100%, .3);
 }
 .reaction .emoji {
     margin: 1px 0 !important;
@@ -7251,49 +7291,52 @@ img:not(.emote):not(.emoji)::before {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/2b953734/icons/speed.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg);
 }
-.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after,
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg);
-}
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg);
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13)::after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg);
 }
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after,
 .platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14)::after,
 .platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg);
+}
+.user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after,
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14)::after {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg);
 }
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after {
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg);
 }
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after,
-.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after {
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after,
+.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg);
 }
-.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
+.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12)::after {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg);
 }
 #bd-settings-new::after {
