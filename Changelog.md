@@ -639,7 +639,15 @@
 
 ##VERSION 5.0.2
 (Release: 25/01/2017)
+###CSS:
 - Adjusted search CSS
 - Fixed issues with new Discord update
 - Fixed user settings icons
+- Minor adjustements & fixes
+
+##VERSION 5.0.3
+(Release: Upcoming)
+###CSS:
+- Added search highlight CSS
+- Adjusted & fixed search CSS
 - Minor adjustements & fixes
