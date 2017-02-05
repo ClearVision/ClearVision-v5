@@ -582,7 +582,7 @@
 
 ##VERSION 4.2.0
 (Release: 02/12/2016)
-###GENRAL:
+###GENERAL:
 - Added min CSS
 - Themes now load min CSS
 
