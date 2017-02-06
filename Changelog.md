@@ -646,7 +646,7 @@
 - Minor adjustements & fixes
 
 ##VERSION 5.0.3
-(Release: Upcoming)
+(Release: 06/02/2017)
 ###CSS:
 - Added search highlight CSS
 - Added plugin settings textarea CSS
