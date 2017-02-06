@@ -651,5 +651,6 @@
 - Added search highlight CSS
 - Added plugin settings textarea CSS
 - Adjusted & fixed search CSS
+- Fixed issues with background
 - Fixed issues with textarea colors
 - Minor adjustements & fixes
