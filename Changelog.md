@@ -654,3 +654,9 @@
 - Fixed issues with background
 - Fixed issues with textarea colors
 - Minor adjustements & fixes
+
+##VERSION 5.0.4
+(Release: Upcoming)
+###CSS:
+- Added SendEmbeds CSS
+- Fixed search CSS
