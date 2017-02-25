@@ -659,4 +659,5 @@
 (Release: Upcoming)
 ###CSS:
 - Added SendEmbeds CSS
+- Fixed textarea focus CSS
 - Fixed search CSS
