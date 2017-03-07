@@ -661,3 +661,4 @@
 - Added SendEmbeds CSS
 - Fixed textarea focus CSS
 - Fixed search CSS
+- Fixed keyboard shorcut modal CSS
