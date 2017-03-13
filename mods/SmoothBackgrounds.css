@@ -1,9 +1,22 @@
-/* "Smooth Backgrounds v1" by Zerthox */
+/* "Smooth Backgrounds v1.1" by Zerthox */
 /* Make the background really clear & more smooth */
 
-.channels-wrap,
-.content .flex-spacer,
-.title-wrap,
-.channel-members {
-	background-color: rgba(0, 0, 0, 0.6) !important;
+.theme-light .guilds-wrapper,
+.theme-dark .guilds-wrapper,
+.theme-light .channels-wrap,
+.theme-dark .channels-wrap,
+.theme-light .content .flex-spacer,
+.theme-dark .content .flex-spacer,
+.theme-light .title-wrap,
+.theme-dark .title-wrap,
+.theme-light .channel-members,
+.theme-dark .channel-members,
+.theme-light .search-results-wrap,
+.theme-dark .search-results-wrap,
+.theme-light .search-results-wrap,
+.theme-light .friends-header,
+.theme-dark .friends-header,
+.theme-light .friends-table,
+.theme-dark .friends-table {
+    background-color: rgba(0, 0, 0, 0.6) !important;
 }
