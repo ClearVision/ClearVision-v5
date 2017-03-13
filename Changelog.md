@@ -659,6 +659,9 @@
 (Release: Upcoming)
 ###CSS:
 - Added SendEmbeds CSS
+- Added Quoter CSS
+- Improved support for light theme
+- Adjusted & fixed search CSS
 - Fixed textarea focus CSS
-- Fixed search CSS
 - Fixed keyboard shorcut modal CSS
+- Fixed issues with light theme
