@@ -660,6 +660,7 @@
 ###CSS:
 - Added SendEmbeds CSS
 - Added Quoter CSS
+- Added status dot transitions
 - Improved support for light theme
 - Adjusted & fixed search CSS
 - Fixed textarea focus CSS
