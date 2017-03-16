@@ -1,60 +1,60 @@
-##VERSION 1.1.5
-####GENERAL:
+## VERSION 1.1.5
+#### GENERAL:
 - Created changelog
 
-####CSS:
+#### CSS:
 - Added emoji-picker CSS
 - Fixed highlight CSS
 
-##VERSION 1.1.6
-####CSS:
+## VERSION 1.1.6
+#### CSS:
 - Added scrollbar CSS for public server list
 
-##VERSION 1.1.7
-####GENERAL:
+## VERSION 1.1.7
+#### GENERAL:
 - Added link to changelog
 - Added link to a preview image
 
-####CSS:
+#### CSS:
 - Added notification badge CSS for friends list
 - Fixed friends list avatars on user profiles
 
-##VERSION 1.1.8
-####CSS:
+## VERSION 1.1.8
+#### CSS:
 - Reworked checkbox CSS
 - Changed slider CSS
 - Changed radio button CSS
 - Added twitch streaming CSS
 
-##VERSION 1.1.9
-####GENERAL:
+## VERSION 1.1.9
+#### GENERAL:
 - Updated theme description
 - Updated commented info in code
 - Added link to DRB RemoveShadows theme
 - Reworked changelog
 
-####CSS:
+#### CSS:
 - Reworked settings tab bar CSS
 - Adjusted alt checkbox CSS
 - Fixed text CSS next to checkboxes
 - Fixed searchbar CSS
 
-##VERSION 1.2.0
+## VERSION 1.2.0
 (Release: 21/06/2016)
-####GENERAL:
+#### GENERAL:
 - Moved to GitHub
 - Updated links
 
-####CSS:
+#### CSS:
 - Added button onclick animations
 - Added shadow to checkbox switch
 - Adjusted user profile background image brightness
 - Fixed activity text on user profiles
 - Fixed alt checkbox CSS
 
-##VERSION 1.2.1
+## VERSION 1.2.1
 (Release: 22/06/2016)
-####CSS:
+#### CSS:
 - Reworked account buttons
 - Reworked voice connection buttons
 - Reworked icons
@@ -62,14 +62,14 @@
 - Added emote picker onklick animations
 - Adjusted user settings background CSS
 
-##VERSION 1.2.2
+## VERSION 1.2.2
 (Release: 24/06/2016)
-####GENERAL:
+#### GENERAL:
 - Replaced screenshots
 - Added new screenshots
 - Added info to use dark theme & dark mode
 
-####CSS:
+#### CSS:
 - Added symbols to settings tab bars
 - Added pinned messages CSS
 - Added background to active header buttons
@@ -84,9 +84,9 @@
 - Fixed emote sorting issues
 - Fixed background colors in public server list
 
-##VERSION 1.2.3
+## VERSION 1.2.3
 (Release: 27/06/2016)
-####CSS:
+#### CSS:
 - Added jump to present bar CSS
 - Added guild placeholder CSS
 - Added symbols to settings tab bars for browser and mac
@@ -99,27 +99,27 @@
 - Fixed highlight CSS issues
 - Fixed icon/button sizing issues
 
-##VERSION 1.2.4
+## VERSION 1.2.4
 (Release: 29/06/2016)
-####GENERAL:
+#### GENERAL:
 - Added new red "Ruby" theme
 - Renamed "Ruby" theme to "Amber"
 - Updated backgrounds to higher resolutions
 - Beautified CSS
 - Shortened URLs
 
-####CSS:
+#### CSS:
 - Added clock plugin CSS
 - Fixed slider handle positions
 
-##VERSION 1.2.5
+## VERSION 1.2.5
 (Release: 02/07/2016)
-####GENERAL:
+#### GENERAL:
 - Changed versioning system
 - Added release dates to changelog
 - Added former version numbers to changelog
 
-####CSS:
+#### CSS:
 - Added icons for titlebar buttons
 - Added icons for header toolbar buttons
 - Added hover animations for account buttons
@@ -129,12 +129,12 @@
 - Changed titlebar button hover colors
 - Removed channel name capitalizing
 
-##VERSION 1.2.6
+## VERSION 1.2.6
 (Release: 04/07/2016)
-####GENERAL:
+#### GENERAL:
 - Updated screenshots
 
-####CSS:
+#### CSS:
 - Added mute button hover animation
 - Added user name hover CSS
 - Added user popout roles hover CSS
@@ -155,12 +155,12 @@
 - Fixed avatars not sizing correctly
 - Removed several unnecessary, no longer working lines
 
-##VERSION 1.2.7
+## VERSION 1.2.7
 (Release: 07/07/2016)
-####GENERAL:
+#### GENERAL:
 - Added support for more browsers (webkit)
 
-####CSS:
+#### CSS:
 - Added new icons in channels
 - Added image download button CSS
 - Added mention highlight CSS
@@ -179,14 +179,14 @@
 - Fixed link hover CSS
 - Minor changes & fixes
 
-##VERSION 1.2.8
+## VERSION 1.2.8
 (Release: 10/07/2016)
-####GENERAL:
+#### GENERAL:
 - Better support for light theme
 - Removed unnecessary CSS
 - Shortened & optimized CSS
 
-####CSS:
+#### CSS:
 - Changed pin icon
 - Changed new messages CSS
 - Added & adjusted user settings connections CSS
@@ -196,15 +196,15 @@
 - Adjusted code cursor color
 - Minor changes & fixes
 
-##VERSION 1.3.0
+## VERSION 1.3.0
 (Release: 16/07/2016)
-####GENERAL:
+#### GENERAL:
 - Renamed themes to "Discord ReBorn"
 - Optimized colors
 - Updated screenshots
 - Changed release dates
 
-####CSS:
+#### CSS:
 - Added load animation
 - Added recent mentions popout CSS
 - Updated pinned messages popout CSS
@@ -220,9 +220,9 @@
 - Adjusted discriminator CSS
 - Fixed button icons
 
-##VERSION 1.3.1
+## VERSION 1.3.1
 (Release: 21/07/2016)
-####GENERAL:
+#### GENERAL:
 - New background image for Sapphire
 - Toned Sapphire colors to fit new background
 - Updated Sapphire screenshots
@@ -230,7 +230,7 @@
 - Added credit to Hammock (Omniscient used parts of his theme)
 - Updated RemoveShadows theme link
 
-####CSS:
+#### CSS:
 - Reworked background image CSS
 - Removed old load animation
 - Added new load animation
@@ -253,19 +253,19 @@
 - Fixed custom css editor CSS
 - Minor adjustements & fixes
 
-##VERSION 1.3.1b
+## VERSION 1.3.1b
 (Release: 23/07/2016)
-####CSS:
+#### CSS:
 - Fixed backgrounds not showing for browsers and custom CSS
 
-##VERSION 1.3.2
+## VERSION 1.3.2
 (Release: 09/08/2016)
-####GENERAL:
+#### GENERAL:
 - Created Discord ReBorn Discord server
 - Moved icons to github
 - Updated screenshots
 
-####CSS:
+#### CSS:
 - Added Call CSS
 - Added EBR CSS
 - Added new create group modal CSS
@@ -278,9 +278,9 @@
 - Fixed voice debug issues
 - Minor adjustements & fixes
 
-##VERSION 2.0.0
+## VERSION 2.0.0
 (Release: 11/08(2016)
-####GENERAL:
+#### GENERAL:
 - Renamed theme series to "ClearVision"
 - Added CSS variables for colors and background
 - Better support for non-BD Dark
@@ -288,7 +288,7 @@
 - Moved screenshots to github
 - Updated screenshots
 
-####CSS:
+#### CSS:
 - Added upload modal CSS
 - Added drag & drop modal CSS
 - Removed "channel members loading" image
@@ -298,14 +298,14 @@
 - Fixed server settings member list ClearVision Dev mark
 - Minor adjustements & fixes
 
-##VERSION 2.0.1
+## VERSION 2.0.1
 (Release: 17/08/2016)
-####GENERAL:
+#### GENERAL:
 - Beautified changelog
 - Removed former version numbers from changelog
 - Updated changelog link
 
-####CSS:
+#### CSS:
 - Renamed "basic-color" variable to "main-color"
 - Added channel textarea focus CSS
 - Added web invite modal icons
@@ -316,9 +316,9 @@
 - Fixed bot tag
 - Minor adjustements & fixes
 
-##VERSION 2.1.0
+## VERSION 2.1.0
 (Release: 20/08/2016)
-####GENERAL:
+#### GENERAL:
 - Added light version of the theme for light appearance
 - Better support for light theme
 - Moved themes into own folder
@@ -326,26 +326,26 @@
 - Updated links
 - Removed "Fixes & adjustements by Zerthox" note
 
-####CSS:
+#### CSS:
 - Added info to appereance tab in settings
 - Added CSS from dark theme to light theme
 - Fixed text channel hover CSS
 - Minor adjustemens & fixes
 
-##VERSION 2.1.1
+## VERSION 2.1.1
 (Release: 20/08/2016)
-####CSS:
+#### CSS:
 - Fixed group channel toolbar icons
 
-##VERSION 2.2.0
+## VERSION 2.2.0
 (Release: 30/08/2016)
-####GENERAL:
+#### GENERAL:
 - Added info for customization to the readme
 - Darkened light version of the theme for better readability
 - Nearly full support for light theme
 - Added light version screenshots
 
-####CSS:
+#### CSS:
 - Made pinned messages clickable
 - Added flashing unread guild marker animation
 - Added flashing badge animation
@@ -364,13 +364,13 @@
 - Fixed EBR CSS issues
 - Minor adjustements & fixes
 
-##VERSION 2.3.0 
+## VERSION 2.3.0 
 (Release: 02/09/2016)
-####GENERAL:
+#### GENERAL:
 - Sorted little parts of CSS
 - Fixed issues with new Discord version
 
-####CSS:
+#### CSS:
 - Added user popout CSS to light version
 - Added detected accounts modal CSS
 - Added friend add page CSS
@@ -387,9 +387,9 @@
 - Several little fixes
 - Minor adjustements
 
-##VERSION 2.3.1
+## VERSION 2.3.1
 (Release: 05/09/2016)
-####CSS:
+#### CSS:
 - Reworked Dev mark
 - Added user profile modal icons
 - Added pseudo element syntax highlighting
@@ -398,14 +398,14 @@
 - Adjusted BetterDiscord theme/plugin list CSS
 - Fixed emote picker custom emotes
 
-##VERSION 3.0.0
+## VERSION 3.0.0
 (Release: 07/09/2016)
-####GENERAL:
+#### GENERAL:
 - Theme now automatically loads the newest version from github
 - Updated theme description
 - Added links to theme description
 
-####CSS:
+#### CSS:
 - Added friend list button icons
 - Added friend list discriminator transition
 - Changed BetterDiscord settings tab icon
@@ -414,9 +414,9 @@
 - Fixed bot tag position
 - Minor adjustements & fixes
 
-##VERSION 3.0.1
+## VERSION 3.0.1
 (Release: 07/09/2016)
-####CSS:
+#### CSS:
 - Added user popout Dev mark hover CSS
 - Adjusted member roles overflow
 - Adjusted emoji picker category CSS
@@ -425,9 +425,9 @@
 - Fixed bot tag & discriminator issues
 - Minor adjustements & fixes
 
-##VERSION 3.0.2
+## VERSION 3.0.2
 (Release: 11/09/2016)
-####CSS:
+#### CSS:
 - Added keyboard shorcut modal CSS
 - Added broken image CSS
 - Added role add button icon
@@ -440,9 +440,9 @@
 - Fixed issues with friend page buttons
 - Minor adjustements & fixes
 
-##VERSION 3.0.3
+## VERSION 3.0.3
 (Release: 16/09/16)
-####CSS:
+#### CSS:
 - Added context menu animation
 - Added user popout animation
 - Added file upload button icon
@@ -455,9 +455,9 @@
 - Fixed pin & mention popout issues
 - Minor adjustements & fixes
 
-##VERSION 3.0.4
+## VERSION 3.0.4
 (Release: 24/09/16)
-###CSS:
+### CSS:
 - Added context menu item sub menu animation 
 - Added account avatar hover animation
 - Adjusted Dev mark CSS
@@ -470,13 +470,13 @@
 - Fixed chat bot tag color
 - Minor adjustements & fixes
 
-##VERSION 3.1.0
+## VERSION 3.1.0
 (Release: 17/09/16)
-###GENERAL:
+### GENERAL:
 - Better support for webkit browsers
 - Removed unnecessary CSS
 
-###CSS:
+### CSS:
 - Added guild settings tab bar icons
 - Added popout menu CSS
 - Added status picker menu CSS
@@ -492,9 +492,9 @@
 - Fixed an issue with user names in chat
 - Minor adjustements & fixes
 
-##VERSION 3.1.1
+## VERSION 3.1.1
 (Release: 03/10/16)
-###CSS:
+### CSS:
 - Added popout menu icons
 - Added leave button hover & active animation
 - Added custom css editor syntax highlighting
@@ -504,9 +504,9 @@
 - Fixed CSS syntax highlighting
 - Minor adjustements & fixes
 
-##VERSION 3.2.0
+## VERSION 3.2.0
 (Release: 15/10/16)
-###CSS:
+### CSS:
 - Added webhook settings page CSS
 - Added color picker CSS
 - Added BetterDiscord Dev mark
@@ -522,9 +522,9 @@
 - Fixed light version context menu
 - Minor adjustements & fixes
 
-##VERSION 4.0.0
+## VERSION 4.0.0
 (Release: 25/10/16)
-###GENERAL:
+### GENERAL:
 - Now loads CSS via GitCDN
 - Added info for mods
 - Darkened light version *(Old version available as mod)*
@@ -533,7 +533,7 @@
 - Fixed mistakes in CSS
 - Removed unnecessary CSS
 
-###CSS:
+### CSS:
 - Added channel textarea guard countdown CSS
 - Added plugin settings popout CSS
 - Added Linenumber plugin CSS
@@ -551,9 +551,9 @@
 - Fixes for light version
 - Minor adjustements & fixes
 
-##VERSION 4.1.0
+## VERSION 4.1.0
 (Release: 06/11/16)
-###CSS:
+### CSS:
 - Added reactions buttons CSS
 - Added pinned messages & recent mentions animation
 - Added emote menu animation
@@ -568,9 +568,9 @@
 - Fixed issues with Owner Tags plugin
 - Minor adjustements & fixes
 
-##VERSION 4.1.1
+## VERSION 4.1.1
 (Release: 18/11/2016)
-###CSS:
+### CSS:
 - Updated & adjsuted user profile modal CSS
 - Updated embed links CSS
 - Added verified icon
@@ -580,13 +580,13 @@
 - Fixed issues with emotes
 - Minor adjustements & fixes
 
-##VERSION 4.2.0
+## VERSION 4.2.0
 (Release: 02/12/2016)
-###GENERAL:
+### GENERAL:
 - Added min CSS
 - Themes now load min CSS
 
-###CSS:
+### CSS:
 - Reworked role CSS
 - Reworked add role button CSS
 - Added quoter plugin CSS
@@ -598,9 +598,9 @@
 - Fixed issues with Group DM
 - Minor adjustements & fixes
 
-##VERSION 4.2.1
+## VERSION 4.2.1
 (Release: 25/12/16)
-###CSS:
+### CSS:
 - Adjusted guild error CSS
 - Adjusted tooltip error CSS
 - Adjusted cancel button CSS
@@ -615,14 +615,14 @@
 - Removed unnecessary CSS
 - Minor adjustements & fixes
 
-##VERSION 5.0.0
+## VERSION 5.0.0
 (Release: 15/01/2017)
-###GENERAL:
+### GENERAL:
 - Added background image brightness CSS variable
 - Added background image blur CSS variable
 - Adjusted comment info in code
 
-###CSS:
+### CSS:
 - Added Discord search CSS
 - Added reactions modal CSS
 - Added Discord Nitro mark
@@ -631,23 +631,23 @@
 - Fixed input CSS
 - Fixed channel scroller flickering issues
 
-##VERSION 5.0.1
+## VERSION 5.0.1
 (Release: 16/01/2017)
-###CSS:
+### CSS:
 - Fixed backdrop position
 - Fixed GIF border radius
 
-##VERSION 5.0.2
+## VERSION 5.0.2
 (Release: 25/01/2017)
-###CSS:
+### CSS:
 - Adjusted search CSS
 - Fixed issues with new Discord update
 - Fixed user settings icons
 - Minor adjustements & fixes
 
-##VERSION 5.0.3
+## VERSION 5.0.3
 (Release: 06/02/2017)
-###CSS:
+### CSS:
 - Added search highlight CSS
 - Added plugin settings textarea CSS
 - Adjusted & fixed search CSS
@@ -655,9 +655,9 @@
 - Fixed issues with textarea colors
 - Minor adjustements & fixes
 
-##VERSION 5.0.4
+## VERSION 5.0.4
 (Release: Upcoming)
-###CSS:
+### CSS:
 - Added SendEmbeds CSS
 - Added Quoter CSS
 - Added status dot transitions
