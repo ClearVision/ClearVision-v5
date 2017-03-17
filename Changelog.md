@@ -666,6 +666,7 @@
 - Improved support for light theme
 - Adjusted & fixed search CSS
 - Adjusted button CSS
+- Adjusted invite button CSS
 - Adjusted system message icons
 - Fixed textarea focus CSS
 - Fixed keyboard shorcut modal CSS
