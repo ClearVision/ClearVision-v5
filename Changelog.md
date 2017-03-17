@@ -656,7 +656,7 @@
 - Minor adjustements & fixes
 
 ## VERSION 5.1.0
-(Release: Upcoming)
+(Release: 17/03/2017)
 ### CSS:
 - Added security settings CSS
 - Added Nitro settings CSS
