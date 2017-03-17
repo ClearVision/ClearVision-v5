@@ -655,7 +655,7 @@
 - Fixed issues with textarea colors
 - Minor adjustements & fixes
 
-## VERSION 5.0.4
+## VERSION 5.1.0
 (Release: Upcoming)
 ### CSS:
 - Added security settings CSS
