@@ -40,8 +40,8 @@ body::after {
 }
 body::after,
 .callout-backdrop {
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
     -webkit-filter: brightness(var(--background-brightness)) blur(var(--background-blur));
     filter: brightness(var(--background-brightness)) blur(var(--background-blur));
 }
