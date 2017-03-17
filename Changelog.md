@@ -669,6 +669,7 @@
 - Adjusted invite button CSS
 - Adjusted system message icons
 - Fixed textarea focus CSS
+- Fixed pulse animations
 - Fixed keyboard shorcut modal CSS
 - Fixed issues with light theme
 - Minor adjustements & fixes
