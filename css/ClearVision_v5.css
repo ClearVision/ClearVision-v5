@@ -40,13 +40,13 @@ body::after {
 }
 body::after,
 .callout-backdrop {
-    background-size: cover !important;
-    background-position: center !important;
+    background-size: cover;
+    background-position: center;
     -webkit-filter: brightness(var(--background-brightness)) blur(var(--background-blur));
     filter: brightness(var(--background-brightness)) blur(var(--background-blur));
 }
 .callout-backdrop {
-    background: #000;
+    background-color: #000;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     -moz-transition: .3s all ease;
