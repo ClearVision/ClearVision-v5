@@ -658,11 +658,15 @@
 ## VERSION 5.0.4
 (Release: Upcoming)
 ### CSS:
+- Added security settings CSS
+- Added Nitro settings CSS
 - Added SendEmbeds CSS
 - Added Quoter CSS
 - Added status dot transitions
 - Improved support for light theme
 - Adjusted & fixed search CSS
+- Adjusted button CSS
 - Fixed textarea focus CSS
 - Fixed keyboard shorcut modal CSS
 - Fixed issues with light theme
+- Minor adjustements & fixes
