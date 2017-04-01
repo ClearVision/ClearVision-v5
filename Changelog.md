@@ -673,3 +673,11 @@
 - Fixed keyboard shorcut modal CSS
 - Fixed issues with light theme
 - Minor adjustements & fixes
+
+## VERSION 5.1.1
+(Release: Upcoming)
+### CSS:
+- Fixed server settings tab bar icons
+- Fixed private call icons
+- Fixed pulsate animations
+- Minor fixes
