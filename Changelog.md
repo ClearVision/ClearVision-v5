@@ -680,4 +680,4 @@
 - Fixed server settings tab bar icons
 - Fixed private call icons
 - Fixed pulsate animations
-- Minor fixes
+- Minor adjustements & fixes
