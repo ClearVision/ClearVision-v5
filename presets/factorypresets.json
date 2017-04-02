@@ -1,0 +1,85 @@
+{
+  "Amber": {
+    "main-color": "#e67a27",
+    "hover-color": "#b35d1e",
+    "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/amber.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929"
+  },
+  "Amethyst": {
+    "main-color": "#da27e6",
+    "hover-color": "#a71eb3",
+    "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/amethyst.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929"
+  },
+  "Emerald": {
+    "main-color": "#33e627",
+    "hover-color": "#2ab31e",
+    "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/emerald.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929"
+  },
+  "Ruby": {
+    "main-color": "#e62727",
+    "hover-color": "#b31e1e",
+    "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/ruby.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929"
+  },
+  "Sapphire": {
+    "main-color": "#2780e6",
+    "hover-color": "#1e63b3",
+    "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/sapphire.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929"
+  },
+  "Halloween": {
+    "main-color": "#e67a27",
+    "hover-color": "#b35d1e",
+    "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/halloween.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929",
+    "load1": "Getting costumes",
+    "load2": "Carving pumpkins",
+    "load3": "Ready for Halloween!"
+  },
+  "Winter": {
+    "main-color": "#66aacc",
+    "hover-color": "#447799",
+     "background-image": "https://cdn.rawgit.com/Zerthox/ClearVision/master/images/winter.jpg",
+    "background-brightness": "100",
+    "background-saturation": "100",
+    "background-blur": "0",
+    "online-color": "#43b581",
+    "idle-color": "#faa61a",
+    "dnd-color": "#982929",
+    "load1": "Riding sleigh",
+    "load2": "Building snowman",
+    "load3": "Snowball fight!"
+  }
+}
