@@ -677,6 +677,7 @@
 ## VERSION 5.1.1
 (Release: Upcoming)
 ### CSS:
+- Adjusted highlight CSS
 - Fixed server settings tab bar icons
 - Fixed private call region select modal
 - Fixed private call icons
