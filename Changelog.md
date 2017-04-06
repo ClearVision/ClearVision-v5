@@ -678,6 +678,7 @@
 (Release: Upcoming)
 ### CSS:
 - Adjusted highlight CSS
+- Fixed backdrop filter performance issues
 - Fixed server settings tab bar icons
 - Fixed private call region select modal
 - Fixed private call icons
