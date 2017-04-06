@@ -678,6 +678,7 @@
 (Release: Upcoming)
 ### CSS:
 - Fixed server settings tab bar icons
+- Fixed private call region select modal
 - Fixed private call icons
 - Fixed pulsate animations
 - Minor adjustements & fixes
