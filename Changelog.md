@@ -683,4 +683,5 @@
 - Fixed private call region select modal
 - Fixed private call icons
 - Fixed pulsate animations
+- Fixed selected guild marker issues
 - Minor adjustements & fixes
