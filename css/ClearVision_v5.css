@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.1.0" by @Zerthox */
+/* "ClearVision CSS v5.1.1" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.1.0";
+    content: "ClearVision v5.1.1";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -30,23 +30,26 @@ body {
     backface-visibility: hidden;
 }
 body::after {
+    z-index: -9999;
+}
+body::after,
+.callout-backdrop::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -9999;
-}
-body::after,
-.callout-backdrop {
     background-size: cover;
     background-position: center;
     -webkit-filter: brightness(var(--background-brightness)) blur(var(--background-blur));
     filter: brightness(var(--background-brightness)) blur(var(--background-blur));
 }
+.callout-backdrop::after {
+    background-image: inherit;
+}
 .callout-backdrop {
-    background-color: #000;
+    background-color: transparent !important;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     -moz-transition: .3s all ease;
@@ -624,7 +627,10 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     border-bottom: 1px solid #4C4C4C;
 }
 .change-log ul li {
-    color: var(--hover-color);
+    color: #9a9a9a;
+}
+.change-log ul strong {
+    color: var(--main-color);
 }
 .download-apps .platforms .platform {
     border: 2px solid var(--hover-color);
@@ -938,14 +944,6 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .need-help-button {
     visibility: hidden;
 }
-.guilds-add {
-    color: transparent !important;
-    background-size: 20px 20px !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-color: rgba(21, 21, 21, 0.41) !important;
-    opacity: 0.7 !important;
-}
 .slider-handle span {
     border: 1px solid var(--main-color);
 }
@@ -1010,6 +1008,12 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .now-playing {
     background: var(--main-color);
     padding: 22px;
+}
+.now-playing.no-detection {
+    background: hsla(0, 0%, 100%, 0.1);
+}
+.now-playing-add {
+    color: #a6a6a6;
 }
 .sensitivity .slider .slider-bar-auto {
     background-color: rgba(0, 0, 0, 0.44);
@@ -1142,11 +1146,6 @@ textarea {
 .guild-channels ul .channel a {
     color: #fff;
 }
-.guilds-add {
-    font-size: 30px;
-    background: #000;
-    opacity: 0.5;
-}
 .guilds .friends-online {
     margin-left: -5px;
 }
@@ -1236,10 +1235,10 @@ textarea {
     border-bottom: 1px solid transparent !important;
     background: rgba(0, 0, 0, 0.88) !important;
 }
-.chat .divider:not(.divider-red)>div {
+.chat .divider:not(.divider-red) > div {
     background: hsla(0, 0%, 100%, 0.2) !important;
 }
-.chat .divider>span {
+.chat .divider > span {
     background: hsla(0, 0%, 100%, 0.2) !important;
     font-size: 12px;
     text-transform: uppercase;
@@ -1521,7 +1520,7 @@ textarea {
 .region-select button {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: transparent;
-    border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+    border-left: 1px solid hsla(0, 0%, 100%, 0.1);
     color: var(--main-color);
 }
 .region-select:hover .region-select-inner,
@@ -1654,12 +1653,12 @@ a:link {
     text-transform: uppercase;
     letter-spacing: .08em;
     font-weight: 700;
-    padding: 4px 58px;
+    padding: 4px 8px;
     background-color: rgba(0, 0, 0, 0.48);
     border: 1px solid;
     border-color: transparent;
     border-radius: 3px;
-    width: 90px;
+    width: 190px;
     margin-left: 15px;
     text-align: center
 }
@@ -1889,9 +1888,6 @@ a:link {
 }
 .add-friend-popout .btn:disabled {
     background-color: var(--hover-color);
-}
-.message-group-blocked {
-    display: none;
 }
 .user-settings-modal-account .discord-tag {
     color: var(--main-color);
@@ -2994,14 +2990,6 @@ div#bd-pub-button:hover {
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
-.guilds-wrapper .guilds-add {
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-.guilds-wrapper .guilds-add:active {
-    -webkit-transform: scale(.9);
-    transform: scale(.9);
-}
 .user-settings-security.show-art {
     background: transparent;
 }
@@ -3569,15 +3557,27 @@ button:active {
 .guilds-wrapper .btn-download-apps::after {
     background-color: hsla(0, 0%, 100%, .2);
 }
-.guilds-add {
-    background-image: none !important;
+.guilds-wrapper .guilds-add {
+    color: transparent;
+    background-image: none;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(21, 21, 21, 0.41);
+    font-size: 0;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
+    opacity: 0.7;
 }
-.guilds-add:hover {
-    border-color: var(--main-color) !important;
-    -webkit-animation: pulsate-border 2s infinite;
-    animation: pulsate-border 2s infinite;
+.guilds-wrapper .guilds-add:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    -webkit-animation: pulsate-border 2s infinite ease-in-out;
+    animation: pulsate-border 2s infinite ease-in-out;
+}
+.guilds-wrapper .guilds-add:active {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
 }
 .guilds-wrapper .guilds-add::before {
     content: "";
@@ -3612,27 +3612,39 @@ button:active {
 .guilds-wrapper .guilds-add:hover::before,
 .guilds-wrapper .guilds-add:hover::after {
     background-color: var(--main-color) !important;
-    -webkit-animation: pulsate-color 2s infinite;
-    animation: pulsate-color 2s infinite;
+    -webkit-animation: pulsate-color 2s infinite ease-in-out;
+    animation: pulsate-color 2s infinite ease-in-out;
 }
 @-webkit-keyframes pulsate-color {
-    50% {
+    0%, 100% {
         background-color: #333539;
+    }
+    50% {
+        background-color: currentcolor;
     }
 }
 @keyframes pulsate-color {
-    50% {
+    0%, 100% {
         background-color: #333539;
+    }
+    50% {
+        background-color: currentcolor;
     }
 }
 @-webkit-keyframes pulsate-border {
-    50% {
+    0%, 100% {
         border-color: #535559;
+    }
+    50% {
+        border-color: currentcolor;
     }
 }
 @keyframes pulsate-border {
-    50% {
+    0%, 100% {
         border-color: #535559;
+    }
+    50% {
+        border-color: currentcolor;
     }
 }
 .emote-container,
@@ -3687,9 +3699,10 @@ progress::-webkit-progress-value {
     color: #fff !important;
 }
 .guilds-wrapper .guilds .guild-placeholder {
+    color: var(--main-color);
     border-color: var(--main-color) !important;
-    -webkit-animation: pulsate-border 2s infinite;
-    animation: pulsate-border 2s infinite;
+    -webkit-animation: pulsate-border 2s infinite ease-in-out;
+    animation: pulsate-border 2s infinite ease-in-out;
 }
 .change-log .changelog-added,
 .change-log .changelog-added-secondary,
@@ -4658,11 +4671,12 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 .guild-channels .channel.sorting::after,
 #settings-roles .roles li.sorting::after {
+    color: var(--main-color);
     border-color: var(--main-color);
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-    -webkit-animation: pulsate-border 2s infinite;
-    animation: pulsate-border 2s infinite;
+    -webkit-animation: pulsate-border 2s infinite ease-in-out;
+    animation: pulsate-border 2s infinite ease-in-out;
 }
 .channel-textarea-guard button {
     background-color: var(--main-color);
@@ -4825,9 +4839,14 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 .private-channel-call .status-deafened::after,
 .private-channel-call .status-muted::after {
-    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic_off.svg) !important;
     background-position: center;
     background-size: 18px;
+}
+.private-channel-call .status-muted::after {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic_off.svg) !important;
+}
+.private-channel-call .status-deafened::after {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/volume_off.svg) !important;
 }
 .chat .private-channel-call .status {
     background-color: var(--main-color);
@@ -4926,7 +4945,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 .guild.active ~ .dms .guild:not(.audio) .guild-inner[style*="border-radius: 15px;"]::before {
     content: "";
     width: 13px;
-    left: -21px;
+    left: -17px;
     position: absolute;
     top: 50%;
     -webkit-transition: height 250ms ease-in-out, margin-top 250ms ease-in-out;
@@ -5148,6 +5167,10 @@ ul.bda-slist {
 .search .search-bar .search-bar-icon .icon.icon-search-bar-eye-glass {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…MuNzg5NzQ2Mi0zLjc5NzM0MDktLjIwNDUzNjItLjIwNDk0NjJ6Ii8+CiAgPC9nPgo8L3N2Zz4=);
 }
+.search .DraftEditor-root,
+.theme-dark .search .DraftEditor-root {
+    color: #fff;
+}
 .search-answer,
 .theme-dark .search-answer,
 .search-filter,
@@ -5193,6 +5216,7 @@ ul.bda-slist {
 .search-popout .search-option .answer {
     color: #caccce;
 }
+.search-popout .search-query .search-for strong,
 .search-popout .search-option .filter,
 .search-popout .search-option .non-text,
 .react-datepicker .react-datepicker__current-month {
@@ -5329,6 +5353,12 @@ ul.bda-slist {
 /* HIGHLIGHTS */
 .highlight {
     background-color: rgba(100, 100, 100, .3);
+    color: #fff;
+}
+.markup[style*="color:"] .highlight {
+    color: inherit;
+    -webkit-filter: saturate(200%);
+    filter: saturate(200%);
 }
 
 /* REACTIONS MODAL */
@@ -5511,7 +5541,8 @@ ul.bda-slist {
 
 /* REPLYER & QUOTER */
 span.replyer,
-span.quoter {
+span.quoter,
+span.discrypt {
     border-radius: 3px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -5519,7 +5550,8 @@ span.quoter {
     animation: replyer-fade .1s ease-in-out;
 }
 span.replyer:hover,
-span.quoter:hover {
+span.quoter:hover,
+span.discrypt:hover {
     background: var(--main-color) !important;
 }
 .quote-msg {
@@ -6489,6 +6521,46 @@ pre:hover .copybutton {
     border-color: #808080;
 }
 
+/* BLOCKED MESSAGES */
+.message-group-blocked,
+.message-group-blocked .message-group-blocked-btn {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.message-group-blocked {
+    border-top: 1px solid hsla(0, 0%, 100%, .04) !important;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .04) !important;
+}
+.message-group-blocked .message-group-blocked-btn {
+    color: hsla(0, 0%, 100%, .3) !important;
+    -wekbit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+.message-group-blocked.revealed .message-group-blocked-btn {
+    color: hsla(0, 0%, 100%, .7) !important;
+}
+.message-group-blocked .message-group {
+    margin-top: -20px;
+    -webkit-animation: blocked-message .3s ease-in-out;
+    animation: blocked-message .3s ease-in-out;
+}
+@-webkit-keyframes blocked-message {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes blocked-message {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* CHANNEL NOTICE */
 .channel-notices .channel-notice.invite,
 .channel-notices .channel-notice.quickswitcher-notice {
@@ -6679,6 +6751,7 @@ pre:hover .copybutton {
     display: none;
 }
 .keybind-shortcut span {
+    background-color: transparent !important;
     border-color: var(--main-color);
     -webkit-box-shadow: inset 0 -4px 0 var(--hover-color);
     box-shadow: inset 0 -4px 0 var(--hover-color);
@@ -7507,7 +7580,70 @@ img:not(.emote):not(.emoji)::before {
     border-radius: 3px;
 }
 
-/* INVITE MODAL CSS */
+/* QUICKSWITCHER MODAL */
+.quickswitcher {
+    background: rgba(0, 0, 0, 0.5) !important;
+    box-shadow: none !important;
+}
+.quickswitcher .big-input {
+    background: rgba(0, 0, 0, 0.3) !important;
+    box-shadow: none !important;
+}
+.quickswitcher .big-input::-webkit-input-placeholder {
+    color: hsla(0, 0%, 100%, .3) !important;
+}
+.quickswitcher .scroller-wrap::before {
+    display: none;
+}
+.quickswitcher-container .quickswitcher .scroller-wrap .scroller::-webkit-scrollbar-thumb {
+    background-color: var(--main-color) !important;
+}
+.quickswitcher-container .quickswitcher .scroller-wrap .scroller::-webkit-scrollbar-thumb:active {
+    background-color: var(--hover-color) !important;
+}
+.quickswitcher.dark .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    background: transparent !important;
+}
+.quickswitcher .result .section-title {
+    color: hsla(0, 0%, 100%, .5) !important;
+}
+.quickswitcher .result.selected {
+    background-color: var(--main-color) !important;
+}
+.quickswitcher.dark .result.selected::after {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.quickswitcher .result > div .result-match,
+.quickswitcher .result > div .result-type-icon {
+    opacity: .7 !important;
+}
+.quickswitcher .result > div.unread .result-match,
+.quickswitcher .result > div.unread .result-type-icon {
+    opacity: 1 !important;
+}
+.quickswitcher .result .result-username,
+.quickswitcher .result .result-note {
+    opacity: .5 !important;
+}
+.quickswitcher .keybind-shortcut span {
+    background-color: transparent !important;
+    border-color: var(--main-color);
+    -webkit-box-shadow: inset 0 -4px 0 var(--hover-color);
+    box-shadow: inset 0 -4px 0 var(--hover-color);
+}
+.quickswitcher-empty-state .quickswitcher-empty-state-cta {
+    opacity: 1;
+}
+.quickswitcher.dark .quickswitcher-empty-state-note,
+.quickswitcher .tips {
+    color: #caccce !important;
+}
+.quickswitcher .tips .misc-controls .keybind-shortcut:last-of-type::before {
+    background: hsla(0, 0%, 100%, .04) !important;
+}
+
+/* INVITE MODAL */
 .invite-modal .scroller {
     background: rgba(0, 0, 0, 0.5);
 }
@@ -7529,7 +7665,7 @@ img:not(.emote):not(.emoji)::before {
     text-shadow: 0 0 1px;
 }
 .invite-button .invite-button-header {
-    color: hsla(0, 0%, 100%, .7);
+    color: hsla(0, 0%, 100%, .7) !important;
 }
 .invite-button .invite-button-body {
     color: hsla(0, 0%, 100%, .5);
@@ -7761,27 +7897,30 @@ img:not(.emote):not(.emoji)::before {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/message.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/assignment.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/block.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/assignment.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/block.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9)::after {
-    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg);
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10)::after {
+    content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg);
+}
+.guild-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11)::after {
     content: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/webhook.svg);
 }
 .guild-settings-modal .tab-bar.SIDE .tab-bar-item:last-of-type::after {
@@ -7978,12 +8117,23 @@ img:not(.emote):not(.emoji)::before {
     }
 }
 .popout-bottom-right {
+    margin-top: 17px !important;
+    overflow: visible;
+}
+.messages-popout-wrap {
     -webkit-animation: menu-titlebar .3s cubic-bezier(.2, .6, .5, 1.1);
     animation: menu-titlebar .3s cubic-bezier(.2, .6, .5, 1.1);
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
     overflow: hidden;
-    margin-top: 17px !important;
+}
+.region-select-popout .check {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.quick-region-select .label,
+.region-select-popout .region-select-name {
+    color: #949494;
 }
 
 /* APPEARANCE SETTINGS */
