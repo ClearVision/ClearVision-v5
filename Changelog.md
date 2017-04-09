@@ -675,7 +675,7 @@
 - Minor adjustements & fixes
 
 ## VERSION 5.1.1
-(Release: Upcoming)
+(Release: 09/04/2017)
 ### CSS:
 - Adjusted highlight CSS
 - Fixed backdrop filter performance issues
