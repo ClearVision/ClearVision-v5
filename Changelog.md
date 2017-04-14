@@ -685,3 +685,9 @@
 - Fixed pulsate animations
 - Fixed selected guild marker issues
 - Minor adjustements & fixes
+
+## VERSION 5.1.2
+(Release: Upcoming)
+### CSS:
+- Fixed quickswitcher CSS
+- Fixed issues with light theme
