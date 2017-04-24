@@ -23,14 +23,14 @@ DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-ba
 
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary DIV.badge,
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
-    background-color: #000 !Important;}
+    background-color: #000 !important;}
 
 .btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
 .modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
-    color: #fff !Important;}
+    color: #fff !important;}
 
 .is-local-bot-message A{
-    color: #00b0f4 !Important;}
+    color: #00b0f4 !important;}
 
 .icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
 .guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
