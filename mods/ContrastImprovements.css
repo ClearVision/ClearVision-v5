@@ -1,0 +1,96 @@
+/* Contrast Improvements v1.2 by Hebgbs (w/ :heart:)
+   Black text and objects where it is otherwise difficult to see with brighter colours.
+   
+   This code must be the first import to be fully effective. */
+
+.tooltip, BUTTON:not(.outlined), .badge, .is-local-bot-message *:not(A):not(.bot-tag),
+::selection, .note textarea::selection, .clipboard-input-inner input::selection,
+.change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
+.guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete-inner .active *,
+.search-popout .search-option:hover .answer, .search-popout .search-option.selected .answer,
+.search-popout .user:hover .display-username, .search-popout .user.selected .display-username,
+.react-datepicker__day:hover, .date-picker-hint .hint-value, .need-help-modal H1,
+.user-settings-modal .now-playing *, .user-settings-modal-keybinds-header *, DIV#voice-connection-popout HEADER,
+.user-settings-modal-connections-list .btn-delete:hover, #overlay-explanation, #overlay-explanation A,
+.Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
+.upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
+DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
+.recent-mentions-popout .mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
+DIV.chat .jump-to-present-bar:hover BUTTON, #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
+DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
+#bd-pub-button:hover{
+    color: #000 !important;}
+
+#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary DIV.badge,
+#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
+    background-color: #000 !Important;}
+
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
+.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
+    color: #fff !Important;}
+
+.is-local-bot-message A{
+    color: #00b0f4 !Important;}
+
+.icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after,
+.guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
+.popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
+.search-popout DIV:hover:before, .search-popout .selected:before,
+.status-deafened:after{
+    filter: brightness(0) !important;}
+
+.channel-textarea-autocomplete-inner .active *,
+.guild:first-child:hover .friends-icon:after{
+    transition: .3s ease-in-out !important;}
+
+/* Icon replacement
+    /* Disappear */
+.titlebar .win-buttons BUTTON:hover,
+.channel .icon-friends, .friends-column-actions .friends-action,
+#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
+#friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
+#friends .friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
+    background-image: none !important;}
+
+    /* Titlebar */
+.titlebar .win-buttons BUTTON:hover:after{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    filter: brightness(0) !important;
+    transition: .1s ease-in-out !important;}
+.titlebar .win-minimize:hover:after{
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/remove.svg) 50% 7px/24px;}
+.titlebar .win-maximize:hover:after{
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/fullscreen.svg) 50% 50%/24px;}
+.titlebar .win-close:hover:after{
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) 50% 50%/24px;}
+
+    /* Friends / Friends icon */
+.channel DIV.icon-friends:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 4px 4px/75%;
+    filter: brightness(0) !important;}
+
+    /* Friends / Friend actions */
+.friends-column-actions DIV:after,
+.friends-column-actions-visible DIV:after{
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    filter: brightness(0) !important;}
+.friends-column-actions .friends-action-voice-call:after{
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIEwyMSwyMCBDMjEsMjAuNTUgMjAuNTUsMjEgMjAsMjEgQzEwLjYxLDIxIDIuNzkzOTk5MDcsMTMuNjQwNDQ0OSAzLDQgQzMuMDExNzQ5OTQsMy40NTAxMjU3MyAzLjQ1LDMgNCwzIEw3LjUsMyBDOC4wNSwzIDguNSwzLjQ1IDguNSw0IEM4LjUsNS4yNSA4LjcsNi40NSA5LjA3LDcuNTcgQzkuMTgsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat center center/24px;}
+.friends-column-actions-visible .friends-action-add:after{
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person_add.svg) no-repeat 50% 50%/24px;}
+.friends-column-actions .friends-action-accept:after{
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMSA3TDkgMTlsLTUuNS01LjUgMS40MS0xLjQxTDkgMTYuMTcgMTkuNTkgNS41OSIvPgogIDwvZz4KPC9zdmc+) no-repeat center center/24px;}
+.friends-column-actions .friends-action-remove:after,
+.friends-column-actions .friends-action-cancel:after,
+.friends-column-actions-visible .friends-action-ignore:after{
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) no-repeat 50% 50%/24px;}
