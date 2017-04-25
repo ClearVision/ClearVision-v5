@@ -1,4 +1,4 @@
-/* Contrast Improvements v1.2 by Hebgbs (w/ :heart:)
+/* Contrast Improvements v1.2.1 by Hebgbs (@w/ :heart:)
    Black text and objects where it is otherwise difficult to see with brighter colours.
    
    This code must be the first import to be fully effective. */
@@ -36,7 +36,7 @@ DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-ba
 .guild:first-child.active .friends-icon:after, .channel .icon-friends:after,
 .popout-menu-item.invite .popout-menu-icon, .status-deafened:after,
 .search-popout DIV:hover:before, .search-popout .selected:before,
-.status-deafened:after{
+.avatar-xxlarge SPAN DIV:after{
     filter: brightness(0) !important;}
 
 .channel-textarea-autocomplete-inner .active *,
