@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.1.1" by @Zerthox */
+/* "ClearVision CSS v5.1.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.1.1";
+    content: "ClearVision v5.1.2";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -56,7 +56,8 @@ body::after,
     transition: .3s all ease;
 }
 .app,
-.layers {
+.layers,
+.layer {
     background: transparent !important;
 }
 
@@ -426,8 +427,8 @@ a,
 .theme-dark .chat .title-wrap .topic a,
 .markdown-modal a,
 .user-settings-modal a,
-#voice-connection .voice-connection-channel,
-#voice-connection-popout .debug-button,
+#rtc-connection .voice-connection-channel,
+#rtc-connection-popout .debug-button,
 .alert.form .form-inner .btn-close-forever,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name,
@@ -449,8 +450,8 @@ a:hover,
 .theme-dark .chat .title-wrap .topic a:hover,
 .markdown-modal a:hover,
 .user-settings-modal a:hover,
-#voice-connection .voice-connection-channel:hover,
-#voice-connection-popout .debug-button:hover,
+#rtc-connection .voice-connection-channel:hover,
+#rtc-connection-popout .debug-button:hover,
 .alert.form .form-inner .btn-close-forever:hover,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a:hover,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
@@ -669,7 +670,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .popout section {
     background-color: rgba(0, 0, 0, 0.7);
 }
-#voice-connection-popout hr {
+#rtc-connection-popout hr {
     border: 1px solid #4C4C4C;
 }
 .option-popout .btn-item,
@@ -1117,7 +1118,7 @@ textarea {
 .private-channels,
 .divider-red span,
 .messages-wrapper,
-#voice-connection {
+#rtc-connection {
     background: transparent !important;
 }
 .guilds-wrapper {
@@ -1214,16 +1215,16 @@ textarea {
 .account .btn-mute {
     border-right: none;
 }
-#voice-connection {
+#rtc-connection {
     border-top: none !important;
     padding: 10px 20px 10px 18px !important;
 }
-#voice-connection .btn {
+#rtc-connection .btn {
     background: rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
-#voice-connection .btn:active {
+#rtc-connection .btn:active {
     background: rgba(0, 0, 0, 0.6);
 }
 .account .btn-deafen,
@@ -1443,7 +1444,7 @@ textarea {
 .bd-minimal .guild-channels h2 {
     margin-left: 10px;
 }
-.bd-minimal #voice-connection {
+.bd-minimal #rtc-connection {
     width: 176px;
     margin-left: -46px;
 }
@@ -1995,11 +1996,6 @@ a:link {
 .guilds-wrapper .guilds-error:hover {
     background-color: var(--main-color);
 }
-.private-channels .channel .icon-friends {
-    background-color: var(--main-color) !important;
-    opacity: .7;
-    transition: opacity .3s ease-in-out;
-}
 .upload-modal {
     background-color: rgba(30, 30, 30, 0.78);
 }
@@ -2085,7 +2081,7 @@ div.control-group .shortcut-recorder input[type=text] {
 img.image {
     border-radius: 5px;
 }
-#voice-connection .btn {
+#rtc-connection .btn {
     background: rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -2929,7 +2925,7 @@ div#bd-pub-button:hover {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-#voice-connection .btn-group {
+#rtc-connection .btn-group {
     margin-right: -10px;
 }
 #friends .friends-header .tab-bar .tab-bar-item.selected {
@@ -3395,13 +3391,13 @@ button:active {
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
-#voice-connection .btn,
+#rtc-connection .btn,
 .account .btn {
     background: transparent !important;
     border: none;
 }
-#voice-connection .btn-disconnect,
-#voice-connection .btn-info,
+#rtc-connection .btn-disconnect,
+#rtc-connection .btn-info,
 .account .btn-settings,
 .account .btn-deafen,
 .account .btn-mute {
@@ -3414,19 +3410,19 @@ button:active {
     right: 4px;
 }
 .account .btn-group,
-#voice-connection .btn-group {
+#rtc-connection .btn-group {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, .3);
     height: 32px;
     border: none;
 }
-#voice-connection .btn-info::after {
+#rtc-connection .btn-info::after {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg) !important;
     background-position: center;
     background-size: 20px;
     opacity: .3;
 }
-#voice-connection .btn-disconnect::after {
+#rtc-connection .btn-disconnect::after {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/call_end.svg);
     background-position: center;
     background-size: 20px;
@@ -3434,7 +3430,7 @@ button:active {
 }
 .account .btn-mute,
 .account .btn-deafen,
-#voice-connection .btn-info {
+#rtc-connection .btn-info {
     border-right: 1px solid hsla(0, 0%, 100%, .2);
     height: 26px;
     bottom: 3px;
@@ -3478,7 +3474,7 @@ button:active {
 .guild-channels .channel-voice-states li .icon {
     opacity: .3 !important;
 }
-#voice-connection .btn-group .btn:active {
+#rtc-connection .btn-group .btn:active {
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
 }
@@ -3486,7 +3482,7 @@ button:active {
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
 }
-#voice-connection .btn-group .btn::after {
+#rtc-connection .btn-group .btn::after {
     -webkit-transition: -webkit-transform .1s ease-in-out;
     transition: -webkit-transform .1s ease-in-out;
     transition: transform .1s ease-in-out;
@@ -3499,7 +3495,7 @@ button:active {
     transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
     opacity: .3;
 }
-#voice-connection .btn-group .btn:active::after {
+#rtc-connection .btn-group .btn:active::after {
     -webkit-transform: scale(.9) !important;
     transform: scale(.9) !important;
 }
@@ -3748,7 +3744,7 @@ line {
     stroke: var(--main-color) !important;
     stroke-dasharray: 5, 3 !important;
 }
-#voice-connection-popout .debug-button {
+#rtc-connection-popout .debug-button {
     color: #8a8e94;
 }
 #clockPluginClock {
@@ -3881,20 +3877,20 @@ line {
         opacity: .7;
     }
 }
-#voice-connection .btn-disconnect:hover::after {
+#rtc-connection .btn-disconnect:hover::after {
     -webkit-animation: wiggle 70ms infinite alternate;
     animation: wiggle 70ms infinite alternate;
 }
-#voice-connection .btn-disconnect:active::after {
+#rtc-connection .btn-disconnect:active::after {
     -webkit-animation: wiggle-active 70ms infinite alternate;
     animation: wiggle-active 70ms infinite alternate;
 }
-#voice-connection .btn-info:hover::after,
-#voice-connection .btn-info.popout-open::after {
+#rtc-connection .btn-info:hover::after,
+#rtc-connection .btn-info.popout-open::after {
     -webkit-animation: pulsate 1s infinite alternate;
     animation: pulsate 1s infinite alternate;
 }
-#voice-connection .btn-info:active::after {
+#rtc-connection .btn-info:active::after {
     -webkit-animation: pulsate-active 1s infinite alternate;
     animation: pulsate-active 1s infinite alternate;
 }
@@ -4072,59 +4068,38 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     transition: opacity .1s ease-in-out, transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
 .header-toolbar button span {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
     opacity: .7;
 }
 .header-toolbar button:nth-child(3) span,
-.private .channel-group-dm + .header-toolbar button:nth-child(4) span {
+.private .channel-group-dm + .header-toolbar button:nth-child(3) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .header-toolbar span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4="],
 .header-toolbar span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iIzk5QUFCNSIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4="],
-.private .channel-group-dm + .header-toolbar button:nth-child(3) span {
+.private .channel-group-dm + .header-toolbar button:nth-child(2) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/pin.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .header-toolbar button:nth-last-of-type(2) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mail.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .header-toolbar button:last-of-type span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/help.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 #friends .header-toolbar button:nth-child(1) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group_add.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .private .header-toolbar .private-channel-call-btn span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/call.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .private .header-toolbar button:nth-child(3) span,
-.private .channel-group-dm + .header-toolbar button:nth-child(5) span {
+.private .channel-group-dm + .header-toolbar button:nth-child(4) span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person_add.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .header-toolbar .auto-update span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/update.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
 }
 .header-toolbar .auto-update.auto-update-checking span {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/refresh.svg) !important;
@@ -4323,11 +4298,18 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     transform: rotate(90deg);
     left: 6px;
 }
+.private-channels .channel .icon-friends,
+.private-channels .channel .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");'] {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 75% !important;
+    background-color: var(--main-color) !important;
+}
 .private-channels .channel .icon-friends {
-    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75%;
+    opacity: .7;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 .guilds-wrapper .guilds .friends-icon {
     background-image: none;
@@ -4344,7 +4326,6 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
     background-position: center;
     background-size: 75%;
     opacity: .7;
-    -webkit-transition: opacity .3s ease-in-out;
     -webkit-transition: opacity .2s ease-in-out;
     transition: opacity .2s ease-in-out;
 }
@@ -4958,8 +4939,8 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     -webkit-animation: selectserver .5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .header-toolbar button span {
-    -webkit-transition: all .1 ease-in-out;
-    transition: all .1 ease-in-out
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
 }
 .notice .notice-dismissm.channel-notices .channel-notice .close {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg);
@@ -4987,7 +4968,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 #voice-debug-modal #users-section .user-list {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
-#voice-connection .btn-group .btn-info {
+#rtc-connection .btn-group .btn-info {
     color: var(--main-color) !important;
 }
 .chat .private-channel-call .btn-icon,
@@ -6936,13 +6917,11 @@ img:not(.emote):not(.emoji)::before {
 #friends .friends-table .friends-row .friends-column-actions .friends-action,
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
     background-color: var(--main-color);
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action:hover,
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
-    background-color: var(--hover-color);
-}
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover,
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
     background-color: var(--hover-color) !important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add {
@@ -7601,8 +7580,12 @@ img:not(.emote):not(.emoji)::before {
 .quickswitcher-container .quickswitcher .scroller-wrap .scroller::-webkit-scrollbar-thumb:active {
     background-color: var(--hover-color) !important;
 }
+.quickswitcher.light .scroller-wrap .scroller::-webkit-scrollbar-track-piece,
 .quickswitcher.dark .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     background: transparent !important;
+}
+.quickswitcher .result {
+    color: #fff !important;
 }
 .quickswitcher .result .section-title {
     color: hsla(0, 0%, 100%, .5) !important;
@@ -7610,9 +7593,16 @@ img:not(.emote):not(.emoji)::before {
 .quickswitcher .result.selected {
     background-color: var(--main-color) !important;
 }
-.quickswitcher.dark .result.selected::after {
+.quickswitcher .result.selected::after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHBvaW50cz0iMTEgOSAxMi40MiAxMC40MiA4LjgzIDE0IDE4IDE0IDE4IDQgMjAgNCAyMCAxNiA4LjgzIDE2IDEyLjQyIDE5LjU4IDExIDIxIDUgMTUiLz4KICA8L2c+Cjwvc3ZnPgo=) !important;
     background-color: transparent !important;
     box-shadow: none !important;
+    opacity: .3;
+}
+.quickswitcher .result .result-type-icon {
+    height: 0;
+    padding: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIuMjczMzMzMzMsMTIgTDIuNzQ2NjY2NjcsOS4zMzMzMzMzMyBMMC4wOCw5LjMzMzMzMzMzIEwwLjMxMzMzMzMzMyw4IEwyLjk4LDggTDMuNjg2NjY2NjcsNCBMMS4wMiw0IEwxLjI1MzMzMzMzLDIuNjY2NjY2NjcgTDMuOTIsMi42NjY2NjY2NyBMNC4zOTMzMzMzMywwIEw1LjcyNjY2NjY3LDAgTDUuMjUzMzMzMzMsMi42NjY2NjY2NyBMOS4yNTMzMzMzMywyLjY2NjY2NjY3IEw5LjcyNjY2NjY3LDAgTDExLjA2LDAgTDEwLjU4NjY2NjcsMi42NjY2NjY2NyBMMTMuMjUzMzMzMywyLjY2NjY2NjY3IEwxMy4wMiw0IEwxMC4zNTMzMzMzLDQgTDkuNjQ2NjY2NjcsOCBMMTIuMzEzMzMzMyw4IEwxMi4wOCw5LjMzMzMzMzMzIEw5LjQxMzMzMzMzLDkuMzMzMzMzMzMgTDguOTQsMTIgTDcuNjA2NjY2NjcsMTIgTDguMDgsOS4zMzMzMzMzMyBMNC4wOCw5LjMzMzMzMzMzIEwzLjYwNjY2NjY3LDEyIEwyLjI3MzMzMzMzLDEyIEwyLjI3MzMzMzMzLDEyIFogTTUuMDIsNCBMNC4zMTMzMzMzMyw4IEw4LjMxMzMzMzMzLDggTDkuMDIsNCBMNS4wMiw0IEw1LjAyLDQgWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4zMzMgMikiLz4KICAgIDxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPgogIDwvZz4KPC9zdmc+Cg==);
 }
 .quickswitcher .result > div .result-match,
 .quickswitcher .result > div .result-type-icon {
@@ -7635,9 +7625,13 @@ img:not(.emote):not(.emoji)::before {
 .quickswitcher-empty-state .quickswitcher-empty-state-cta {
     opacity: 1;
 }
+.quickswitcher.light .quickswitcher-empty-state-note,
 .quickswitcher.dark .quickswitcher-empty-state-note,
 .quickswitcher .tips {
     color: #caccce !important;
+}
+.quickswitcher .tips {
+    border-top-color: hsla(0, 0%, 100%, .04) !important;
 }
 .quickswitcher .tips .misc-controls .keybind-shortcut:last-of-type::before {
     background: hsla(0, 0%, 100%, .04) !important;
@@ -8180,7 +8174,7 @@ img:not(.emote):not(.emoji)::before {
     background: rgba(0, 0, 0, 0.3) !important;
 }
 .theme-light .account .btn-group,
-.theme-light #voice-connection .btn-group {
+.theme-light #rtc-connection .btn-group {
     background: rgba(0, 0, 0, 0.4) !important;
 }
 .theme-light .channels-wrap,
