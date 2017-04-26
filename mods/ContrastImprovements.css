@@ -15,9 +15,10 @@
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
-DIV .mention:hover, DIV.search-results-wrap .action-buttons .jump-button:hover,
-DIV.chat .jump-to-present-bar:hover BUTTON, #friends DIV.friends-header .tab-bar .tab-bar-item .badge,
-DIV.chat .divider.divider-red SPAN, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
+.flex-spacer.flex-vertical .comment .body DIV.markup .mention:hover, .recent-mentions-popout .mention:hover,
+DIV.search-results-wrap .action-buttons .jump-button:hover,
+DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
+#friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 #bd-pub-button:hover{
     color: #000 !important;}
 
