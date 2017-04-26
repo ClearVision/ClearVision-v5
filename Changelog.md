@@ -687,7 +687,10 @@
 - Minor adjustements & fixes
 
 ## VERSION 5.1.2
-(Release: Upcoming)
+(Release: 26/04/2017)
 ### CSS:
+- Added private group icon
+- Fixed issues with latest Discord update
+- Fixed toolbar buttons
 - Fixed quickswitcher CSS
 - Fixed issues with light theme
