@@ -1,9 +1,9 @@
-/* Contrast Improvements v1.2.2 by Hebgbs (@w/ :heart:)
+/* Contrast Improvements v1.2.3 by Hebgbs (@w/ :heart:)
    Black text and objects where it is otherwise difficult to see with brighter colours.
    
    This code must be the first import to be fully effective. */
 
-.tooltip, BUTTON:not(.outlined), .badge, .is-local-bot-message *:not(A):not(.bot-tag),
+.tooltip, BUTTON:not(.outlined), .badge, .alert-actions .btn, .is-local-bot-message *:not(A):not(.bot-tag),
 ::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
 .guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete-inner .active *,
@@ -15,9 +15,10 @@
 .Select-option.is-selected, .Select-menu .is-selected DIV .primary, .Select-menu .is-selected DIV .localized,
 .upload-drop-modal *, .new-messages-indicator, .popout-menu-item.invite *,
 DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button:hover .text,
-.flex-spacer.flex-vertical .comment .body DIV.markup .mention:hover, .recent-mentions-popout .mention:hover,
-DIV.search-results-wrap .action-buttons .jump-button:hover,
-DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
+/* Allow me to remark how much I hate it has to be this stupidly long selector. I hate it. */
+.flex-spacer.flex-vertical .comment .message:not(.mentioned) .body DIV.markup .mention:hover, .recent-mentions-popout .mention:hover,
+.quickswitcher .result.selected, DIV.search-results-wrap .action-buttons .jump-button:hover,
+DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, .guild-settings-modal-emoji-header .btn-primary,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 #bd-pub-button:hover{
     color: #000 !important;}
@@ -26,8 +27,9 @@ DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON,
 #friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
     background-color: #000 !important;}
 
-.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete,
-.modal-content .form-actions BUTTON:not(.btn-primary), .upload-modal .footer .button:not(.button-primary){
+.btn-confirm BUTTON, .user-settings-modal-connections-list .btn-delete, .region-select BUTTON:not(:hover),
+.form-actions .btn:not(.btn-primary), .webhook-actions .btn:not(.btn-primary):not(.btn-clear),
+.alert-actions .btn:not(.btn-primary), .modal-inner .button:not(.button-primary){
     color: #fff !important;}
 
 .is-local-bot-message A{
