@@ -694,3 +694,10 @@
 - Fixed toolbar buttons
 - Fixed quickswitcher CSS
 - Fixed issues with light theme
+
+
+## VERSION 5.1.3
+(Release: Upcoming)
+### CSS:
+- Added NSFW warning CSS
+- Fixed issues with quoter CSS
