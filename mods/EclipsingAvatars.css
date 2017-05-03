@@ -1,0 +1,109 @@
+/* Eclipsing Avatars 2.6
+   User status enhancer to make avatars fit in with a lunar-style theme.
+   
+   Ideally, this should be imported before the ClearVision base theme. */
+
+/* Colours; Adjusted for ClearVision */
+:root{
+    --status-online: #43b581;
+    --status-idle: #faa61a;
+    --status-dnd: #982929;
+    --status-streaming: #593695;}
+
+/* General */
+.channel.private .status,
+.account .avatar-small .status,
+.member .status,
+.popout .header .status,
+.avatar-profile .status{
+    left: 0px !important;
+    top: 0px !important;
+    border: none !important;
+    background: transparent !important;}
+
+/* Size */
+.channel.private .status,
+.account .avatar-small .status,
+.member .status{
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 30px !important;}
+
+.account .avatar-small:hover .status,
+.account .avatar-small.popout-open .status{
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50px !important;
+	transition: all .15s ease-in-out;}
+
+.popout .header .status{
+    height: 90px !important;
+    width: 90px !important;
+    border-radius: 90px !important;}
+
+.avatar-profile .status{
+    height: 128px !important;
+    width: 128px !important;
+    border-radius: 128px !important;}
+
+/* Typing indicator */
+.member .status-typing .spinner{
+    position: absolute !important;
+    left: 2px !important;
+    top: 13px !important;}
+
+/* Appearance settings; change colours in :root */
+.private-channel-call DIV.speaking{
+    box-shadow: 0px 0px 24px var(--main-color),
+                0px 0px 8px 4px var(--main-color) !important;}
+
+.channel.private .status.status-online,
+.account .status.status-online,
+.member .status.status-online{
+    box-shadow: 0px 0px 6px var(--status-online),
+                0px 0px 2px 1px var(--status-online) !important;}
+.account .avatar-small:hover .status.online{
+    box-shadow: 0px 0px 12px var(--status-online),
+                0px 0px 4px 2px var(--status-online) !important;}
+.popout .header .status.status-online{
+    box-shadow: 0px 0px 18px var(--status-online),
+                0px 0px 6px 3px var(--status-online) !important;}
+.avatar-profile .status.status-online{
+    box-shadow: 0px 0px 24px var(--status-online),
+                0px 0px 8px 4px var(--status-online) !important;}
+
+.channel.private .status.status-idle,
+.account .status.status-idle,
+.member .status.status-idle{
+    box-shadow: 0px 0px 6px var(--status-idle),
+                0px 0px 2px 1px var(--status-idle) !important;}
+.account .avatar-small:hover .status.idle{
+    box-shadow: 0px 0px 12px var(--status-idle),
+                0px 0px 4px 2px var(--status-idle) !important;}
+.popout .header .status.status-idle{
+    box-shadow: 0px 0px 18px var(--status-idle),
+                0px 0px 6px 3px var(--status-idle) !important;}
+.avatar-profile .status.status-idle{
+    box-shadow: 0px 0px 24px var(--status-idle),
+                0px 0px 8px 4px var(--status-idle) !important;}
+                
+.channel.private .status.status-dnd,
+.account .status.status-dnd,
+.member .status.status-dnd{
+    box-shadow: 0px 0px 6px var(--status-dnd),
+                0px 0px 2px 1px var(--status-dnd) !important;}
+.account .avatar-small:hover .status.dnd{
+    box-shadow: 0px 0px 12px var(--status-dnd),
+                0px 0px 4px 2px var(--status-dnd) !important;}
+.popout .header .status.status-dnd{
+    box-shadow: 0px 0px 18px var(--status-dnd),
+                0px 0px 6px 3px var(--status-dnd) !important;}
+.avatar-profile .status.status-dnd{
+    box-shadow: 0px 0px 24px var(--status-dnd),
+                0px 0px 8px 4px var(--status-dnd) !important;}
+
+.channel.private .status.status-streaming,
+.account .status.status-streaming,
+.member .status.status-streaming{
+    box-shadow: 0px 0px 6px var(--status-streaming),
+                0px 0px 2px 1px var(--status-streaming) !important;}
