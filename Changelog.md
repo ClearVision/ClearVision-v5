@@ -696,8 +696,14 @@
 - Fixed issues with light theme
 
 
-## VERSION 5.1.3
+## VERSION 5.2.0
 (Release: Upcoming)
 ### CSS:
+- Added new settings CSS
+- Added new notification modal CSS
+- Added new webhook modal CSS
 - Added NSFW warning CSS
+- Fixed custom CSS editor CSS
+- Fixed issues with Discord update
+- Fixed issues with BetterDiscord update
 - Fixed issues with quoter CSS
