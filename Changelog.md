@@ -711,5 +711,6 @@
 ## VERSION 5.2.1
 (Release: 09/05/2017)
 ### CSS:
+- Made light version lighter
 - Fixed search CSS
 - Fixed button colors
