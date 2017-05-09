@@ -697,7 +697,7 @@
 
 
 ## VERSION 5.2.0
-(Release: Upcoming)
+(Release: 09/05/2017)
 ### CSS:
 - Added new settings CSS
 - Added new notification modal CSS
