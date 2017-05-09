@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.2.0" by @Zerthox */
+/* "ClearVision CSS v5.2.1" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.2.0";
+    content: "ClearVision v5.2.1";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -5145,10 +5145,6 @@ ul.bda-slist {
 .search-popout .date-picker .date-picker-hint {
     border-color: transparent;
 }
-.search-results-wrap,
-.theme-dark .search-results-wrap {
-    background-color: rgba(0, 0, 0, .9);
-}
 .search-results-wrap .search-header,
 .theme-dark .search-results-wrap .search-header,
 .react-datepicker .react-datepicker__header {
@@ -7354,7 +7350,7 @@ img:not(.emote):not(.emoji)::before {
 }
 .ui-switch::before {
     top: 0;
-    left: 0;
+    left: 0 !important;
     bottom: 0;
     width: 18px !important;
     height: 18px !important;
@@ -7366,7 +7362,7 @@ img:not(.emote):not(.emoji)::before {
     transform: none !important;
 }
 .ui-switch-checkbox:checked + .ui-switch::before {
-    left: 100%;
+    left: 100% !important;
     margin-left: -18px;
 }
 .connection .ui-switch {
@@ -7397,7 +7393,8 @@ img:not(.emote):not(.emoji)::before {
     background: rgba(0, 0, 0, 0.7) !important;
     border-bottom: 1px solid transparent !important;
 }
-.channel-members {
+.channel-members,
+.search-results-wrap {
     background: rgba(0, 0, 0, 0.75) !important;
 }
 .friends-header {
@@ -7563,6 +7560,9 @@ img:not(.emote):not(.emoji)::before {
 }
 .ui-button.primary .ui-button-contents {
     background-image: none !important;
+}
+.ui-button.brand.filled {
+    background: var(--main-color);
 }
 .ui-button.red {
     background-color: #a93d3d;
@@ -8909,7 +8909,7 @@ img:not(.emote):not(.emoji)::before {
 
 /* LIGHT VERSION */
 .theme-light .layers {
-    background: rgba(0, 0, 0, .3) !important;
+    background: rgba(0, 0, 0, .1) !important;
 }
 .theme-light .guilds-wrapper .guilds .guild .guild-inner {
     -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
