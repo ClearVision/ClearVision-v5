@@ -707,3 +707,9 @@
 - Fixed issues with Discord update
 - Fixed issues with BetterDiscord update
 - Fixed issues with quoter CSS
+
+## VERSION 5.2.1
+(Release: 09/05/2017)
+### CSS:
+- Fixed search CSS
+- Fixed button colors
