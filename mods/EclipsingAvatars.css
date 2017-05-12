@@ -57,6 +57,9 @@
     box-shadow: 0px 0px 24px var(--main-color),
                 0px 0px 8px 4px var(--main-color) !important;}
 
+.title .status.status-online,
+.friends-row .status.status-online{
+    background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 .account .status.status-online,
 .member .status.status-online{
@@ -72,6 +75,9 @@
     box-shadow: 0px 0px 24px var(--status-online),
                 0px 0px 8px 4px var(--status-online) !important;}
 
+.title .status.status-idle,
+.friends-row .status.status-idle{
+    background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 .account .status.status-idle,
 .member .status.status-idle{
@@ -86,7 +92,10 @@
 .avatar-profile .status.status-idle{
     box-shadow: 0px 0px 24px var(--status-idle),
                 0px 0px 8px 4px var(--status-idle) !important;}
-                
+
+.title .status.status-dnd,
+.friends-row .status.status-dnd{
+    background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
 .account .status.status-dnd,
 .member .status.status-dnd{
