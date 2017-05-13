@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.2.1" by @Zerthox */
+/* "ClearVision CSS v5.2.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.2.1";
+    content: "ClearVision v5.2.2";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -1470,6 +1470,9 @@ textarea {
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+.modal-content {
+    background: transparent;
+}
 .form .form-inner {
     background-color: rgba(0, 0, 0, 0.8);
     color: hsla(0, 0%, 100%, .7);
@@ -2600,6 +2603,16 @@ ul.bda-slist {
     border: none !important;
     margin-bottom: 5px;
     border-radius: 5px;
+}
+.bd-pfbtn {
+    background: var(--main-color) !important;
+    padding: 1px 6px;
+    border-radius: 4px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.bd-pfbtn:hover {
+    background: var(--hover-color) !important;
 }
 #bd-themes-pane .bda-plugin-reload {
     margin-top: 68px;
@@ -7774,6 +7787,11 @@ img:not(.emote):not(.emoji)::before {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
+.user-settings-locale .ui-flex.flex-horizontal img {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: gnone;
+}
 .ui-audit-log {
     background-color: rgba(0, 0, 0, .3) !important;
     border: none !important;
@@ -8081,7 +8099,7 @@ img:not(.emote):not(.emoji)::before {
 [layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(4)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:last-child::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item.danger::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg);
 }
 .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(2)::after  {
@@ -8135,6 +8153,17 @@ img:not(.emote):not(.emoji)::before {
 .ui-sidebar .ui-tab-bar.SIDE .ui-tab-bar-item.selected,
 .bd-blue .ui-sidebar .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
     background: var(--main-color);
+}
+.social-links-link {
+    opacity: .3;
+    -webkit-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+}
+.social-links-link:hover {
+    opacity: .7;
+}
+.social-links-link .ui-icon-fg {
+    fill: #fff !important;
 }
 
 /* CONNECTION SETTINGS */
