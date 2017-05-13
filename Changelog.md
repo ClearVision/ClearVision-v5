@@ -714,3 +714,11 @@
 - Made light version lighter
 - Fixed search CSS
 - Fixed button colors
+
+## VERSION 5.2.2
+(Release: 13/05/2017)
+### CSS:
+- Add social links CSS
+- Fix user settings image filters
+- Fix button colors
+- Fix issues with latest Discord Canary update
