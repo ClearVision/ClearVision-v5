@@ -111,8 +111,10 @@
     box-shadow: 0px 0px 24px var(--status-dnd),
                 0px 0px 8px 4px var(--status-dnd) !important;}
 
+.title .status.status-streaming,
+.friends-row .status.status-streaming{
+    background-color: var(--status-streaming) !important;}
 .channel.private .status.status-streaming,
-.account .status.status-streaming,
 .member .status.status-streaming{
     box-shadow: 0px 0px 6px var(--status-streaming),
                 0px 0px 2px 1px var(--status-streaming) !important;}
