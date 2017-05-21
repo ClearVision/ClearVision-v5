@@ -1,4 +1,4 @@
-/* Eclipsing Avatars 2.6
+/* Eclipsing Avatars 2.7
    User status enhancer to make avatars fit in with a lunar-style theme.
    
    Ideally, this should be imported before the ClearVision base theme. */
@@ -12,22 +12,24 @@
 
 /* General */
 .channel.private .status,
-.account .avatar-small .status,
+.account .status,
 .member .status,
 .popout .header .status,
-.avatar-profile .status{
+.avatar-profile .status,
+.channel-textarea-autocomplete-inner .status{
     left: 0px !important;
     top: 0px !important;
     border: none !important;
     background: transparent !important;}
 
+.avatar-popout{
+	border: none !important;}
+
 /* Size */
-.channel.private .status,
-.account .avatar-small .status,
-.member .status{
-    height: 30px !important;
-    width: 30px !important;
-    border-radius: 30px !important;}
+.channel-textarea-autocomplete-inner .status{
+	height: 26px !important;
+	width: 26px !Important;
+	border-radius: 26px !Important;}
 
 .account .avatar-small:hover .status,
 .account .avatar-small.popout-open .status{
@@ -62,7 +64,8 @@
     background-color: var(--status-online) !important;}
 .channel.private .status.status-online,
 .account .status.status-online,
-.member .status.status-online{
+.member .status.status-online,
+.channel-textarea-autocomplete-inner .status.status-online{
     box-shadow: 0px 0px 6px var(--status-online),
                 0px 0px 2px 1px var(--status-online) !important;}
 .account .avatar-small:hover .status.online{
@@ -80,7 +83,8 @@
     background-color: var(--status-idle) !important;}
 .channel.private .status.status-idle,
 .account .status.status-idle,
-.member .status.status-idle{
+.member .status.status-idle,
+.channel-textarea-autocomplete-inner .status.status-idle{
     box-shadow: 0px 0px 6px var(--status-idle),
                 0px 0px 2px 1px var(--status-idle) !important;}
 .account .avatar-small:hover .status.idle{
@@ -98,7 +102,8 @@
     background-color: var(--status-dnd) !important;}
 .channel.private .status.status-dnd,
 .account .status.status-dnd,
-.member .status.status-dnd{
+.member .status.status-dnd,
+.channel-textarea-autocomplete-inner .status.status-dnd{
     box-shadow: 0px 0px 6px var(--status-dnd),
                 0px 0px 2px 1px var(--status-dnd) !important;}
 .account .avatar-small:hover .status.dnd{
