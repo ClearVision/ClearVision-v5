@@ -722,3 +722,10 @@
 - Fix user settings image filters
 - Fix button colors
 - Fix issues with latest Discord Canary update
+
+## Version 5.2.3
+(Release: Upcoming)
+### CSS:
+- Fixed custom CSS editor scroller color
+- Fixed settings scroller colors
+- Fixed quickswitcher CSS
