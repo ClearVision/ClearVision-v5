@@ -726,6 +726,7 @@
 ## Version 5.2.3
 (Release: Upcoming)
 ### CSS:
+- Add emoji premium promo CSS
 - Fixed quickswitcher CSS
 - Fixed connection popout CSS
 - Fixed connection debug modal CSS
