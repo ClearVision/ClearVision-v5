@@ -726,6 +726,8 @@
 ## Version 5.2.3
 (Release: Upcoming)
 ### CSS:
+- Fixed quickswitcher CSS
+- Fixed connection popout CSS
+- Fixed connection debug modal CSS
 - Fixed custom CSS editor scroller color
 - Fixed settings scroller colors
-- Fixed quickswitcher CSS
