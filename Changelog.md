@@ -726,6 +726,7 @@
 ## Version 5.2.3
 (Release: Upcoming)
 ### CSS:
+- Added custom GIF badge to GIFV images
 - Added emoji premium promo CSS
 - Fixed private call CSS
 - Fixed region select CSS
