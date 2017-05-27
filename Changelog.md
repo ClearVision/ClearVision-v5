@@ -733,5 +733,6 @@
 - Fixed quickswitcher CSS
 - Fixed connection popout CSS
 - Fixed connection debug modal CSS
+- Fixed button colors
 - Fixed custom CSS editor scroller color
 - Fixed settings scroller colors
