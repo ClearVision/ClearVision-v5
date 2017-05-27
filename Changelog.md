@@ -718,15 +718,17 @@
 ## VERSION 5.2.2
 (Release: 13/05/2017)
 ### CSS:
-- Add social links CSS
-- Fix user settings image filters
-- Fix button colors
-- Fix issues with latest Discord Canary update
+- Added social links CSS
+- Fixed user settings image filters
+- Fixed button colors
+- Fixed issues with latest Discord Canary update
 
 ## Version 5.2.3
 (Release: Upcoming)
 ### CSS:
-- Add emoji premium promo CSS
+- Added emoji premium promo CSS
+- Fixed private call CSS
+- Fixed region select CSS
 - Fixed quickswitcher CSS
 - Fixed connection popout CSS
 - Fixed connection debug modal CSS
