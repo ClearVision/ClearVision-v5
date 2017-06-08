@@ -726,8 +726,11 @@
 ## Version 5.2.3
 (Release: Upcoming)
 ### CSS:
+- Added text & voice channel CSS
 - Added custom GIF badge to GIFV images
 - Added emoji premium promo CSS
+- Fixed issues with latest Discord update
+- Fixed channel scroller CSS
 - Fixed private call CSS
 - Fixed region select CSS
 - Fixed quickswitcher CSS
