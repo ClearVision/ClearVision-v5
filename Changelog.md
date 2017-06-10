@@ -724,7 +724,7 @@
 - Fixed issues with latest Discord Canary update
 
 ## Version 5.2.3
-(Release: Upcoming)
+(Release: 11/06/2017)
 ### CSS:
 - Added text & voice channel CSS
 - Added custom GIF badge to GIFV images
