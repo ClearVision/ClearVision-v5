@@ -739,3 +739,9 @@
 - Fixed button colors
 - Fixed custom CSS editor scroller color
 - Fixed settings scroller colors
+
+## Version 5.2.4
+(Release: Upcoming)
+### CSS:
+- Fixed icons in voice chat
+- Fixed issues with minimal mode
