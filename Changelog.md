@@ -744,4 +744,7 @@
 (Release: Upcoming)
 ### CSS:
 - Fixed icons in voice chat
+- Fixed user limit display color
+- Fixed issues with account container width
 - Fixed issues with minimal mode
+- Minor adjustements & fixes
