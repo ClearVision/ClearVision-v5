@@ -741,8 +741,10 @@
 - Fixed settings scroller colors
 
 ## Version 5.2.4
-(Release: Upcoming)
+(Release: 14/06/2017)
 ### CSS:
+- Fixed selected channel CSS
+- Fixed unread channel CSS
 - Fixed icons in voice chat
 - Fixed user limit display color
 - Fixed issues with account container width
