@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.2.3" by @Zerthox */
+/* "ClearVision CSS v5.2.4" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .channels-wrap > [class*="container"]:last-child::after {
-    content: "ClearVision v5.2.3";
+    content: "ClearVision v5.2.4";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -895,7 +895,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .guilds li.unread .guild-inner::before {
     background: var(--main-color);
 }
-.channels-wrap .scroller ul .channel-text.unread:not(.selected):not(.channel-muted)::before {
+.channels-wrap [class*="scroller-"] ul .channel-text.unread:not(.selected):not(.channel-muted)::before {
     background: var(--hover-color);
 }
 .chat>.content .messages .divider:not(.red) div,
@@ -1126,7 +1126,7 @@ textarea {
 .chat,
 .typing,
 .content,
-.channels-wrap .scroller,
+.channels-wrap [class*="scroller-"],
 .private-channels,
 .divider-red span,
 .messages-wrapper,
@@ -1139,8 +1139,8 @@ textarea {
     box-shadow: none !important;
     color: #ddd;
 }
-.channels-wrap .scroller header h2,
-.channels-wrap .scroller ul .channel a {
+.channels-wrap [class*="scroller-"] header h2,
+.channels-wrap [class*="scroller-"] ul .channel a {
     color: #fff;
 }
 .guilds .friends-online {
@@ -1173,7 +1173,7 @@ textarea {
 .guilds li .guild-inner::before {
     left: -26px;
 }
-.channels-wrap .scroller header h2,
+.channels-wrap [class*="scroller-"] header h2,
 .private-channels header {
     opacity: .6;
 }
@@ -1393,7 +1393,7 @@ textarea {
 .bd-minimal .message-group {
     padding: 10px 5px;
 }
-.bd-minimal .channels-wrap .scroller ul .channel-text .channel-name {
+.bd-minimal .channels-wrap [class*="scroller-"] ul .channel-text .channel-name {
     padding-left: 5px;
 }
 .bd-minimal .avatar-large {
@@ -1421,28 +1421,27 @@ textarea {
     margin-left: -13px;
     font-size: 14px;
 }
-.bd-minimal .channels-wrap .scroller ul .channel-text.unread:not(.selected):not(.channel-muted)::before {
+.bd-minimal .channels-wrap [class*="scroller-"] ul .channel-text.unread:not(.selected):not(.channel-muted)::before {
     top: 9px;
     width: 10px;
     height: 10px;
 }
-.bd-minimal .channels-wrap .scroller h2 {
+.bd-minimal .channels-wrap [class*="scroller-"] h2 {
     margin-left: 10px;
 }
-.bd-minimal #rtc-connection {
-    width: 176px;
-    margin-left: -46px;
-}
-.bd-minimal .account .avatar-small {
-    display: block;
-    margin-left: 5px;
-}
-.bd-minimal .account .username,
-.bd-minimal .account .discriminator {
+.bd-minimal .channels-wrap > [class*="container"]:last-child .username,
+.bd-minimal .channels-wrap > [class*="container"]:last-child .discriminator {
     display: none;
 }
-.bd-minimal .account .btn-group .btn {
-    width: 30px;
+.bd-minimal .channels-wrap > [class*="container"]:not(:first-child) .rtc-connection-status .ping {
+    display: none;
+}
+.bd-minimal .guilds-wrapper .guilds .guilds-error {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    font-size: 15px;
+    line-height: 17px;
 }
 .settings .settings-header {
     background: rgba(0, 0, 0, 0.75);
@@ -1450,10 +1449,10 @@ textarea {
 .channel-notification-settings .content .content-inner {
     background: transparent !important;
 }
-.channels-wrap .scroller ul .channel-text:hover:not(.unread)::before {
+.channels-wrap [class*="scroller-"] ul .channel-text:hover:not(.unread)::before {
     border-left: 4px solid var(--main-color);
 }
-.channels-wrap .scroller ul .channel-text.selected::before {
+.channels-wrap [class*="scroller-"] ul .channel-text.selected::before {
     border-left: 4px solid var(--main-color);
 }
 .guilds li.active .guild-inner,
@@ -1838,7 +1837,7 @@ a:link {
     -webkit-animation: load8 2.8s infinite linear;
     animation: load8 2.8s infinite linear;
 }
-.channels-wrap .scroller ul .channel-voice.locked:hover .icon-lock {
+.channels-wrap [class*="scroller-"] ul .channel-voice.locked:hover .icon-lock {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 }
 @keyframes shake {
@@ -1859,7 +1858,7 @@ a:link {
         transform: translate3d(4px, 0, 0);
     }
 }
-.channels-wrap .scroller ul .channel-voice.locked {
+.channels-wrap [class*="scroller-"] ul .channel-voice.locked {
     cursor: pointer;
 }
 #friends .btn {
@@ -2638,7 +2637,7 @@ ul.bda-slist {
 #friends .friends-table .friends-row+.friends-row {
     border-top: 1px solid hsla(0, 0%, 100%, .04) !important;
 }
-.channels-wrap .scroller header span {
+.channels-wrap [class*="scroller-"] header span {
     text-align: center;
     margin-left: -7px;
 }
@@ -2670,7 +2669,7 @@ ul.bda-slist {
 .instant-invites .instant-invites-list .instant-invite {
     color: #C4C4C4;
 }
-.channels-wrap .scroller ul .channel-voice .channel-arrow:hover {
+.channels-wrap [class*="scroller-"] ul .channel-voice .channel-arrow:hover {
     background-color: var(--main-color);
 }
 .auth-tiling-bg {
@@ -2725,22 +2724,22 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
        __/\\\\\\\\\\\\\\\__\//\\\\\\\\\\_\/\\\____________\//\\\\\___\/\\\___\/\\\__\///\\\\\/____/\\\/\///\\\_
         _\///////////////____\//////////__\///______________\/////____\///____\///_____\/////_____\///____\///__
 */
-.channels-wrap .scroller .channel-text.selected {
+.channels-wrap [class*="scroller-"] .channel-text.selected {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 85%, transparent) !important;
 }
-.channels-wrap .scroller .channel-text.selected::before {
+.channels-wrap [class*="scroller-"] .channel-text.selected::before {
     border-left: 4px solid var(--main-color) !important;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.channels-wrap .scroller .channel-text:hover.channel-muted::before,
-.channels-wrap .scroller .channel-text:hover:not(.unread)::before {
+.channels-wrap [class*="scroller-"] .channel-text:hover.channel-muted::before,
+.channels-wrap [class*="scroller-"] .channel-text:hover:not(.unread)::before {
     border-left: 4px solid var(--main-color) !important;
     opacity: .25;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.channels-wrap .scroller .channel-text:not(.selected):hover {
+.channels-wrap [class*="scroller-"] .channel-text:not(.selected):hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
 .private-channels .channel.selected::before,
@@ -2777,16 +2776,16 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
         background-color: var(--hover-color);
     }
 }
-.channels-wrap .scroller .channel-text.unread:not(.selected):not(.channel-muted)::before {
+.channels-wrap [class*="scroller-"] .channel-text.unread:not(.selected):not(.channel-muted)::before {
     background: var(--main-color) !important;
     border-left: 0px solid transparent;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-.bd-minimal .channels-wrap .scroller .channel-text.unread:not(.selected):not(.channel-muted)::before {
+.bd-minimal .channels-wrap [class*="scroller-"] .channel-text.unread:not(.selected):not(.channel-muted)::before {
     top: 8px;
 }
-.channels-wrap .scroller .channel-text.unread:not(.selected):not(.channel-muted):hover::before {
+.channels-wrap [class*="scroller-"] .channel-text.unread:not(.selected):not(.channel-muted):hover::before {
     background: transparent !important;
     border-left: 4px solid var(--hover-color) !important;
     height: 36px;
@@ -2796,17 +2795,17 @@ __/\\\\\\\\\\\\\\\_____________________________________________/\\\_____________
     border-radius: 0;
     opacity: .25;
 }
-.bd-minimal .channels-wrap .scroller .channel-text.unread:not(.selected):not(.channel-muted):hover::before {
+.bd-minimal .channels-wrap [class*="scroller-"] .channel-text.unread:not(.selected):not(.channel-muted):hover::before {
     height: 28px;
     margin-top: -8px;
 }
-.channels-wrap .scroller ul .channel.selected,
+.channels-wrap [class*="scroller-"] ul .channel.selected,
 .private-channels .search-result.selected,
 .private-channels .search-result:hover,
 #rtc-debug-modal #users-section .user-list li.selected {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 85%, transparent) !important;
 }
-.channels-wrap .scroller ul .channel:not(.selected):hover,
+.channels-wrap [class*="scroller-"] ul .channel:not(.selected):hover,
 #rtc-debug-modal #users-section .user-list li:not(.selected):hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
@@ -3011,7 +3010,8 @@ div#bd-pub-button:hover {
 #permissions .permission-actions>div.PASSTHROUGH:hover {
     border-color: #51555F;
 }
-.badge {
+.badge,
+[class*="iconSpacing"] [class*="wrapper"] {
     padding: 3px 5px;
     background-color: var(--main-color);
     -webkit-box-shadow: none;
@@ -3354,7 +3354,7 @@ button:active {
     background-position: center;
     background-size: 20px;
 }
-.channels-wrap .scroller .icon-settings {
+.channels-wrap [class*="scroller-"] .icon-settings {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/settings.svg) !important;
     background-position: center;
     background-size: 120%;
@@ -3369,7 +3369,7 @@ button:active {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/volume_off.svg) !important;
     background-position: center;
 }
-.channels-wrap .scroller .channel-voice-states li .icon {
+.channels-wrap [class*="scroller-"] .channel-voice-states li .icon {
     opacity: .3 !important;
 }
 #rtc-connection .btn-group .btn:active {
@@ -3410,8 +3410,8 @@ button:active {
 .account .btn-settings:hover::after {
     opacity: .7;
 }
-.channels-wrap .scroller .channel .icon.popout-open,
-.channels-wrap .scroller .channel .icon:hover {
+.channels-wrap [class*="scroller-"] .channel .icon.popout-open,
+.channels-wrap [class*="scroller-"] .channel .icon:hover {
     opacity: .7 !important;
 }
 .message-group .btn-option {
@@ -3432,7 +3432,7 @@ button:active {
     background-position: center;
     opacity: .7 !important;
 }
-.channels-wrap .scroller .icon+.icon {
+.channels-wrap [class*="scroller-"] .icon+.icon {
     margin-left: 3px;
 }
 .guilds-wrapper .guilds .guild.audio .guild-inner::after {
@@ -3441,7 +3441,7 @@ button:active {
     background-color: #000;
     opacity: .7;
 }
-.channels-wrap .scroller .icon-instant-invite {
+.channels-wrap [class*="scroller-"] .icon-instant-invite {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg) !important;
     background-position: center;
     background-size: 110%;
@@ -4071,7 +4071,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 #bd-show-channels {
     background-color: rgba(0, 0, 0, .3);
 }
-.channels-wrap .scroller .channel-voice .channel-arrow:hover {
+.channels-wrap [class*="scroller-"] .channel-voice .channel-arrow:hover {
     background-color: rgba(100, 100, 100, .3);
 }
 .fav {
@@ -4162,13 +4162,13 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
         background-color: transparent;
     }
 }
-.channels-wrap .scroller .channel-voice .channel-arrow {
+.channels-wrap [class*="scroller-"] .channel-voice .channel-arrow {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/navigate_next.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
 }
-.channels-wrap .scroller header button::after {
+.channels-wrap [class*="scroller-"] header button::after {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add_circle.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -4357,10 +4357,10 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 #friends .friends-header .tab-bar .tab-bar-separator {
     background-color: hsla(0, 0%, 85%, .1) !important;
 }
-.channels-wrap .scroller .toggle-muted-text-channels a {
+.channels-wrap [class*="scroller-"] .toggle-muted-text-channels a {
     text-decoration: none;
 }
-.channels-wrap .scroller .toggle-muted-text-channels a::before {
+.channels-wrap [class*="scroller-"] .toggle-muted-text-channels a::before {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/expand_more.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -4547,18 +4547,18 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/colorize.svg);
     background-size: 20px;
 }
-.channels-wrap .scroller .icon-lock {
+.channels-wrap [class*="scroller-"] .icon-lock {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/lock.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
     opacity: .3 !important;
 }
-.channels-wrap .scroller,
+.channels-wrap [class*="scroller-"],
 .private-channels .scroller {
     -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
 }
-.channels-wrap .scroller .channel.sorting::after,
+.channels-wrap [class*="scroller-"] .channel.sorting::after,
 #settings-roles .roles li.sorting::after {
     color: var(--main-color);
     border-color: var(--main-color);
@@ -4927,7 +4927,7 @@ ul.bda-slist {
 .message-group .embed .embed-fields {
     color: rgba(255,255,255,.7);
 }
-.bd-minimal .channels-wrap .scroller .channel .channel-name {
+.bd-minimal .channels-wrap [class*="scroller-"] .channel .channel-name {
     text-indent: 5px;
 }
 .message-group .comment .attachment .metadata,
@@ -6284,50 +6284,52 @@ pre:hover .copybutton {
 .contentSelectedVoice-gTtYM9:active {
     background-color: transparent !important;
 }
-.channels-wrap .scroller > [class*="horizontal"] [class*="name"] {
+.channels-wrap [class*="scroller-"] > [class*="horizontal"] [class*="name"] {
     text-align: center;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] {
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"]:hover {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"]:hover {
     background-color: hsla(0, 0%, 100%, .1) !important;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] {
     opacity: .7 !important;
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"]:hover {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"]:hover {
     opacity: 1 !important;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"][class*="Selected"] svg path {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"][class*="Selected"] svg path {
     fill: #fff;
     opacity: 1 !important;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"][class*="Selected"] {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"][class*="Selected"] {
     background-color: var(--main-color) !important;
 }
-.channels-wrap .scroller [class*="Text"] [class*="unread"] + div .margin-reset:first-child svg path {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"][class*="Selected"] [class*="iconSpacing"] {
+    opacity: 1 !important;
+}
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"][class*="Selected"] [class*="iconSpacing"] [class*="wrapper"] {
+    background-color: #fff;
+    color: var(--main-color);
+}
+.channels-wrap [class*="scroller-"] [class*="Text"] [class*="unread-"] + div [class*="marginReset"]:first-child svg path {
     fill: var(--main-color);
     opacity: 1 !important;
 }
-.channels-wrap .scroller [class*="unread"] {
+.channels-wrap [class*="scroller-"] [class*="unread-"] {
     display: none;
 }
-.channels-wrap .scroller [class*="DragBefore"]::before {
+.channels-wrap [class*="scroller-"] [class*="DragBefore"]::before {
     background-color: var(--main-color);
     border-radius: 0;
 }
-[class*="iconSpacing"] [class*="wrapper"] {
-    background-color: var(--main-color);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] svg,
-.channels-wrap .scroller [class*="Voice"] [class*="icon"] svg,
-.channels-wrap .scroller [class*="horizontal"] [class*="icon"] {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] svg,
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="icon"] svg,
+.channels-wrap [class*="scroller-"] [class*="horizontal"] [class*="icon"] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -6335,32 +6337,33 @@ pre:hover .copybutton {
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] svg:hover,
-.channels-wrap .scroller [class*="Voice"] [class*="icon"] svg:hover,
-.channels-wrap .scroller [class*="horizontal"] [class*="icon"]:hover {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] svg:hover,
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="icon"] svg:hover,
+.channels-wrap [class*="scroller-"] [class*="horizontal"] [class*="icon"]:hover {
     opacity: .7;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] svg,
-.channels-wrap .scroller [class*="Voice"] [class*="icon"] svg {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] svg,
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="icon"] svg {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg);
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] [class*="iconButton"],
-.channels-wrap .scroller [class*="Voice"] [class*="icon"] [class*="iconButton"] {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] [class*="iconButton"],
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="icon"] [class*="iconButton"] {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/settings.svg);
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="iconButton"]:hover,
-.channels-wrap .scroller [class*="Voice"] [class*="iconButton"]:hover {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="iconButton"]:hover,
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="iconButton"]:hover {
     -webkit-animation: load8 2.8s infinite linear;
     animation: load8 2.8s infinite linear;
 }
-.channels-wrap .scroller [class*="Text"][class*="content"] [class*="icon"] svg path,
-.channels-wrap .scroller [class*="Voice"] [class*="icon"] svg path {
+.channels-wrap [class*="scroller-"] [class*="Text"][class*="content"] [class*="icon"] svg path,
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="icon"] svg path {
     display: none;
 }
-.channels-wrap .scroller > [class*="horizontal"] [class*="icon"] {
+.channels-wrap [class*="scroller-"] > [class*="horizontal"] [class*="icon"] {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/add_circle.svg);
+    background-size: 18px;
 }
-.channels-wrap .scroller > [class*="horizontal"] [class*="icon"] polygon {
+.channels-wrap [class*="scroller-"] > [class*="horizontal"] [class*="icon"] polygon {
     display: none;
 }
 
@@ -6399,6 +6402,12 @@ pre:hover .copybutton {
 .channels-wrap > [class*="container"]:last-child {
     position: relative;
     margin-bottom: 10px;
+}
+.channels-wrap > [class*="container"] [class*="accountDetails"] .username {
+    max-width: 70px;
+}
+.channels-wrap > [class*="container"] [class*="accountDetails"] .discriminator {
+    background: transparent !important;
 }
 .channels-wrap > [class*="container"]:not(:first-child) .flex-lFgbSz {
     border-radius: 15px;
@@ -7113,8 +7122,8 @@ pre:hover .copybutton {
 .bd-blue .detected-platform-accounts-modal .btn-group .btn-primary,
 .bd-blue .download-apps .platforms .platform.active .download-button,
 .bd-blue .emoji-picker .premium-promo .btn,
-.bd-blue .channels-wrap .scroller .channel-text.unread:not(.selected):not(.channel-muted).selected::before,
-.bd-blue .channels-wrap .scroller .channel-voice-states li.speaking .avatar-small,
+.bd-blue .channels-wrap [class*="scroller-"] .channel-text.unread:not(.selected):not(.channel-muted).selected::before,
+.bd-blue .channels-wrap [class*="scroller-"] .channel-voice-states li.speaking .avatar-small,
 .bd-blue .invite-banner,
 .bd-blue .invite-header .invite-guild-icon,
 .bd-blue .invite-mobile .link.purple,
@@ -8315,18 +8324,18 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 }
 
 /* SETTINGS TAB BAR */
-.ui-standard-sidebar-view .sidebar-region .scroller {
+.ui-standard-sidebar-view .sidebar-region [class*="scroller-"] {
     margin: 30px 0;
     -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
 }
-.ui-standard-sidebar-view .sidebar-region .scroller::-webkit-scrollbar {
+.ui-standard-sidebar-view .sidebar-region [class*="scroller-"]::-webkit-scrollbar {
     display: none;
 }
 .ui-standard-sidebar-view .sidebar-region .sidebar {
     height: 100%;
     padding: 0 6px 0 20px;
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar {
+.ui-standard-sidebar-view .sidebar-region [class*="side-"] {
     padding: 30px 0;
 }
 .tab-bar.SIDE .tab-bar-item,
@@ -8335,10 +8344,9 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     -webkit-transition: color .3s ease-in-out, opacity .3s ease-in-out;
     transition: color .3s ease-in-out, opacity .3s ease-in-out;
 }
-.ui-standard-sidebar-view .ui-tab-bar.SIDE .ui-tab-bar-item {
+.ui-standard-sidebar-view .sidebar-region-scroller [class*="item"] {
     padding: 8px 0 8px 20px;
     margin: 0;
-    border-radius: 0;
     cursor: pointer !important;
 }
 .ui-tab-bar.SIDE .ui-tab-bar-item {
@@ -8349,44 +8357,33 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     background: var(--main-color);
     color: #fff;
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"],
+#bd-settings-sidebar .ui-tab-bar-item {
     color: hsla(0, 0%, 100%, .3) !important;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:hover,
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:hover,
+#bd-settings-sidebar .ui-tab-bar-item:hover {
+    color: hsla(0, 0%, 100%, .7) !important;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"][class*="selected-"],
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+    background-color: var(--main-color);
     color: #fff !important;
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:not(.selected):hover {
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
-}
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 85%, transparent) !important;
-}
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-left: 4px solid var(--main-color);
-    pointer-events: none;
-    opacity: 0;
-}
-.ui-standard-sidebar-view .ui-tab-bar.SIDE .ui-tab-bar-item:hover::before {
-    opacity: .25;
-}
-.ui-standard-sidebar-view .ui-tab-bar.SIDE .ui-tab-bar-item.selected::before {
-    opacity: 1;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item  {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"],
+#bd-settings-sidebar .ui-tab-bar-item {
     padding-left: 50px;
 }
-.ui-standard-sidebar-view .ui-tab-bar.SIDE .ui-tab-bar-item.guild-role {
-    height: auto;
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar [class*="item"][class*="Brand"]:not([class*="selected-"]):hover {
+    background-color: var(--hover-color);
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar [class*="itemDanger"]:hover {
+    background-color: #a93d3d;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]::after,
+#bd-settings-sidebar .ui-tab-bar-item::after {
     content: "";
     position: absolute;
     width: 24px;
@@ -8394,103 +8391,103 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     left: 15px;
     margin-top: -2px;
     opacity: .3;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:hover::after,
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item.selected::after,
-#bd-settings-new:hover::after,
-#bd-settings-new.selected::after {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:hover::after {
+    opacity: .7;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"][class*="selected-"]::after,
+#bd-settings-sidebar .ui-tab-bar-item.selected::after {
     opacity: 1;
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(2)::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(2)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(3)::after,
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(9)::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(3)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(9)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(4)::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(4)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/apps.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(5)::after,
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(6)::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(5)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(6)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(7)::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"][class*="Brand"]::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/speed.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .brand::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/speed.svg);
-}
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(10)::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(10)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(11)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(11)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(12)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(11)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(12)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(11)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(13)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(12)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(13)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(12)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(14)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(13)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(14)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(13)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(15)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(14)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(15)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(14)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(16)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(15)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(16)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(15)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(17)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(16)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(17)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(16)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(18)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(17)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(18)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(17)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg);
 }
-.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(21)::after,
-.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item:nth-child(20)::after,
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(4)::after {
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(21)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(20)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(4)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg);
 }
-[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE > .ui-tab-bar-item.danger::after {
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="itemDanger"]::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg);
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(2)::after  {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(2)::after  {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg);
 }
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(3)::after {
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(3)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/message.svg);
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(3)::after,
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(5)::after {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(3)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(5)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/assignment.svg);
 }
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(7)::after {
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(7)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg);
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(5)::after,
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(8)::after {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(5)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(8)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/webhook.svg);
 }
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(12)::after {
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(12)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(4)::after,
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(13)::after {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(4)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(13)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg);
 }
-[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:nth-child(14)::after {
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(14)::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/block.svg);
 }
-.ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item:last-child::after {
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:last-child::after {
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/delete.svg);
 }
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
@@ -8593,20 +8590,20 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
-.ui-scroller-themed.ui-scroller-ghost-hairline .scroller::-webkit-scrollbar {
-    width: 14px;
+[class*="scrollerThemed-"] [class*="scroller-"]::-webkit-scrollbar {
+    width: 14px !important;
 }
-.ui-scroller-themed.ui-scroller-ghost-hairline .scroller::-webkit-scrollbar-track-piece {
-    background: rgba(0, 0, 0, .3);
-    background-clip: padding-box;
+[class*="scrollerThemed-"] [class*="scroller-"]::-webkit-scrollbar-track-piece {
+    background: rgba(0, 0, 0, .3) !important;
+    background-clip: padding-box !important;
 }
-.ui-scroller-themed.ui-scroller-ghost-hairline .scroller:not(:hover)::-webkit-scrollbar-track-piece {
-    visibility: hidden;
+[class*="scrollerThemed-"] [class*="scroller-"]:not(:hover)::-webkit-scrollbar-track-piece {
+    visibility: hidden !important;
 }
-.ui-scroller-themed.ui-scroller-ghost-hairline .scroller::-webkit-scrollbar-track-piece,
-.ui-scroller-themed.ui-scroller-ghost-hairline .scroller::-webkit-scrollbar-thumb {
-    border: 3px solid transparent;
-    border-radius: 7px;
+[class*="scrollerThemed-"] [class*="scroller-"]::-webkit-scrollbar-track-piece,
+[class*="scrollerThemed-"] [class*="scroller-"]::-webkit-scrollbar-thumb {
+    border: 3px solid transparent !important;
+    border-radius: 7px !important;
 }
 .keyboard-shortcuts-modal .scroller::-webkit-scrollbar,
 #user-profile-modal .scroller::-webkit-scrollbar {
@@ -9076,11 +9073,11 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 }
 
 /* VOICE CHANNEL CSS */
-.channels-wrap .scroller [class*="UserOver"]::after {
+.channels-wrap [class*="scroller-"] [class*="UserOver"]::after {
     background: hsla(0, 0%, 100%, .1);
     border-color: var(--main-color);
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] {
     position: relative;
     border-left: 4px solid transparent;
     left: -20px;
@@ -9088,12 +9085,12 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     -webkit-transition: border-left .15s ease-in-out;
     transition: border-left .15s ease-in-out;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="avatar"] {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="avatar"] {
     border-color: transparent !important;
     box-shadow: none !important;
     z-index: 10;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="avatar"]::before {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="avatar"]::before {
     content: "";
     position: absolute;
     top: 1px;
@@ -9106,10 +9103,10 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="avatarSpeaking"]::before {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="avatarSpeaking"]::before {
     opacity: 1;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="avatar"]::after {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="avatar"]::after {
     content: "";
     position: absolute;
     top: 1px;
@@ -9124,27 +9121,30 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     transition: all .15s ease-in-out;
     z-index: -1;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="avatarSpeaking"]::after {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="avatarSpeaking"]::after {
     opacity: .5;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="name"]{
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="name"]{
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="iconSpacing"] svg {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="iconSpacing"] svg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
     opacity: .7;
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="iconSpacing"]:first-child svg {
-    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic_off.svg);
-}
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="iconSpacing"]:last-child svg {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="iconSpacing"]:last-child svg {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/volume_off.svg);
 }
-.channels-wrap .scroller [class*="Voice"] + div [class*="user"] [class*="iconSpacing"] path {
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="iconSpacing"]:first-child svg {
+    background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic_off.svg);
+}
+.channels-wrap [class*="scroller-"] [class*="Voice"] + div [class*="user"] [class*="iconSpacing"] path {
     display: none;
+}
+.channels-wrap [class*="scroller-"] [class*="Voice"] [class*="wrapper"] {
+    background-color: hsla(0, 0%, 100%, .1);
 }
 
 /* MENU & PUPOUT ANIMATIONS */
@@ -9363,16 +9363,16 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
 }
-.theme-light .channels-wrap .scroller ul .channel:not(.selected):hover,
-.theme-light .channels-wrap .scroller .channel-text:not(.selected):hover,
+.theme-light .channels-wrap [class*="scroller-"] ul .channel:not(.selected):hover,
+.theme-light .channels-wrap [class*="scroller-"] .channel-text:not(.selected):hover,
 .theme-light #rtc-debug-modal #users-section .user-list li:not(.selected):hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 85%, transparent) !important;
 }
-.theme-light .channels-wrap .scroller ul .channel.selected,
+.theme-light .channels-wrap [class*="scroller-"] ul .channel.selected,
 .theme-light .private-channels .channel.selected,
 .theme-light .private-channels .search-result.selected,
 .theme-light .private-channels .search-result:hover,
-.theme-light .channels-wrap .scroller .channel-text.selected,
+.theme-light .channels-wrap [class*="scroller-"] .channel-text.selected,
 .theme-light #rtc-debug-modal #users-section .user-list li.selected {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
