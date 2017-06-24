@@ -1,4 +1,4 @@
-/* Contrast Improvements v1.3 by Hebgbs (@w/ :heart:)
+/* Contrast Improvements v1.5 by Hebgbs (@w/ &#2039;)
    Black text and objects where it is otherwise difficult to see with brighter colours.
    
    This code must be the first import to be fully effective. */
@@ -22,7 +22,9 @@ DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-b
 DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, .guild-settings-modal-emoji-header .btn-primary,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 .ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name,
-.guild-settings-roles .ui-sidebar .ui-tab-bar-item:not(:first-child).selected,
+.guild-settings-roles .ui-sidebar .ui-tab-bar-item:not(:first-child).selected, .private-channels .channel.selected *,
+#friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge,
+DIV[class|="contentSelectedText"] DIV, DIV[class|="contentHoveredText"] DIV[class|="wrapper"], DIV[class|="contentUnreadText"] DIV[class|="wrapper"],
 #bd-pub-button:hover{
     color: #000 !important;}
 
@@ -60,13 +62,21 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
     transition: .3s ease-in-out !important;}
 
 /* background colour */
-#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.tab-bar-item-primary DIV.badge,
-#friends .friends-header .tab-bar.UNIQUE .tab-bar-item.selected DIV.badge{
-    background-color: #000 !important;}
+/* #friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge, (Keeping this in case I need it later.) */
+.private-channels .channel.selected .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");'],
+.private-channels .channel.selected DIV.icon-friends,
+DIV[class|="contentSelectedText"] DIV[class|="wrapper"]{
+    background-color: #fff !important;}
+
+/* FIXME: Make this work. Intent; Make unread badge in guilds completely opaque at all times. */
+.channels-wrap .scroller [class*="Text"][class*="content"] DIV[class|="iconSpacing"] DIV[class|="wrapper"]{
+    opacity: 1 !Important;}
+
 /* Icon replacement and object brightness */
     /* Disappear */
 .titlebar .win-buttons BUTTON:hover,
-.channel .icon-friends, .friends-column-actions .friends-action,
+.channel DIV.icon-friends, .friends-column-actions .friends-action,
+.private-channels .channel .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");'],
 #friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-add,
 #friends .friends-column.friends-column-actions.friends-column-actions-visible .friends-action.friends-action-ignore,
 #friends .friends-table .friends-column.friends-column-actions .friends-action.friends-action-remove{
@@ -74,10 +84,18 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
 
     /* Darken */
 .icon.icon-unread-arrow, .guild:first-child:hover .friends-icon:after, .guild:first-child.active .friends-icon:after,
-.channel .icon-friends:after, .popout-menu-item.invite .popout-menu-icon, .status-deafened:after, .search-popout DIV:hover:before,
-.search-popout .selected:before, .avatar-xxlarge SPAN DIV:after, .ui-radiogroup .ui-card .ui-icon-check-mark,
-.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV{
+.channel DIV.icon-friends:after, .private-channels .channel .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");']:after,
+.popout-menu-item.invite .popout-menu-icon, .status-deafened:after, .search-popout DIV:hover:before,
+.search-popout .selected:before, .avatar-xxlarge SPAN DIV:after, .ui-radiogroup DIV[class*="card"] .ui-icon-check-mark,
+.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV,
+DIV[class|="contentSelectedText"] SVG{
     filter: brightness(0) !important;}
+    
+    /* Brighten */
+.ui-radiogroup DIV[class*="card"][style*="rgb(67, 181, 129)"] .ui-icon-check-mark,
+.ui-radiogroup DIV[class*="card"][style*="rgb(250, 166, 26)"] .ui-icon-check-mark,
+.ui-radiogroup DIV[class*="card"][style*="rgb(240, 71, 71)"] .ui-icon-check-mark{
+    filter: brightness(1) !Important;}
 
         /* Titlebar */
 .titlebar .win-buttons BUTTON:hover:after{
@@ -95,13 +113,12 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) 50% 50%/24px;}
 
         /* Friends / Friends icon */
-.channel DIV.icon-friends:after{
+.channel DIV.icon-friends:after, .private-channels .channel .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");']:after{
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat 4px 4px/75%;
-    filter: brightness(0) !important;}
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg) no-repeat center center/75%;}
 
         /* Friends / Friend actions */
 .friends-column-actions DIV:after,
@@ -121,9 +138,3 @@ DIV.messages-wrapper DIV.has-more BUTTON, .settings-panel .control-group:nth-chi
 .friends-column-actions .friends-action-cancel:after,
 .friends-column-actions-visible .friends-action-ignore:after{
     background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg) no-repeat 50% 50%/24px;}
-    
-    /* Brighten */
-.ui-radiogroup .ui-card[style*="rgb(67, 181, 129)"] .ui-icon-check-mark,
-.ui-radiogroup .ui-card[style*="rgb(250, 166, 26)"] .ui-icon-check-mark,
-.ui-radiogroup .ui-card[style*="rgb(240, 71, 71)"] .ui-icon-check-mark{
-    filter: brightness(1) !Important;}
