@@ -750,3 +750,11 @@
 - Fixed issues with account container width
 - Fixed issues with minimal mode
 - Minor adjustements & fixes
+
+## Version 5.2.5
+(Release: Upcoming)
+### CSS:
+- Adjusted connecting CSS
+- Fixed issues with latest Discord update
+- Fixed settings CSS
+- Fixed modal CSS
