@@ -1,4 +1,4 @@
-/* Contrast Improvements v1.5 by Hebgbs (@w/ &#2039;)
+/* Contrast Improvements v1.6 by Hebgbs (@w/ :heart:)
    Black text and objects where it is otherwise difficult to see with brighter colours.
    
    This code must be the first import to be fully effective. */
@@ -8,7 +8,7 @@
 .tooltip, BUTTON:not(.outlined), .badge, .alert-actions .btn, .settings-panel .control-group:nth-child(2) .region-select:hover BUTTON
 .theme-light .is-local-bot-message *:not(A):not(.bot-tag), ::selection, .note textarea::selection, .clipboard-input-inner input::selection,
 .change-log .changelog-added, .change-log .changelog-added-secondary, .change-log .changelog-improved,
-.guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete-inner .active *,
+.guilds-wrapper .guilds .friends-online:hover, .channel-textarea-autocomplete-inner LI.active *,
 .search-popout .search-option:hover .answer, .search-popout .search-option.selected .answer,
 .search-popout .user:hover .display-username, .search-popout .user.selected .display-username,
 .react-datepicker__day:hover, .date-picker-hint .hint-value, .need-help-modal H1, .guilds-wrapper .guilds-error:hover,
@@ -22,10 +22,10 @@ DIV.messages-popout-wrap .messages-popout .message-group .action-buttons .jump-b
 DIV.chat .divider.divider-red SPAN, DIV.chat .jump-to-present-bar:hover BUTTON, .guild-settings-modal-emoji-header .btn-primary,
 #friends DIV.friends-header .tab-bar .tab-bar-item .badge, #friends DIV.friends-header .tab-bar .tab-bar-item.selected,
 .ui-button.brand.filled, .ui-button:not(.link):not(.outlined), .user-settings-games .now-playing .game-name,
-.guild-settings-roles .ui-sidebar .ui-tab-bar-item:not(:first-child).selected, .private-channels .channel.selected *,
-#friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge,
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar [class*="item"][class*="selected-"],
+.private-channels .channel.selected *, #friends .friends-header .tab-bar.UNIQUE DIV[class*="tab-bar-item"] DIV.badge,
 DIV[class|="contentSelectedText"] DIV, DIV[class|="contentHoveredText"] DIV[class|="wrapper"], DIV[class|="contentUnreadText"] DIV[class|="wrapper"],
-#bd-pub-button:hover{
+.sidebar #bd-settings-sidebar .ui-tab-bar-item.selected, #bd-pub-button:hover{
     color: #000 !important;}
 
     /* White */
@@ -87,8 +87,8 @@ DIV[class|="contentSelectedText"] DIV[class|="wrapper"]{
 .channel DIV.icon-friends:after, .private-channels .channel .avatar-small[style='background-image: url("/assets/6cd008c0ba16db365710e0d9c95dbeed.svg");']:after,
 .popout-menu-item.invite .popout-menu-icon, .status-deafened:after, .search-popout DIV:hover:before,
 .search-popout .selected:before, .avatar-xxlarge SPAN DIV:after, .ui-radiogroup DIV[class*="card"] .ui-icon-check-mark,
-.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV,
-DIV[class|="contentSelectedText"] SVG{
+.ui-radio-list-item .ui-icon-check-mark, .ui-popout-list .selected:not(:hover) DIV, DIV[class|="contentSelectedText"] SVG,
+.sidebar [class*="item"][class*="selected"]:after{
     filter: brightness(0) !important;}
     
     /* Brighten */
