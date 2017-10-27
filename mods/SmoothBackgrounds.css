@@ -1,10 +1,10 @@
-/* "Smooth Backgrounds v2.0" by Zerthox */
+/* "Smooth Backgrounds v2.1" by Zerthox */
 /* Make the background really clear & more smooth */
 
 .theme-light .guilds-wrapper,
 .theme-dark .guilds-wrapper,
-.theme-light .channels-wrap,
-.theme-dark .channels-wrap,
+.theme-light [class*="channels-"],
+.theme-dark [class*="channels-"],
 .theme-light .content .flex-spacer,
 .theme-dark .content .flex-spacer,
 .theme-light .title-wrap,
