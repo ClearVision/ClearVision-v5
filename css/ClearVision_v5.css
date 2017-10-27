@@ -1,6 +1,9 @@
 /* "ClearVision CSS v5.2.4" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
+/* Import Fixes by Dani */
+@import url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/ClearVisionFixes.css);
+
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
 /*
 ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\________/\\\______________________________________________________
@@ -14,7 +17,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .channels-wrap > [class*="container"]:last-child::after {
-    content: "ClearVision v5.2.4";
+    content: "ClearVision v5.2.5";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
