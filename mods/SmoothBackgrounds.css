@@ -1,14 +1,14 @@
-/* "Smooth Backgrounds v2.1" by Zerthox */
+/* "Smooth Backgrounds v2.1b" by Zerthox*/
 /* Make the background really clear & more smooth */
 
-.theme-light .guilds-wrapper,
-.theme-dark .guilds-wrapper,
-.theme-light [class*="channels-"],
-.theme-dark [class*="channels-"],
+.theme-light .guilds-wrapper .scroller-wrap,
+.theme-dark .guilds-wrapper .scroller-wrap,
+.theme-light DIV[class*="channels-"],
+.theme-dark DIV[class*="channels-"],
 .theme-light .content .flex-spacer,
 .theme-dark .content .flex-spacer,
-.theme-light .title-wrap,
-.theme-dark .title-wrap,
+[class*="titleWrapper"].theme-light > DIV,
+[class*="titleWrapper"].theme-dark > DIV,
 .theme-light .channel-members,
 .theme-dark .channel-members,
 .theme-light .search-results-wrap,
