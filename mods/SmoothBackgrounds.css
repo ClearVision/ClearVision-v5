@@ -1,4 +1,4 @@
-/* "Smooth Backgrounds v2.1b" by Zerthox*/
+/* "Smooth Backgrounds v2.1c" by Zerthox*/
 /* Make the background really clear & more smooth */
 
 .theme-light .guilds-wrapper .scroller-wrap,
@@ -13,8 +13,8 @@
 .theme-dark .channel-members,
 .theme-light .search-results-wrap,
 .theme-dark .search-results-wrap,
-.theme-light .friends-header,
-.theme-dark .friends-header,
+.theme-light #friends [class*="headerBar"],
+.theme-dark #friends [class*="headerBar"],
 .theme-light .friends-table,
 .theme-dark .friends-table {
     background-color: transparent !important;
