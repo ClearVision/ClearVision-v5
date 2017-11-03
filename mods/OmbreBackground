@@ -1,0 +1,26 @@
+/* Ombre background v1
+   A style for people who want to embrace their inner fashionista;
+   This will supersede the dark tint in ClearVision with a gradient of your choosing. */
+   
+/* To use, import this code, then add these three variables in your theme's :root block (sans !important flags);
+   --ombre-angle: The gradient angle for titlebar and main window
+   --ombre-color-1: First colour of the gradient (ideally specified with RGBA)
+   --ombre-color-2: Second colour of the gradient (also ideally specified with RGBA)
+   
+   If you're completely lost but still interested in learning, look up about CSS3 linear gradients. */
+
+/* Defining additional variables */
+:root{
+    --ombre-background: linear-gradient(var(--ombre-angle), var(--ombre-color-1), var(--ombre-color-2)) !important;}
+
+/* Titlebar mod for this to not suck */
+[class*="titleBar-"]{
+    margin-top: 0px !Important;
+    padding-top: 4px !Important;}
+
+/* Gradient stuff */
+[class*="titleBar-"],
+DIV.layers{
+    background-color: transparent !important;
+    background-image: var(--ombre-background) !important;
+    background-attachment: fixed !important;}
