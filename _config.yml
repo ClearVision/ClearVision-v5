@@ -1,0 +1,9 @@
+name: ClearVision
+author: Zerthox
+exclude:
+    - README.md
+    - LICENSE.md
+    - Gemfile
+sass:
+    sass_dir: /
+    style: compressed
