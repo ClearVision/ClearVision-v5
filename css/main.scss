@@ -1,0 +1,245 @@
+---
+---
+
+// IMPORT MIXINS
+@import "css/mixins.scss";
+
+// CYCLE MIXINS
+@mixin cycle-keyframes($a, $t: (color, background-color)) {
+    @each $k in map-keys($a) {
+        $l: map-get($a, $k);
+        @each $c in $t {
+                @include keyframes(cycle-#{$k}-#{$c}) {
+                    @for $n from 0 to length($l) {
+                        #{$n * 100 / length($l)}% {
+                            #{$c}: #{nth($l, $n + 1)};
+                        }
+                    }
+                    100% {
+                        #{$c}: #{nth($l, 1)};
+                    }
+                }
+        }
+    }
+}
+@mixin cycle-animate($n, $d: $animation-duration, $t: ease-in-out) {
+    @include prefix(animation, cycle-#{$n} $d $t infinite);
+}
+
+// VARIABLES
+$main-colors: #e62727, #e67a27, #33e627, #2780e6, #da27e6;
+$hover-colors: #b31e1e, #b35d1e, #2ab31e, #1e63b3, #a71eb3;
+$images: "/images/ruby.jpg", "/images/amber.jpg", "/images/emerald.jpg", "/images/sapphire.jpg", "/images/amethyst.jpg";
+$animation-duration: 30s;
+
+// GENERAL
+body {
+    min-height: 100vh;
+    @include display-flex;
+    @include flex-direction(column);
+    background: #000;
+    font-family: Whitney, Helvetica Neue , Helvetica, Arial, sans-serif;
+    color: hsla(0, 0%, 100%, .6);
+    @include pseudo(after, before) {
+        content: "";
+        position: fixed;
+        @include pos(0, 0, 0, 0);
+        @include bg($size: cover, $pos: center);
+    }
+    @include pseudo(after) {
+        @include prefix(animation, images1 2 * $animation-duration infinite);
+        z-index: -9999;
+    }
+    @include pseudo(before) {
+        @include prefix(animation, images2 2 * $animation-duration infinite);
+        z-index: -9998;
+    }
+}
+@each $selector in  selection, -moz-selection {
+    ::#{$selector} {
+        background: #fff;
+        color: #000;
+    }
+}
+
+// CONTENT
+.site-body {
+    width: 100%;
+    @include display-flex;
+    @include flex-direction(column);
+    @include flex-grow(1);
+    background-color: rgba(0, 0, 0, .5);
+    .content {
+        @include display-flex;
+        @include flex-direction(column);
+        @include flex-grow(1);
+        margin: 10%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 5px;
+    }
+    h1 {
+        color: #bfbfbf;
+    }
+    a {
+        @include cycle-animate(main-color);
+        @include prefix(transition, text-shadow .1s ease-in-out);
+        &:hover {
+            text-decoration: none;
+            text-shadow: 0 0 1px;
+        }
+    }
+}
+
+// FOOTER
+.site-footer {
+    @include display-flex;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, .7);
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 13px;
+    @include prefix(user-select, none);
+    & > .left {
+        margin-right: auto;
+    }
+    & > .right {
+        margin-left: auto;
+    }
+    & > * > * {
+        margin: 0 5px;
+    }
+    a {
+        color: hsla(0, 0%, 100%, .7);
+        @include prefix(transition, all .15s ease-in-out);
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+// KEYFRAMES
+@include cycle-keyframes((main: $main-colors, hover: $hover-colors));
+@keyframes images1 {
+    0% {
+        background-image: url(/images/amber.jpg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    19% {
+        background-image: url(/images/amber.jpg);
+        opacity: 0;
+    }
+    20% {
+        background-image: url(/images/sapphire.jpg);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    39% {
+        background-image: url(/images/sapphire.jpg);
+        opacity: 0;
+    }
+    40% {
+        background-image: url(/images/ruby.jpg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    59% {
+        background-image: url(/images/ruby.jpg);
+        opacity: 0;
+    }
+    60% {
+        background-image: url(/images/emerald.jpg);
+        opacity: 0;
+    }   
+    70% {
+        opacity: 1;
+    }   
+    79% {
+        background-image: url(/images/emerald.jpg);
+        opacity: 0;
+    }   
+    80% {
+        background-image: url(/images/amethyst.jpg);
+        opacity: 0;
+    }   
+    90% {
+        opacity: 1;
+    }   
+    99% {
+        background-image: url(/images/amethyst.jpg);
+        opacity: 0;
+    }
+    100% {
+        background-image: url(/images/amber.jpg);
+        opacity: 0;
+    }
+}
+@keyframes images2 {
+    0% {
+        background-image: url(/images/ruby.jpg);
+        opacity: 1;
+    }
+    9% {
+        background-image: url(/images/ruby.jpg);
+        opacity: 0;
+    }
+    10% {
+        background-image: url(/images/emerald.jpg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    29% {
+        background-image: url(/images/emerald.jpg);
+        opacity: 0;
+    }
+    30% {
+        background-image: url(/images/amethyst.jpg);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    49% {
+        background-image: url(/images/amethyst.jpg);
+        opacity: 0;
+    }
+    50% {
+        background-image: url(/images/amber.jpg);
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    69% {
+        background-image: url(/images/amber.jpg);
+        opacity: 0;
+    }   
+    70% {
+        background-image: url(/images/sapphire.jpg);
+        opacity: 0;
+    }   
+    80% {
+        opacity: 1;
+    }   
+    89% {
+        background-image: url(/images/sapphire.jpg);
+        opacity: 0;
+    }   
+    90% {
+        background-image: url(/images/ruby.jpg);
+        opacity: 0;
+    }   
+    100% {
+        background-image: url(/images/ruby.jpg);
+        opacity: 1;
+    }
+}
