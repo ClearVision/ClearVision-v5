@@ -1,21 +1,21 @@
-/* "Smooth Backgrounds v2.2" by Zerthox & Hebgbs */
+/* "Smooth Backgrounds v2.2b" by Zerthox & Hebgbs */
 /* Make the background really clear & more smooth */
 
 DIV.theme-light .guilds-wrapper .scroller-wrap,
 DIV.theme-dark .guilds-wrapper .scroller-wrap,
-DIV.theme-light DIV[class*="channels-"],
-DIV.theme-dark DIV[class*="channels-"],
+DIV.theme-light DIV[class*="noWrap"] [class*="channels-"],
+DIV.theme-dark DIV[class*="noWrap"] [class*="channels-"],
 DIV.theme-light DIV.flex-spacer.flex-horizontal,
 DIV.theme-dark DIV.flex-spacer.flex-horizontal,
-DIV[class*="titleWrapper"].theme-light > DIV,
-DIV[class*="titleWrapper"].theme-dark > DIV,
-DIV.theme-light .channel-members,
-DIV.theme-dark .channel-members,
+DIV[class*="titleWrapper"].theme-light > DIV[class*="title-"],
+DIV[class*="titleWrapper"].theme-dark > DIV[class*="title-"],
+DIV.theme-light DIV.channel-members,
+DIV.theme-dark DIV.channel-members,
 DIV.theme-light .search-results-wrap,
 DIV.theme-dark .search-results-wrap,
-DIV.theme-light #friends [class*="headerBar"],
-DIV.theme-dark #friends [class*="headerBar"],
-DIV.theme-light #rriends DIV.friends-table,
+DIV.theme-light #friends [class*="noWrap"][class*="headerBar"],
+DIV.theme-dark #friends [class*="noWrap"][class*="headerBar"],
+DIV.theme-light #friends DIV.friends-table,
 DIV.theme-dark #friends DIV.friends-table {
     background-color: transparent !important;
 }
