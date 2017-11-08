@@ -1,0 +1,18 @@
+:root{
+    --main-color: $main-color;
+    --hover-color: $hover-color;
+    --background-blur: $background-blur;
+    --background-brightness: $background-brightness;
+}
+body::after,
+.callout-backdrop,
+[class*=userPopout-]::before,
+#user-profile-modal .header::before,
+#pubs-container::before,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme.light label,
+.radio-theme.dark label {
+    background-image: url($background-image) !important;
+}
