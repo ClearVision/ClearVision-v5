@@ -122,124 +122,124 @@ body {
 @include cycle-keyframes((main: $main-colors, hover: $hover-colors));
 @keyframes images1 {
     0% {
-        background-image: url(/images/amber.jpg);
+        background-image: url({{site.baseurl}}/images/amber.jpg);
         opacity: 0;
     }
     10% {
         opacity: 1;
     }
     19% {
-        background-image: url(/images/amber.jpg);
+        background-image: url({{site.baseurl}}/images/amber.jpg);
         opacity: 0;
     }
     20% {
-        background-image: url(/images/sapphire.jpg);
+        background-image: url({{site.baseurl}}/images/sapphire.jpg);
         opacity: 0;
     }
     30% {
         opacity: 1;
     }
     39% {
-        background-image: url(/images/sapphire.jpg);
+        background-image: url({{site.baseurl}}/images/sapphire.jpg);
         opacity: 0;
     }
     40% {
-        background-image: url(/images/ruby.jpg);
+        background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 0;
     }
     50% {
         opacity: 1;
     }
     59% {
-        background-image: url(/images/ruby.jpg);
+        background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 0;
     }
     60% {
-        background-image: url(/images/emerald.jpg);
+        background-image: url({{site.baseurl}}/images/emerald.jpg);
         opacity: 0;
     }   
     70% {
         opacity: 1;
     }   
     79% {
-        background-image: url(/images/emerald.jpg);
+        background-image: url({{site.baseurl}}/images/emerald.jpg);
         opacity: 0;
     }   
     80% {
-        background-image: url(/images/amethyst.jpg);
+        background-image: url({{site.baseurl}}/images/amethyst.jpg);
         opacity: 0;
     }   
     90% {
         opacity: 1;
     }   
     99% {
-        background-image: url(/images/amethyst.jpg);
+        background-image: url({{site.baseurl}}/images/amethyst.jpg);
         opacity: 0;
     }
     100% {
-        background-image: url(/images/amber.jpg);
+        background-image: url({{site.baseurl}}/images/amber.jpg);
         opacity: 0;
     }
 }
 @keyframes images2 {
     0% {
-        background-image: url(/images/ruby.jpg);
+        background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 1;
     }
     9% {
-        background-image: url(/images/ruby.jpg);
+        background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 0;
     }
     10% {
-        background-image: url(/images/emerald.jpg);
+        background-image: url({{site.baseurl}}/images/emerald.jpg);
         opacity: 0;
     }
     20% {
         opacity: 1;
     }
     29% {
-        background-image: url(/images/emerald.jpg);
+        background-image: url({{site.baseurl}}/images/emerald.jpg);
         opacity: 0;
     }
     30% {
-        background-image: url(/images/amethyst.jpg);
+        background-image: url({{site.baseurl}}/images/amethyst.jpg);
         opacity: 0;
     }
     40% {
         opacity: 1;
     }
     49% {
-        background-image: url(/images/amethyst.jpg);
+        background-image: url({{site.baseurl}}/images/amethyst.jpg);
         opacity: 0;
     }
     50% {
-        background-image: url(/images/amber.jpg);
+        background-image: url({{site.baseurl}}/images/amber.jpg);
         opacity: 0;
     }
     60% {
         opacity: 1;
     }
     69% {
-        background-image: url(/images/amber.jpg);
+        background-image: url({{site.baseurl}}/images/amber.jpg);
         opacity: 0;
     }   
     70% {
-        background-image: url(/images/sapphire.jpg);
+        background-image: url({{site.baseurl}}/images/sapphire.jpg);
         opacity: 0;
     }   
     80% {
         opacity: 1;
     }   
     89% {
-        background-image: url(/images/sapphire.jpg);
+        background-image: url({{site.baseurl}}/images/sapphire.jpg);
         opacity: 0;
     }   
     90% {
-        background-image: url(/images/ruby.jpg);
+        background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 0;
     }   
     100% {
-        background-image: url(/images/ruby.jpg);
+        background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 1;
     }
 }
