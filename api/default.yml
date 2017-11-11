@@ -7,6 +7,6 @@ offline-color: "#808080"
 background-image: https://zerthox.github.io/ClearVision/images/sapphire.jpg
 background-brightness: 100%
 background-blur: 0px
-load1: '""'
-load2: '""'
-load3: '""'
+load1: '"Loading styles"'
+load2: '"Loading assets"'
+load3: '"Finished loading"'
