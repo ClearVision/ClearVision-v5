@@ -1,0 +1,64 @@
+---
+---
+// MIXINS
+$prefixes: (webkit, moz, ms, o);
+@mixin prefix($property, $value...) {
+	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms, o));
+	@if type-of($property) == map {
+		$prefixes: if($value, $value, $prefixes);
+		@each $k in map-keys($property) {
+			@each $e in $p {
+				#{'-' + $e + '-' + $k}: map-get($property, $k);
+			}
+			#{$k}: map-get($property, $k);
+		}
+	}
+	@else {
+		@each $e in $p {
+			#{'-' + $e + '-' + $property}: $value;
+		}
+		#{$property}: $value;
+	}
+}
+@mixin pseudo($a...) {
+	@each $p in $a {
+		&:#{$p},
+		&::#{$p} {
+			@content;
+		}
+	}
+}
+
+// COLOR SETTINGS
+:root {
+    --main-color: #{"$main-color"};
+    --hover-color: #{"$hover-color"};
+    --online-color: #{"$online-color"};
+	--idle-color: #{"$idle-color"};
+	--dnd-color: #{"$dnd-color"};
+	--offline-color: #{"$offline-color"};
+}
+
+// BACKGROUND SETTINGS
+.callout-backdrop,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme label {
+    background-image: url(#{"$background-image"}) !important;
+}
+[class*=userPopout-],
+#user-profile-modal .header,
+#pubs-container {
+    @include pseudo(before) {
+        @extend .auth-background;
+    }
+}
+body {
+    @include pseudo(after) {
+        @extend .callout-backdrop;
+    }
+}
+.callout-backdrop {
+    @include prefix(filter, brightness(#{"$background-brightness"}) blur(#{"$background-blur"}));
+}
