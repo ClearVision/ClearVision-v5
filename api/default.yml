@@ -5,7 +5,7 @@ idle-color: "#faa61a"
 dnd-color: "#982929"
 offline-color: "#808080"
 background-image: https://zerthox.github.io/ClearVision/images/sapphire.jpg
-background-brighntess: 100%
+background-brightness: 100%
 background-blur: 0px
 load1: '""'
 load2: '""'
