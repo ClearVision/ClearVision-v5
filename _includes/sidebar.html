@@ -1,0 +1,27 @@
+{% assign current = page.url | downcase | split: '/' %}
+<div class="side-bar">
+	<div class="header">ClearVision</div>
+	<div class="category">
+		<a href="{{site.baseurl}}/">
+			<div class="item{% if current.last == nil or current.last == 'index.html' %} selected{% endif %}">Home</div>
+		</a>
+		<a href="{{site.baseurl}}/v5">
+			<div class="item{% if current.last == 'v5.html' %} selected{% endif %}">V5</div>
+		</a>
+		<a href="{{site.baseurl}}/v6">
+			<div class="item{% if current.last == 'v6.html' %} selected{% endif %}">V6</div>
+		</a>
+	</div>
+	<div class="header">Presets</div>
+	<div class="category">
+		<a href="{{site.baseurl}}/presets/official">
+			<div class="item{% if page.url contains 'presets/official' %} selected{% endif %}">Official</div>
+		</a>
+		<a href="{{site.baseurl}}/presets/community">
+			<div class="item{% if page.url contains 'presets/community' %} selected{% endif %}">Community</div>
+		</a>
+		<a href="{{site.baseurl}}/generator">
+			<div class="item{% if current.last == 'generator.html' %} selected{% endif %}">Generator</div>
+		</a>
+	</div>
+</div>
