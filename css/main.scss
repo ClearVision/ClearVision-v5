@@ -5,7 +5,7 @@
 @import "css/mixins.scss";
 
 // CYCLE MIXINS
-@mixin cycle-keyframes($a, $t: (color, background-color)) {
+@mixin cycle-keyframes($a, $t: (color, background-color, border-color)) {
     @each $k in map-keys($a) {
         $l: map-get($a, $k);
         @each $c in $t {
