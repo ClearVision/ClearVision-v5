@@ -332,22 +332,6 @@ body {
     }
 }
 
-// SWITCHJS
-[switch-page] {
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-}
-[switch-page]:not([switch-visible]) {
-    height: 0;
-    opacity: 0;
-}
-[switch-ref] {
-    cursor: pointer;
-}
-
 // KEYFRAMES
 @include cycle-keyframes((main: $main-colors, hover: $hover-colors));
 @include keyframes(images1) {
