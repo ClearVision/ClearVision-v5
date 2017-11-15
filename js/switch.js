@@ -2,6 +2,7 @@ window.onload = function() {
     switchjs.init();
 };
 
+/* SwitchJS v1.1 by Zerthox */
 var switchjs = {
     init: function() {
         var r = document.querySelector("[switch-root]");
