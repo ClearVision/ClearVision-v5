@@ -23,7 +23,7 @@ var switchjs = {
         }
     },
     show: function(page, timeout = 300) {
-        // Update pages
+        // Hide pages
         for (var i = 0; i < switchjs.pages.length; i++) {
             switchjs.pages[i].removeAttribute("switch-visible");
         }
@@ -36,10 +36,11 @@ var switchjs = {
                 switchjs.refs[i].removeAttribute("switch-selected");
             }
         }
+        // Unhide active page
         setTimeout(function() {
             for (var i = 0; i < switchjs.pages.length; i++) {
                 if (switchjs.pages[i].getAttribute("switch-page") === page) {
-                    switchjs.pages[i].setAttribute("switch-visible", "");;
+                    switchjs.pages[i].setAttribute("switch-visible", "");
                 }
             }
         }, timeout);
