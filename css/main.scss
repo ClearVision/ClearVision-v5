@@ -24,7 +24,6 @@
 }
 @mixin cycle-animate($n, $d: $animation-duration, $t: ease-in-out) {
     @include prefix(animation, cycle-#{$n} $d $t infinite);
-    color: nth($main-colors, 1);
 }
 
 // VARIABLES
@@ -45,7 +44,6 @@ body {
     @include flex-direction(column);
     background: #000;
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: hsla(0, 0%, 100%, .6);
     overflow: hidden;
     @include pseudo(after, before) {
@@ -113,6 +111,27 @@ body {
         margin: 0 auto;
         overflow-x: auto;
     }
+    .warning {
+        margin: auto;
+        text-align: center;
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            @include cycle-animate(main-color);
+        }
+        .text {
+            font-size: 16px;
+            color: hsla(0, 0%, 100%, .7);
+            a {
+                @include cycle-animate(main-color);
+                @include prefix(transition, text-shadow .1s ease-in-out);
+                &:hover {
+                    text-decoration: none;
+                    text-shadow: 0 0 1px;
+                }
+            }
+        }
+    }
     // SIDEBAR
     .side-bar {
         width: 218px;
@@ -132,20 +151,34 @@ body {
             text-transform: uppercase;
         }
         .item {
+            position: relative;
             padding: 8px 0 8px 20px;
             color: hsla(0, 0%, 100%, .3);
             font-size: 16px;
             font-weight: 500;
             border-radius: 3px;
             @include prefix(transition, all .15s ease-in-out);
+            overflow: hidden;
+            z-index: 10;
             &:hover {
                 background-color: hsla(0, 0%, 100%, .1);
                 color: hsla(0, 0%, 100%, .7);
                 
             }
-            &.selected {
+            @include pseudo(after) {
+                content: "";
+                position: absolute;
+                @include pos(0, 0, 0, 0);
+                opacity: 0;
+                z-index: -1;
+                @include prefix(transition, inherit);
                 @include cycle-animate(main-background-color);
+            }
+            &[switch-selected] {
                 color: #fff;
+                @include pseudo(after) {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -178,7 +211,99 @@ body {
             }
         }
     }
+    // GENERATOR
+    .generator {
+        @include display-flex;
+        @include flex-direction(column);
+        @include flex-grow(1);
+        @include justify-content(flex-start);
+        .input {
+            display: table;
+            .input-item {
+                display: table-row;
+                & > * {
+                    display: table-cell;
+                    margin: 10px;
+                }
+
+            }
+        }
+        button {
+            margin-top: 5px;
+            min-height: 25px;
+            height: 25px;
+            padding: 2px 3px;
+            @include align-self(start);
+            color: hsla(0, 0%, 100%, .3);
+            background: transparent;
+            outline: none !important;
+            border: none;
+            @include prefix(transition, all .3s ease-in-out);
+            cursor: pointer;
+            &:hover {
+                color: hsla(0, 0%, 100%, .7);
+            }
+        }
+        input {
+            padding: 6px;
+            background-color: rgba(0, 0, 0, .5);
+            color: #fff;
+            border: 0px solid;
+            outline: none !important;
+            border-radius: 3px;
+            @include cycle-animate(main-border-color);
+            &:focus {
+                padding: 5px;
+                border-width: 1px;
+            }
+        }
+        .output {
+            @include display-flex;
+            @include flex-direction(column);
+            @include flex-grow(1);
+            @include flex-basis(0);
+            margin: 20px 0;
+        }
+        .success {
+            margin-top: 5px;
+            min-height: 25px;
+            height: 25px;
+            padding: 2px 3px;
+            @include align-self(start);
+            background: transparent;
+            color: hsla(0, 0%, 100%, .7);
+            font-style: italic;
+            cursor: default;
+        }
+    }
+    .codeblock {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        min-height: 100px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        border: 3px solid transparent;
+        resize: vertical;
+        outline: none !important;
+        border-radius: 3px;
+        overflow: hidden;
+        white-space: pre-line;
+        &[lang=cvp] {
+            .property {
+                color: #fff;
+            }
+            .value {
+                color: #adff32;
+            }
+            .variable {
+                color: #ffb732;
+            }
+        }
+    }
 }
+
 
 // FOOTER
 .site-footer {
@@ -207,9 +332,25 @@ body {
     }
 }
 
+// SWITCHJS
+[switch-page] {
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+[switch-page]:not([switch-visible]) {
+    height: 0;
+    opacity: 0;
+}
+[switch-ref] {
+    cursor: pointer;
+}
+
 // KEYFRAMES
 @include cycle-keyframes((main: $main-colors, hover: $hover-colors));
-@keyframes images1 {
+@include keyframes(images1) {
     0% {
         background-image: url({{site.baseurl}}/images/amber.jpg);
         opacity: 0;
@@ -270,7 +411,7 @@ body {
         opacity: 0;
     }
 }
-@keyframes images2 {
+@include keyframes(images2) {
     0% {
         background-image: url({{site.baseurl}}/images/ruby.jpg);
         opacity: 1;
@@ -329,6 +470,14 @@ body {
     }   
     100% {
         background-image: url({{site.baseurl}}/images/ruby.jpg);
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
