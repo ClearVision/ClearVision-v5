@@ -7,3 +7,6 @@
 <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
 <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 <script type="text/javascript" src="{{site.baseurl}}/js/jquery.min.js"></script>
+{% for e in page.js %}
+<script type="text/javascript" src="{{site.baseurl}}/js/{{e}}.js"></script>
+{% endfor %}
