@@ -18,12 +18,21 @@
 	}
 }
 @mixin keyframes($a) {
-	@-webkit-keyframes #{$a} {
-		@content;
-	}
-	@keyframes #{$a} {
-		@content;
-	}
+    @-webkit-keyframes #{$a} {
+        @content;
+    }
+    @-moz-keyframes #{$a} {
+        @content;
+    }
+    @-ms-keyframes #{$a} {
+        @content;
+    }
+    @-o-keyframes #{$a} {
+        @content;
+    }
+    @keyframes #{$a} {
+        @content;
+    }
 }
 @mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null) {
 	$image: if($image, $image, $img);
@@ -150,14 +159,6 @@
     -moz-user-select: $a;
     -ms-user-select: $a;
     user-select: $a;
-}
-@mixin keyframes($a) {
-    @-webkit-keyframes #{$a} {
-        @content;
-    }
-    @keyframes #{$a} {
-        @content;
-    }
 }
 @mixin font($name, $url: null, $format: null, $weight: null, $style: null, $decoration: null) {
     @font-face {
