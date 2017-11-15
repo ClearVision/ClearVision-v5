@@ -18,7 +18,15 @@ var switchjs = {
                 };
             }
             // Show default page
-            let d = switchjs.root.getAttribute("switch-root");
+            var d = switchjs.root.querySelector("[switch-page]").getAttribute("switch-page");
+            let h = window.location.hash.slice(1),
+                a = switchjs.root.getAttribute("switch-root");
+            if (h.length > 0 && switchjs.root.querySelector("[switch-page=" + h + "]")) {
+                d = h;
+            }
+            else if (a.length > 0 && switchjs.root.querySelector("[switch-page=" + a + "]")) {
+                d = a;
+            }
             switchjs.show(d, 0);
         }
     },
