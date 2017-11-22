@@ -14,6 +14,7 @@
     [switch-page]:not([switch-visible]) {
         height: 0;
         opacity: 0;
+        pointer-events: none;
     }
     [switch-ref] {
         cursor: pointer;
