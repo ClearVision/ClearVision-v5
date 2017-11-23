@@ -1,4 +1,4 @@
-/* SwitchJS v1.2 by Zerthox */
+/* SwitchJS v1.3 by Zerthox */
 !function() {
     // Inject CSS
     var style = document.createElement("style");
@@ -10,10 +10,13 @@
         -ms-transition: opacity 0.3s ease-in-out;
         -o-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
-    }
-    [switch-page]:not([switch-visible]) {
-        height: 0;
         opacity: 0;
+    }
+    [switch-page][switch-visible] {
+        opacity: 1;
+    }
+    [switch-page]:not([switch-visible]):not([switch-out]) {
+        position: absolute;
         pointer-events: none;
     }
     [switch-ref] {
@@ -52,7 +55,10 @@
         show: function(page, timeout = 300) {
             // Hide pages
             for (var i = 0; i < switchjs.pages.length; i++) {
-                switchjs.pages[i].removeAttribute("switch-visible");
+                if (switchjs.pages[i].hasAttribute("switch-visible")) {
+                    switchjs.pages[i].setAttribute("switch-out", "");
+                    switchjs.pages[i].removeAttribute("switch-visible");
+                }
             }
             // Update refs
             for (var i = 0; i < switchjs.refs.length; i++) {
@@ -66,6 +72,7 @@
             // Unhide active page
             setTimeout(function() {
                 for (var i = 0; i < switchjs.pages.length; i++) {
+                    switchjs.pages[i].removeAttribute("switch-out");
                     if (switchjs.pages[i].getAttribute("switch-page") === page) {
                         switchjs.pages[i].setAttribute("switch-visible", "");
                     }
