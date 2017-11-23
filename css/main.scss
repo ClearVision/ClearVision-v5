@@ -183,15 +183,22 @@ body {
             }
         }
     }
+    .scroller {
+        min-width: 300px;
+        @include display-flex;
+        @include flex-direction(column);
+        @include flex-grow(1);
+        overflow-y: auto;
+        margin: 0 60px;
+    }
     // CONTENT
     .content {
         min-width: 300px;
         @include display-flex;
         @include flex-direction(column);
-        @include flex-grow(1);
-        margin: 10vh 40px;
-        padding: 20px;
-        border-radius: 5px;
+        min-height: 80vh;
+        max-height: 100%;
+        margin: auto 0;
         .title {
             @include cycle-animate(main-color);
             font-size: 32px;
