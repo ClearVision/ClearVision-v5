@@ -2,44 +2,106 @@
 layout: default
 js: switch
 ---
-<div switch-root="home">
-    <div switch-page="home">
-        <div class="title">ClearVision</div>
-        <p>ClearVision is an automatically updating, easily customizable theme for Discord.</p>
-        <p>ClearVision is built for use with <a href="https://betterdiscord.net">BetterDiscord</a>.</p>
-        <p>For update notifications and theme support, join the <a href="https://github.com/Zerthox/ClearVision">ClearVision Discord server</a>.</p>
-        <p>If you would like to contribute, check out the <a href="https://github.com/Zerthox/ClearVision">Github Repository</a>.</p>
-    </div>
-    <div switch-page="v5">
-        <div class="title">ClearVision v5</div>
-        <p>This is the Theme version of ClearVision for <a href="https://betterdiscord.net">BetterDiscord</a>.</p>
-        <p>
-            If you wanna download the original Theme, head over to the <a href="https://github.com/Zerthox/ClearVision/releases">Github Releases</a> and download the Theme of your choosing.
-            You can find installation instructions in the <a href="https://github.com/Zerthox/ClearVision/wiki">ClearVision Wiki</a>.
-        </p>
-    </div>
-    <div switch-page="v6">
-        <div class="title">ClearVision v6</div>
-        <p>
-            This project is still work-in-progress currently.
-            The goal is to rework ClearVision as an even easier to use and more user-friendly JavaScript based theme.
-        </p>
-        <p>
-            The final version will be available as a <a href="https://betterdiscord.net">BetterDiscord</a> Plugin, but you'll be able to run it independently aswell.
-        </p>
-        <p>Participation in the development process is currently limited to Contributors, Donators and Testers.</p>
-        <p>If you would like to participate in the future, make sure to join the <a href="https://discord.me/clearvision">ClearVision Discord server</a>.</p>
-    </div>
-    <div switch-page="official">
-        <div class="title">Official Presets</div>
-        <i>Coming soon...</i>
-    </div>
-    <div switch-page="community">
-        <div class="title">Community Presets</div>
-        <i>Coming soon...</i>
-    </div>
-    <div switch-page="generator">
-        <div class="title">Preset Generator</div>
-        <i>Coming soon...</i>
+{% include sidebar.html %}
+<div class="scroller">
+    <div class="content" switch-root="home">
+        <div switch-page="home">
+            <div class="title">ClearVision</div>
+            <p>
+                ClearVision is an automatically updating, easily customizable theme for Discord.
+            </p>
+            <p>
+                ClearVision is built for use with <a href="https://betterdiscord.net">BetterDiscord</a>.
+            </p>
+            <p>
+                For update notifications and theme support, join the <a href="https://github.com/Zerthox/ClearVision">ClearVision Discord server</a>.
+            </p>
+            <p>
+                If you would like to contribute, check out the <a href="https://github.com/Zerthox/ClearVision">Github Repository</a>.
+            </p>
+        </div>
+        <div switch-page="v5">
+            <div class="title">ClearVision v5</div>
+            <p>
+                This is the Theme version of ClearVision for <a href="https://betterdiscord.net">BetterDiscord</a>.
+            </p>
+            <p>
+                If you wanna download the original Theme, head over to the <a href="https://github.com/Zerthox/ClearVision/releases">Github Releases</a> and download the Theme of your choosing.
+                You can find installation instructions in the <a href="https://github.com/Zerthox/ClearVision/wiki">ClearVision Wiki</a>.
+            </p>
+        </div>
+        <div switch-page="v6">
+            <div class="title">ClearVision v6</div>
+            <p>
+                This project is still work-in-progress currently.
+                The goal is to rework ClearVision as an even easier to use and more user-friendly JavaScript based theme.
+            </p>
+            <p>
+                The final version will be available as a <a href="https://betterdiscord.net">BetterDiscord</a> Plugin, but you'll be able to run it independently aswell.
+            </p>
+            <p>
+                Participation in the development process is currently limited to Contributors, Donators and Testers.
+            </p>
+            <p>
+                If you would like to participate in the future, make sure to join the <a href="https://discord.me/clearvision">ClearVision Discord server</a>.
+            </p>
+        </div>
+        <div switch-page="installation">
+                <div class="title">Installation Instructions</div>
+                <div class="header">1. Installing BetterDiscord</div>
+                <p>
+                    The installation is different depending on which operating system you are on.
+                </p>
+                <p>
+                    Visit <a href="https://betterdiscord.net">BetterDiscord.net</a> and read the <a href="https://github.com/Jiiks/BetterDiscordApp/wiki">BetterDiscord Wiki</a> for installation instructions.
+                </p>
+                <p>
+                    If you have any questions, join the <a href="https://discord.gg/0Tmfo5ZbORCRqbAd">BetterDiscord Discord server</a>.
+                </p>
+                <div class="header">2. Downloading the Theme</div>
+                <p>
+                    Got to the <a href="https://github.com/Zerthox/ClearVision/releases">Latest Github release</a> and download the theme of your choosing.
+                </p>
+                <div class="header">3. Installing the Theme</div>
+                <p>
+                        Move the theme file to your BetterDiscord theme folder:
+                </p>
+                <div class="codeblock"><b>Windows:</b> %appdata%\betterdiscord\themes\
+                    <b>Mac:</b> ~/Library/Preferences/BetterDiscord/themes
+                </div>
+                <p>
+                    If you have no idea how to open the according directory:
+                </p>
+                <div class="list ordered">
+                    <div>Open Discord</div>
+                    <div>Open your user settings</div>
+                    <div>Go to the BetterDiscord tab</div>
+                    <div>Go to the themes tab</div>
+                    <div>Click on the <code class="inline">Open Theme Folder</code> button</div>
+                </div>
+                <div class="header">4. Enabling the theme</div>
+                <p>Make sure the theme file is placed in the correct folder and the file extension is <code class="inline">.theme.css</code><br>
+                    <i>(If you dont have "Show file extensions" enabled it will only show <code class="inline">.theme</code>)</i>
+                </p>
+                <p>
+                    Now head back to Discord and restart it.<br>
+                    <i>(Instead of restarting the whole programm you can reload using Ctrl + R)</i>
+                </p>
+                <p>
+                    Head to the themes tab and check the checkbox next to the theme you just installed!
+                </p>
+            </div>
+        <div switch-page="official-presets">
+            <div class="title">Official Presets</div>
+            <i>Coming soon...</i>
+        </div>
+        <div switch-page="community-presets">
+            <div class="title">Community Presets</div>
+            <i>Coming soon...</i>
+        </div>
+        <div switch-page="generator">
+            <div class="title">Preset Generator</div>
+            <i>Coming soon...</i>
+        </div>
     </div>
 </div>
