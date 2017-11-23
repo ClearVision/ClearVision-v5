@@ -211,6 +211,21 @@ body {
                 text-shadow: 0 0 1px;
             }
         }
+        .list {
+            & > * {
+                margin-bottom: 6px;
+            }
+            &.ordered {
+                counter-reset: items;
+                & > * {
+                    @include pseudo(before) {
+                        content: counter(items) ". ";
+                        counter-increment: items;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
         .inline {
             padding: 3.5px 7.5px;
             background-color: hsla(0, 0%, 100%, .1);
