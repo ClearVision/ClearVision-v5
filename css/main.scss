@@ -194,14 +194,17 @@ body {
         border-radius: 5px;
         .title {
             @include cycle-animate(main-color);
-            font-size: 30px;
+            font-size: 32px;
             font-weight: 600;
         }
         .header {
-            @include cycle-animate(main-color);
+            margin-top: 20px;
             font-size: 20px;
             font-weight: 600;
-            text-transform: uppercase;
+        }
+        .header,
+        p {
+            margin-bottom: 12px;
         }
         a {
             @include cycle-animate(main-color);
