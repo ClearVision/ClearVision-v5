@@ -1,5 +1,5 @@
 // Mixin Collection by Zerthox
-@mixin prefix($property, $value: null, $prefixes...) {
+@mixin prefix($property, $value...) {
 	$p: if(length(prefixes) == 0, $prefixes, (webkit, moz, ms, o));
 	@if type-of($property) == map {
 		$prefixes: if($value, $value, $prefixes);
@@ -18,36 +18,39 @@
 	}
 }
 @mixin keyframes($a) {
-    @-webkit-keyframes #{$a} {
-        @content;
-    }
-    @-moz-keyframes #{$a} {
-        @content;
-    }
-    @-ms-keyframes #{$a} {
-        @content;
-    }
-    @-o-keyframes #{$a} {
-        @content;
-    }
-    @keyframes #{$a} {
-        @content;
-    }
+	@-webkit-keyframes #{$a} {
+		@content;
+	}
+	@-moz-keyframes #{$a} {
+		@content;
+	}
+	@-ms-keyframes #{$a} {
+		@content;
+	}
+	@-o-keyframes #{$a} {
+		@content;
+	}
+	@keyframes #{$a} {
+		@content;
+	}
 }
-@mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null) {
+@mixin bg($color: null, $image: null, $img: null, $size: null, $position: null, $pos: null, $repeat: null) {
 	$image: if($image, $image, $img);
 	$position: if($position, $position, $pos);
 	@if $color {
 		background-color: #{$color};
 	}
 	@if $image {
-		background-image: url(#{$img});
+		background-image: url(#{$image});
 	}
 	@if $size {
 		background-size: #{$size};
 	}
 	@if $position {
 		background-position: #{$position};
+	}
+	@if $repeat {
+		background-repeat: #{$repeat};
 	}
 }
 @mixin pseudo($a...) {
