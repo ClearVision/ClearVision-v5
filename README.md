@@ -1,7 +1,14 @@
+# ClearVision
+[![Releases](https://img.shields.io/github/release/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/releases)
+[![License](https://img.shields.io/github/license/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/blob/master/LICENSE)
+[![Discord server](https://img.shields.io/discord/212324635356692500.svg)](https://discord.me/clearvision)
+[![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/pulls)
+
 # ClearVision Discord Server
 Join for *update notifications* and *theme support*!
 
-**Instant Invite:** https://discord.gg/HmVKer8
+**Instant Invite:** https://discord.me/clearvision
 
 # Donations
 I spend a lot of time working voluntarily on my themes.  
