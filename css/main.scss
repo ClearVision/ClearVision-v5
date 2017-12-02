@@ -184,7 +184,7 @@ body {
         }
     }
     .scroller {
-        min-width: 300px;
+        min-width: 400px;
         @include display-flex;
         @include flex-direction(column);
         @include flex-grow(1);
@@ -193,7 +193,6 @@ body {
     }
     // CONTENT
     .content {
-        min-width: 300px;
         @include display-flex;
         @include flex-direction(column);
         min-height: 80vh;
