@@ -1,9 +1,9 @@
 # ClearVision
-[![Releases](https://img.shields.io/github/release/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/releases)
-[![License](https://img.shields.io/github/license/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/blob/master/LICENSE)
-[![Discord server](https://img.shields.io/discord/212324635356692500.svg)](https://discord.me/clearvision)
-[![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg)](https://github.com/Zerthox/ClearVision/pulls)
+[![Releases](https://img.shields.io/github/release/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/releases)
+[![License](https://img.shields.io/github/license/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/blob/master/LICENSE)
+[![Discord server](https://img.shields.io/discord/212324635356692500.svg?style=flat-square)](https://discord.me/clearvision)
+[![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/pulls)
 
 # ClearVision Discord Server
 Join for *update notifications* and *theme support*!
