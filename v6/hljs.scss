@@ -5,6 +5,21 @@
 // IMPORT MIXINS
 @import "css/mixins.scss";
 
+// CUSTOM FUNCTIONs
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    @return $string;
+}
+@function str-classify($string) {
+    @each $e in " ", "(", ")", "/", "+", "#", "'", "." {
+        $string: str-replace($string, $e);
+    }
+    @return $string;
+}
+
 // LANGUAGE MAP
 $languages: (
     "1c": "1c",
@@ -202,11 +217,14 @@ $languages: (
 // OUTPUT
 .message-group .hljs {
     @each $l in map-keys($languages) {
+        %t#{str-classify($l)} {
+            @include pseudo(before) {
+                content: "#{$l}";
+            }
+        }
         @each $e in map-get($languages, $l) {
             &[class~="#{$e}" i] {
-                @include pseudo(before) {
-                    content: "#{$l}";
-                }
+                @extend %t#{str-classify($l)};
             }
         }
     }
