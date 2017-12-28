@@ -1,9 +1,9 @@
-//META{"name":"ClearVision_Amber","description":"A fiery, orange theme with customizable colors & background!</br> Based on <a href='https://github.com/0mniscient/Discord-Themes/tree/master/Themes' target='_blank'>Discord Reborn</a> by <a href='https://github.com/0mniscient' target='_blank'>@Omniscient</a> & <a href='https://github.com/cosmicsalad/Discord-Themes-and-Plugins/tree/master/themes/DarkMatter' target='_blank'>DarkMatter</a> by <a href='https://github.com/cosmicsalad' target='_blank'>@Hammock</a> <span style='position: absolute; bottom: 0; left: 0;'>Links: <b><a href='https://git.io/v6BHO' target='_blank'>Github</a></b> | <b><a href='https://discord.gg/FtYVPky' target='_blank'>Discord</a></b> | <b><a href='https://git.io/vXTqM' target='_blank'>Wiki</a></b></span> <span style='position: absolute; bottom: 0; right: 14px;'>By <b><a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a></b></span>","author":"<a href='https://github.com/Zerthox' target='_blank'>@Zerthox</a>","version":"5"}*//{}
+//META{"name":"ClearVision_Sapphire","description":"A fiery, orange theme with customizable colors & background! Based on Discord Reborn by @Omniscient &DarkMatter by @Hammock. Server: https://discord.me/clearvision","author":"Zerthox","version":"5"}*//{}
 /* "ClearVision - Amber v5" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* IMPORT CSS FROM GITHUB */
-@import url(https://gitcdn.xyz/repo/Zerthox/ClearVision/master/css/ClearVision_v5.min.css);
+@import url(https://zerthox.github.io/ClearVision/css/ClearVision_v5.min.css);
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE BETWEEN DARK AND LIGHT VERSION IN APPEARANCE SETTINGS!
@@ -38,15 +38,15 @@ Changelog: https://git.io/v6r5N
 */
 body::after,
 .callout-backdrop,
-.user-popout::before,
-#user-profile-modal .header::before,
+.userPopout-4pfA0d::before,
+.root-2sNHUF::before,
 #pubs-container::before,
 .auth-background,
 .auth-tiling-bg,
 .invite-modal .invite-splash,
 .radio-theme.light label,
-.radio-theme.dark label{
-    background-image: url(https://github.com/Zerthox/ClearVision/raw/master/images/amber.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
+.radio-theme.dark label {
+    background-image: url(https://zerthox.github.io/ClearVision/images/amber.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
