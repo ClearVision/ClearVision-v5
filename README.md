@@ -5,6 +5,8 @@
 [![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/pulls)
 
+Thanks to [Danielle](https://github.com/OmgDani) and [Hegbbs](https://github.com/Hebgbs) for mainting v5 while I work on v6.
+
 # ClearVision Discord Server
 Join for *update notifications* and *theme support*!
 
@@ -13,7 +15,7 @@ Join for *update notifications* and *theme support*!
 # Donations
 I spend a lot of time working voluntarily on my themes.  
 Donations help me to keep up my work and constantly update, improve and optimize my themes.  
-Donators get access to *donator only chat* and *ClearVision BETA pre-releases* on my [Discord server](https://discord.gg/HmVKer8).  
+Donators get access to *donator only chat* and *WIP versions of my work* on my [Discord server](https://discord.me/clearvision).  
 If you want to support me you can donate money via Paypal or items via Steam.
 
 **Donate money:** [Paypal](https://www.paypal.me/zerthox)  
