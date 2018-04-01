@@ -1,6 +1,7 @@
 .friends-online {
     position: relative;
     margin-bottom: 70px !important;
+    overflow: visible !important;
 }
 .friends-online::before {
     content: "";
