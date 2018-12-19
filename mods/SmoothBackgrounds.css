@@ -5,8 +5,16 @@ DIV.theme-light .guildsWrapper-5TJh6A,
 DIV.theme-dark .guildsWrapper-5TJh6A,
 DIV.theme-light .chat-3bRxxu,
 DIV.theme-dark .chat-3bRxxu,
-DIV.theme-light.content-yTz4x3,
+DIV.theme-light .content-yTz4x3,
 DIV.theme-dark .content-yTz4x3,
+DIV.theme-light .gameLibrary-TTDw4Y,
+DIV.theme-dark .gameLibrary-TTDw4Y,
+DIV.theme-light .headerBar-UHpsPw,
+DIV.theme-dark .headerBar-UHpsPw,
+DIV.theme-light .activityFeed-28jde9,
+DIV.theme-dark .activityFeed-28jde9,
+DIV.theme-light .applicationStore-1pNvnv,
+DIV.theme-dark .applicationStore-1pNvnv,
 DIV.theme-light DIV[class*="noWrap"] [class*="channels-"],
 DIV.theme-dark DIV[class*="noWrap"] [class*="channels-"],
 DIV.theme-light DIV.flex-spacer.flex-horizontal,
@@ -21,5 +29,6 @@ DIV.theme-light #friends [class*="noWrap"][class*="headerBar"],
 DIV.theme-dark #friends [class*="noWrap"][class*="headerBar"],
 DIV.theme-light #friends DIV.friends-table,
 DIV.theme-dark #friends DIV.friends-table {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
+
