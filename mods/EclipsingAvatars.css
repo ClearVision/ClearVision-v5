@@ -1,12 +1,12 @@
-/* Eclipsing Avatars 3.1 (import)
+/* Eclipsing Avatars 3.0 (import)
    User status enhancer to make avatars fit in with a lunar-style theme.
    
    Ideally, this should be imported before the ClearVision base theme.
    This is intended only for people who use ClearVision and derivatives of;
    Any other theme may cause minor appearance issues. */
 
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Eclipsing_Avatars/imports/ClearVision.css);
-@import url(https://rawgit.com/Hebgbs/DiscordStuff/master/Themes/Eclipsing_Avatars/imports/default.css);
+@import url(https://gitcdn.xyz/cdn/Hebgbs/DiscordStuff/master/Themes/Eclipsing_Avatars/imports/ClearVision.css);
+@import url(https://gitcdn.xyz/cdn/Hebgbs/DiscordStuff/master/Themes/Eclipsing_Avatars/imports/base.css);
 
 /* Colours; Adjusted for ClearVision */
 :root{
