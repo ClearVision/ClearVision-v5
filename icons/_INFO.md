@@ -19,4 +19,4 @@ Allowing to download as SVG, Vector Drawable, PNG or Webfont you can use their i
 
 **Website:** [Material Design Icons](https://materialdesignicons.com/)  
 **Github:** [Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign)  
-**License:** [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/license.txt)
+**License:** [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE)
