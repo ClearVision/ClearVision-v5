@@ -1,18 +1,20 @@
 ## Disclaimer
-Icons used in my ClearVision themes are not made by myself and I do not own any of those,  
-they are just hosted on the Github repository to provide more control and better accessability.
+Most of the Icons used in the ClearVision themes are from external sources,  
+however they are hosted on the ClearVision Github repository to provide more control and better accessability.  
+If you are the Copyright owner of one of the icons and would like your icon to be taken down, please submit an [Issue](https://github.com/Zerthox/ClearVision/issues/new) or a [Pull Request](https://github.com/Zerthox/ClearVision/pulls/new).  
+All rights go to their respective owners.
 
 ## Sources
 ### Google Material Icons
 Many of the the icons are from Material icons from Google's Material Design.  
-They provide high quality icons with good accessability. I can only recommend Google's Material icons.
+They provide high quality Material Design icons with different styles for each icon and are arguably one of the best sources for Material Design icons.
 
-**Website:** [Google Material icons](https://material.io/icons/)  
+**Website:** [Google Material icons](https://material.io/tools/icons/)  
 **Github:** [google/material-design-icons](https://github.com/google/material-design-icons)  
 **License:** [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
 
 ### Material Design Icons
-Material Design Icons is a collection of design resources for Material Design.  
+Material Design Icons is a huge collection of Material Design icons.  
 It contains icons made by Google, Austin Andrews, 14 other contributors and community submissions.  
 It is a great resource for icons and icon ideas you would not find otherwise.  
 Allowing to download as SVG, Vector Drawable, PNG or Webfont you can use their icons on every platform.
