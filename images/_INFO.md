@@ -1,7 +1,7 @@
 ## Disclaimer
 Background Images used in the ClearVision themes are from external sources,  
 however they are hosted on the ClearVision Github repository to provide more control and better accessability.  
-If you are the Copyright owner of one of the icons and would like your icon to be taken down, please submit an [Issue](https://github.com/Zerthox/ClearVision/issues/new) or a [Pull Request](https://github.com/Zerthox/ClearVision/pulls/new).  
+If you are the Copyright owner of one of the images and would like your image to be taken down, please submit an [Issue](https://github.com/Zerthox/ClearVision/issues/new) or a [Pull Request](https://github.com/Zerthox/ClearVision/pulls/new).  
 All rights go to their respective owners.
 
 ## Sources
