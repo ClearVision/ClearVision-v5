@@ -55,9 +55,13 @@
         show: function(page, timeout = 300) {
             // Hide pages
             for (var i = 0; i < switchjs.pages.length; i++) {
-                if (switchjs.pages[i].hasAttribute("switch-visible")) {
+                if (switchjs.pages[i].hasAttribute("switch-visible") || switchjs.pages[i].hasAttribute("switch-in")) {
                     switchjs.pages[i].setAttribute("switch-out", "");
                     switchjs.pages[i].removeAttribute("switch-visible");
+                    switchjs.pages[i].removeAttribute("switch-in");
+                }
+                if (switchjs.pages[i].getAttribute("switch-page") === page) {
+                    switchjs.pages[i].setAttribute("switch-in", "");
                 }
             }
             // Update refs
@@ -73,8 +77,9 @@
             setTimeout(function() {
                 for (var i = 0; i < switchjs.pages.length; i++) {
                     switchjs.pages[i].removeAttribute("switch-out");
-                    if (switchjs.pages[i].getAttribute("switch-page") === page) {
+                    if (switchjs.pages[i].hasAttribute("switch-in")) {
                         switchjs.pages[i].setAttribute("switch-visible", "");
+                        switchjs.pages[i].removeAttribute("switch-in");
                     }
                 }
             }, timeout);
