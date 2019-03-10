@@ -4,7 +4,7 @@ description: ClearVision is an automatically updating, easily customizable theme
 
 exclude:
     - README.md
-    - LICENSE.md
+    - LICENSE
     - Gemfile
 
 sass:
