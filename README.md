@@ -11,7 +11,7 @@ Thanks to [Danielle](https://github.com/OmgDani) for mainting v5 while I work on
 # ClearVision Discord Server
 Join for *update notifications* and *theme support*!
 
-**Instant Invite:** https://discord.me/clearvision
+**Instant Invite:** https://clearvision.gitlab.io/join
 
 # Donations
 I spend a lot of time working voluntarily on my themes.  
