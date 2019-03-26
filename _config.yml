@@ -7,6 +7,5 @@ exclude:
     - LICENSE
     - Gemfile
 
-sass:
-    sass_dir: /
-    style: compressed
+plugins:
+  - jekyll-redirect-from
