@@ -1,0 +1,24 @@
+/* //META {"name": "ClearVision", "description": "Public BETA for ClearVision v6.", "author": "Zerthox", "version": "6 BETA", "website": "https://clearvision.gitlab.io"} *//**/
+/* "ClearVision v6 BETA" by Zerthox */
+
+/* IMPORT CSS */
+@import url(https://clearvision.gitlab.io/public/main.css);
+
+/* COLOR SETTINGS */
+:root {
+	--main-color: #2780e6;
+	--hover-color: #1e63b3;
+	--online-color: #43b581;
+	--idle-color: #faa61a;
+	--dnd-color: #982929;
+	--offline-color: #808080;
+	--streaming-color: #593695;
+}
+
+/* BACKGROUND SETTINGS */
+:root {
+	--background-image: url(https://clearvision.gitlab.io/images/sapphire.jpg);
+	--background-brightness: 100%;
+	--background-blur: 0px;
+	--background-overlay: rgba(0, 0, 0, 0.6);
+}
