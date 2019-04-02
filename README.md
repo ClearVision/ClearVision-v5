@@ -1,7 +1,6 @@
 # ClearVision
 [![Releases](https://img.shields.io/github/release/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/releases)
 [![License](https://img.shields.io/github/license/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/blob/master/LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/Zerthox/ClearVision/total.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/releases)
 [![Discord server](https://img.shields.io/discord/212324635356692500.svg?style=flat-square)](https://clearvision.gitlab.io/join)
 [![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/pulls)
