@@ -29,19 +29,19 @@ ClearVision v6 is still a work-in-progress project. The source is available on [
 # ClearVision v5
 ClearVision v5 is currently maintained by [Danielle](https://github.com/OmgDani) while I focus on [ClearVision v6](https://gitlab.com/ClearVision/v6).
 ## ClearVision - Amber
-![Amber](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber.png)
+![Amber](https://github.com/Zerthox/ClearVision/raw/master/screenshots/Amber.png)
 
 ## ClearVision - Amethyst
-![Amethyst](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst.png)
+![Amethyst](https://github.com/Zerthox/ClearVision/raw/master/screenshots/Amethyst.png)
 
 ## ClearVision - Emerald
-![EmeraldDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald.png)
+![EmeraldDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/Emerald.png)
 
 ## ClearVision - Ruby
-![RubyDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby.png)
+![RubyDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/Ruby.png)
 
 ## ClearVision - Sapphire
-![SapphireDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire.png)
+![SapphireDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/Sapphire.png)
 
 ## ClearVision - Halloween
 *No udpated preview*
