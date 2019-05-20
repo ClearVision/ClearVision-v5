@@ -5,10 +5,10 @@
 [![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/pulls)
 
-Thanks to [Danielle](https://github.com/OmgDani) for mainting v5 while I work on v6.
+Many thanks to [Danielle](https://github.com/OmgDani) for maintaining v5 while I work on [ClearVision v6](https://gitlab.com/ClearVision/v6)!
 
 # ClearVision Discord Server
-Join for *update notifications* and *theme support*!
+Join for information on the v6 BETA, update notifications and theme support!
 
 **Instant Invite:** https://clearvision.gitlab.io/join
 
@@ -21,66 +21,31 @@ If you want to support me you can donate money via Paypal or items via Steam.
 **Donate money:** [Paypal](https://www.paypal.me/zerthox)  
 **Donate items:** [Steam](https://steamcommunity.com/tradeoffer/new/?partner=128392116&token=v9WYPla-)
 
-# Installation & Customization
-Visit the Wiki page to learn more about how to install and customize your theme: [ClearVision Wiki](https://github.com/Zerthox/ClearVision/wiki)
+# ClearVision v6
+ClearVision v6 is still a work-in-progress project. The source is available on [GitLab](https://gitlab.com/ClearVision/v6). Currently, v6 is in public beta and available to download here: [ClearVision_v6.theme.css](https://clearvision.gitlab.io/download/v6/latest)
 
-# Mods
-Visit the Wiki page to learn more about mods: [Mods wiki page](https://github.com/Zerthox/ClearVision/wiki/Mods)
+![v6 Sapphire](https://github.com/Zerthox/ClearVision/raw/master/screenshots/v6.png)
 
-# Previews
+# ClearVision v5
+ClearVision v5 is currently maintained by [Danielle](https://github.com/OmgDani) while I focus on [ClearVision v6](https://gitlab.com/ClearVision/v6).
 ## ClearVision - Amber
-### Dark Appearance
-![AmberDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber_dark.png)
-### Light Appearance
-![AmberLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber_light.png)
-### Settings
-![AmberSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber_settings.png)
+![Amber](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amber.png)
 
 ## ClearVision - Amethyst
-### Dark Appearance
-![AmethystDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst_dark.png)
-### Light Appearance
-![AmethystLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst_light.png)
-### Settings
-![AmethystSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst_settings.png)
+![Amethyst](https://github.com/Zerthox/ClearVision/raw/master/screenshots/amethyst.png)
 
 ## ClearVision - Emerald
-### Dark Appearance
-![EmeraldDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald_dark.png)
-### Light Appearance
-![EmeraldLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald_light.png)
-### Settings
-![EmeraldSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald_settings.png)
+![EmeraldDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/emerald.png)
 
 ## ClearVision - Ruby
-### Dark Appearance
-![RubyDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby_dark.png)
-### Light Appearance
-![RubyLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby_light.png)
-### Settings
-![RubySettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby_settings.png)
+![RubyDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/ruby.png)
 
 ## ClearVision - Sapphire
-### Dark Appearance
-![SapphireDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_dark.png)
-### Light Appearance
-![SapphireLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_light.png)
-### Settings
-![SapphireSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire_settings.png)
+![SapphireDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/sapphire.png)
 
 ## ClearVision - Halloween
-### Dark Appearance
-![WinterDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_dark.png)
-### Light Appearance
-![WinterLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_light.png)
-### Settings
-![WinterSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/halloween_settings.png)
+*No udpated preview*
 
 
 ## ClearVision - Winter
-### Dark Appearance
-![WinterDark](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_dark.png)
-### Light Appearance
-![WinterLight](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_light.png)
-### Settings
-![WinterSettings](https://github.com/Zerthox/ClearVision/raw/master/screenshots/winter_settings.png)
+*No udpated preview*
