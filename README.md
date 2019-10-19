@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/pulls)
 
-Many thanks to [Danielle](https://github.com/OmgDani) for maintaining ClearVision v5 repository while I work on [ClearVision v6](https://gitlab.com/ClearVision/v6)!
+Many thanks to [Danielle](https://github.com/OmgDani) for maintaining ClearVision v5 repository while I work on [ClearVision v6](https://github.com/ClearVision/v6)!
 
 # Discord Server
 Join for information on the v6 BETA, update notifications and theme support!
