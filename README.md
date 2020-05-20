@@ -1,3 +1,6 @@
+# IMPORTANT
+ClearVision v5 has been discontinued. This repository will soon be moved to the [ClearVision group](https://github.com/ClearVision).
+
 # ClearVision
 [![Releases](https://img.shields.io/github/release/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/releases)
 [![License](https://img.shields.io/github/license/Zerthox/ClearVision.svg?style=flat-square)](https://github.com/Zerthox/ClearVision/blob/master/LICENSE)
